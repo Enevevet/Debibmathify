@@ -1,0 +1,232 @@
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+<!doctype html><html lang="fr"<head><meta charset="utf-8"><meta name="Author" CONTENT="Fred Bayart"><meta name="Description" CONTENT="Ressources de mathématiques"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Résumé de cours : fonctions vectorielles, arcs paramétrés</title><link type="text/css" href="../css/bibstyle.css" rel="stylesheet" /><link type="text/css" href="lib/ressources.css" rel="stylesheet" /><script type="text/x-mathjax-config">
+MathJax.Hub.Config({  tex2jax: {inlineMath: [['$','$']]} });</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script><script type="text/javascript" src="../common/fonctions.js"></script><script type="text/javascript" src="lib/oXHR.js"></script><script type="text/javascript" src="lib/ajouteexo.js"></script><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5238512654171693",
+    enable_page_level_ads: true
+  });
+</script></head><body>	<div style="display:none">$$\newcommand{\mtn}{\mathbb{N}}\newcommand{\mtns}{\mathbb{N}^*}\newcommand{\mtz}{\mathbb{Z}}\newcommand{\mtr}{\mathbb{R}}\newcommand{\mtk}{\mathbb{K}}\newcommand{\mtq}{\mathbb{Q}}\newcommand{\mtc}{\mathbb{C}}\newcommand{\mch}{\mathcal{H}}\newcommand{\mcp}{\mathcal{P}}\newcommand{\mcb}{\mathcal{B}}\newcommand{\mcl}{\mathcal{L}}
+\newcommand{\mcm}{\mathcal{M}}\newcommand{\mcc}{\mathcal{C}}
+\newcommand{\mcmn}{\mathcal{M}}\newcommand{\mcmnr}{\mathcal{M}_n(\mtr)}
+\newcommand{\mcmnk}{\mathcal{M}_n(\mtk)}\newcommand{\mcsn}{\mathcal{S}_n}
+\newcommand{\mcs}{\mathcal{S}}\newcommand{\mcd}{\mathcal{D}}
+\newcommand{\mcsns}{\mathcal{S}_n^{++}}\newcommand{\glnk}{GL_n(\mtk)}
+\newcommand{\mnr}{\mathcal{M}_n(\mtr)}\DeclareMathOperator{\ch}{ch}
+\DeclareMathOperator{\sh}{sh}\DeclareMathOperator{\th}{th}
+\DeclareMathOperator{\vect}{vect}\DeclareMathOperator{\card}{card}
+\DeclareMathOperator{\comat}{comat}\DeclareMathOperator{\imv}{Im}
+\DeclareMathOperator{\rang}{rg}\DeclareMathOperator{\Fr}{Fr}
+\DeclareMathOperator{\diam}{diam}\DeclareMathOperator{\supp}{supp}
+\newcommand{\veps}{\varepsilon}\newcommand{\mcu}{\mathcal{U}}
+\newcommand{\mcun}{\mcu_n}\newcommand{\dis}{\displaystyle}
+\newcommand{\croouv}{[\![}\newcommand{\crofer}{]\!]}
+\newcommand{\rab}{\mathcal{R}(a,b)}\newcommand{\pss}[2]{\langle #1,#2\rangle}
+$$</div><header id="bandeau"><div id="bandeaucentre"><span id=bandeaulogo>Bibm@th.net</span><span id=bandeaumilieu><a href="https://www.youtube.com/channel/UCP-LXgvAe7CMdf_dddUcLmw" alt="Visitez notre chaine YouTube" title="Visiter notre chaine YouTube"><img src="../img/youtube.png" /></a><a href="https://www.facebook.com/bibmath" alt="Consulter notre page FaceBook" title="Consulter notre page Facebook"><img src="../img/fb.png" /></a><a href="../forums/login.php" alt="Consulter mon compte" title="Vous n'êtes pas identifié. Identifiez-vous."><img src="../img/moncompte.png" /></a></span><div id=bandeaurecherche><form id="formrech" name="recherche" action="../recherche.php"  method="get"><input name="q" placeholder="Rechercher sur le site..." class="formulairerecherche inputrecherche" /><button class="formulairerecherche boutonrecherche" value="" title="Rechercher"> </button></form></div></div></header><header id="bandeaumobile"><div class="sousbandeaumobile"><span class="itembandeaumobile" id="iconeouvremenu"><a href="javascript:ouvremenumobile()"><img src="../img/menumobile.png" /></a></span><span class="itembandeaumobilefondnoir" id="iconefermemenu"><a href="javascript:fermemenumobile()"><img src="../img/deletemobile.png"></a></span><span class="itembandeaumobile">Bibm@th</span></div><div class="sousbandeaumobile"><span class="itembandeaumobile"><a href="../forums/index.php" title="Accéder au forum du site"><img src="../img/forumgrand.png" /></a></span><span class="itembandeaumobilesansbordure"><a href="https://www.facebook.com/bibmath" alt="Consulter notre page FaceBook" title="Consulter notre page Facebook"><img src="../img/fbmobile.png" /></a></span><span class="itembandeaumobilesansbordure"><a href="../forums/login.php" alt="Consulter mon compte" title="Vous n'êtes pas identifié. Identifiez-vous."><img src="../img/moncomptemobile.png" /></a></span><span class="itembandeaumobile"  id="iconeouvrerecherche"><a href="javascript:ouvrerecherchemobile()"><img src="../img/loupemobile.png" /></a></span><span class="itembandeaumobilefondnoir" id="iconefermerecherche"><a href="javascript:fermerecherchemobile()"><img src="../img/deletemobile.png"></a></span></div></header><div id="recherchemobile"><form id="formrecherchemobile" name="recherche" action="../recherche.php"  method="get"><div class="divinputrecherche"><input name="q" placeholder="Rechercher sur le site..." class="formulairerecherche inputrecherche" /></div><div class="divboutonmobile"><button class="formulairerecherche boutonrecherche" value="" title="Rechercher"> </button></div></form></div><div id="menuetsousmenu"><nav id="menuhaut"><div id="menuhautcentre"><section id="listemenuhaut"><span id="menu0" class="item"><a href="../index.php"><img src="../img/maison.png" />Accueil</a></span><span id="menu1" class="item"><a href="javascript:affiche_sousmenu(1);"><img src="../img/lycee16.png" />Lycée</a></span><span id="menu2" class="itemselectionne"><a href="javascript:affiche_sousmenu(2);"><img src="../img/ressources.png" />Supérieur</a></span><span id="menu3" class="item"><a href="javascript:affiche_sousmenu(3);"><img src="../img/bibliotheques.png" />Bibliothèques</a></span><span id="menu4" class="item"><a href="javascript:affiche_sousmenu(4);"><img src="../img/references.png" />Références</a></span><span id="menu5" class="item"><a href="javascript:affiche_sousmenu(5);"><img src="../img/themes.png" />Thèmes</a></span><span id="menu6" class="item"><a href="../forums/index.php"><img src="../img/forum.png" />Forum</a></span></section></div></nav><nav id="sousmenuhaut"><div id="sousmenuhautcentre"><section id="listesousmenuhaut"><div class="sousmenucontenu" id="sousmenu_0" style="display:none" ></div><div class="sousmenucontenu" id="sousmenu_1" style="display:none" ><span class="sousmenuitem"><a href="../ressources/index.php?action=affiche&quoi=college/index">Collège</a></span><span class="sousmenuitem"><a href="../ressources/index.php?action=affiche&quoi=seconde/index">Seconde</a></span></div><div class="sousmenucontenu" id="sousmenu_2" style="display:flex" ><span class="sousmenuitem"><a href="../ressources/index.php?action=affiche&quoi=mathsup/index">Math Sup</a></span><span class="sousmenuitemselectionne"><a href="../ressources/index.php?action=affiche&quoi=mathspe/index">Math Spé</a></span><span class="sousmenuitem"><a href="../ressources/index.php?action=affiche&quoi=capes/index">Capes</a></span><span class="sousmenuitem"><a href="../ressources/index.php?action=affiche&quoi=agreginterne/index">Agreg interne</a></span><span class="sousmenuitem"><a href="../ressources/index.php?action=affiche&quoi=bts/index">BTS</a></span></div><div class="sousmenucontenu" id="sousmenu_3" style="display:none" ><span class="sousmenuitem"><a href="../ressources/index.php?action=affiche&quoi=bde/index">Bibliothèque d'exercices</a></span><span class="sousmenuitem"><a href="../pbs/index.php">Bibliothèque de problèmes</a></span><span class="sousmenuitem"><a href="../quizz/index.php">Automatismes</a></span></div><div class="sousmenucontenu" id="sousmenu_4" style="display:none" ><span class="sousmenuitem"><a href="../dico/index.php">Dictionnaire</a></span><span class="sousmenuitem"><a href="../bios/index.php">Biographie de mathématiciens</a></span><span class="sousmenuitem"><a href="../formulaire/index.php">Formulaire</a></span><span class="sousmenuitem"><a href="../trans/index.php">Lexique français/anglais</a></span></div><div class="sousmenucontenu" id="sousmenu_5" style="display:none" ><span class="sousmenuitem"><a href="../crypto/index.php">Cryptographie et codes secrets</a></span><span class="sousmenuitem"><a href="../jeux/index.php">Jeux et énigmes</a></span><span class="sousmenuitem"><a href="../carres/index.php?action=affiche&quoi=carres">Carrés magiques</a></span><span class="sousmenuitem"><a href="../quotidien/index.php">Mathématiques au quotidien</a></span><span class="sousmenuitem"><a href="../dossiers/index.php">Dossiers</a></span></div><div class="sousmenucontenu" id="sousmenu_6" style="display:none" ></div></section></div></nav><nav id="menumobile"><div class="itemmenumobile"><div class="teteitemmenumobile"><span><a href="../index.php">Accueil</a></span><img src="../img/flechemenumobileferme.png" id="sousmenumobileimageferme0"  /><img src="../img/flechemenumobileouvert.png" id="sousmenumobileimageouvert0"  style="display:none;"/></div></div><div class="itemmenumobile"><div class="teteitemmenumobile"><span><a href="javascript:affiche_sousmenumobile(1);">Lycée</a></span><img src="../img/flechemenumobileferme.png" id="sousmenumobileimageferme1"  /><img src="../img/flechemenumobileouvert.png" id="sousmenumobileimageouvert1"  style="display:none;"/></div><div class="sousmenumobile" id="sousmenumobile1"><div class="sousitemmenumobile"><span><a href="../ressources/index.php?action=affiche&quoi=college/index">Collège</a></span></div><div class="sousitemmenumobile"><span><a href="../ressources/index.php?action=affiche&quoi=seconde/index">Seconde</a></span></div></div></div><div class="itemmenumobileselectionne"><div class="teteitemmenumobile"><span><a href="javascript:affiche_sousmenumobile(2);">Supérieur</a></span><img src="../img/flechemenumobileferme.png" id="sousmenumobileimageferme2"  /><img src="../img/flechemenumobileouvert.png" id="sousmenumobileimageouvert2"  style="display:none;"/></div><div class="sousmenumobile" id="sousmenumobile2"><div class="sousitemmenumobile"><span><a href="../ressources/index.php?action=affiche&quoi=mathsup/index">Math Sup</a></span></div><div class="sousitemmenumobile"><span><a href="../ressources/index.php?action=affiche&quoi=mathspe/index">Math Spé</a></span></div><div class="sousitemmenumobile"><span><a href="../ressources/index.php?action=affiche&quoi=capes/index">Capes</a></span></div><div class="sousitemmenumobile"><span><a href="../ressources/index.php?action=affiche&quoi=agreginterne/index">Agreg interne</a></span></div><div class="sousitemmenumobile"><span><a href="../ressources/index.php?action=affiche&quoi=bts/index">BTS</a></span></div></div></div><div class="itemmenumobile"><div class="teteitemmenumobile"><span><a href="javascript:affiche_sousmenumobile(3);">Bibliothèques</a></span><img src="../img/flechemenumobileferme.png" id="sousmenumobileimageferme3"  /><img src="../img/flechemenumobileouvert.png" id="sousmenumobileimageouvert3"  style="display:none;"/></div><div class="sousmenumobile" id="sousmenumobile3"><div class="sousitemmenumobile"><span><a href="../ressources/index.php?action=affiche&quoi=bde/index">Bibliothèque d'exercices</a></span></div><div class="sousitemmenumobile"><span><a href="../pbs/index.php">Bibliothèque de problèmes</a></span></div><div class="sousitemmenumobile"><span><a href="../quizz/index.php">Automatismes</a></span></div></div></div><div class="itemmenumobile"><div class="teteitemmenumobile"><span><a href="javascript:affiche_sousmenumobile(4);">Références</a></span><img src="../img/flechemenumobileferme.png" id="sousmenumobileimageferme4"  /><img src="../img/flechemenumobileouvert.png" id="sousmenumobileimageouvert4"  style="display:none;"/></div><div class="sousmenumobile" id="sousmenumobile4"><div class="sousitemmenumobile"><span><a href="../dico/index.php">Dictionnaire</a></span></div><div class="sousitemmenumobile"><span><a href="../bios/index.php">Biographie de mathématiciens</a></span></div><div class="sousitemmenumobile"><span><a href="../formulaire/index.php">Formulaire</a></span></div><div class="sousitemmenumobile"><span><a href="../trans/index.php">Lexique français/anglais</a></span></div></div></div><div class="itemmenumobile"><div class="teteitemmenumobile"><span><a href="javascript:affiche_sousmenumobile(5);">Thèmes</a></span><img src="../img/flechemenumobileferme.png" id="sousmenumobileimageferme5"  /><img src="../img/flechemenumobileouvert.png" id="sousmenumobileimageouvert5"  style="display:none;"/></div><div class="sousmenumobile" id="sousmenumobile5"><div class="sousitemmenumobile"><span><a href="../crypto/index.php">Cryptographie et codes secrets</a></span></div><div class="sousitemmenumobile"><span><a href="../jeux/index.php">Jeux et énigmes</a></span></div><div class="sousitemmenumobile"><span><a href="../carres/index.php?action=affiche&quoi=carres">Carrés magiques</a></span></div><div class="sousitemmenumobile"><span><a href="../quotidien/index.php">Mathématiques au quotidien</a></span></div><div class="sousitemmenumobile"><span><a href="../dossiers/index.php">Dossiers</a></span></div></div></div><div class="itemmenumobile"><div class="teteitemmenumobile"><span><a href="../forums/index.php">Forum</a></span><img src="../img/flechemenumobileferme.png" id="sousmenumobileimageferme6"  /><img src="../img/flechemenumobileouvert.png" id="sousmenumobileimageouvert6"  style="display:none;"/></div></div></nav></div><div id="main"><div id="maincentre"><div id="gauche"><div id="pubgauche"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-5238512654171693";google_ad_slot = "0076167888";
+google_ad_width = 728;google_ad_height = 90;//-->
+</script><script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div><div id="pubresponsive"><script async src="/pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- bibmathresponsive -->
+		<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5238512654171693"
+     data-ad-slot="2152023625"
+     data-ad-format="auto"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div><article id="contenugauche"><div class="chemin"><a href="index.php">Ressources mathématiques</a> &gt; <a href="index.php?action=affiche&quoi=mathspe/index">Math Spé</a> &gt; </div><div class="chemin"><a href="moncompte.php">Accéder à mon compte</a> &gt; <a href="mafeuille.php">Accéder à ma feuille d'exercices</a> &gt; </div><h1>Résumé de cours : fonctions vectorielles, arcs paramétrés</h1>$E,F,G$ désignent des espaces vectoriels réels de dimension finie de dimension $n$, et $I$ un intervalle de $\mathbb R$ non réduit à un point.
+<div class=titrepartie>Dérivabilité</div>
+<div class=liste>
+<ul>
+<li>On dit que la fonction $f:I\to\mathbb E$ est <span class=rougedico>dérivable</span> en $a\in I$ si le taux d'accroissement $\displaystyle 
+\frac{f(a+h)-f(a)}{h}$ admet une limite quand $h$ tend vers $0$. Dans ce cas, la limite est notée $f'(a)$ et s'appelle <span class=rougedico>vecteur dérivé</span>
+de $f$ en $a$.
+<li>Une fonction $f:I\to\mathbb E$ est dérivable en $a$ si et seulement s'il existe $\alpha\in E$ et une fonction $\veps$ définie dans un intervalle $J$
+ouvert contenant $0$, vérifiant $\lim_{h\to 0}\veps(h)=0$ tels que
+$$\forall h\in J,\ f(a+h)=f(a)+h \alpha +h\veps(h).$$
+<li>Si $f=(f_1,\dots,f_n)$, alors $f$ est dérivable en $a$ si et seulement si chaque $f_i$ est dérivable en $a$. 
+Dans ce cas, on a $f'(a)=\big(f_1'(a),\dots,f_n'(a)\big)$.
+<li>On dit que la fonction $f:I\to\mathbb E$ est <span class=rougedico>dérivable à droite</span> en $a\in I$ si le taux d'accroissement $\displaystyle 
+\frac{f(a+h)-f(a)}{h}$ admet une limite quand $h$ tend vers $0^+$. On définit de même la dérivabilité à gauche, et on sait que $f$ est dérivable en $a$ si et seulement
+si $f$ est dérivable à droite et à gauche en $a$.
+<li>On dit que $f$ est dérivable sur $I$ si $f$ est dérivable en tout point de $I$. $f'$ s'appelle alors la fonction dérivée de $f$.
+</ul>
+</div>
+
+<div class=titrepartie>Opérations sur les fonctions dérivables</div>
+<div class=liste>
+<ul>
+<li><span class=grastheo>Combinaison linéaire</span> : Soient $f,g:I\to E$ dérivables. Pour tout $\lambda\in\mathbb R$, $\lambda f+g$ est dérivable et $(\lambda f+g)'=\lambda f'+g'$.
+<li><span class=grastheo>Composée par une application linéaire</span> : Soit $f:I\to E$ dérivable et $L:E\to F$ linéaire. Alors $L\circ f$ est
+ dérivable et $(L\circ f)'=L\circ f'$.
+<li><span class=grastheo>Composée par une application bilinéaire</span> : Soit $f:I\to E$, $g:I\to F$ dérivables et $B:E\times F\to G$ bilinéaire. Alors $B(f,g):t\mapsto B\big(f(t),g(t)\big)$ est dérivable et $\big(B(f,g)\big)'=B(f',g)+B(f,g')$.
+<li><span class=grastheo>Composée par le produit scalaire</span> : En particulier, si $E$ est un espace vectoriel euclidien muni du produit scalaire $\langle \cdot,\cdot\rangle$, si $f,g:I\to E$ sont dérivables, alors la fonction
+$u:I\to \mathbb R,\ t\mapsto \langle f(t),g(t)\rangle$ est dérivable sur $I$ et 
+$u'(t)=\langle f'(t),g(t)\rangle+\langle f(t),g'(t)\rangle$.
+<li><span class=grastheo>Composée</span> : Si $J$ est un intervalle de $\mathbb R$, $\varphi:J\to I$ est dérivable et $f:I\to\mathbb E$, alors $f\circ \varphi:J\to\mathbb R$ est dérivable et $(f\circ \varphi)'=\varphi' \cdot f'\circ \varphi$.
+</ul>
+</div>
+
+
+<div class=titrepartie>Dérivées successives</div>
+<div class=liste>
+<ul>
+<li>Soit $f:I\to\mathbb E$ une fonction dérivable. Sa dérivée $f'$ peut elle-même être dérivable. On appelle
+alors cette dérivée la dérivée seconde de $f$ et on la note $f''$. En itérant ce procédé, on peut
+définir la dérivée $n$-ième de $f$, notée $f^{(n)}$.
+<li>On dit que $f$ est de classe $C^n$ sur $I$ si elle admet une dérivée d'ordre $n$ notée $f^{(n)}$ et si cette dérivée
+est elle-même continue sur $I$. On dit que $f$ est de classe $C^\infty$ sur $I$ si elle admet des dérivées successives
+de tout ordre.
+<li>La plupart des résultats valables pour la dérivée d'ordre 1 reste valable pour les dérivées d'ordre $n$. Par exemple :
+<div class=liste>
+<ul>
+<li>$f$ est de classe $\mathcal C^n$ si et seulement si toutes ses fonctions coordonnées sont de classe $\mathcal C^n$.
+<li>la combinaison linéaire de deux applications de classe $\mathcal C^n$ est de classe $\mathcal C^n$. 
+<li>Formule de Leibniz : soit $f:I\to E$ et $g:I\to F$ deux applications de classe $\mathcal C^n$ et soit $B:E\times F\to G$ une application bilinéaire. 
+Alors $B(f,g)$ est de classe $\mathcal C^n$ et 
+\begin{eqnarray*}
+\big(B(f,g)\big)^{(n)}&=&\sum_{k=0}^n \binom{n}{k}B\big(f^{(n-k)},g^{(k)}\big)
+\end{eqnarray*}
+</ul>
+</div>
+<li><div class=theo><span class=grastheo>Théorème (inégalité des accroissements finis) :</span> Soit $f:[a,b]\to E$ de classe $\mathcal C^1$. Alors 
+$$\|f(b)-f(a)\|\leq (b-a)\sup_{t\in [a,b]}\|f'(t)\|.$$
+</div>
+</ul>
+</div>
+
+<div class=titrepartie>Intégration des fonctions à valeurs vectorielles</div>
+On fixe $(e_1,\dots,e_n)$ une base de l'espace vectoriel $E$.
+<div class=liste>
+<ul>
+<li>Une application $f=(f_1,\dots,f_n):[a,b]\to E$ est <span class=rougedico>continue par morceaux</span> si toutes ses applications coordonnées le sont.
+<li>Soit $f=(f_1,\dots,f_n):[a,b]\to E$ une application continue par morceaux. On appelle <span class=rougedico>intégrale</span> de $a$ à $b$ de $f$ le vecteur 
+noté $\int_a^b f(t)dt$ et défini par
+$$\int_a^b f(t)dt=\sum_{j=1}^n \left(\int_a^b f_j(t)dt\right) e_j.$$
+Ce vecteur ne dépend pas de la base $(e_1,\dots,e_n)$ de $E$ fixée au préalable.
+<li>L'intégration vectorielle vérifie les deux propriétés suivantes, bien connues de l'intégration scalaire :
+<div class=liste>
+<ul>
+<li><span class=grastheo>linéarité de l'intégrale</span> : pour toutes fonctions $f,g:[a,b]\to E$ continues par morceaux et pour tout $\lambda\in\mathbb R$, 
+$$\int_a^b \big(\lambda f(t)+g(t)\big)dt=\lambda\int_a^b f(t)dt+\int_a^b g(t)dt.$$
+<li><span class=grastheo>relation de Chasles</span> : pour toute fonction $f:[a,b]\to E$ continue par morceaux et pour tout $c\in[a,b]$, on a
+$$\int_a^b f(t)dt=\int_a^c f(t)dt+\int_c^b f(t)dt.$$
+</ul>
+</div>
+<li><div class=theo><span class=grastheo>Proposition :</span> Pour toute fonction $f:[a,b]\to E$ continue par morceaux, on a 
+$$\left\|\int_a^b f(t)dt\right\|\leq \int_a^b \|f(t)\|dt.$$
+</div>
+<li><div class=theo><span class=grastheo>Théorème :</span> Soit $f:[a,b]\to E$ continue par morceaux.
+Alors
+$$\frac {b-a}n\sum_{k=0}^{n-1}f\left(a+k\frac{b-a}n\right)\to\int_a^b f(t)dt.$$
+</div>
+<li><div class=theo><span class=grastheo>Théorème :</span> Soit $f:[a,b]\to\mathbb E$ continue. Alors la fonction $F:[a,b]\to E$, $x\mapsto \int_a^x f(t)dt$
+est dérivable, et pour tout $x\in\mathbb R$, on a $F'(x)=f(x)$.
+</ul>
+</div>
+
+<div class=titrepartie>Formules de Taylor</div>
+<div class=liste>
+<ul>
+<li><div class=theo><span class=grastheo>Formule de Taylor avec reste intégral :</span>
+Soit $f:[a,b]\to\mathbb E$ une fonction de classe $\mathcal C^{n+1}$. Alors 
+$$f(b)=\sum_{k=0}^{n}\frac{(b-a)^k}{k!}f^{(k)}(a)+\int_a^b \frac{(b-t)^n}{n!}f^{(n+1)}(t)dt.$$
+</div>
+<li><div class=theo><span class=grastheo>Inégalité de Taylor-Lagrange :</span>
+Soit $f:[a,b]\to\mathbb E$ une fonction de classe $\mathcal C^{n+1}$. Alors 
+$$\left| f(b)-\sum_{k=0}^{n}\frac{(b-a)^k}{k!}f^{(k)}(a)\right|\leq M_{n+1}\frac{|b-a|^{n+1}}{(n+1)!}$$
+avec
+$M_{n+1}=\sup_{t\in [a,b]}\|f^{(n+1)}(t)\|$.
+</div>
+<li><div class=theo><span class=grastheo>Formule de Taylor-Young :</span> Soit $I$ un intervalle de $\mathbb R$, $a\in I$ et $f:I\to E$ de classe $\mathcal C^n$. Alors $f$ admet un développement limité à l'ordre $n$
+en $a$ donné par
+$$f(a+h)=f(a)+f'(a) h+\dots+\frac{f^{(n)}(a)}{n!}h^n+h^n\veps(h)$$
+où $\veps:I\to E$ vérifie $\lim_{h\to 0}\veps(h)=0_E$.
+</div>
+</ul>
+</div>
+
+<div class=titrepartie>Arcs paramétrés</div>
+<div class=liste>
+<ul>
+<li>On appelle <span class=rougedico>arc paramétré à valeurs dans $E$</span> la donnée d'un couple $(I,f)$ où $I$ est un intervalle et $f:I\to E$ est une fonction.
+L'arc est dit continue ou de classe $\mathcal C^k$ si $f$ l'est.
+<li>On appelle <span class=rougedico>support</span> de l'arc $(I,f)$ la partie $\Gamma$ de $E$ définie par $\Gamma=\{f(t);\ t\in I\}$.
+<li>Lorsque $E=\mathbb R^2$, on parle d'arc paramétré plan. Le support d'un tel arc est alors une courbe du plan.
+<li>On dit que l'arc paramétré $(I,f)$ admet une <span class=rougedico>tangente</span> au point $f(t_0)$ s'il existe un vecteur $\vec u_0$ tel que la droite $(f(t)f(t_0))$ admette 
+un vecteur directeur $\vec u(t)$ qui tend vers $\vec u_0$ lorsque $t$ tend vers $t_0$. Cette condition impose en particulier que $f(t)\neq f(t_0)$ pour tout $t\neq t_0$ dans un voisinage de $t_0$.
+<li>En pratique, il suffit de considérer le vecteur directeur normalisé $\frac{f(t)-f(t_0)}{\|f(t)-f(t_0)\|}$ et d'étudier si ce vecteur admet une limite lorsque $t$ tend vers $t_0$.
+<li>Un arc paramétré de classe $\mathcal C^1$ est dit <span class=rougedico>régulier</span> en $t_0$ si $f'(t_0)\neq 0$. Il est dit régulier s'il est régulier en chacun de ses points.
+<li><div class=theo><span class=grastheo>Proposition : </span> Soit $(I,f)$ un arc paramétré de classe $\mathcal C^1$ et soit $t_0$ un point régulier de $f$. Alors $(I,f)$ admet une tangente en $f(t_0)$ dirigée par $f'(t_0)$. En particulier, si $E=\mathbb R^2$ et si on écrit $f(t)=(x(t),y(t))$, alors l'équation de la tangente au point $f(t_0)=(x(t_0),y(t_0)$ est
+$$y'(t_0)\big(x-x(t_0)\big)-x'(t_0)\big(y-y(t_0)\big)=0.$$
+</ul>
+</div>
+
+
+</article></div><aside id="droite"><div class="contenudroite"><h1>
+	Discussions des forums</h1><li><a href="http://www.bibmath.net/forums/viewtopic.php?id=12842&amp;action=new" title="La NANCY PI (cours d&#039;intégration)">La NANCY PI (cours d&#039;inté …</a></li>
+<li><a href="http://www.bibmath.net/forums/viewtopic.php?id=12851&amp;action=new" title="modifier un programme Python">modifier un programme Python</a></li>
+<li><a href="http://www.bibmath.net/forums/viewtopic.php?id=12850&amp;action=new" title="Pourcentage">Pourcentage</a></li>
+<li><a href="http://www.bibmath.net/forums/viewtopic.php?id=12849&amp;action=new" title="Développement de Taylor">Développement de Taylor</a></li>
+<li><a href="http://www.bibmath.net/forums/viewtopic.php?id=12847&amp;action=new" title="Demonstration dans l&#039;ordre dans R">Demonstration dans l&#039;ordr …</a></li>
+<li><a href="http://www.bibmath.net/forums/viewtopic.php?id=12846&amp;action=new" title="Mat 112">Mat 112</a></li>
+<li><a href="http://www.bibmath.net/forums/viewtopic.php?id=12841&amp;action=new" title="Probabilité sur un univers fini">Probabilité sur un univer …</a></li>
+<li><a href="http://www.bibmath.net/forums/viewtopic.php?id=12845&amp;action=new" title="Problème de math">Problème de math</a></li>
+<li><a href="http://www.bibmath.net/forums/viewtopic.php?id=12267&amp;action=new" title="La cryptographie moderne est trop !">La cryptographie moderne …</a></li>
+<li><a href="http://www.bibmath.net/forums/viewtopic.php?id=12844&amp;action=new" title="probabilité Terminale (2)">probabilité Terminale (2)</a></li>
+<li><a href="http://www.bibmath.net/forums/viewtopic.php?id=12843&amp;action=new" title="maths pour reconfinement">maths pour reconfinement</a></li>
+<li><a href="http://www.bibmath.net/forums/viewtopic.php?id=12830&amp;action=new" title="Probabilités - Tribus Boréliennes">Probabilités - Tribus Bor …</a></li>
+<li><a href="http://www.bibmath.net/forums/viewtopic.php?id=12829&amp;action=new" title="probabilité Terminale">probabilité Terminale</a></li>
+<li><a href="http://www.bibmath.net/forums/viewtopic.php?id=12836&amp;action=new" title="valeur acquise et valeur actuelle">valeur acquise et valeur …</a></li>
+<li><a href="http://www.bibmath.net/forums/viewtopic.php?id=12840&amp;action=new" title="Cotés et hauteurs d&#039;un triangle">Cotés et hauteurs d&#039;un tr …</a></li>
+<div class=bascontenu><a href="http://www.bibmath.net/forums/">Accéder aux forums</a></div>  </div><div id="pubdroite"><ins class="adsbygoogle"
+		 style="display:inline-block;width:300px;height:600px"
+		 data-ad-client="ca-pub-5238512654171693"
+		 data-ad-slot="3610567220"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div><div class="contenudroite"><h1>Mathématicienne du mois</h1><center><img src="http://www.bibmath.net/bios/images/uhlenbeck.jpg"></center>
+<center>
+<a href="http://www.bibmath.net/bios/index.php?action=affiche&quoi=uhlenbeck">Karen Uhlenbeck (1942-)</a>
+</center><div class=bascontenu><a href="http://www.bibmath.net/bios/index.php">Toutes les biographies</a></div></div></aside></div></div><footer id="pied"><div id="piedcentre"><section id="listepied"><span class="item"><script language="JavaScript1.1"> <!-- 
+	hsh = new Date();
+      hsd = document;
+      hsi = '<a href="http://www.xiti.com/xiti.asp?s=65164"'
+      hsi += ' TARGET="_top"><img width="80" height="15" border=0 '
+      hsi += 'src="http://logv17.xiti.com/oco.xiti?s=65164'
+      hsi += '&p=&hl=' + hsh.getHours() + 'x' + hsh.getMinutes() + 'x' + hsh.getSeconds();
+      if(parseFloat(navigator.appVersion)>=4)
+            {Xiti_s=screen;hsi += '&r=' + Xiti_s.width + 'x' + Xiti_s.height + 'x' + Xiti_s.pixelDepth + 'x' + Xiti_s.colorDepth;}
+      hsd.writeln(hsi + '&ref=' + hsd.referrer.replace('&', '$') + ' " title="Mesurez votre audience"></a>');//-->  
+      </script></span><span class="item"><a href=../contact.php>Signaler une erreur/Nous contacter</a></span><span class="item"><a href=../credits.php>Mentions Légales</a></span><span class="item"><a href=../cookies.php>Cookies</a></span></section></div></footer><footer id="piedmobile"><span class="item"><script language="JavaScript1.1"> <!-- 
+	hsh = new Date();
+      hsd = document;
+      hsi = '<a href="http://www.xiti.com/xiti.asp?s=65164"'
+      hsi += ' TARGET="_top"><img width="80" height="15" border=0 '
+      hsi += 'src="http://logv17.xiti.com/oco.xiti?s=65164'
+      hsi += '&p=&hl=' + hsh.getHours() + 'x' + hsh.getMinutes() + 'x' + hsh.getSeconds();
+      if(parseFloat(navigator.appVersion)>=4)
+            {Xiti_s=screen;hsi += '&r=' + Xiti_s.width + 'x' + Xiti_s.height + 'x' + Xiti_s.pixelDepth + 'x' + Xiti_s.colorDepth;}
+      hsd.writeln(hsi + '&ref=' + hsd.referrer.replace('&', '$') + ' " title="Mesurez votre audience"></a>');//-->  
+      </script></span><span class="item"><a href=../contact.php?origine=mobile>Nous contacter</a></span><span class="item"><a href=../credits.php>Mentions Légales</a></span></footer>
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "rgb(29,125,28)",
+      "text": "#ffffff"
+    },
+    "button": {
+      "background": "rgb(89,178,0)"
+    }
+  },
+  "theme": "classic",
+  "content": {
+    "message": "Ce site utilise des cookies pour faciliter votre navigation, obtenir des statistiques de visite, et afficher des publicités personnalisées.",
+    "dismiss": "Continuer!",
+    "link": "En savoir plus",
+    "href": "http://www.bibmath.net/cookies.php"
+  }
+});
+</script>
+</body><script type="text/javascript" src="../common/scrolling.js"></script></html>	

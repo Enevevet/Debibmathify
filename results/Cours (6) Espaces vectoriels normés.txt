@@ -1,0 +1,125 @@
+Résumé de cours : espaces vectoriels normés
+
+\(E\) désigne un espace vectoriel sur le corps \(\mathbb K=\) \(\mathbb R\) ou \(\mathbb C\).
+
+Normes
+
+Une application \(\|\cdot\|:E\to\mathbb R_+\) est appelée une <b>norme</b> si elle vérifie les trois propriétés suivantes :
+ - Pour tout \(x\in E\), \(\|x\|=\) \(0\iff x=\) \(0\).
+
+ - Pour tout \(x\in E\) et tout \(\lambda\in\mathbb K\), \(\|\lambda x\|=\) \(|\lambda|\|x\|\) (homogénéité).
+
+ - Pour tous \(x,y\in E\), \(\|x+y\|\leq \|x\|+\|y\|\) (inégalité triangulaire).
+
+
+On dit alors que \((E,\|\cdot\|)\) est un <b>espace vectoriel normé</b>.
+
+Si \((E,\|\cdot\|)\) est un espace vectoriel normé, l'application \(d:E\times E\to\mathbb R_+\) définie par
+\(d(x,y)=\) \(\|x-y\|\) est appelée <b>distance associée</b> à la norme \(\|\cdot\|\) sur \(E\).
+ 
+Elle vérifie les propriétés suivantes :
+ - \(\forall (x,y)\in E^2\), \(d(x,y)=\) \(0\iff x=\) \(y\).
+
+ - \(\forall (x,y)\in E^2\), \(d(x,y)=\) \(d(y,x)\).
+
+ - \(\forall (x,y,z)\in E^3\), \(d(x,z)\leq d(x,y)+d(y,z)\).
+
+
+Si \((E,\|\cdot\|)\) est un espace vectoriel normé, on appelle
+
+<b>boule ouverte</b> de centre \(a\in E\) et de rayon \(r\geq 0\) l'ensemble 
+\(B(a,r)=\) \(\{x\in E;\ \|x-a\|< r\} .\)
+
+<b>boule fermée</b> de centre \(a\in E\) et de rayon \(r\geq 0\) l'ensemble 
+\(\bar B(a,r)=\) \(\{x\in E;\ \|x-a\|\leq r\} .\)
+
+<b>sphère</b> de centre \(a\in E\) et de rayon \(r\geq 0\) l'ensemble 
+\(S(a,r)=\) \(\{x\in E;\ \|x-a\|=\) \(r\} .\)
+
+
+<b>Proposition :</b>
+Les boules d'un espace vectoriel normé sont convexes : si \(a\in E\) et \(r\geq 0\), 
+\(\forall (x,y)\in B(a,r),\ \forall \lambda\in [0,1],\ \lambda x+(1-\lambda)y\in B(a,r).\)
+
+
+Une partie \(A\) de l'espace vectoriel normé \(E\) est dite <b>bornée</b> s'il existe
+\(M\geq 0\) tel que, pour tout \(x\in A\), \(\|x\|\leq M\).
+
+Une fonction \(f:X\to E\) est dite bornée si son image \(f(X)\) est bornée dans \((E,\|\cdot\|)\).
+
+Si \((E_1,N_1),\dots,(E_p,N_p)\) sont \(p\) espaces vectoriels normés, on peut définir une norme
+sur \(E_1\times\dots\times E_p\) en posant 
+\(N\big((x_1,\dots,x_p)\big)=\) \(\max\big(N_1(x_1),\dots,N_p(x_p)\big).\)
+
+On l'appelle la <b>norme produit</b>
+
+
+Suites d'un espace vectoriel normé
+\((E,\|\cdot\|)\) est un espace vectoriel normé.
+
+
+Une suite \((u_n)\) de \((E,\|\cdot\|)\) est dite <b>bornée</b> s'il existe un réel \(M>0\) tel que, pour tout \(n\in \mathbb N\), \(\|u_n\|\leq M\).
+
+Une suite \((u_n)\) de \((E,\|\cdot\|)\) est dite <b>convergente</b> vers \(\ell\in E\) si 
+\(\forall \veps>0,\ \exists N\in \mathbb N,\ \forall n\geq N,\ \|u_n-\ell\|\leq\veps.\)
+
+Une suite qui n'est convergente vers aucun \(\ell\in E\) est dite <b>divergente</b>.
+
+<b>Théorème :</b> Si \((u_n)\) est une suite convergente vers \(\ell\) et vers \(\ell'\), alors
+\(\ell=\) \(\ell'\).
+ On appelle cet élément de \(E\) la <b>limite</b> de la suite \((u_n)\).
+
+
+<b>Proposition :</b> Toute suite convergente est bornée.
+
+
+<b>Proposition :</b> Si \((u_n)\) et \((v_n)\) sont deux suites de \(E\) convergeant
+respectivement vers \(\ell\) et vers \(\ell'\), alors pour tous \(\alpha,\beta\in\mathbb K^2\), \((\alpha u_n+\beta v_n)\) converge
+vers \(\alpha \ell+\beta\ell'\).
+ 
+<b>Proposition :</b> Soient \((E_1,N_1),\dots,(E_p,N_p)\) des espaces vectoriels normés et soit \(N\)
+la norme produit sur \(E=\) \(E_1\times\dots\times E_p\).
+ Soit \((u_n)=\) \((u_n(1),\dots,u_n( p))\) une suite de \(E\).
+ Alors \((u_n)\) converge dans \(E\)
+pour la norme \(N\) si et seulement si, pour chaque \(i=\) \(1,\dots,p\), \((u_n(i))\) converge dans \(E_i\) pour la norme \(N_i\).
+
+Soit \((u_n)\) une suite de \(E\) et soit \(\phi:\mathbb N\to\mathbb N\) strictement croissante.
+ La suite \((u_{\phi(n)} )\) s'appelle <b>suite extraite</b> de \((u_n)\).
+
+<b>Proposition :</b> Soit \((u_n)\) une suite de \(E\).
+
+
+toute suite extraite d'une suite extraite de \((u_n)\) est une suite extraite de \((u_n)\).
+
+si \((u_n)\) converge vers \(\ell\), toute suite extraite de \((u_n)\) converge vers \(\ell\).
+
+si \((u_n)\) admet une suite extraite \((u_{\phi(n)} )\) qui converge vers \(\ell_1\) et une suite extraite \((u_{\psi(n)} )\) qui converge vers \(\ell_2\)
+avec \(\ell_1\neq \ell_2\), alors \((u_n)\) est divergente.
+
+si \((u_{2n} )\) et \((u_{2n+1} )\) convergent vers le même \(\ell\in E\), alors \((u_n)\) converge vers \(\ell\).
+
+
+On dit que \(\ell\) est une <b>valeur d'adhérence</b> de la suite \((u_n)\) s'il existe une suite extraite de \((u_n)\) qui converge vers \(\ell\).
+
+<b>Corollaire :</b> Si \((u_n)\) admet deux valeurs d'adhérence distinctes, alors \((u_n)\) est divergente.
+
+
+<b>Théorème : </b> \(\ell\) est une valeur d'adhérence de la suite \((u_n)\) si et seulement si, pour tout \(\veps>0\), 
+pour tout \(N\in\mathbb N\), il existe \(n\geq N\) tel que \(\|u_n-\ell\|<\veps\).
+
+
+
+Normes équivalentes
+
+Deux normes \(N_1\) et \(N_2\) sur \(E\) sont appelées <b>normes équivalentes</b> s'il existe deux constantes \(a,b>0\) telles que, pour tout
+\(x\in E\), 
+\(aN_1(x)\leq N_2(x)\leq b N_1(x).\)
+
+<b>Théorème :</b> Si \(N_1\) et \(N_2\) sont deux normes équivalentes sur \(E\), une suite est convergente (resp.
+ bornée) dans \((E,N_1)\) si et seulement si elle est convergente
+(resp.
+ bornée) dans \((E,N_2)\).
+ 
+
+
+

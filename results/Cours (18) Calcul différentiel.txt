@@ -1,0 +1,175 @@
+Résumé de cours : calcul différentiel
+
+\(E\) est un \(\mathbb R\)-espace vectoriel normé de dimension finie \(p\), \(F\) est un \(\mathbb R\)-espace vectoriel de dimension finie \(n\) et \((e_1,\dots,e_p)\) est une base de \(E\).
+ Soit \(\mathcal U\) un ouvert de \(E\) et \(f:\mathcal U\to F\).
+ 
+
+Dérivées suivant un vecteur, dérivées partielles
+
+Soit \(v\in E\) et \(a\in\mathcal U\).
+  On dit que \(f\) admet une <b>dérivée suivant le vecteur \(v\) en \(a\)</b> si l'application \(t\mapsto f(a+tv)\) est dérivable en \(0\).
+ Dans ce cas, on note
+\(D_vf(a)=\) \(\lim_{t\to 0} \frac{f(a+tv)-f(a)} {t} \)
+la dérivée de \(f\) en \(a\) suivant le vecteur \(v\).
+
+On appelle <b>\(i\)-ème dérivée partielle</b>, \(1\leq i\leq p\) de  \(f\) en \(a\) la dérivée suivant le vecteur \(e_i\) de \(f\) en \(a\), et on note 
+\(\frac{\partial f} {\partial x_i} (a)=\) \(\partial_i f(a)=\) \(\lim_{t\to 0} \frac{f(a+te_i)-f(a)} t.\)
+
+<b>Proposition :</b> \(f=\) \((f_1,\dots,f_n)\) admet une dérivée par rapport à \(v\) en \(a\) si et seulement si tous les \(f_i\), \(1\leq i\leq n\), admettent une dérivée par rapport à \(v\) en \(a\).
+ Dans ce cas,
+\(D_vf(a)=\) \((D_vf_1(a),\dots,D_v f_n(a)).\)
+
+
+
+Différentielle
+Soit \(a\in\mathcal U\).
+
+
+On dit que \(f\) est <b>différentiable en \(a\)</b> s'il existe un voisinage \(V\) de \(0\) dans \(E\), une application linéaire \(L:E\to F\) et une application \(\veps: V\to F\) vérifiant \(\lim_{h\to 0} \veps(h)=\) \(0\) tels que, pour tout \(h\in V\), 
+\(f(a+h)=\) \(f(a)+L(h)+\|h\|\veps(h).\)
+
+L'application \(L\), si elle existe, est unique et s'appelle la <b>différentielle</b> de \(f\) en \(a\) (ou encore <b>application linéaire tangente</b>).
+ On la note \(df_a\).
+
+<b>Proposition :</b> Si \(f\) est différentiable en \(a\), alors \(f\) est continue en \(a\) et \(f\) admet en \(a\) une dérivée suivant tout vecteur \(v\in E\).
+ De plus,
+\(df_a(v)=\) \(D_vf(a).\)
+
+
+<b>Proposition :</b> Si \(f\) est différentiable en \(a\), alors les \(p\) dérivées partielles de \(f\) en \(a\) existent.
+ De plus, pour tout \(h\in E\), on a 
+\(df_a(h)=\) \(\sum_{i=\) \(1} ^p \frac{\partial f} {\partial x_i} (a)h_i.\)
+
+
+Si \(f\) est différentiable en \(a\), et si on écrit \(f=\) \((f_1,\dots,f_n)\), alors on appelle <b>matrice jacobienne</b> de \(f\) en \(a\) la matrice
+\(J_a f=\) \(\left(
+\frac{\partial f_i} {\partial x_j} (a)\right)_{1\leq i\leq n,\ 1\leq j\leq p} .\)
+
+Le déterminant de la matrice jacobienne s'appelle <b>déterminant jacobien</b>.
+
+<b>Proposition :</b> Si \(L:E\to F\) est une application linéaire, elle est différentiable en tout point de \(E\) et sa différentielle est constante égale à \(L\).
+
+
+<b>Proposition :</b> Si \(E=\) \(\mathbb R\), alors \(f\) est différentiable en \(a\) si et seulement si \(f\) est dérivable en \(a\).
+ Dans ce cas, on a \(f'(a)=\) \(df_a(1)\).
+ 
+
+
+Opérations sur les applications différentiable
+Dans cette partie, \(G\) et \(H\) désignent des espaces vectoriels de dimension finie.
+
+
+Si \(f:U\to F\) et \(g:U\to F\) sont différentiables en \(a\in U\), alors toute combinaison linéaire \(\lambda f+\mu g\) est différentiable en \(a\) et on a 
+\(d(\lambda f+\mu g)_a=\) \(\lambda df_a+\mu dg_a.\)
+
+
+Si \(f:U\to F\) et \(g:U\to G\) sont différentiables en \(a\) et si \(B:F\times G\to H\) est bilinéaire, alors \(B(f,g)\) est différentiable en \(a\) et 
+\(d(B(f,g))_a=\) \(B(df_a,g)+B(f,dg_a).\)
+
+<b>Composée de deux applications différentiables.
+</b>
+Si \(V\) est un ouvert de \(F\), \(g:V\to G\), \(f(U)\subset V\) et si \(f\) est différentiable en \(a\) et \(g\) est différentiable en \(f(a)\), alors \(g\circ f\) est différentiable en \(a\) et 
+\(d(g\circ f)_a=\) \(dg_{f(a)} \circ  df_a.\)
+
+
+Sur les matrices jacobiennes, l'égalité précédente se traduit par un produit de matrices :\(J_a (g\circ f)=\) \(J_{f(a)} gJ_a f.\)
+
+<b>Corollaire :</b> Si \(V\) est un ouvert de \(F\), \(g:V\to G\), \(f(U)\subset V\) et si \(f\) est différentiable en \(a\) et \(g\) est différentiable en \(f(a)\), alors les dérivées partielles de \(g\circ f\) en \(a\) sont données par 
+\(\frac{\partial g\circ f} {\partial x_i} (a)=\) \(\sum_{j=\) \(1} ^n \frac{\partial g} {\partial y_j} (f(a))\frac{\partial f_j} {\partial x_i} (a).\)
+
+
+En particulier, si \(f\) est différentiable sur \(U\) et si \(x_1,\dots,x_p:I\to \mathbb R\) sont dérivables sur \(I\) et vérifient \((x_1(t),\dots,x_p(t))\in U\) pour tout \(t\in I\), la fonction 
+\(F(t)=\) \(f(x_1(t),\dots,x_p(t))\) est dérivable sur \(I\) et vérifie
+\(F'(t)=\) \(\sum_{i=\) \(1} ^n x_i'(t)\frac{\partial f} {\partial x_i} (x_1(t),\dots,x_p(t)).\)
+
+<b>Dérivée le long d'un arc :</b> si \(\gamma\) est une application définie sur un intervalle \(I\) de \(\mathbb R\), dérivable en \(t\), si \(f\) est différentiable en \(\gamma(t)\), alors \(f\circ \gamma\) est dérivable en \(t\) et 
+\((f\circ \gamma)'(t)=\) \(df_{\gamma(t)} ( \gamma'(t)).\)
+
+
+
+Applications de classe \(C^k\), \(k\geq 1\)
+
+On dit que \(f\) est de classe \(C^1\) sur \(U\) si \(f\) est différentiable sur \(U\) et si l'application \(a\in U\mapsto df_a \) est continue.
+
+<b>Théorème :</b> \(f\) est de classe \(C^1\) sur \(U\) si et seulement si toutes les dérivées partielles \(\frac{\partial f} {\partial x_i} \) de \(f\) existent sur \(U\)  et si elles sont continues sur \(U\).
+
+<b>Théorème :</b> Si \(f\) est une application de classe \(C^1\) de \(U\) dans \(F\), si \(\gamma\)  est une application de classe \(C^1\) de \([0,1]\) dans \(U\), si \(\gamma(0)=\) \(a\), \(\gamma(1) =\) \( b\), alors :\(f (b) - f (a) =\) \( \int_0^1 df_{\gamma(t)} ( \gamma'(t))dt.\)
+
+
+<b>Corollaire : </b>Si \(U\) est connexe par arcs et si \(f:U\to F\) est de classe \(C^1\), \(f\) est constante si et seulement si \(df=\) \(0\) sur \(U\).
+
+
+Pour \(k\geq 2\), on définit par récurrence les dérivées partielles d'ordre \(k\) de \(f\) comme les dérivées partielles des dérivées partielles d'ordre \(k-1\) de \(f\).
+ Par exemple, les dérivées partielles d'ordre \(2\) sont les fonctions 
+\(\frac{\partial} {\partial x_i} \left(\frac{\partial f} {\partial x_j} \right)\)
+avec \(1\leq i,j\leq p\).
+ On la note \(\frac{\partial^2 f} {\partial x_i\partial x_j} \).
+ Plus généralement, pour tout \(k\)-uplet \((i_1,\dots,i_k)\) de \(\{1,\dots,p\} ^k\), 
+\(\frac{\partial^k f} {\partial x_{i_1} \dots \partial x_{i_k} } =\) \(\frac{\partial} {\partial x_{i_1} } 
+\left(\frac{\partial } {\partial x_{i_2} } \left(\cdots \left(\frac{\partial f} {\partial x_{i_k} } \right)\right)\right).\)
+
+On dit que \(f:U\to F\) est de <b>classe \(C^k\)</b> sur \(U\) avec \(k\geq 1\) si elle admet sur \(U\) toutes les dérivées partielles possibles jusqu'à l'ordre \(k\) et si ces dérivées partielles sont continues sur \(U\).
+
+<b>Théorème de Schwarz :</b> Si \(f\) est de classe \(C^2\) sur \(U\), alors pour tout \(a\in U\),
+\(\frac{\partial^2 f} {\partial x_i\partial x_j} (a)=\) \(\frac{\partial^2 f} {\partial x_j \partial x_i} (a).\)
+
+
+La composée de deux applications de classe \(C^k\) est de classe \(C^k\).
+ Toute combinaison linéaire de deux fonctions de classe \(C^k\) est de classe \(C^k\).
+ 
+Si \(B\) est bilinéaire et \(f\), \(g\) sont de classe \(C^k\), alors \(B(f,g)\) est de classe \(C^k\).
+
+
+
+Extrema
+\(f\) est désormais à valeurs dans \(\mathbb R\).
+
+
+On dit que \(f\) admet un <b>minimum global</b> en \(a\in \mathcal U\) si, pour tout \(x\in \mathcal U\), \(f(x)\geq f(a)\).
+
+On dit que \(f\) admet un <b>minimum local</b> en \(a\) s'il existe \(r>0\) tel que, pour tout \(x\in \mathcal U\cap B(a,r)\),
+ on a \(f(x)\geq f(a)\).
+
+On définit de la même façon maximum global, maximum local.
+ Un extrémum est un maximum ou un minimum.
+
+
+Si \(f\) est différentiable en \(a\in\mathcal U\), on dit que \(a\) est un <b>point critique</b> de \(f\) si \(df_a=\) \(0\).
+
+<b>Théorème :</b> Si \(f\) admet un extrémum local en \(a\) et si \(f\) est différentiable en \(a\),
+ alors \(a\) est un point critique de \(f\).
+
+
+
+Vecteur gradient, vecteur tangent
+Dans cette partie, \(E\) est un espace euclidien et \(f\) est à valeurs dans \(\mathbb R\).
+
+
+<b>Théorème de représentation des formes linéaires dans un espace euclidien :</b>
+Soit \(\varphi\in E^*\).
+ Alors il existe un unique \(u\in E\) tel que, pour tout \(x\in E\), \(\varphi(x)=\) \(\langle u,x\rangle\).
+
+
+<b>Corollaire :</b> Si \(f\) est différentiable en \(a\), alors il existe un unique vecteur \(\nabla f(a)\in E\) tel que, pour tout \(x\in E\), 
+\(df_a(x)=\) \(\langle \nabla f(a),x\rangle\).
+ Le vecteur \(\nabla f(a)\) s'appelle le <b>vecteur gradient</b> de \(f\) en \(a\).
+
+<b>Théorème :</b> Si \(f\) est différentiable en \(a\) et si \(\nabla f(a)\neq 0\), alors l'application \(\{u\in E;\ \|u\|=\) \(1\} \to \mathbb R\), 
+\(u\mapsto D_u f(a)=\) \(df_a(u)\) admet un maximum en unique vecteur \(u_0\) qui est le vecteur unitaire colinéaire et de même sens que \(\nabla f(a)\).
+
+
+Soit \(X\) une partie de \(E\), \(x\) un point de \(X\) et \(v\) un vecteur de \(E\).
+ On dit que \(v\) est <b>tangent</b> à \(X\) en \(x\) s'il existe \(\veps>0\) et un arc \(\gamma\) défini sur \(]-\veps,\veps[\), dérivable en \(0\) et à valeurs dans \(X\), tels que \(\gamma(0)=\) \(x,\ \gamma'(0)=\) \(v\).
+
+<b>Théorème :</b> Soit \(f:\mathcal U\subset\mathbb R^2\to \mathbb R\) différentiable sur \(\mathcal U\) et soit \(X=\) \(\{(x,y,z)\in\mathbb R^3;\ (x,y)\in \mathcal U,\ z=\) \(f(x,y)\} \).
+ Soit enfin \((x_0,y_0,z_0)\) un point de \(X\).
+ Alors l'ensemble des vecteurs tangents à \(X\) au point \((x_0,y_0,z_0)\) est le plan d'équation
+\(z-z_0=\) \(\frac{\partial f} {\partial x} (x_0,y_0)(x-x_0)+\frac{\partial f} {\partial y} (x_0,y_0)(y-y_0).\)
+
+
+On appelle <b>ligne de niveau</b> de \(f\) associé à \(\lambda\in\mathbb R\) l'ensemble \(\{x\in X;\ f(x)=\) \(\lambda\} \).
+
+<b>Théorème :</b> Si \(f:\mathcal U\to\mathbb R\) est différentiable sur \(\mathcal U\), si \(X\) est une ligne de niveau de \(f\) et si \(x\in X\), alors les vecteurs tangents à \(X\) en \(x\) sont exactement les vecteurs orthogonaux à \(\nabla f(x)\).
+
+
+

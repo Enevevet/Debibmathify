@@ -1,0 +1,171 @@
+Résumé de cours : topologie des espaces vectoriels normés
+
+\((E,\|\cdot\|)\) désigne un espace vectoriel normé sur le corps \(\mathbb K=\) \(\mathbb R\) ou \(\mathbb C\).
+
+Ouverts, fermés, parties denses
+
+Soit \(x\) un point de \(E\) et \(V\) une partie de \(E\).
+ On dit que \(V\) est un <b>voisinage</b>
+de \(x\) s'il existe \(r>0\) tel que \(B(x,r)\subset V\).
+
+On dit qu'une partie \(U\) de \(E\) est un <b>ouvert</b> s'il est voisinage de tous ses points.
+
+Autrement dit, \(U\) est ouvert si, pour tout \(x\in U\), il existe \(r>0\) tel que \(B(x,r)\subset U\).
+
+<b>Proposition :</b>
+
+une réunion quelconque d'ouverts est un ouvert.
+
+une intersection finie d'ouverts est un ouvert.
+
+
+
+On dit qu'une partie \(F\) de \(E\) est un <b>fermé</b> de \(E\) si son complémentaire est un ouvert de \(E\).
+
+<b>Proposition :</b>
+
+une réunion finie de fermés est un fermé.
+
+une intersection quelconque de fermés est un fermé.
+
+
+
+Soit \(A\) une partie de \(E\).
+ On dit que \(x\in E\) est un <b>point intérieur</b> de \(A\) s'il existe \(r>0\) tel que
+\(B(x,r)\subset A\).
+ On appelle <b>intérieur de \(A\)</b> et on note \(\mathring A\) l'ensemble des points intérieurs de \(A\).
+
+L'ensemble \(\mathring A\) est un ouvert : c'est le plus grand ouvert contenu dans \(A\).
+
+Soit \(A\) une partie de \(E\).
+ On dit que \(x\in E\) un un <b>point adhérent</b> à \(A\) si, pour tout \(r>0\), on a 
+\(B(x,r)\cap A\neq\varnothing\).
+ On appelle <b>adhérence de \(A\)</b> et on note \(\bar A\) l'ensemble des points
+adhérents à \(A\).
+ L'ensemble \(\bar A\) est un fermé : c'est le plus petit fermé contenant \(A\).
+ 
+On appelle également <b>frontière de \(A\)</b> l'ensemble \(\bar A\backslash \mathring A\).
+
+<b>Théorème (caractérisation séquentielle) :</b> Soit \(A\) une partie de \(E\) et \(x\in E\).
+
+
+\(x\in\bar A\) si et seulement s'il existe une suite \((u_n)\) d'éléments de \(A\) qui converge vers \(x\).
+
+\(A\) est fermé si et seulement si, pour toute suite \((u_n)\) d'éléments de \(A\) qui converge vers \(\ell\in E\), 
+alors \(\ell\in A\).
+
+
+Une partie \(A\) de \(E\) est <b>dense</b> dans \(E\) si son adhérence est égale à \(E\).
+ Autrement dit, \(A\) est dense dans \(E\) si et seulement tout \(x\in E\) est limite d'une suite \((x_n)\) d'éléments de \(A\).
+
+Soit \(A\) une partie de \(E\).
+ On appelle <b>ouvert relatif de A</b> l'intersection d'un ouvert de \(E\) avec \(A\).
+ De même, on appelle
+<b>fermé relatif de A</b> l'intersection d'un fermé de \(E\) avec \(A\).
+ Un fermé relatif de \(A\) est aussi le complémentaire dans \(A\) d'un ouvert relatif de \(A\).
+ 
+<b>Proposition :</b> Soit \(A\) une partie de \(E\) et \(F\) une partie de \(A\).
+ Alors \(F\) est un fermé relatif de \(A\) si, pour toute suite \((x_n)\) d'éléments de \(F\) qui converge vers un élément \(\ell\) de \(A\), alors \(\ell\in F\).
+
+
+<b>Théorème :</b> Si \(N_1\) et \(N_2\) sont deux normes sur \(E\) telles que \(N_1\) est équivalente à \(N_2\), alors tout ouvert
+de \((E,N_1)\) est un ouvert de \((E,N_2)\).
+
+
+
+Limites
+\((E,\|\cdot\|)\) et \((F,\|\cdot\|)\) désignent deux espaces vectoriels normés, \(A\) est une partie de \(E\) et \(f:A\to F\) est une fonction.
+
+
+Soit \(a\in\bar A\).
+ On dit que \(f\) admet une limite en \(a\) s'il existe \(\ell\in F\) tel que, pour tout \(\veps>0\), il existe \(\delta>0\) tel que, pour tout 
+\(x\in B(a,\delta)\cap A\), on a \(\|f(x)-\ell\|&lt;\veps\).
+ Si \(f\) admet une limite en \(a\), cette limite est nécessairement unique.
+
+<b>Proposition : </b>\(f\) admet pour limite \(\ell\) en \(a\in\bar A\) si et seulement si pour toute suite \((x_n)\) de \(A\) qui converge vers \(a\), alors \(\big(f(x_n)\big)\) converge vers \(\ell\).
+
+Si \(F=\) \(\mathbb R\), on dit que \(f\) admet \(+\infty\) comme limite en \(a\in\bar A\) si, pour tout \(M>0\), 
+il existe \(\delta>0\) tel que, pour tout \(x\in B(a,\delta)\), on a \(f(x)\geq M\).
+
+Si \(E=\) \(\mathbb R\) et \(A\) est une partie non majorée de \(\mathbb R\), on dit que \(f\) admet pour limite \(\ell\in F\) en \(+\infty\) si, 
+pour tout \(\veps>0\), il existe \(M>0\) tel que, pour tout \(x\in A\) avec \(x\geq M\), on a \(\|f(x)-\ell\|\leq \veps\).
+
+Si \(A\) est une partie non bornée de \(E\), on dit que \(f\) admet pour limite \(\ell\in F\) lorsque \(\|x\|\) 
+tend vers \(+\infty\) si, pour tout \(\veps>0\), il existe \(M>0\) tel que, pour tout \(x\in A\) avec \(\|x\|\geq M\), on a \(\|f(x)-\ell\|\leq \veps\).
+
+<b>Proposition :</b> Soit \(F=\) \(F_1\times\dots\times F_p\) un espace vectoriel normé produit et \(f=\) \((f_1,\dots,f_p)\) une application de \(A\) dans \(F\).
+ L'application \(f\) admet au point \(a\) la limite \(\ell=\) \((\ell_1,\dots,\ell_p)\) si et seulement si, pour tout \(i=\) \(1,\dots,p\), l'application \(f_i\) admet au point \(a\) la limite \(\ell_i\).
+
+
+
+Opérations sur les limites
+\((E,\|\cdot\|)\), \((F,\|\cdot\|)\) et \((G,\|\cdot\|)\) désignent des espaces vectoriels normés, \(A\) est une partie de \(E\), \(B\) est une partie de \(F\),  et \(f:A\to F\), \(g:B\to G\), \(h:A\to F\) et \(u:A\to \mathbb K\) sont des fonctions.
+ Soit \(a\in \bar A\).
+
+
+Si \(f\) et \(h\) admettent pour limites respectives \(\ell_1\) et \(\ell_2\) en \(a\), alors pour tout \(\lambda\in\mathbb K\), \(f+\lambda h\) admet pour limite
+\(\ell_1+\lambda\ell_2\) en \(a\).
+
+Si \(f\) admet pour limite \(\ell\) en \(a\) et si \(u\) admet pour limite \(\alpha\) en \(a\), alors \(uf\) admet pour limite \(\alpha\ell\) en \(a\).
+
+<b>Théorème : </b>
+On suppose que \(f(A)\subset B\) et que \(f\) admet comme limite \(b\) en \(a\).
+ Alors 
+
+\(b\) est élément de l'adhérence de \(B\).
+
+si \(g\) admet comme limite \(\ell\) en \(b\), alors \(g\circ f\) admet comme limite \(\ell\) en \(a\).
+
+
+</span>
+
+
+
+Continuité
+\((E,\|\cdot\|)\) et \((F,\|\cdot\|)\) désignent deux espaces vectoriels normés.
+ \(A\) est une partie de \(E\).
+
+
+On dit que \(f:A\to F\) est <b>continue en \(a\in A\)</b> si \(f\) admet une limite en \(a\) (nécessairement égale à \(f(a)\)).
+ On dit que \(f\) est <b>continue</b> sur \(A\) si elle est continue en chaque point de \(A\).
+
+<b>Théorème : </b>\(f:A\to F\) est continue en \(a\in A\) si et seulement si, pour toute suite \((x_n)\) de \(A\) qui tend vers \(a\), alors 
+\(\big(f(x_n)\big)\) tend vers \(f(a)\).
+
+<b>Corollaire : </b>Deux applications continues \(f,g:A\to F\) qui coïncident sur une partie dense de \(A\) sont égales.
+
+La somme, la composée de deux applications continues est une application continue.
+ De même, si \(f:A\to F\) est continue et \(u:A\to\mathbb K\) est continue, alors \(u\times f\) est continue.
+
+<b>Théorème :</b> L'image réciproque d'un ouvert par une application continue est un ouvert.
+ L'image réciproque d'un fermé par une application continue est un fermé.
+
+
+
+Continuité uniforme, applications lipschitiziennes
+\((E,\|\cdot\|)\) et \((F,\|\cdot\|)\) désignent deux espaces vectoriels normés, \(A\) est une partie de \(E\) et \(f:A\to F\) est une fonction.
+
+
+On dit que \(f\) est <b>uniformément continue</b> sur \(A\) si, pour tout \(\veps>0\), il existe \(\delta>0\) tel que
+\(\forall x,y\in A,\ \|x-y\|&lt;\delta\implies \|f(x)-f(y)\|&lt;\veps.\)
+
+On dit que \(f\) est <b>lipschitzienne</b> de rapport \(k\in\mathbb R\) si
+\(\forall x,y\in A,\  \|f(x)-f(y)\|\leq k\|x-y\|.\)
+
+Toute application lipschitzienne est uniformément continue.
+ Toute application uniformément continue est continue.
+ Les réciproques sont fausses.
+
+
+
+Applications linéaires continues
+
+<b>Théorème :</b> Soient \((E,\|\cdot\|)\), \((F,\|\cdot\|)\) deux espaces vectoriels normés, et soit \(u\in\mathcal L(E,F)\) une application linéaire.
+ Alors \(u\) est continue si et seulement s'il existe \(C>0\) tel que, pour tout \(x\in E\), 
+\(\|u(x)\|\leq C\|x\|.\)
+
+
+On note \(\mathcal L_c(E,F)\) l'ensemble des applications linéaires continues de \(E\) dans \(F\).
+ 
+
+

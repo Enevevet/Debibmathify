@@ -1,0 +1,222 @@
+Résumé de cours : Espaces préhilbertiens et endomorphismes des espaces euclidiens
+
+On a résumé ici les nouveautés spécifiques au programme de Math Spé.
+ Evidemment, il faut encore savoir tout ce qui a été appris en Math Sup à ce sujet.
+
+On pourra pour cela consulter <a href=\) \(http://www.
+bibmath.
+net/ressources/index.
+php?action=\) \(affiche&quoi=\) \(mathsup/cours/prehilbert.
+html>ce résumé de cours</a>.
+</p>
+On fixe \(E\) un espace préhilbertien réel.
+ Le produit scalaire est noté \(\langle\cdot,\cdot\rangle\).
+
+Projeté orthogonal sur un sous-espace de dimension finie
+On suppose dans cette partie que \(F\) est un sous-espace de \(E\) de dimension finie.
+
+
+\(F^\perp\) est un sous-espace supplémentaire de \(F\) appelé 
+<b>supplémentaire orthogonal</b> de \(F\).
+ Si \(E\) est lui-même de dimension finie, on a en particulier
+\(\dim(F^\perp)=\) \(\dim(E)-\dim(F).\)
+
+Soit \(x\in E\), qui s'écrit uniquement \(x=\) \(y+z\) dans la somme directe \(F\oplus F^\perp\).
+ Alors \(y\) s'appelle le <b>projeté orthogonal</b>
+de \(x\) sur \(F\), et est noté \(p_F(x)\).
+ 
+Si \((e_1,\dots,e_p)\) est une base orthonormée de \(F\), alors 
+\(p_F(x)=\) \(\sum_{i=\) \(1} ^p \langle x,e_i\rangle e_i.\)
+
+
+<b>Théorème et définition :</b> Pour tout \(x\in E\) et tout \(f\in F\), on a 
+\(\|x-f\|\geq \|x-p_F(x)\|\)
+avec égalité si et seulement si \(f=\) \(p_F(x)\).
+ La quantité
+\(d(x,F)=\) \(\|x-p_F(x)\|=\) \(\inf_{f\in F} \|x-f\|\)
+d'appelle distance de \(x\) à \(F\).
+
+
+Par le théorème de Pythagore, on a 
+\(d(x,F)=\) \(\sqrt{\|x\|^2-\|p_F(x)\|^2} .\)
+
+<b>Inégalité de Bessel :</b> Soit \((e_1,\dots,e_n)\) une famille orthonormale de \(E\).
+ Alors pour tout \(x\in E\), on a 
+\(\sum_{k=\) \(1} ^n \langle x,e_k\rangle^2\leq \|x\|^2.\)
+
+
+
+Suites totales
+
+Une suite \((e_n)_{n\geq 0} \) de \(E\) est une suite totale si l'espace vectoriel engendré par les \(e_n\) est dense dans \(E\).
+
+<b>Théorème :</b>
+Soit \((e_k)_{k\in\mathbb N} \) une suite orthonormale totale de \(E\).
+ Notons, pour \(n\geq 0\), \(p_n\) la projection orthogonale sur l'espace vectoriel
+engendré par \((e_0,\dots,e_n)\).
+ Alors pour tout \(x\in E\), \((p_n(x))\) converge vers \(x\).
+
+
+
+Matrices orthogonales
+On suppose dans cette partie que \(E\) est euclidien de dimension \(n\).
+
+
+On appelle <b>matrice orthogonale</b> de taille \(n\) toute matrice \(M\in\mathcal M_n(\mathbb R)\) vérifiant 
+\(M^T M=\) \(I_n\).
+ On a alors automatiquement \(MM^T=\) \(I_n\).
+ De plus, \(M\) est inversible avec \(M^{-1} =\) \(M^T\).
+
+Une matrice est orthogonale si et seulement ses colonnes forment une base orthonormale de \(\mathbb R^n\), si et seulement si 
+ses lignes forment une base orthonormale de \(\mathbb R^n\).
+
+L'ensemble des matrices orthogonales de taille \(n\) forme un groupe appelé <b>groupe orthogonal</b> et noté \(\mathcal O_n(\mathbb R)\).
+
+Le déterminant d'une matrice orthogonale vaut \(\pm 1\).
+ Une matrice orthogonale est dite positive si son déterminant vaut \(1\), négative si son 
+déterminant vaut \(-1\).
+ L'ensemble des matrices orthogonales positives forme un groupe appelé le <b>groupe spécial orthogonal</b>
+et note \(SO_n(\mathbb R)\).
+ 
+<b>Proposition (changement de base orthonormale) :</b> Soit \((e_1,\dots,e_n)\) une base orthonormale de \(E\) et soit
+\((f_1,\dots,f_n)\) une famille de vecteurs de \(E\).
+ On a l'équivalence suivante 
+
+\((f_1,\dots,f_n)\) est une base orthonormale de \(E\);
+la matrice de passage de \((e_1,\dots,e_n)\) à \((f_1,\dots,f_n)\) est une matrice orthogonale.
+
+
+
+
+Endomorphismes symétriques
+On suppose dans cette partie que \(E\) est euclidien de dimension \(n\).
+
+
+Un endomorphisme \(u\in\mathcal L(E)\) est <b>symétrique</b> (ou <b>auto-adjoint</b>)
+si pour tous \(x,y\in E\), \(\langle u(x),y\rangle=\) \(\langle x,u(y)\rangle\).
+
+Matriciellement, dire qu'un endomorphisme est symétrique est équivalent à dire que sa matrice dans une base orthonormale est symétrique.
+
+<b>Proposition :</b> Un projecteur de \(E\) est symétrique si et seulement si c'est un projecteur orthogonal.
+
+<b>Proposition :</b> Si \(u\in\mathcal L(E)\) est symétrique, alors \((\ker u)^\perp=\) \(\textrm{Im} (u)\).
+
+<b>Proposition :</b> Si \(u\in\mathcal L(E)\) est symétrique et si \(F\) est un sous-espace de \(E\) stable par \(u\),
+alors \(F^\perp\) est un sous-espace de \(E\) stable par \(u\).
+
+<b>Théorème spectral :</b> Soit \(u\) un endomorphisme symétrique de \(E\).
+ Alors \(E\) est somme directe orthogonale
+des sous-espaces propres de \(u\).
+ De façon équivalente, il existe une base orthonormale de \(E\) constituée de vecteurs propres pour \(u\).
+
+<b>Corollaire :</b> Soit \(M\) une matrice symétrique réelle.
+ Alors il existe une matrice orthogonale \(P\) et une matrice
+diagonale \(D\) telle que \(M=\) \(PDP^T\).
+
+
+
+Isométries vectorielles
+On suppose dans cette partie que \(E\) est euclidien de dimension \(n\).
+
+
+Un endomorphisme \(u\in\mathcal L(E)\) est un <b>automorphisme orthogonal</b>, ou une <span class=\) \(rougedico>isométrie
+vectorielle</span> si pour tout \(x\in E\), \(\|u(x)\|=\) \(\|x\|\).
+ On note \(\mathcal O(E)\) l'ensemble des automorphismes orthogonaux de \(E\); \(\mathcal O(E)\) est
+un sous-groupe de \(GL(E)\).
+
+Un endomorphisme \(u\in\mathcal L(E)\) est orthogonal si et seulement s'il conserve le produit scalaire.
+
+<b>Théorème :</b> Soit \(f\in\mathcal L(E)\).
+ Alors les assertions suivantes sont équivalentes :
+
+\(f\) est orthogonal;
+La matrice de \(f\) dans toute base orthonormale de \(E\) est orthogonale.
+
+
+
+<b>Proposition :</b> Si \(u\in\mathcal L(E)\) est une isométrie vectorielle et si \(F\) est un sous-espace de \(E\) stable par \(u\),
+alors \(F^\perp\) est un sous-espace de \(E\) stable par \(u\).
+
+
+<b>Théorème spectral :</b> Soit \(u\in\mathcal O(E)\).
+ Alors il existe une base orthonormée de \(E\) dans laquelle la matrice de \(u\) est diagonale par blocs, les blocs diagonaux étant de la forme \((1)\), \((-1)\) ou 
+\(\left(\begin{array} {cc} 
+\cos\theta&-\sin\theta\\
+\sin\theta&\cos\theta
+\end{array} \right),\ \theta\in\mathbb R.\)
+
+Autrement dit \(E\) est la somme directe orthogonale des sous-espaces propres associés aux valeurs propres \(1\) et \(-1\), et de plans sur lesquels \(u\) opère comme une rotation.
+
+
+En termes de matrices, le théorème précédent dit qu'une matrice orthogonale est orthogonalement semblable à une matrice de la forme
+\(\left(
+\begin{array} {ccccc} 
+I_p&0&\dots&&0\\
+0&-I_q&\ddots&\\
+\vdots&\ddots&
+\left(\begin{array} {cc} 
+\cos\theta_1&-\sin\theta_1\\
+\sin\theta_1&\cos\theta_1
+\end{array} \right)&\ddots&\vdots\\
+\vdots&\ddots&\ddots&\ddots&0\\
+0&\dots&\dots&0&
+\left(\begin{array} {cc} 
+\cos\theta_r&-\sin\theta_r\\
+\sin\theta_r&\cos\theta_r
+\end{array} \right)
+\end{array} \right).\)
+
+
+
+Isométries vectorielles en dimension 2
+On suppose dans cette partie que \(E\) est euclidien orienté de dimension 2.
+
+
+
+Les matrices orthogonales positives en dimension 2 sont les matrices de la forme 
+\(M(\theta)=\) \(\left(\begin{array} {cc} 
+\cos(\theta)&-\sin(\theta)\\
+\sin(\theta)&\cos(\theta)
+\end{array} \right),\ \theta\in\mathbb R.\)
+
+Les matrices orthogonales négatives en dimension 2 sont les matrices de la forme
+\(N(\theta)=\) \(\left(\begin{array} {cc} 
+\cos(\theta)&\sin(\theta)\\
+\sin(\theta)&-\cos(\theta)
+\end{array} \right),\ \theta\in\mathbb R.\)
+
+On appelle <b>rotation vectorielle</b> d'angle \(\theta\in [0,2\pi[\) un endomorphisme orthogonal de \(E\) dont la matrice
+dans une (dans toute) base orthonormale directe de \(E\) est de la forme \(M(\theta)\).
+ On note l'endomorphisme correspondant \(r_\theta\).
+
+Si \(u,v\) sont deux vecteurs unitaires de \(E\), il existe une unique rotation vectorielle \(r_\theta\) telle que \(r_\theta(u)=\) \(v\).
+ \(\theta\) est appelé
+mesure de l'angle orienté \((u,v)\) (et est défini à \(2\pi\)-près).
+
+Les automorphismes orthogonaux de \(E\) sont les rotations vectorielles et les réflexions.
+
+
+
+Isométries vectorielles en dimension 3
+On suppose dans cette partie que \(E\) est euclidien orienté de dimension 3.
+
+
+
+<b>Orientation induite :</b> Si \(P\) est un plan de \(E\) et \(D\) la droite normale à \(P\), il n'existe pas d'orientation a priori ni pour \(D\), ni pour \(P\).
+ Choisissons une orientation sur \(D\) en choisissant un vecteur 	unitaire \(\vec u\) de \(D\).
+ \(\vec u\) dirige \(D\).
+ Complétons \(\vec u\) en \((\vec u,\vec v,\vec w)\) une base orthonormée directe de \(E\).
+ Alors \((\vec v,\vec w)\) est une base orthonormée de \(P\).
+ On oriente \(P\) en disant que \((\vec v,\vec w)\) est une base orthonormée directe de \(P\).
+
+Il s'agit ici de l'orientation induite par le choix de \(\vec u\).
+
+Si \(u\in\mathcal O(E)\) a son déterminant égal à \(1\) et \(u\) n'est pas l'identité, l'espace propre associé à la valeur propre \(1\) est de dimension 1.
+ C'est donc une droite \(D\) qu'on oriente par le choix d'un vecteur unitaire \(\vec u\).
+ La restriction de \(\vec u\) sur le plan \(P\) orthogonal à \(D\) est une rotation.
+ Soit \(\theta\) son angle (tenant compte de l'orientation de \(P\) induite par celle de \(D\)).
+ On dit alors que \(u\) est la <b>rotation</b> d'axe dirigé et orienté par \(\vec u\) et d'angle \(\theta\).
+
+
+
+

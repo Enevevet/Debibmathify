@@ -1,0 +1,188 @@
+Résumé de cours : Anneaux
+
+Structure d'anneaux
+
+On appelle <b>anneau</b> la donnée d'un ensemble \(A\) et de deux lois de composition interne notées \(+\) et \(\times\) sur \(A\) vérifiant les propriétés suivantes :
+ - \((A,+)\) est un groupe abélien dont le neutre sera noté \(0_A\);
+ - La loi \(\times\) est associative : pour tous \(a,b,c\in A\), \(a\times(b\times c)=\) \((a\times b)\times c\);
+ - la loi \(\times\) possède un élément neutre noté \(1_A\);
+ - la loi \(\times\) est distributive à gauche et à droite par rapport à la loi \(+\), c'est-à-dire que pour tout \(a,b,c\in A\), on a 
+\(a\times(b+c)=\) \(a\times b+a\times c\textrm{ et } (b+c)\times a=\) \(b\times a+c\times a.\)
+
+
+Lorsque la loi \(\times\) est commutative, on dit que l'anneau est commutatif.
+ 
+Dans un anneau \(A\), tous les éléments \(a\in A\) n'admettent pas forcément d'inverse pour la loi \(\times\).
+ Lorsque c'est le cas,
+on dit que \(a\) est <b>inversible</b> ou que c'est une <b>unité</b> de \(A\), et on note
+son inverse \(a^{-1} \).
+
+Si \(A\) et \(B\) sont deux anneaux, on munit \(A\times B\) d'une structure d'anneau en posant \((a,b)+ (a',b')=\) \((a+a',b+b')\) et
+\((a,b) \times (a',b')=\) \((a\times a',b\times b')\).
+
+Si \(A\) est un anneau et \(B\) est une partie de \(A\), on dit que \(B\) est un <b>sous-anneau</b> de \(A\) si, muni des lois induites par \(A\),
+c'est lui-même un anneau.
+ 
+<b>Proposition (caractérisation des sous-anneaux) :</b>
+Une partie \(B\) de l'anneau \(A\) est un sous-anneau de \(A\) si et seulement si :
+\(1_A\in B\);
+pour tous \(a,b\in B\), \(a-b\in B\);
+pour tous \(a,b\in B\), \(a\times b\in B\).
+
+
+Dans un anneau, on peut continuer à appliquer les identités remarquables pourvu que les éléments auxquels on les applique commutent.
+ Par exemple,
+si \(a\times b=\) \(b\times a\), la formule du binôme de Newton
+\((a+b)^n=\) \(\sum_{k=\) \(0} ^n \binom nk a^k b^{n-k} \)
+est vraie.
+
+Soient \(A,B\) deux anneaux.
+ Une application \(f:A\to B\) est un morphisme d'anneaux si les conditions suivantes sont vérifiées : 
+
+ - \(f(1_A)=\) \(1_B\);
+ - pour tous \(a,b\in A\), on a \(f(a+b)=\) \(f(a)+f(b)\);
+ - pour tous \(a,b\in A\), on a \(f(a\times b)=\) \(f(a)\times f(b)\).
+
+
+Lorsque \(f\) est bijective, on parle d'isomorphisme d'anneaux.
+
+Un anneau \(A\) est <b>intègre</b> si l'équation \(a\times b=\) \(0\) entraîne \(a=\) \(0\) ou \(b=\) \(0\).
+
+Un <b>corps</b> est un anneau commutatif dans lequel tout élément non nul est inversible.
+ 
+Si \(K\) est un corps, une partie \(L\) de \(K\) est un <b>sous-corps</b> de \(K\) si \(L\) est un sous-anneau de \(K\) qui est un corps.
+
+Autrement dit, \(L\) est un sous-corps de \(K\) si et seulement si 
+
+\(1_K\in L\);
+pour tous \(a,b\in L\), \(a-b\in L\);
+pour tous \(a,b\in L\), \(a\times b\in L\);
+pour tout \(a\in L\) non-nul, on a \(a^{-1} \in L\).
+
+
+
+Idéaux - divisibilité
+Soit \(A\) un anneau commutatif.
+
+
+Une partie \(I\) de \(A\) est un <b>idéal</b> si \((I,+)\) est un groupe et si, pour tout \(a\in A\) et tout \(u\in I\), alors \(au\in I\) (propriété d'absorbtion).
+
+Le noyau d'un morphisme d'anneaux est un idéal.
+
+
+<b>Proposition :</b> Une partie \(I\) de \(A\) est un idéal si et seulement si \(I\) est non vide et vérifie :
+ - pour tous \(x,y\in I\), \(x-y\in I\);
+ - pour tout \(x\in I\) et tout \(a\in A\), \(ax\in I\).
+
+
+Si \(x\) est un élément de \(A\), alors \(xA=\) \(\{xa;\ a\in A\} \) est un idéal de \(A\) et c'est le plus petit idéal contenant \(x\).
+ On l'appelle
+idéal engendré par \(x\).
+
+Si \(A\) est intègre et \(x,y\in A\), on dit que \(x\) divise \(y\) si et seulement si il existe \(c\in A\) tel que \(cx=\) \(y\).
+
+<b>Proposition :</b> Soit \(A\) un anneau commutatif intègre et \(x,y\in A\).
+
+Alors \(x\) divise \(y\) si et seulement si \(yA\subset xA\).
+ 
+
+
+Idéaux de \(\mathbb Z\), anneau \(\mathbb Z/n\mathbb Z\)
+
+<b>Théorème :</b> Les idéaux de \(\mathbb Z\) sont les ensembles \(n\mathbb Z\) pour \(n\in\mathbb N\).
+
+Soit \(n\geq 2\).
+ La relation de congruence modulo \(n\) est une relation d'équivalence sur \(\mathbb Z\) : \(a\equiv b\ [n]\iff a-b\in n\mathbb Z\).
+
+On note \(\bar a\) la classe d'équivalence de \(a\), et \(\mathbb Z/n\mathbb Z\) l'ensemble des classes d'équivalence pour cette relation.
+
+On a en particulier \(\mathbb Z/n\mathbb Z=\) \(\{\bar 0,\bar 1,\dots,\overline {n-1} \} .\)
+
+<b>Théorème :</b> On munit \(\mathbb Z/n\mathbb Z\) d'une structure d'anneaux en posant 
+\(\bar a+\bar b=\) \(\overline{a+b} \)
+\(\bar a\times \bar b=\) \(\overline{a\times b} .\)
+
+
+<b>Théorème :</b> \(\bar k\) est inversible dans \(\mathbb Z/n\mathbb Z\) si et seulement \(k\wedge n=\) \(1\).
+
+<b>Corollaire :</b> \((\mathbb Z/n\mathbb Z,+,\times)\) est un corps si et seulement si \(n\) est premier.
+
+<b>Théorème chinois :</b> Si \(n,m\geq 2\) sont premiers entre eux, alors 
+l'anneau produit \(\mathbb Z/n\mathbb Z\times \mathbb Z/m\mathbb Z\) est isomorphe à l'anneau \(\mathbb Z/nm\mathbb Z\).
+
+On appelle <b>indicatrice d'Euler</b> et on note \(\varphi(n)\) le nombre d'éléments inversibles dans l'anneau \(\mathbb Z/n\mathbb Z\).
+
+<b>Théorème :</b> Si la décomposition en produit de facteurs premiers de \(n\) est 
+\(n=\) \(p_1^{\alpha_1} \cdots p_r^{\alpha_r} \), alors 
+\(\varphi(n)=\) \(\prod_{i=\) \(1} ^r (p_i^{\alpha_i} -p_i^{\alpha_i-1} ).\)
+
+
+<b>Théorème d'Euler :</b> Pour tout entier naturel \(n\geq 2\) et tout entier \(k\) premier avec \(n\), on a \(k^{\varphi(n)} \equiv 1\ [n].\)
+
+
+
+Idéaux et arithmétique de polynômes
+Dans ce paragraphe, \(\mathbb K\) désigne un sous-corps de \(\mathbb C\).
+
+
+<b>Théorème :</b> Les idéaux de \(\mathbb K[X]\) sont les idéaux \(( P)\) engendrés par un polynôme \(P\in\mathbb K[X]\) :\(( P)=\) \(\{AP;\ A\in\mathbb K[X]\} .\)
+
+De plus, on a \(( P)=\) \(( Q)\) si et seulement si il existe \(\lambda\in\mathbb K^*\) tel que \(Q=\) \(\lambda P\).
+
+
+Si \(P\) et \(Q\) sont deux polynômes de \(\mathbb K[X]\), l'ensemble \(\{AP+BQ;\ A,B\in\mathbb K[X]\} =\) \(( P)+(Q)\) est un idéal de \(\mathbb K[X]\).
+ 
+Il existe un polynôme unitaire \(D\) unique tel que \(( P)+(Q)=\) \((D)\).
+ \(D\) s'appelle le <b>pgcd</b> de \(A\) et \(B\).
+
+On dit que \(A\) et \(B\) sont premiers entre eux si \(A\wedge B=\) \(1\).
+
+<b>Théorème de Bézout :</b> Soient \(A,B\in\mathbb K[X]\) non-nuls.
+ Alors 
+\(A\wedge B=\) \(1\) si et seulement s'il existe \(U,V\in\mathbb K[X]\) tels que \(AU+BV=\) \(1\).
+
+
+<b>Lemme de Gauss :</b> Soient \(A,B,C\in\mathbb K[X]\) non-nuls.
+ On suppose que 
+\(A\wedge B=\) \(1\).
+ Alors si \(A|BC\), on a \(A|C\).
+
+On peut généraliser la définition du pgcd à un nombre fini de polynômes \(P_1,\dots,P_r\) : le pgcd de ces polynômes est l'unique polynôme \(D\) tel que 
+\((D)\) est égal à l'idéal \(\{A_1P_1+\dots+A_rP_r;\ A_1,\dots,A_r\in\mathbb K[X]\} \).
+
+Un polynôme \(P\in\mathbb K[X]\) est <b>irréductible</b> s'il est de degré supérieur ou égal à 1 et si tous ses diviseurs
+sont les polynômes constants ou les polynômes associés à \(P\) (c'est-à-dire les polynômes qui s'écrivent \(\lambda P\) avec \(\lambda\in\mathbb K\)).
+
+<b>Théorème : </b> Tout polynôme \(P\in\mathbb K[X]\) s'écrit 
+\(P=\) \(\lambda P_1\cdots P_r\)
+où \(\lambda\in\mathbb K\) et où les \(P_i\) sont des polynômes irréductibles et unitaires de \(\mathbb K[X]\).
+ De plus, cette décomposition est unique 
+à l'ordre des termes prêt.
+
+<b>Théorème :</b> Les polynômes irréductibles de \(\mathbb C[X]\) sont les polynômes de degré 1.
+
+
+<b>Théorème :</b> Les polynômes irréductibles de \(\mathbb R[X]\) sont les polynômes de degré 1 et les polynômes de degré 2 de discriminant strictement négatif.
+
+
+
+
+Algèbre
+Dans ce paragraphe, \(\mathbb K\) est un corps.
+
+
+On appelle <b>\(\mathbb K\)-algèbre</b> un ensemble muni de deux lois internes \(+\) et \(\times\) et d'une loi externe sur le corps
+\(\mathbb K\), notée \(\cdot\), telles que 
+
+\((E,+,\times)\) est un anneau;
+\((E,+,\cdot)\) est un espace vectoriel sur \(\mathbb K\);
+Pour tout \(\alpha\in\mathbb K\), pour tout \((x,y)\in E^2\), on a 
+\((\alpha \cdot x)\times y=\) \(x\times (\alpha\cdot y)=\) \(\alpha\cdot(x\times y).\)
+
+
+Une partie \(F\) d'une algèbre \(E\) est une <b>sous-algèbre</b> de \(E\) si muni des lois \(+\), \(\times\), \(\cdot\) héritées de \(E\), c'est une algèbre.
+
+Si \(E\) et \(F\) sont deux algèbres, une application \(f:E\to F\) est un <b>morphisme d'algèbre</b> si c'est un morphisme d'anneaux et une application linéaire.
+
+
+

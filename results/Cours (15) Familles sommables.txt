@@ -1,0 +1,138 @@
+Résumé de cours : familles sommables
+
+
+Ensembles dénombrables
+
+Un ensemble \(A\) est <b>dénombrable</b> s'il existe une bijection entre \(A\) et \(\mathbb N\).
+
+<b>Proposition :</b>
+
+s'il existe une injection de \(A\) dans \(\mathbb N\), alors \(A\) est fini ou dénombrable.
+
+si \(A\) et \(B\) sont dénombrables,alors \(A\times B\) est dénombrable.
+
+si \(I\) est un ensemble fini ou dénombrable, et si pour tout \(i\in I\), \(A_i\) est un ensemble fini ou dénombrable, alors
+\(\bigcup_{i\in I} A_i\) est fini ou dénombrable.
+
+
+
+Les ensembles suivants sont dénombrables : \(\mathbb Z\), \(\mathbb Q\), \(\mathbb N^2\), toute partie infinie de \(\mathbb N\).
+
+L'ensemble des nombres réels \(\mathbb R\) n'est pas dénombrable.
+
+
+
+Familles sommables de réels positifs
+\(I\) désigne un ensemble dénombrable.
+
+
+La famille de réels positifs \((u_i)_{i\in I} \) est dite <b>sommable</b> si l'ensemble des sommes
+\(\sum_{i\in F} u_i\), où \(F\) décrit l'ensemble des parties finies de \(I\), est majorée.
+ Dans ce cas, la borne supérieure de cet
+ensemble s'appelle la <b>somme</b> de la famille \((u_i)_{i\in I} \).
+ Si la famille n'est pas sommable, on convient que sa somme vaut \(+\infty\).
+
+Dans tous les cas, on note la somme \(\sum_{i\in I} u_i\).
+
+<b>Proposition :</b> Soit \((u_n)_{n\in\mathbb N} \) une famille de réels positifs indexée
+par \(\mathbb N\).
+ Alors la famille \((u_n)\) est sommable si et seulement si la série \(\sum_n u_n\) converge, et dans ce cas, les deux sommes
+coïncident.
+
+
+<b>Théorème (sommation par paquets):</b> Soit \((I_n)_{n\in\mathbb N} \) une partition de \(I\) et soit \((u_i)_{i\in I} \) une famille de réels positifs.
+
+Alors les assertions suivantes sont équivalentes :
+ - la famille \((u_i)\) est sommable;
+ - pour tout entier \(n\in\mathbb N\), la famille \((u_i)_{i\in I_n} \) est sommable et la série \(\sum_n \left(\sum_{i\in I_n} u_i\right)\) converge.
+
+
+Dans ce cas, on a
+\(\sum_{i\in I} u_i=\) \(\sum_n \left(\sum_{i\in I_n} u_i\right).\)
+
+
+
+Familles sommables de nombres complexes
+\(I\) désigne un ensemble dénombrable.
+
+
+La famille de nombres complexes \((u_i)_{i\in I} \) est dite <b>sommable</b> si la famille de réels positifs \((|u_i|)\) l'est.
+
+Soit \((u_i)_{i\in I} \) une famille de nombres réels.
+ On note, pour tout \(i\in I\), 
+\(u_i^+=\) \(\max(u_i,0)\textrm{ et } u_i^-=\) \(\max(-u_i,0).\)
+
+Alors \((u_i)_{i\in I} \) est sommable si et seulement si \((u_i^+)_{i\in I} \) et \((u_i^-)_{i\in I} \) sont sommables.
+ Dans ce cas, on appelle <b>somme</b> 
+de la famille \((u_i)_{i\in I} \) le réel
+\(\sum_{i\in I} u_i=\) \(\sum_{i\in I} u_i^+-\sum_{i\in I} u_i^-.\)
+
+Soit \((u_i)_{i\in I} \) une famille de nombres complexes.
+ Alors \((u_i)_{i\in I} \) est sommable si et seulement si les deux suites de nombres réels \((\Re e(u_i))_{i\in I} \)
+et \((\Im m(u_i))_{i\in I} \) sont sommables.
+ Dans ce cas, on appelle <b>somme</b> de la famille \((u_i)_{i\in I} \) le nombre complexe
+\(\sum_{i\in I} u_i=\) \(\sum_{i\in I} \Re e(u_i)+\text{i} \sum_{i\in I} \Im m(u_i).\)
+
+<b>Proposition :</b> Soit \((u_n)_{n\in\mathbb N} \) une famille de complexes indexée
+par \(\mathbb N\).
+ Alors la famille \((u_n)\) est sommable si et seulement si la série \(\sum_n u_n\) est absolument convergente.
+ Dans ce cas, la somme
+de la famille sommable et la somme de la série coïncident.
+
+
+<b>Proposition :</b> Soit \((u_i)_{i\in I} \) une famille de complexes et soit \(\sigma\) une bijection de \(I\).
+ 
+Alors la famille \((u_i)_{i\in I} \) est sommable si et seulement si la famille \((u_{\sigma(i)} )_{i\in I} \) est sommable.
+ Dans ce cas, les deux sommes sont égales.
+
+
+<b>Théorème :</b> Soit \((I_n)_{n\in\mathbb N} \) une partition de \(I\) et soit \((u_i)_{i\in I} \) une famille de complexes sommable.
+
+Alors pour tout entier \(n\in\mathbb N\), la famille \((u_i)_{i\in I_n} \) est sommable et la série \(\sum_n \left(\sum_{i\in I_n} u_i\right)\) est absolument convergente.
+
+De plus, on a
+\(\sum_{i\in I} u_i=\) \(\sum_n \left(\sum_{i\in I_n} u_i\right).\)
+
+
+Propriétés : soit \((u_i)_{i\in I} \) et \((v_i)_{i\in I} \) deux familles sommables de nombres complexes.
+ Alors 
+
+<b>linéarité :</b> pour tout \(\lambda\in\mathbb C\), \((\lambda u_i+v_i)_{i\in I} \) est sommable, et 
+\(\sum_{i\in I} \big(\lambda u_i+v_i\big)=\) \(\lambda\sum_{i\in I} u_i+\sum_{i\in I} v_i.\)
+
+<b>positivité :</b> si \(u_i\geq 0\), alors \(\sum_i u_i\geq 0\) avec égalité si et seulement si, pour chaque \(i\in I\), \(u_i=\) \(0\).
+
+<b>inégalité triangulaire :</b> 
+\(\left|\sum_{i\in I} u_i\right|\leq \sum_{i\in I} |u_i|.\)
+
+<b>famille produit :</b> la famille \((u_iv_j)_{(i,j)\in I\times I} \) est sommable et on a
+\(\sum_{(i,j)\in I\times I} u_iv_j=\) \(\left(\sum_{i\in I} u_i\right)\times\left(\sum_{j\in I} v_j\right).\)
+
+
+
+Application aux séries
+
+<b>Proposition (permutation de l'ordre des termes):</b> Soit \(\sum_n u_n\) une série absolument convergente et soit \(\sigma\) une bijection de \(\mathbb N\).
+ Alors
+\(\sum u_{\sigma(n)} \) est absolument convergente, et on a \(\sum_{n\geq 0} u_n=\) \(\sum_{n\geq 0} u_{\sigma(n)} .\)
+</span>
+<b>Théorème (permutation des sommes) :</b> Soit \((u_{m,n} )_{(m,n)\in\mathbb N^2} \) une famille de nombres complexes.
+ Les assertions suivantes sont équivalentes :
+ - la famille \((u_{m,n} )_{(n,m)\in\mathbb N^2} \) est sommable;
+ - pour tout entier \(n\), la série \(\sum_m |u_{m,n} |\) converge, et la série \(\sum_n \left(\sum_{m=\) \(0} ^{+\infty} |u_{m,n} |\right)\) est convergente.
+
+
+Dans ce cas, on a égalité des sommes :\(\sum_{(m,n)\in\mathbb N^2} u_{m,n} =\) \(\sum_{n=\) \(0} ^{+\infty} \sum_{m=\) \(0} ^{+\infty} u_{m,n} .\)
+
+
+Soit \(\sum_n a_n\) et \(\sum_n b_n\) deux séries de nombres complexes.
+ On appelle <b>produit de Cauchy</b> de ces deux séries
+la série de terme général \(c_n=\) \(\sum_{k=\) \(0} ^n a_k b_{n-k} \).
+
+<b>Théorème (produit de Cauchy de deux séries) :</b> Soit \(\sum_n a_n\) et \(\sum_n b_n\) deux séries de nombres complexes absolument convergentes
+et soit \(\sum_n c_n\) la série produit de Cauchy de ces deux séries.
+ Alors \(\sum_n c_n\) est absolument convergente et on a 
+\(\sum_{n\geq 0} c_n=\) \(\left(\sum_{n\geq 0} a_n\right)\times\left(\sum_{n\geq 0} b_n\right).\)
+
+
+

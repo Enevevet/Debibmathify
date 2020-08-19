@@ -1,0 +1,123 @@
+Résumé de cours : espaces probabilisés dénombrables
+
+On considère une expérience aléatoire d'univers \(\Omega\).
+
+Langage des probabilités
+
+Une <b>tribu</b> sur \(\Omega\) est une partie \(\mathcal T\) de l'ensemble des parties de \(\Omega\) telle que
+
+\(\Omega\in\mathcal T\);
+Pour tout \(A\in\mathcal T\), le complémentaire \(\bar A\) est élément de \(\mathcal T\);
+Si \((A_n)_{n\in\mathbb N} \) est une suite d'éléments de \(\mathcal T\), leur réunion \(\bigcup_{n=\) \(0} ^{+\infty} A_n\) est élément de \(\mathcal T\).
+
+
+La tribu triviale \(\{\varnothing,\Omega\} \) est une tribu, l'ensemble des parties \(\mathcal P(\Omega)\) est une tribu.
+
+<b>Proposition :</b>
+Soit \(\mathcal T\) une tribu.
+ Alors 
+
+\(\varnothing\in\mathcal T\);
+toute réunion finie ou dénombrable d'éléments de \(\mathcal T\) est un élément de \(\mathcal T\);
+toute intersection finie ou dénombrable d'éléments de \(\mathcal T\) est un élément de \(\mathcal T\).
+
+
+Si \(\mathcal T\) est une tribu, le couple \((\Omega,\mathcal T)\) s'appelle <b>espace probabilisable</b>.
+ Les éléments de \(\mathcal T\) sont appelés les <b>événements</b>.
+ \(\Omega\) est l'<b>événement certain</b> et \(\varnothing\) est l'<b>événement impossible</b>.
+
+Deux événements \(A\) et \(B\) sont incompatibles si \(A\cap B=\) \(\varnothing\).
+
+On appelle <b>système complet d'événements</b> la donnée
+d'une famille finie ou dénombrable d'événements \((A_i)_{i\in I} \) deux à deux incompatibles et dont la réunion est l'événement certain \(\Omega\).
+
+
+
+Probabilités
+Dans cette partie, \((\Omega,\mathcal T)\) désigne un espace probabilisable.
+
+
+On appelle <b>probabilité</b> sur \((\Omega,\mathcal T)\) une application \(P\) définie sur \(\mathcal T\), à valeurs dans \([0,1]\) et vérifiant :
+
+\(P(\Omega)=\) \(1\);
+Pour toute suite \((A_n)_{n\in\mathbb N} \) d'événements deux à deux incompatibles, 
+\(P\left(\bigcup_{n=\) \(0} ^{+\infty} A_n\right)=\) \(\sum_{n=\) \(0} ^{+\infty} P(A_n).\)
+
+
+Le triplet \((\Omega,\mathcal T,P)\) s'appelle alors <b>espace de probabilité</b>.
+
+Si \(\Omega\) est fini ou dénombrable, et si \(\mathcal T=\) \(\mathcal P(\Omega)\), la donnée d'une probabilité \(P\) correspond à celle d'une famille sommable \((p_\omega)_{\omega\in\Omega} \) de réels positifs et de somme 1 via la formule \(P(\{\omega\} )=\) \(p_\omega\).
+
+<b>Propriétés des probabilités :</b>
+Soit \((\Omega,\mathcal T,P)\) un espace de probabilité.
+ Alors :
+
+\(P(\varnothing)=\) \(0\);
+Pour tout \(A\in\mathcal T\), \(P(\bar A)=\) \(1-P(A)\);
+Pour tous \(A,B\in\mathcal P(\Omega)\), \(A\subset B\implies P(A)\leq P(B)\);
+Pour tous \(A,B\in\mathcal P(\Omega)\), \(P(A\cup B)=\) \(P(A)+P(B)-P(A\cap B)\).
+
+
+<b>Proposition (continuité croissante) :</b>
+Si \((A_n)_{n\in\mathbb N} \) est une suite d'événements croissante pour l'inclusion, c'est-à-dire si \(A_n\subset A_{n+1} \) pour tout entier \(n\), alors 
+\(\lim_{n\to+\infty} P(A_n)=\) \(P\left(\bigcup_{n=\) \(0} ^{+\infty} A_n\right).\)
+
+
+<b>Proposition (continuité décroissante) :</b>
+Si \((A_n)_{n\in\mathbb N} \) est une suite d'événements décroissante pour l'inclusion, c'est-à-dire si \(A_n\supset A_{n+1} \) pour tout entier \(n\), alors 
+\(\lim_{n\to+\infty} P(A_n)=\) \(P\left(\bigcap_{n=\) \(0} ^{+\infty} A_n\right).\)
+
+
+<b>Proposition (sous-additivité) :</b>
+Si \((A_n)_{n\in\mathbb N} \) est une suite d'événements telle que \(\sum_{n=\) \(0} ^{+\infty} P(A_n)\) converge, alors 
+\(P\left(\bigcup_{n=\) \(0} ^{+\infty} A_n\right)\leq \sum_{n=\) \(0} ^{+\infty} P(A_n).\)
+ 
+
+Un événement \(A\) est dit <b>négligeable</b> si \(P(A)=\) \(0\).
+
+Un événement \(A\) est dit <b>presque sûr</b> si \(P(A)=\) \(1\).
+
+<b>Proposition :</b> Toute réunion dénombrable d'événements négligeables est un événement négligeable.
+ Toute intersection dénombrable d'événements presque sûrs est un événement presque sûr.
+
+
+
+Probabilités conditionnelles et indépendance
+Dans cette partie, \((\Omega,\mathcal T,P)\) est un espace de probabilité.
+ 
+
+On dit que deux événements \(A\) et \(B\) sont <b>indépendants</b> si \(P(A\cap B)=\) \(P(A)P(B)\).
+
+Soit \((A_i)_{i\in I} \) une famille d'événements.
+ On dit que les \((A_i)_{i\in I} \) sont <b>mutuellement indépendants</b> si, pour toute partie finie \(J\) de \(I\), on a 
+\(P\left(\bigcap_{j\in J} A_j\right)=\) \(\prod_{j\in J} P(A_j).\)
+
+Soient \(A\) et \(B\) deux événements tels que \(P(B)>0\).
+ On appelle <b>probabilité conditionnelle de \(A\) sachant \(B\)</b> le réel
+\(P(A|B)=\) \(P_B(A)=\) \(\frac{P(A\cap B)} {P(B)} .\)
+
+\(P_B\) est une probabilité sur \(\Omega\).
+
+<b>Formule des probabilités composées :</b> Soient \(A_1,\dots,A_m\) des événements tels que 
+\(P(A_1\cap\dots\cap A_m)\neq 0\).
+ Alors :\(P(A_1\cap\dots\cap A_m)=\) \(P(A_1)P(A_2|A_1)P(A_3|A_1\cap A_2)\cdots P(A_m|A_1\cap \dots\cap A_{m-1} ).\)
+
+
+<b>Formule des probabilités totales :</b> Soit \((A_n)_{n\in\mathbb N} \) un système complet d'événements, tous de probabilité non nulle.
+ Soit \(B\) un événement.
+ Alors la série \(\sum_n P(B\cap A_n)\) converge et on a :\(P(B)=\) \(\sum_{n=\) \(0} ^{+\infty} P(B\cap A_n)=\) \(\sum_{n=\) \(0} ^{+\infty} P(A_n)P(B|A_n).\)
+
+
+En particulier, on retrouve la formule des probabilités totales pour un nombre fini d'événements : soit \(A_1,\dots,A_n\) un système complet d'événements, tous de probabilité non nulle.
+ Soit \(B\) un événement.
+ Alors :\(P(B)=\) \(\sum_{i=\) \(1} ^n P(A_i)P(B|A_i).\)
+
+
+<b>Formule de Bayes  :</b> Si \(I\) est un ensemble fini ou dénombrable, et si \((A_i)\) est un système complet d'événéments dont aucun n'est négligeable, alors pour tout événement \(B\) non négligeable et pour tout \(k\in I\), on a :\(P(A_k|B)=\) \(\frac{P(A_k)P(B|A_k)} {\sum_{i\in I} P(A_i)P(B|A_i)} .\)
+
+
+En particulier, on retrouve la formule de Bayes pour deux événements : si \(A\) et \(B\) sont deux événements de probabilité non nulle, alors
+\(P(A|B)=\) \(\frac{P(B|A)P(A)} {P(B)} .\)
+
+
+

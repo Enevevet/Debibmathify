@@ -1,0 +1,256 @@
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+<!doctype html><html lang="fr"<head><meta charset="utf-8"><meta name="Author" CONTENT="Fred Bayart"><meta name="Description" CONTENT="Ressources de mathématiques"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Résumé de cours : variables aléatoires discrètes</title><link type="text/css" href="../css/bibstyle.css" rel="stylesheet" /><link type="text/css" href="lib/ressources.css" rel="stylesheet" /><script type="text/x-mathjax-config">
+MathJax.Hub.Config({  tex2jax: {inlineMath: [['$','$']]} });</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script><script type="text/javascript" src="../common/fonctions.js"></script><script type="text/javascript" src="lib/oXHR.js"></script><script type="text/javascript" src="lib/ajouteexo.js"></script><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5238512654171693",
+    enable_page_level_ads: true
+  });
+</script></head><body>	<div style="display:none">$$\newcommand{\mtn}{\mathbb{N}}\newcommand{\mtns}{\mathbb{N}^*}\newcommand{\mtz}{\mathbb{Z}}\newcommand{\mtr}{\mathbb{R}}\newcommand{\mtk}{\mathbb{K}}\newcommand{\mtq}{\mathbb{Q}}\newcommand{\mtc}{\mathbb{C}}\newcommand{\mch}{\mathcal{H}}\newcommand{\mcp}{\mathcal{P}}\newcommand{\mcb}{\mathcal{B}}\newcommand{\mcl}{\mathcal{L}}
+\newcommand{\mcm}{\mathcal{M}}\newcommand{\mcc}{\mathcal{C}}
+\newcommand{\mcmn}{\mathcal{M}}\newcommand{\mcmnr}{\mathcal{M}_n(\mtr)}
+\newcommand{\mcmnk}{\mathcal{M}_n(\mtk)}\newcommand{\mcsn}{\mathcal{S}_n}
+\newcommand{\mcs}{\mathcal{S}}\newcommand{\mcd}{\mathcal{D}}
+\newcommand{\mcsns}{\mathcal{S}_n^{++}}\newcommand{\glnk}{GL_n(\mtk)}
+\newcommand{\mnr}{\mathcal{M}_n(\mtr)}\DeclareMathOperator{\ch}{ch}
+\DeclareMathOperator{\sh}{sh}\DeclareMathOperator{\th}{th}
+\DeclareMathOperator{\vect}{vect}\DeclareMathOperator{\card}{card}
+\DeclareMathOperator{\comat}{comat}\DeclareMathOperator{\imv}{Im}
+\DeclareMathOperator{\rang}{rg}\DeclareMathOperator{\Fr}{Fr}
+\DeclareMathOperator{\diam}{diam}\DeclareMathOperator{\supp}{supp}
+\newcommand{\veps}{\varepsilon}\newcommand{\mcu}{\mathcal{U}}
+\newcommand{\mcun}{\mcu_n}\newcommand{\dis}{\displaystyle}
+\newcommand{\croouv}{[\![}\newcommand{\crofer}{]\!]}
+\newcommand{\rab}{\mathcal{R}(a,b)}\newcommand{\pss}[2]{\langle #1,#2\rangle}
+$$</div><header id="bandeau"><div id="bandeaucentre"><span id=bandeaulogo>Bibm@th.net</span><span id=bandeaumilieu><a href="https://www.youtube.com/channel/UCP-LXgvAe7CMdf_dddUcLmw" alt="Visitez notre chaine YouTube" title="Visiter notre chaine YouTube"><img src="../img/youtube.png" /></a><a href="https://www.facebook.com/bibmath" alt="Consulter notre page FaceBook" title="Consulter notre page Facebook"><img src="../img/fb.png" /></a><a href="../forums/login.php" alt="Consulter mon compte" title="Vous n'êtes pas identifié. Identifiez-vous."><img src="../img/moncompte.png" /></a></span><div id=bandeaurecherche><form id="formrech" name="recherche" action="../recherche.php"  method="get"><input name="q" placeholder="Rechercher sur le site..." class="formulairerecherche inputrecherche" /><button class="formulairerecherche boutonrecherche" value="" title="Rechercher"> </button></form></div></div></header><header id="bandeaumobile"><div class="sousbandeaumobile"><span class="itembandeaumobile" id="iconeouvremenu"><a href="javascript:ouvremenumobile()"><img src="../img/menumobile.png" /></a></span><span class="itembandeaumobilefondnoir" id="iconefermemenu"><a href="javascript:fermemenumobile()"><img src="../img/deletemobile.png"></a></span><span class="itembandeaumobile">Bibm@th</span></div><div class="sousbandeaumobile"><span class="itembandeaumobile"><a href="../forums/index.php" title="Accéder au forum du site"><img src="../img/forumgrand.png" /></a></span><span class="itembandeaumobilesansbordure"><a href="https://www.facebook.com/bibmath" alt="Consulter notre page FaceBook" title="Consulter notre page Facebook"><img src="../img/fbmobile.png" /></a></span><span class="itembandeaumobilesansbordure"><a href="../forums/login.php" alt="Consulter mon compte" title="Vous n'êtes pas identifié. Identifiez-vous."><img src="../img/moncomptemobile.png" /></a></span><span class="itembandeaumobile"  id="iconeouvrerecherche"><a href="javascript:ouvrerecherchemobile()"><img src="../img/loupemobile.png" /></a></span><span class="itembandeaumobilefondnoir" id="iconefermerecherche"><a href="javascript:fermerecherchemobile()"><img src="../img/deletemobile.png"></a></span></div></header><div id="recherchemobile"><form id="formrecherchemobile" name="recherche" action="../recherche.php"  method="get"><div class="divinputrecherche"><input name="q" placeholder="Rechercher sur le site..." class="formulairerecherche inputrecherche" /></div><div class="divboutonmobile"><button class="formulairerecherche boutonrecherche" value="" title="Rechercher"> </button></div></form></div><div id="menuetsousmenu"><nav id="menuhaut"><div id="menuhautcentre"><section id="listemenuhaut"><span id="menu0" class="item"><a href="../index.php"><img src="../img/maison.png" />Accueil</a></span><span id="menu1" class="item"><a href="javascript:affiche_sousmenu(1);"><img src="../img/lycee16.png" />Lycée</a></span><span id="menu2" class="itemselectionne"><a href="javascript:affiche_sousmenu(2);"><img src="../img/ressources.png" />Supérieur</a></span><span id="menu3" class="item"><a href="javascript:affiche_sousmenu(3);"><img src="../img/bibliotheques.png" />Bibliothèques</a></span><span id="menu4" class="item"><a href="javascript:affiche_sousmenu(4);"><img src="../img/references.png" />Références</a></span><span id="menu5" class="item"><a href="javascript:affiche_sousmenu(5);"><img src="../img/themes.png" />Thèmes</a></span><span id="menu6" class="item"><a href="../forums/index.php"><img src="../img/forum.png" />Forum</a></span></section></div></nav><nav id="sousmenuhaut"><div id="sousmenuhautcentre"><section id="listesousmenuhaut"><div class="sousmenucontenu" id="sousmenu_0" style="display:none" ></div><div class="sousmenucontenu" id="sousmenu_1" style="display:none" ><span class="sousmenuitem"><a href="../ressources/index.php?action=affiche&quoi=college/index">Collège</a></span><span class="sousmenuitem"><a href="../ressources/index.php?action=affiche&quoi=seconde/index">Seconde</a></span></div><div class="sousmenucontenu" id="sousmenu_2" style="display:flex" ><span class="sousmenuitem"><a href="../ressources/index.php?action=affiche&quoi=mathsup/index">Math Sup</a></span><span class="sousmenuitemselectionne"><a href="../ressources/index.php?action=affiche&quoi=mathspe/index">Math Spé</a></span><span class="sousmenuitem"><a href="../ressources/index.php?action=affiche&quoi=capes/index">Capes</a></span><span class="sousmenuitem"><a href="../ressources/index.php?action=affiche&quoi=agreginterne/index">Agreg interne</a></span><span class="sousmenuitem"><a href="../ressources/index.php?action=affiche&quoi=bts/index">BTS</a></span></div><div class="sousmenucontenu" id="sousmenu_3" style="display:none" ><span class="sousmenuitem"><a href="../ressources/index.php?action=affiche&quoi=bde/index">Bibliothèque d'exercices</a></span><span class="sousmenuitem"><a href="../pbs/index.php">Bibliothèque de problèmes</a></span><span class="sousmenuitem"><a href="../quizz/index.php">Automatismes</a></span></div><div class="sousmenucontenu" id="sousmenu_4" style="display:none" ><span class="sousmenuitem"><a href="../dico/index.php">Dictionnaire</a></span><span class="sousmenuitem"><a href="../bios/index.php">Biographie de mathématiciens</a></span><span class="sousmenuitem"><a href="../formulaire/index.php">Formulaire</a></span><span class="sousmenuitem"><a href="../trans/index.php">Lexique français/anglais</a></span></div><div class="sousmenucontenu" id="sousmenu_5" style="display:none" ><span class="sousmenuitem"><a href="../crypto/index.php">Cryptographie et codes secrets</a></span><span class="sousmenuitem"><a href="../jeux/index.php">Jeux et énigmes</a></span><span class="sousmenuitem"><a href="../carres/index.php?action=affiche&quoi=carres">Carrés magiques</a></span><span class="sousmenuitem"><a href="../quotidien/index.php">Mathématiques au quotidien</a></span><span class="sousmenuitem"><a href="../dossiers/index.php">Dossiers</a></span></div><div class="sousmenucontenu" id="sousmenu_6" style="display:none" ></div></section></div></nav><nav id="menumobile"><div class="itemmenumobile"><div class="teteitemmenumobile"><span><a href="../index.php">Accueil</a></span><img src="../img/flechemenumobileferme.png" id="sousmenumobileimageferme0"  /><img src="../img/flechemenumobileouvert.png" id="sousmenumobileimageouvert0"  style="display:none;"/></div></div><div class="itemmenumobile"><div class="teteitemmenumobile"><span><a href="javascript:affiche_sousmenumobile(1);">Lycée</a></span><img src="../img/flechemenumobileferme.png" id="sousmenumobileimageferme1"  /><img src="../img/flechemenumobileouvert.png" id="sousmenumobileimageouvert1"  style="display:none;"/></div><div class="sousmenumobile" id="sousmenumobile1"><div class="sousitemmenumobile"><span><a href="../ressources/index.php?action=affiche&quoi=college/index">Collège</a></span></div><div class="sousitemmenumobile"><span><a href="../ressources/index.php?action=affiche&quoi=seconde/index">Seconde</a></span></div></div></div><div class="itemmenumobileselectionne"><div class="teteitemmenumobile"><span><a href="javascript:affiche_sousmenumobile(2);">Supérieur</a></span><img src="../img/flechemenumobileferme.png" id="sousmenumobileimageferme2"  /><img src="../img/flechemenumobileouvert.png" id="sousmenumobileimageouvert2"  style="display:none;"/></div><div class="sousmenumobile" id="sousmenumobile2"><div class="sousitemmenumobile"><span><a href="../ressources/index.php?action=affiche&quoi=mathsup/index">Math Sup</a></span></div><div class="sousitemmenumobile"><span><a href="../ressources/index.php?action=affiche&quoi=mathspe/index">Math Spé</a></span></div><div class="sousitemmenumobile"><span><a href="../ressources/index.php?action=affiche&quoi=capes/index">Capes</a></span></div><div class="sousitemmenumobile"><span><a href="../ressources/index.php?action=affiche&quoi=agreginterne/index">Agreg interne</a></span></div><div class="sousitemmenumobile"><span><a href="../ressources/index.php?action=affiche&quoi=bts/index">BTS</a></span></div></div></div><div class="itemmenumobile"><div class="teteitemmenumobile"><span><a href="javascript:affiche_sousmenumobile(3);">Bibliothèques</a></span><img src="../img/flechemenumobileferme.png" id="sousmenumobileimageferme3"  /><img src="../img/flechemenumobileouvert.png" id="sousmenumobileimageouvert3"  style="display:none;"/></div><div class="sousmenumobile" id="sousmenumobile3"><div class="sousitemmenumobile"><span><a href="../ressources/index.php?action=affiche&quoi=bde/index">Bibliothèque d'exercices</a></span></div><div class="sousitemmenumobile"><span><a href="../pbs/index.php">Bibliothèque de problèmes</a></span></div><div class="sousitemmenumobile"><span><a href="../quizz/index.php">Automatismes</a></span></div></div></div><div class="itemmenumobile"><div class="teteitemmenumobile"><span><a href="javascript:affiche_sousmenumobile(4);">Références</a></span><img src="../img/flechemenumobileferme.png" id="sousmenumobileimageferme4"  /><img src="../img/flechemenumobileouvert.png" id="sousmenumobileimageouvert4"  style="display:none;"/></div><div class="sousmenumobile" id="sousmenumobile4"><div class="sousitemmenumobile"><span><a href="../dico/index.php">Dictionnaire</a></span></div><div class="sousitemmenumobile"><span><a href="../bios/index.php">Biographie de mathématiciens</a></span></div><div class="sousitemmenumobile"><span><a href="../formulaire/index.php">Formulaire</a></span></div><div class="sousitemmenumobile"><span><a href="../trans/index.php">Lexique français/anglais</a></span></div></div></div><div class="itemmenumobile"><div class="teteitemmenumobile"><span><a href="javascript:affiche_sousmenumobile(5);">Thèmes</a></span><img src="../img/flechemenumobileferme.png" id="sousmenumobileimageferme5"  /><img src="../img/flechemenumobileouvert.png" id="sousmenumobileimageouvert5"  style="display:none;"/></div><div class="sousmenumobile" id="sousmenumobile5"><div class="sousitemmenumobile"><span><a href="../crypto/index.php">Cryptographie et codes secrets</a></span></div><div class="sousitemmenumobile"><span><a href="../jeux/index.php">Jeux et énigmes</a></span></div><div class="sousitemmenumobile"><span><a href="../carres/index.php?action=affiche&quoi=carres">Carrés magiques</a></span></div><div class="sousitemmenumobile"><span><a href="../quotidien/index.php">Mathématiques au quotidien</a></span></div><div class="sousitemmenumobile"><span><a href="../dossiers/index.php">Dossiers</a></span></div></div></div><div class="itemmenumobile"><div class="teteitemmenumobile"><span><a href="../forums/index.php">Forum</a></span><img src="../img/flechemenumobileferme.png" id="sousmenumobileimageferme6"  /><img src="../img/flechemenumobileouvert.png" id="sousmenumobileimageouvert6"  style="display:none;"/></div></div></nav></div><div id="main"><div id="maincentre"><div id="gauche"><div id="pubgauche"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-5238512654171693";google_ad_slot = "0076167888";
+google_ad_width = 728;google_ad_height = 90;//-->
+</script><script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div><div id="pubresponsive"><script async src="/pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- bibmathresponsive -->
+		<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5238512654171693"
+     data-ad-slot="2152023625"
+     data-ad-format="auto"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div><article id="contenugauche"><div class="chemin"><a href="index.php">Ressources mathématiques</a> &gt; <a href="index.php?action=affiche&quoi=mathspe/index">Math Spé</a> &gt; </div><div class="chemin"><a href="moncompte.php">Accéder à mon compte</a> &gt; <a href="mafeuille.php">Accéder à ma feuille d'exercices</a> &gt; </div><h1>Résumé de cours : variables aléatoires discrètes</h1>$(\Omega,\mathcal T,P)$ est un espace de probabilité et $E$ un ensemble.
+
+<div class=titrepartie>Variables aléatoires discrètes</div>
+<div class=liste>
+<ul>
+<li>On appelle <span class=rougedico>variable aléatoire discrète</span> une application $X$ de $\Omega$ dans $E$ telle que $X(\Omega)$ est fini ou dénombrable et, pour tout $x\in E$, $X^{-1}(\{x\})\in \mathcal T$. On dit que $X$ est une variable aléatoire discrète réelle si $E=\mathbb R$.
+<li>Soit $X$ une variable aléatoire discrète et notons $X(\Omega)=\{x_n;\ n\in I\}$ où $I$ est fini ou dénombrable. La <span class=rougedico>loi de probabilité</span> de $X$ est la suite $(p_n)_{n\in I}$, où pour tout $n\in I$, $p_n=P(X=x_n)$.
+<li>Soit $(\Omega_1,\mathcal T_1,P_1)$ et $(\Omega_2,\mathcal T_2,P_2)$ deux espaces de probabilité. Soit $X$ (resp. $Y$) une variable aléatoire discrète définie sur $\Omega_1$ (resp. $\Omega_2$). On dit que $X$ et $Y$ ont <span class=rougedico>même loi</span> si $X(\Omega_1)=Y(\Omega_2)$ et si, pour tout $x\in X(\Omega_1)$, $P_1(X=x)=P_2(Y=x)$. On note $X\sim Y$.
+</ul>
+</div>
+
+<div class=titrepartie>Couple de variables aléatoires - indépendance</div>
+<div class=liste>
+<ul>
+<li>On appelle <span class=rougedico>couple</span> de variables aléatoires discrètes un couple $(X,Y)$ où $X$ et $Y$ sont deux variables aléatoires discrètes. La <span class=rougedico>loi conjointe</span> du couple $(X,Y)$ est la loi de $(X,Y)$ vue comme variable aléatoire. Autrement dit, la loi conjointe est la donnée de toutes les valeurs de $P(X=x,Y=y)$ pour $(x,y)\in X(\Omega)\times Y(\Omega)$. Les lois de $X$ et de $Y$ sont les <span class=rougedico>lois marginales</span> de $X$ et de $Y$.
+<li>Soit $x$ un élément de $X(\Omega)$ tel que $P(X=x)>0$. On appelle <span class=rougedico>loi conditionnelle de $Y$ sachant que $(X=x)$</span> la probabilité $P_x$ définie sur $Y(\Omega)$ par 
+$$\forall y\in Y(\Omega), P_x(\{y\})=P(Y=y|X=x)=\frac{P(X=x,Y=y)}{P(X=x)}.$$
+<li>Ces définitions se généralisent à des $n$-uplets de variables aléatoires discrètes. Si $X_1,\dots,X_n$ sont $n$ variables aléatoires discrètes, $(X_1,\dots,X_n)$ s'appelle un vecteur aléatoire discret.
+<li>Deux variables aléatoires discrètes $X$ et $Y$ sont dites <span class=rougedico>indépendantes</span> si, pour tout $x\in X(\Omega)$ et tout $y\in Y(\Omega)$, on a
+$$P(X=x,Y=y)=P(X=x)P(Y=y).$$
+<li><div class=theo><span class=grastheo>Proposition :</span> Deux variables aléatoires discrètes $X$ et $Y$ sont indépendantes si et seulement si, pour tout $A\subset X(\Omega)$ et tout $B\subset Y(\Omega)$, on a 
+$$P(X\in A,Y\in B)=P(X\in A)P(Y\in B).$$
+</div>
+<li>Soit $(X_n)_{n\in I}$ une famille de variables aléatoires, où $I$ est fini ou dénombrable. On dit que les variables aléatoires $(X_n)_{n\in I}$ sont <span class=rougedico>mutuellement indépendantes</span> lorsque, pour toute partie finie $J=\{i_1,\dots,i_p\}\subset I$, pour tout $(x_{i_1},\dots,x_{i_p})\in X_{i_1}(\Omega)\times\dots\times X_{i_p}(\Omega)$, on a
+$$P(X_{i_1}=x_{i_1},\dots,X_{i_p}=x_{i_p})=P(X_{i_1}=x_{i_1})\cdots P(X_{i_p}=x_{i_p}).$$
+<li><div class=theo><span class=grastheo>Proposition :</span> Si $X_1,X_2,\dots,X_n$ sont des variables aléatoires mutuellement indépendantes, alors pour tout $m$ compris entre 1 et $n-1$, et pour toutes fonctions $f$ et $g$, les variables $f(X_1,\cdots,X_m)$ et $g(X_{m+1},\cdots,X_n)$ sont indépendantes.</div>
+</ul>
+</div>
+
+<div class=titrepartie>Espérance, variance et covariance</div>
+Dans cette partie, $X$ et $Y$ désignent deux variables aléatoires discrètes réelles. On note $X(\Omega)=\{x_n;\ n\in I\}$ et $Y(\Omega)=\{y_n;\ n\in J\}$.
+<div class=liste>
+<ul>
+<li>On dit que $X$ est d'<span class=rougedico>espérance finie</span> si la famille $(x_n P(X=x_n))$ est sommable. Si c'est le cas, on appelle <span class=rougedico>espérance de $X$</span> la somme de cette famille :
+$$E(X)=\sum_{n\in I}x_n P(X=x_n).$$
+<li><div class=theo><span class=grastheo>Proposition :</span>
+<div class=liste>
+<ul>
+<li>L'espérance est linéaire : si $X$ et $Y$ sont d'espérance finie, $X+Y$ est d'espérance finie et $E(X+Y)=E(X)+E(Y)$.
+<li>L'espérance est positive : si $X\geq 0$ est d'espérance finie, alors $E(X)\geq 0$. En particulier, si $X\leq Y$ et $X$ et $Y$ sont d'espérance finie, alors $E(X)\leq E(Y)$.
+<li>Si $|Y|\leq X$ et $X$ est d'espérance finie, alors $Y$ est d'espérance finie.
+</ul>
+</div>
+</div>
+<li><div class=theo><span class=grastheo>Théorème (espérance du produit de deux variables aléatoires indépendantes) :</span> Si $X$ et $Y$ sont indépendantes et admettent une espérance, alors $XY$ admet une espérance et $E(XY)=E(X)E(Y)$.
+<li><div class=theo><span class=grastheo>Théorème de transfert :</span> Soit $f$ une fonction définie sur $X(\Omega)$ à valeurs dans $\mathbb R$. Alors $f(X)$ est d'espérance finie si et seulement si la famille $(P(X=x_n)f(x_n))_{n\in I}$ est sommable. Dans ce cas,
+$$E(f(X))=\sum_{n\in I}f(x_n)P(X=x_n).$$
+</div>
+<li>Soit $p\in\mathbb N^*$. On dit que $X$ admet un <span class=rougedico>moment d'ordre $p$</span> si $X^p$ est d'espérance finie. Dans ce cas, $E(X^p)$ s'appelle le moment d'ordre $p$ de $X$.
+<li><div class=theo><span class=grastheo>Proposition :</span> Soit $p,q\in\mathbb N^*$ avec $p\leq q$. Si $X$ admet un moment d'ordre $q$, alors $X$ admet un moment d'ordre $p$.</div>
+<li><div class=theo><span class=grastheo>Inégalité de Cauchy-Schwarz :</span> Si $X$ et $Y$ admettent des moments d'ordre $2$, alors $XY$ est d'espérance finie et
+$$\big(E(XY)\big)^2\leq E(X^2)E(Y^2).$$
+</div>
+<li>Lorsque $X^2$ est d'espérance finie, on appelle <span class=rougedico>variance de $X$</span> le réel 
+$$V(X)=E\big( (X-E(X))^2\big)=E(X^2)-\big(E(X)\big)^2$$
+et <span class=rougedico>écart-type de $X$</span> le réel $\sigma(X)=\sqrt{V(X)}$.
+<li>On a $V(aX+b)=a^2V(X)$.
+<li><div class=theo><span class=grastheo>Théorème (variance d'une somme de variables aléatoires) :</span> Soit $X_1,\dots,X_n$ des variables aléatoires discrètes finies admettant des moments d'ordre $2$. Alors
+$$V\left(\sum_{i=1}^n X_i\right)=\sum_{i=1}^n V(X_i)+2\sum_{1\leq i&lt;j\leq n}\big(E(X_iX_j)-E(X_i)E(X_j)\big).$$
+En particulier, si les $X_I$ sont <span class=grastheo>deux à deux</span> indépendantes, alors 
+$$V\left(\sum_{i=1}^n X_i\right)=\sum_{i=1}^n V(X_i).$$
+</div>
+<li>Si $X$ et $Y$ admettent un moment d'ordre $2$, on appelle <span class=rougedico>covariance</span> de $X$ et de $Y$ le réel
+$$\textrm{Cov}(X,Y)=E\big((X-E(X))(Y-E(Y)\big)=E(XY)-E(X)E(Y).$$
+Le <span class=rougedico>coefficient de corrélation linéaire</span> est
+$$\rho(X,Y)=\frac{\textrm{Cov}(X,Y)}{\sigma(X)\sigma(Y)}.$$
+</ul>
+</div>
+
+<div class=titrepartie>Loi discrètes usuelles</div>
+<div class=liste>
+<ul>
+<li>On dit qu'une variable aléatoire $X$ suit une <span class=rougedico>loi de Bernoulli</span> de paramètre $p\in [0,1]$ lorsque $X$ 
+est à valeurs dans $\{0,1\}$ et que
+$$P(X=1)=p\textrm{ et }P(X=0)=1-p.$$
+On a alors 
+$$E(X)=p,\ V(X)=p(1-p).$$
+<li>On dit qu'une variable aléatoire $X$ suit une <span class=rougedico>loi binomiale</span> de paramètres $n\in\mathbb N^*$ et  $p\in [0,1]$, que l'on note $\mathcal B( n,p)$, lorsque $X$ est à valeurs dans $\{0,\dots,n\}$ avec, pour tout $k\in\{0,\dots,n\}$, 
+$$P(X=k)=\binom nk p^k(1-p)^{n-k}.$$
+On a alors
+$$E(X)=np,\ V(X)=np(1-p).$$
+<li><div class=theo><span class=grastheo>Proposition :</span> Si $X_1,\dots,X_n$ sont $n$ variables aléatoires indépendantes définies sur le même univers $\Omega$ suivant toutes une loi de Bernoulli $\mathcal B( p)$, alors $X_1+\dots+X_n$ suit une loi binomiale $\mathcal B(n,p)$.
+</div>
+<li>Soit $p\in ]0,1[$. On dit que la variable aléatoire $X$ suit une <span class=rougedico>loi géométrique</span> de paramètre $p$ si elle est à valeurs dans $\mathbb N^*$ et si, pour tout $n\geq 1$, $$P(X=n)=p(1-p)^{n-1}.$$
+On a alors $$E(X)=\frac 1p\textrm{ et }V(X)=\frac{1-p}{p^2}.$$
+<li><div class=theo><span class=grastheo>Proposition :</span> Si $(X_n)$ est une suite de variables aléatoires de Bernoulli indépendantes de même paramètre $p$, et si $X$ est la variable aléatoire qui donne le rang du premier succès dans cette succession d'épreuves, alors $X$ suit une loi géométrique de paramètre $p$.
+<li><div class=theo><span class=grastheo>Théorème (caractérisation comme loi sans mémoire) :</span> Soit $X$ une variable aléatoire à valeurs dans $\mathbb N$. $X$ est sans mémoire, c'est-à-dire que pour tout $n,k\in\mathbb N^2$, 
+$$P(X>n+k|X>n)=P(X>k)$$
+ si et seulement si $X$ suit une loi géométrique.
+ </div>
+ <li>Soit $\lambda>0$. On dit que $X$ suit  une <span class=rougedico>loi de Poisson</span> de paramètre $\lambda$ si elle est à valeurs dans $\mathbb N$ et si, pour tout $n\in \mathbb N$, $$P(X=n)=\frac{e^{-\lambda}\lambda^n}{n!}.$$
+ On a alors $E(X)=\lambda$ et $V(X)=\lambda$.
+</ul>
+</div>
+
+<div class=titrepartie>Estimation</div>
+<div class=liste>
+<ul>
+<li><div class=theo><span class=grastheo>Inégalité de Markov :</span>
+Soit $X$ une variable aléatoire discrète réelle admettant une espérance et soit $t>0$. Alors
+$$P(|X|\geq t)\leq\frac{E(|X|)}{t}.$$
+</div>
+<li><div class=theo><span class=grastheo>Inégalité de Bienaymé-Tchebychev :</span>
+Soit $X$ une variable aléatoire discrète réelle telle que $X^2$ soit d'espérance finie. Alors, pour tout $\veps>0$, 
+$$P(|X-E(X)|\geq \veps)\leq \frac{V(X)}{\veps^2}.$$
+</div>
+<li><div class=theo><span class=grastheo>Loi faible des grands nombres :</span>
+Soit $(X_n)_{n\geq 1}$ une suite de variables aléatoires discrètes réelles deux à deux indépendantes, de même loi, et admettant un moment d'ordre 2. Alors, si $m=E(X_1)$, on a
+$$P\left(\left|\frac{S_n}n-m\right|\geq\veps\right)\xrightarrow{n\to+\infty}0.$$
+</div>
+<li><div class=theo><span class=grastheo>Approximation de la loi binomiale par la loi de Poisson  :</span> Soit $(X_n)$ une suite de variables aléatoires telle que, pour tout $n$, $X_n$ suit une loi binomiale de paramètres $(n,p_n)$. Si la suite $(np_n)$ converge vers $\lambda>0$, alors, pour tout $k\in\mathbb N$, 
+$$P(X_n=k)\xrightarrow{n\to+\infty}\frac{e^{-\lambda}\lambda^k}{k!}.$$
+</div>
+</ul>
+</div>
+
+<div class=titrepartie>Fonction génératrice</div>
+<div class=liste>
+<ul>
+<li>Soit $X$ une variable aléatoire à valeurs dans $\mathbb N$. On appelle  <span class=rougedico>fonction génératrice</span> de $X$ la série entière suivante :
+$$G_X(t)=\sum_{n=0}^{+\infty}P(X=n)t^n.$$
+<li>Le rayon de convergence de la série entière précédente est supérieur ou égal à $1$. $G_X$ définit donc une fonction de classe $\mathcal C^\infty$ sur $]-1,1[$. Elle est en fait continue sur l'intervalle fermé $[-1,1]$.</p>
+<li><b>Exemples :</b>
+<div class=liste>
+<ul>
+<li>Si $X$ suit une loi de Bernoulli de paramètre $p$, alors
+$$G_X(t)=(1-p)+pt.$$
+<li>Si $X$ suit une loi binomiale de paramètres $n,p$, alors
+$$G_X(t)=\big((1-p)+pt)^n.$$
+<li>Si $X$ suit une loi géométrique de paramètre $p\in ]0,1[$, alors
+$$G_X(t)=\frac{pt}{1-(1-p)t}.$$
+<li>Si $X$ suit une loi de Poisson de paramètre $\lambda>0$, alors
+$$G_X(t)=e^{-\lambda}e^{\lambda t}.$$
+</ul>
+</div>
+<li>La fonction génératrice caractérise la loi d'une variable aléatoire :
+<div class=theo><span class=grastheo>Théorème :</span> Si $X$ et $Y$ sont deux variables aléatoires à valeurs dans $\mathbb N$ telles que, pour tout $t\in ]-1,1[$, $G_X(t)=G_Y(t)$, alors $X$ et $Y$ ont la même loi.
+</div>
+<li>La fonction génératrice permet également de retrouver la loi de la somme de deux variables aléatoires indépendantes :
+<div class=theo><span class=grastheo>Théorème :</span> Si $X$ et $Y$ sont deux variables aléatoires à valeurs dans $\mathbb N$ indépendantes, alors, pour tout $t\in ]-1,1[$, $G_{X+Y}(t)=G_X(t)G_Y(t)$.
+</div>
+<li>La fonction génératrice permet de retrouver les moments d'une variable aléatoire :
+<div class=theo><span class=grastheo>Théorème :</span> Soit $X$ une variable aléatoire à valeurs dans $\mathbb N$. Alors
+<div class=liste>
+<ul>
+<li>$X$ admet une espérance si et seulement si $G_X$ est dérivable en $1$. Dans ce cas, $G_X'(1)=E(X)$;
+<li>$X$ admet une variance si et seulement si $G_X$ est deux fois dérivable en $1$. Dans ce cas, $V(X)=G_X''(1)+G_X'(1)-\big(G_X'(1)\big)^2.$
+</ul>
+</div>
+
+</ul>
+</div>
+
+</article></div><aside id="droite"><div class="contenudroite"><h1>
+	Discussions des forums</h1><li><a href="http://www.bibmath.net/forums/viewtopic.php?id=12842&amp;action=new" title="La NANCY PI (cours d&#039;intégration)">La NANCY PI (cours d&#039;inté …</a></li>
+<li><a href="http://www.bibmath.net/forums/viewtopic.php?id=12851&amp;action=new" title="modifier un programme Python">modifier un programme Python</a></li>
+<li><a href="http://www.bibmath.net/forums/viewtopic.php?id=12850&amp;action=new" title="Pourcentage">Pourcentage</a></li>
+<li><a href="http://www.bibmath.net/forums/viewtopic.php?id=12849&amp;action=new" title="Développement de Taylor">Développement de Taylor</a></li>
+<li><a href="http://www.bibmath.net/forums/viewtopic.php?id=12847&amp;action=new" title="Demonstration dans l&#039;ordre dans R">Demonstration dans l&#039;ordr …</a></li>
+<li><a href="http://www.bibmath.net/forums/viewtopic.php?id=12846&amp;action=new" title="Mat 112">Mat 112</a></li>
+<li><a href="http://www.bibmath.net/forums/viewtopic.php?id=12841&amp;action=new" title="Probabilité sur un univers fini">Probabilité sur un univer …</a></li>
+<li><a href="http://www.bibmath.net/forums/viewtopic.php?id=12845&amp;action=new" title="Problème de math">Problème de math</a></li>
+<li><a href="http://www.bibmath.net/forums/viewtopic.php?id=12267&amp;action=new" title="La cryptographie moderne est trop !">La cryptographie moderne …</a></li>
+<li><a href="http://www.bibmath.net/forums/viewtopic.php?id=12844&amp;action=new" title="probabilité Terminale (2)">probabilité Terminale (2)</a></li>
+<li><a href="http://www.bibmath.net/forums/viewtopic.php?id=12843&amp;action=new" title="maths pour reconfinement">maths pour reconfinement</a></li>
+<li><a href="http://www.bibmath.net/forums/viewtopic.php?id=12830&amp;action=new" title="Probabilités - Tribus Boréliennes">Probabilités - Tribus Bor …</a></li>
+<li><a href="http://www.bibmath.net/forums/viewtopic.php?id=12829&amp;action=new" title="probabilité Terminale">probabilité Terminale</a></li>
+<li><a href="http://www.bibmath.net/forums/viewtopic.php?id=12836&amp;action=new" title="valeur acquise et valeur actuelle">valeur acquise et valeur …</a></li>
+<li><a href="http://www.bibmath.net/forums/viewtopic.php?id=12840&amp;action=new" title="Cotés et hauteurs d&#039;un triangle">Cotés et hauteurs d&#039;un tr …</a></li>
+<div class=bascontenu><a href="http://www.bibmath.net/forums/">Accéder aux forums</a></div>  </div><div id="pubdroite"><ins class="adsbygoogle"
+		 style="display:inline-block;width:300px;height:600px"
+		 data-ad-client="ca-pub-5238512654171693"
+		 data-ad-slot="3610567220"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div><div class="contenudroite"><h1>Mathématicienne du mois</h1><center><img src="http://www.bibmath.net/bios/images/uhlenbeck.jpg"></center>
+<center>
+<a href="http://www.bibmath.net/bios/index.php?action=affiche&quoi=uhlenbeck">Karen Uhlenbeck (1942-)</a>
+</center><div class=bascontenu><a href="http://www.bibmath.net/bios/index.php">Toutes les biographies</a></div></div></aside></div></div><footer id="pied"><div id="piedcentre"><section id="listepied"><span class="item"><script language="JavaScript1.1"> <!-- 
+	hsh = new Date();
+      hsd = document;
+      hsi = '<a href="http://www.xiti.com/xiti.asp?s=65164"'
+      hsi += ' TARGET="_top"><img width="80" height="15" border=0 '
+      hsi += 'src="http://logv17.xiti.com/oco.xiti?s=65164'
+      hsi += '&p=&hl=' + hsh.getHours() + 'x' + hsh.getMinutes() + 'x' + hsh.getSeconds();
+      if(parseFloat(navigator.appVersion)>=4)
+            {Xiti_s=screen;hsi += '&r=' + Xiti_s.width + 'x' + Xiti_s.height + 'x' + Xiti_s.pixelDepth + 'x' + Xiti_s.colorDepth;}
+      hsd.writeln(hsi + '&ref=' + hsd.referrer.replace('&', '$') + ' " title="Mesurez votre audience"></a>');//-->  
+      </script></span><span class="item"><a href=../contact.php>Signaler une erreur/Nous contacter</a></span><span class="item"><a href=../credits.php>Mentions Légales</a></span><span class="item"><a href=../cookies.php>Cookies</a></span></section></div></footer><footer id="piedmobile"><span class="item"><script language="JavaScript1.1"> <!-- 
+	hsh = new Date();
+      hsd = document;
+      hsi = '<a href="http://www.xiti.com/xiti.asp?s=65164"'
+      hsi += ' TARGET="_top"><img width="80" height="15" border=0 '
+      hsi += 'src="http://logv17.xiti.com/oco.xiti?s=65164'
+      hsi += '&p=&hl=' + hsh.getHours() + 'x' + hsh.getMinutes() + 'x' + hsh.getSeconds();
+      if(parseFloat(navigator.appVersion)>=4)
+            {Xiti_s=screen;hsi += '&r=' + Xiti_s.width + 'x' + Xiti_s.height + 'x' + Xiti_s.pixelDepth + 'x' + Xiti_s.colorDepth;}
+      hsd.writeln(hsi + '&ref=' + hsd.referrer.replace('&', '$') + ' " title="Mesurez votre audience"></a>');//-->  
+      </script></span><span class="item"><a href=../contact.php?origine=mobile>Nous contacter</a></span><span class="item"><a href=../credits.php>Mentions Légales</a></span></footer>
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "rgb(29,125,28)",
+      "text": "#ffffff"
+    },
+    "button": {
+      "background": "rgb(89,178,0)"
+    }
+  },
+  "theme": "classic",
+  "content": {
+    "message": "Ce site utilise des cookies pour faciliter votre navigation, obtenir des statistiques de visite, et afficher des publicités personnalisées.",
+    "dismiss": "Continuer!",
+    "link": "En savoir plus",
+    "href": "http://www.bibmath.net/cookies.php"
+  }
+});
+</script>
+</body><script type="text/javascript" src="../common/scrolling.js"></script></html>	

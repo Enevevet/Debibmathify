@@ -1,0 +1,131 @@
+Résumé de cours : séries entières
+
+
+Série entière - rayon de convergence
+
+On appelle <b>série entière</b> toute série de fonctions de la forme \(\sum_{n} a_nz^n\) où \((a_n)\) est une suite de nombres complexes et où \(z\in\mathbb C\).
+ 
+L'ensemble des \(z\in\mathbb C\) pour lesquels la série converge s'appelle le <b>domaine de convergence</b> de la série entière.
+
+<b>Lemme d'Abel :</b> Si la suite \((a_nz_0^n)\) est bornée, alors pour tout \(z\in\mathbb C\) avec \(|z|<|z_0|\), la série \(\sum_n a_n z^n\) 
+est absolument convergente.
+
+On appelle <b>rayon de convergence</b> de la série entière 
+\(R=\) \(\sup\{\rho\geq 0;\ (a_n\rho^n)\textrm{ est bornée} \} \in \mathbb R_+\cup\{+\infty\} .\)
+
+<b>Proposition :</b> Soit \(\sum_n a_nz^n\) une série entière de rayon de convergence \(R\).
+ Alors, pour tout \(z\in \mathbb C\),
+
+si \(|z|&lt;R\), la série \(\sum_n a_nz^n\) converge absolument;
+si \(|z|>R\), la série \(\sum_n a_nz^n\) diverge grossièrement (son terme général ne tend pas vers 0);
+si \(|z|=\) \(R\), alors on ne peut pas conclure en général.
+
+
+
+Le disque ouvert \(D(0,R)\) est alors appelé <b>disque ouvert de convergence</b> de la série entière.
+
+<b>Corollaire (convergence normale) :</b> Soit \(\sum_n a_nz^n\) une série entière de rayon de convergence \(R>0\) et soit
+\(r\in ]0,R[\).
+ Alors la série \(\sum_n a_nz^n\) converge normalement sur le disque ouvert \(D(0,r)\).
+ En particulier, la somme de la série entière est continue sur son disque ouvert de convergence.
+
+Pour calculer le rayon de convergence d'une série entière, on utilise souvent la règle de d'Alembert pour les séries dont l'énoncé est le suivant :<b>Règle de d'Alembert :</b> Soit \((u_n)\) une suite de réels strictement positifs.
+ Si \(u_{n+1} /u_n\) tend vers \(\ell\), alors
+
+ - si \(\ell>1\), la série \(\sum_n u_n\) diverge grossièrement;
+ - si \(\ell<1\), la série \(\sum_n u_n\) converge absolument.
+
+
+
+Lorsqu'on applique cette règle à une série entière \(\sum_n a_nz^n\) en posant \(u_n=\) \(|a_nz^n|\), on obtient que si \(|a_{n+1} |/|a_n|\) converge vers \(\ell\),
+alors le rayon de convergence de la série entière est \(1/\ell\).
+ 
+
+
+Opérations sur les séries entières
+On considère \(\sum_n a_n z^n\) et \(\sum_n b_nz^n\) deux séries entières de rayon de convergence respectifs \(R_a\) et \(R_b\).
+
+
+<b>Comparaison des rayons de convergence</b> : Si \(a_n=\) \(O(b_n)\), alors \(R_a\geq R_b\).
+ En particulier, si \(a_n\sim b_n\), alors \(R_a=\) \(R_b\).
+
+<b>Rayon de convergence de la série dérivée</b> : Le rayon de convergence de \(\sum_n na_nz^n\) est égal au rayon de convergence de \(\sum_n a_nz^n\).
+
+<b>Somme de deux séries entières</b> : Le rayon de convergence de la série somme \(\sum_n (a_n+b_n)z^n\) vérifie \(R\geq \min(R_a,R_b)\).
+ De plus, pour tout \(z\in\mathbb C\) avec \(|z|<\min(R_a,R_b)\), alors
+\(\sum_{n\geq 0} (a_n+b_n)z^n=\) \(\sum_{n\geq 0} a_n z^n+\sum_{n\geq 0} b_nz^n.\)
+
+On appelle <b>série entière produit</b> de \(\sum_n a_nz^n\) et de \(\sum_n b_nz^n\) la série entière \(\sum_n c_nz^n\) avec \(c_n=\) \(\sum_{k=\) \(0} ^n a_k b_{n-k} \).
+
+<b>Proposition :</b> Le rayon de convergence \(R\) de la série produit \(\sum_n c_nz^n\) de \(\sum_n a_nz^n\) et \(\sum_n b_nz^n\) 
+vérifie \(R\geq  \min(R_a,R_b)\).
+ De plus, pour tout \(z\in\mathbb C\) avec \(|z|<\min(R_a,R_b)\), alors
+\(\sum_{n\geq 0} c_nz^n=\) \(\left(\sum_{n\geq 0} a_n z^n\right)\times\left(\sum_{n\geq 0} b_nz^n\right).\)
+
+
+
+Cas de la variable réelle
+On s'intéresse désormais au cas où la variable ne peut plus prendre que des valeurs réelles, et nous noterons désormais les 
+séries entières \(\sum_n a_n x^n\).
+ On s'intéresse à la régularité de la série entière à l'intérieur de son intervalle de convergence \(]-R,R[\).
+
+
+<b>Théorème (intégration d'une série entière) :</b> Soit \(f(x)=\) \(\sum_{n\geq 0} a_nx^n\) une série entière de rayon de convergence \(R>0\) et soit \(F\)
+une primitive de \(f\).
+ Alors, pour tout \(x\in ]-R,R[\),
+\(F(x)=\) \(F(0)+\sum_{n\geq 0} \frac{a_n} {n+1} x^{n+1} .\)
+
+
+<b>Théorème (dérivation terme à terme) :</b> Soit \(f(x)=\) \(\sum_{n\geq 0} a_nx^n\) une série entière de rayon de convergence \(R>0\).
+ Alors \(f\) est de classe \(\mathcal C^\infty\) sur \(]-R,R[\).
+ De plus, pour tout \(x\in]-R,R[\) et tout \(k\geq 0\), on a 
+\(f^{(k)} (x)=\) \(\sum_{n\geq k} n(n-1)\cdots(n-k+1)a_n x^{n-k} .\)
+
+
+<b>Théorème (expression des coefficients d'une série entière) :</b> Soit \(f(x)=\) \(\sum_{n\geq 0} a_nx^n\) une série entière de rayon de convergence \(R>0\).
+ Alors, pour tout \(n\geq 0\), 
+\(a_n=\) \(\frac{f^{(n)} (0)} {n!} .\)
+
+</di>
+<b>Corollaire :</b> Si \(f(x)=\) \(\sum_{n\geq 0} a_nx^n\) et \(g(x)=\) \(\sum_{n\geq 0} b_nx^n\) coïncident sur un voisinage de \(0\), alors pour tout \(n\geq 0\), \(a_n=\) \(b_n\).
+
+
+
+Cas de la variable complexe
+
+<b>Théorème (dérivabilité de la variable complexe) :</b> Soit \(f(z)=\) \(\sum_{n\geq 0} a_nz^n\) une série entière de rayon de convergence \(R>0\).
+ Alors, pour tout \(z_0\in D(0,R)\), 
+\(\lim_{h\to 0} \frac{f(z_0+h)-f(z_0)} {h} =\) \(\sum_{n\geq 1} n a_n z_0^{n-1} .\)
+
+
+
+Développements en série entière
+
+Soit \(I\) un intervalle contenant \(0\) et \(f:I\to\mathbb R\).
+ On dit que \(f\) est développable en série entière en 0 s'il existe \(r>0\) et une suite \((a_n)\) tels que, pour tout \(x\in ]-r,r[\), on ait \(f(x)=\) \(\sum_{n\geq 0} a_n x^n\).
+
+Une combinaison linéaire de fonctions développables en série entière est développable en série entière.
+ Il en est de même de la dérivée ou d'une primitive d'une fonction développable en série entière.
+
+<b>Corollaire :</b> Soit \(I\) un intervalle contenant \(0\) et \(f:I\to\mathbb R\).
+ Si \(f\) est développable en série entière en \(0\), alors il existe \(r>0\) tel que, 
+pour tout \(x\in ]-r,r[\), 
+\(f(x)=\) \(\sum_{n\geq 0} \frac{f^{(n)} (0)} {n!} x^n.\)
+
+
+
+Développements en séries entières usuels
+
+\begin{eqnarray*} 
+e^x&=\) \(&\sum_{n\geq 0} \frac{x^n} {n!} ,\ R=\) \(+\infty\\
+\cos x&=\) \(&\sum_{n\geq 0} \frac{(-1)^n x^{2n} } {(2n)!} ,\ R=\) \(+\infty\\
+\sin x&=\) \(&\sum_{n\geq 0} \frac{(-1)^n x^{2n+1} } {(2n+1)!} ,\ R=\) \(+\infty\\
+\cosh x&=\) \(&\sum_{n\geq 0} \frac{x^{2n} } {(2n)!} ,\ R=\) \(+\infty\\
+\sinh x&=\) \(&\sum_{n\geq 0} \frac{ x^{2n+1} } {(2n+1)!} ,\ R=\) \(+\infty\\
+\frac{1} {1-x} &=\) \(&\sum_{n\geq 0} x^n,\ R=\) \(1\\
+\ln(1+x)&=\) \(&\sum_{n\geq 1} \frac{(-1)^{n+1} } {n} x^n,\ R=\) \(1\\
+\arctan(x)&=\) \(&\sum_{n\geq 0} \frac{(-1)^n} {2n+1} x^{2n+1} ,\ R=\) \(1\\
+(1+x)^\alpha&=\) \(&1+\sum_{n\geq 1} \frac{\alpha(\alpha-1)\cdots (\alpha-n+1)} {n!} x^n,\ R=\) \(1\\
+\end{eqnarray*} 
+
+

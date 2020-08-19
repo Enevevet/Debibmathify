@@ -1,0 +1,132 @@
+Résumé de cours : groupes
+
+Structure de groupes
+
+On appelle <b>groupe</b> la donnée d'un ensemble \(G\) et d'une loi de composition interne \(\star\) sur \(G\) vérifiant les 3 propriétés suivantes :
+ - la loi \(\star\) est associative : pour tous \(x,y,z\in G\), \(x\star(y\star z)=\) \((x\star y)\star z\);
+ - il existe un élément \(e\in G\) tel que, pour tout \(x\in G\), \(e\star x=\) \(x\star e=\) \(x\); \(e\) s'appelle l'<b>élément neutre</b>
+de \(G\);
+ - pour tout \(x\in G\), il existe \(y\in G\) tel que \(x\star y=\) \(y\star x=\) \(e\); \(y\) s'appelle l'<b>inverse</b> de \(x\) et est noté \(x^{-1} \).
+
+
+L'élément neutre du groupe et l'inverse d'un élément \(x\) sont uniques.
+
+Si \(G\) et \(H\) sont deux groupes, on munit \(G\times H\) d'une structure de groupe en posant \((g,h)\star (g',h')=\) \((g\star g',h\star h')\).
+
+
+
+Sous-groupe
+Soit \((G,\star)\) un groupe.
+
+
+une partie \(H\) de \(G\) est un <b>sous-groupe de \(G\)</b> s'il est stable par \(\star\) et si \((H,\star)\) est lui-même un groupe.
+
+<b>Proposition (caractérisation des sous-groupes) :</b>
+Une partie \(H\) de \(G\) est un sous-groupe de \(G\) si et seulement si :
+\(H\) est non-vide;
+\(H\) est stable par passage au produit : pour tous \(x,y\in H\), alors \(x\star y\in H\);
+\(H\) est stable par passage à l'inverse : pour tout \(x\in H\), alors \(x^{-1} \in H\).
+
+
+<b>Proposition :</b> l'intersection de deux sous-groupes est un sous-groupe.
+
+Soit \(A\) une partie de \(G\).
+ Le plus petit sous-groupe de \(G\) contenant \(A\) est appelé le <b>sous-groupe engendré</b> par \(A\).
+
+Si ce sous-groupe est \(G\), on dit que \(A\) est une <b>partie génératrice</b> de \(G\).
+
+<b>Proposition :</b> Le sous-groupe engendré par \(A\) est l'intersection de tous les sous-groupes contenant \(A\).
+ 
+Si \(A\neq \varnothing\), alors ce sous-groupe est égal à 
+\(\langle A\rangle=\) \(\{a_1^{\veps_1} \cdots a_p^{\varepsilon_p} ;\ p\in\mathbb N^*,\ a_i\in A,\ \veps_i=\) \(\pm 1\} .\)
+
+
+<b>Théorème :</b> Les sous-groupes de \((\mathbb Z,+)\) sont les \(n\mathbb Z\), \(n\in\mathbb N\).
+
+
+			
+			
+
+
+Morphisme de groupes
+Soient \(G\) et \(H\) deux groupes.
+
+
+Une application \(f:G\to H\) est un <b>morphisme de groupe</b> si pour tous \(x,y\in G\), on a \(f(x\star y)=\) \(f(x)\star f(y)\).
+
+<b>Proposition :</b> Soit \(f:G\to H\) un morphisme de groupes.
+ Alors :
+l'image directe d'un sous-groupe de \(G\) est un sous-groupe de \(H\);
+l'image réciproque d'un sous-groupe de \(H\) est un sous-groupe de \(G\);
+\(f(e_G)=\) \(e_H\).
+
+
+On appelle <b>noyau</b> du morphisme \(f:G\to H\) le sous-groupe de \(G\)
+\(\ker(f)=\) \(f^{-1} (e_H)=\) \(\{x\in G;\ f(x)=\) \(e_H\} .\)
+
+On appelle <b>image</b> du morphisme \(f:G\to H\) le sous-groupe de \(H\)
+\(\textrm{Im} (f)=\) \(f(G)=\) \(\{f(x);\ x\in G\} .\)
+
+<b>Proposition :</b> Un morphisme de groupes \(f:G\to H\) est
+
+injectif si et seulement si \(\ker(f)=\) \(\{e_G\} \);
+surjectif si et seulement si \(\textrm{Im} (f)=\) \(H\).
+
+
+On dit que le morphisme \(f:G\to H\) est un <b>isomorphisme</b> si \(f\) est bijective.
+
+<b>Proposition :</b> Soit \(f:G\to H\) un isomorphisme de groupes.
+ Alors \(f^{-1} \) est
+un morphisme de \(H\) sur \(G\).
+
+
+
+Groupe monogène, groupe cyclique
+Soit \(G\) un groupe.
+
+
+On dit que \(G\) est <b>monogène</b> s'il existe \(a\in G\) tel que le sous-groupe engendré par \(a\) est égal à \(G\).
+ 
+Autrement dit, s'il existe \(a\in G\) tel que \(G=\) \(\{a^n;\ n\in\mathbb Z\} \).
+ \(G\) est dit <b>cyclique</b> s'il est monogène
+et fini.
+
+Soit \(n\geq 2\).
+ La relation "être congru modulo \(n\)" est une relation d'équivalence.
+ On note \(\bar a\) la classe d'équivalence de \(a\), 
+et \(\mathbb Z/n\mathbb Z\) l'ensemble des classes d'équivalence : \(\mathbb Z/n\mathbb Z=\) \(\{\bar 0,\bar 1,\dots,\overline{n-1} \} \).
+ 
+On définit une structure de groupe sur \(\mathbb Z/n\mathbb Z\) en posant 
+\(\bar a+\bar b=\) \(\overline{a+b} .\)
+
+L'application \(\psi:\mathbb Z\to\mathbb Z/n\mathbb Z\), \(a\mapsto \bar a\) est alors un morphisme surjectif de groupes.
+
+<b>Théorème :</b> \(\mathbb Z/n\mathbb Z\) est un groupe cyclique.
+ De plus, 
+\(\bar k\) est un générateur de \(\mathbb Z/n\mathbb Z\) si et seulement si \(k\wedge n=\) \(1\).
+
+
+<b>Théorème :</b> 
+
+tout groupe monogène infini est isomorphe à \(\mathbb Z\);
+tout groupe monogène fini de cardinal \(n\) est isomorphe à \(\mathbb Z/n\mathbb Z\).
+
+
+
+
+Ordre d'un élément dans un groupe
+Soit \(G\) un groupe d'élément neutre \(e\).
+
+
+Un élément \(a\in G\) est dit <b>d'ordre fini</b> s'il existe \(n\geq 1\) tel que \(a^n=\) \(e\).
+ Le plus petit entier \(n\) vérifiant cette égalité
+est alors appelé l'<b>ordre</b> de \(a\).
+
+<b>Proposition :</b> Soit \(a\in G\) d'ordre \(n\).
+
+Alors \(a^k=\) \(e\) si et seulement si \(n|k\).
+
+<b>Proposition :</b> L'ordre d'un élément dans un groupe divise l'ordre du groupe.
+
+
+

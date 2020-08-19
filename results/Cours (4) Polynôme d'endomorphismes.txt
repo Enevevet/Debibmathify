@@ -1,0 +1,85 @@
+Résumé de cours : Polynômes d'endomorphismes
+
+\(E\) désigne un \(\mathbb K\)-espace vectoriel, \(\mathbb K\) étant le corps \(\mathbb R\) ou \(\mathbb C\), et \(u\) désigne un élément de \(\mathcal L(E)\).
+
+On rappelle la notation suivante :\(u^n=\) \(u\circ u\circ\dots \circ u\textrm{ de sorte que } u^{p+q} =\) \(u^p\circ u^q.\)
+
+
+Polynômes d'un endomorphisme
+
+Soit \(P\in\mathbb K[X]\), \(P(X)=\) \(a_dX^d+a_{d-1} X^{d-1} +\dots+a_1X+a_0\).
+ On note \(P(u)\) l'endomorphisme de \(E\) défini par
+\(P(u)=\) \(a_d u^d+a_{d-1} u^{d-1} +\dots+a_1u+a_0Id_E.\)
+
+<b>Proposition :</b> L'application de \(\mathbb K[X]\) dans \(\mathcal L(E)\) définie par \(P\mapsto P(u)\) est 
+un morphisme d'algèbres.
+ Son image est une sous-algèbre commutative de \(\mathcal L(E)\), notée \(\mathbb K[u]\).
+ C'est 
+la plus petite algèbre de \(\mathcal L(E)\) contenant \(u\).
+ Son noyau s'appelle <b>l'idéal annulateur</b> de \(u\).
+
+En particulier, la proposition précédente implique que, pour tous \(P,Q\in\mathbb K[X]\), on a
+\((PQ)(u)=\) \(P(u)\circ Q(u).\)
+
+<b>Théorème :</b> Si \(E\) est de dimension finie, alors le noyau de \(P\mapsto P(u)\) n'est pas réduit à \(\{0\} \).
+ Il existe un unique polynôme unitaire \(\pi_u\) qui engendre ce noyau.
+ On appelle ce polynôme le <b>polynôme minimal</b> de \(u\).
+
+Le polynôme minimal de \(u\) est donc caractérisé par \(\pi_u(u)=\) \(0\) et si \(P\in\mathbb K[X]\) est tel que \(P(u)=\) \(0\), alors \(\pi_u|P\).
+<br>
+Dans la suite, on supposera désormais que \(E\) est de dimension finie.
+
+<b>Proposition :</b> Si \(d\) est le degré du polynôme minimal de \(u\), alors \(\{Id,u,\dots,u^{d-1} \} \) forme une base de 
+\(\mathbb K[u]\).
+
+<b>Proposition :</b> Soit \(P\in\mathbb K[X]\), \(\lambda\in\textrm{Sp} (u)\) et \(x\in E\) tel que \(u(x)=\) \(\lambda x\).
+ Alors 
+\(P(u)(x)=\) \(P(\lambda)x.\)
+
+En particulier, si \(P\) est un polynôme annulateur de \(u\), alors \(P(\lambda)=\) \(0\).
+
+<b>Théorème de Cayley-Hamilton : </b>Le polynôme caractéristique \(\chi_u\) est un polynôme annulateur de \(u\).
+
+On définit les mêmes notions pour la matrice \(A\in\mathcal M_n(\mathbb K)\).
+ Toutes les propriétés analogues sont vérifiées.
+
+
+
+Lemme de décomposition des noyaux
+
+
+<b>Théorème :</b> Soient \(P_1,\dots,P_r\in\mathbb K[X]\) des polynômes premiers entre eux deux à deux et notons \(P=\) \(P_1\cdots P_r\).
+ Alors
+\(\ker(P(u))=\) \(\bigoplus_{i=\) \(1} ^r \ker(P_i(u)).\)
+
+
+			
+			
+
+
+Polynôme annulateur et diagonalisabilité
+\(E\) est de dimension finie \(n\).
+
+
+<b>Théorème :</b> \(u\) est diagonalisable si et seulement s'il existe un polynôme scindé à racines simples
+annulant \(u\), si et seulement si son polynôme minimal est scindé à racines simples.
+
+<b>Proposition :</b> Soit \(F\) un sous-espace stable par \(u\) et notons \(u_F\) l'endomorphisme induit par \(u\) sur \(u_F\).
+ Alors son polynôme minimal divise le polynôme minimal de \(u\).
+
+<b>Corollaire :</b> Si \(F\) est un sous-espace stable par \(u\) et si \(u\) est diagonalisable, alors
+l'endomorphisme induit \(u_F\) par \(u\) sur \(F\) est lui-même diagonalisable.
+
+
+
+Endomorphisme à polynôme minimal scindé
+\(E\) est de dimension finie \(n\).
+
+
+<b>Théorème :</b> Si le polynôme minimal de \(u\) est scindé, et si \(\lambda_1,\dots,\lambda_p\) sont ses racines, 
+il existe des sous-espaces \(N_1,\dots,N_p\) stables par \(u\) tels que \(E=\) \(\bigoplus_{i=\) \(1} ^r N_i\) et tels que, si \(u_i\) est l'endomorphisme 
+induit par \(u\) sur \(N_i\), alors \(u_i=\) \(\lambda_i Id_{N_i} +n_i\) où \(n_i\) est un endomorphisme de \(N_i\) nilpotent.
+
+
+
+

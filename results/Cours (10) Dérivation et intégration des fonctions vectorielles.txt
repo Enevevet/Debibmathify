@@ -1,0 +1,172 @@
+Résumé de cours : fonctions vectorielles, arcs paramétrés
+
+\(E,F,G\) désignent des espaces vectoriels réels de dimension finie de dimension \(n\), et \(I\) un intervalle de \(\mathbb R\) non réduit à un point.
+
+Dérivabilité
+
+On dit que la fonction \(f:I\to\mathbb E\) est <b>dérivable</b> en \(a\in I\) si le taux d'accroissement \(\displaystyle 
+\frac{f(a+h)-f(a)} {h} \) admet une limite quand \(h\) tend vers \(0\).
+ Dans ce cas, la limite est notée \(f'(a)\) et s'appelle <b>vecteur dérivé</b>
+de \(f\) en \(a\).
+
+Une fonction \(f:I\to\mathbb E\) est dérivable en \(a\) si et seulement s'il existe \(\alpha\in E\) et une fonction \(\veps\) définie dans un intervalle \(J\)
+ouvert contenant \(0\), vérifiant \(\lim_{h\to 0} \veps(h)=\) \(0\) tels que
+\(\forall h\in J,\ f(a+h)=\) \(f(a)+h \alpha +h\veps(h).\)
+
+Si \(f=\) \((f_1,\dots,f_n)\), alors \(f\) est dérivable en \(a\) si et seulement si chaque \(f_i\) est dérivable en \(a\).
+ 
+Dans ce cas, on a \(f'(a)=\) \(\big(f_1'(a),\dots,f_n'(a)\big)\).
+
+On dit que la fonction \(f:I\to\mathbb E\) est <b>dérivable à droite</b> en \(a\in I\) si le taux d'accroissement \(\displaystyle 
+\frac{f(a+h)-f(a)} {h} \) admet une limite quand \(h\) tend vers \(0^+\).
+ On définit de même la dérivabilité à gauche, et on sait que \(f\) est dérivable en \(a\) si et seulement
+si \(f\) est dérivable à droite et à gauche en \(a\).
+
+On dit que \(f\) est dérivable sur \(I\) si \(f\) est dérivable en tout point de \(I\).
+ \(f'\) s'appelle alors la fonction dérivée de \(f\).
+
+
+
+Opérations sur les fonctions dérivables
+
+<b>Combinaison linéaire</b> : Soient \(f,g:I\to E\) dérivables.
+ Pour tout \(\lambda\in\mathbb R\), \(\lambda f+g\) est dérivable et \((\lambda f+g)'=\) \(\lambda f'+g'\).
+
+<b>Composée par une application linéaire</b> : Soit \(f:I\to E\) dérivable et \(L:E\to F\) linéaire.
+ Alors \(L\circ f\) est
+ dérivable et \((L\circ f)'=\) \(L\circ f'\).
+
+<b>Composée par une application bilinéaire</b> : Soit \(f:I\to E\), \(g:I\to F\) dérivables et \(B:E\times F\to G\) bilinéaire.
+ Alors \(B(f,g):t\mapsto B\big(f(t),g(t)\big)\) est dérivable et \(\big(B(f,g)\big)'=\) \(B(f',g)+B(f,g')\).
+
+<b>Composée par le produit scalaire</b> : En particulier, si \(E\) est un espace vectoriel euclidien muni du produit scalaire \(\langle \cdot,\cdot\rangle\), si \(f,g:I\to E\) sont dérivables, alors la fonction
+\(u:I\to \mathbb R,\ t\mapsto \langle f(t),g(t)\rangle\) est dérivable sur \(I\) et 
+\(u'(t)=\) \(\langle f'(t),g(t)\rangle+\langle f(t),g'(t)\rangle\).
+
+<b>Composée</b> : Si \(J\) est un intervalle de \(\mathbb R\), \(\varphi:J\to I\) est dérivable et \(f:I\to\mathbb E\), alors \(f\circ \varphi:J\to\mathbb R\) est dérivable et \((f\circ \varphi)'=\) \(\varphi' \cdot f'\circ \varphi\).
+
+
+
+Dérivées successives
+
+Soit \(f:I\to\mathbb E\) une fonction dérivable.
+ Sa dérivée \(f'\) peut elle-même être dérivable.
+ On appelle
+alors cette dérivée la dérivée seconde de \(f\) et on la note \(f''\).
+ En itérant ce procédé, on peut
+définir la dérivée \(n\)-ième de \(f\), notée \(f^{(n)} \).
+
+On dit que \(f\) est de classe \(C^n\) sur \(I\) si elle admet une dérivée d'ordre \(n\) notée \(f^{(n)} \) et si cette dérivée
+est elle-même continue sur \(I\).
+ On dit que \(f\) est de classe \(C^\infty\) sur \(I\) si elle admet des dérivées successives
+de tout ordre.
+
+La plupart des résultats valables pour la dérivée d'ordre 1 reste valable pour les dérivées d'ordre \(n\).
+ Par exemple :
+
+\(f\) est de classe \(\mathcal C^n\) si et seulement si toutes ses fonctions coordonnées sont de classe \(\mathcal C^n\).
+
+la combinaison linéaire de deux applications de classe \(\mathcal C^n\) est de classe \(\mathcal C^n\).
+ 
+Formule de Leibniz : soit \(f:I\to E\) et \(g:I\to F\) deux applications de classe \(\mathcal C^n\) et soit \(B:E\times F\to G\) une application bilinéaire.
+ 
+Alors \(B(f,g)\) est de classe \(\mathcal C^n\) et 
+\begin{eqnarray*} 
+\big(B(f,g)\big)^{(n)} &=\) \(&\sum_{k=\) \(0} ^n \binom{n} {k} B\big(f^{(n-k)} ,g^{(k)} \big)
+\end{eqnarray*} 
+
+<b>Théorème (inégalité des accroissements finis) :</b> Soit \(f:[a,b]\to E\) de classe \(\mathcal C^1\).
+ Alors 
+\(\|f(b)-f(a)\|\leq (b-a)\sup_{t\in [a,b]} \|f'(t)\|.\)
+
+
+
+Intégration des fonctions à valeurs vectorielles
+On fixe \((e_1,\dots,e_n)\) une base de l'espace vectoriel \(E\).
+
+
+Une application \(f=\) \((f_1,\dots,f_n):[a,b]\to E\) est <b>continue par morceaux</b> si toutes ses applications coordonnées le sont.
+
+Soit \(f=\) \((f_1,\dots,f_n):[a,b]\to E\) une application continue par morceaux.
+ On appelle <b>intégrale</b> de \(a\) à \(b\) de \(f\) le vecteur 
+noté \(\int_a^b f(t)dt\) et défini par
+\(\int_a^b f(t)dt=\) \(\sum_{j=\) \(1} ^n \left(\int_a^b f_j(t)dt\right) e_j.\)
+
+Ce vecteur ne dépend pas de la base \((e_1,\dots,e_n)\) de \(E\) fixée au préalable.
+
+L'intégration vectorielle vérifie les deux propriétés suivantes, bien connues de l'intégration scalaire :
+
+<b>linéarité de l'intégrale</b> : pour toutes fonctions \(f,g:[a,b]\to E\) continues par morceaux et pour tout \(\lambda\in\mathbb R\), 
+\(\int_a^b \big(\lambda f(t)+g(t)\big)dt=\) \(\lambda\int_a^b f(t)dt+\int_a^b g(t)dt.\)
+
+<b>relation de Chasles</b> : pour toute fonction \(f:[a,b]\to E\) continue par morceaux et pour tout \(c\in[a,b]\), on a
+\(\int_a^b f(t)dt=\) \(\int_a^c f(t)dt+\int_c^b f(t)dt.\)
+
+
+<b>Proposition :</b> Pour toute fonction \(f:[a,b]\to E\) continue par morceaux, on a 
+\(\left\|\int_a^b f(t)dt\right\|\leq \int_a^b \|f(t)\|dt.\)
+
+
+<b>Théorème :</b> Soit \(f:[a,b]\to E\) continue par morceaux.
+
+Alors
+\(\frac {b-a} n\sum_{k=\) \(0} ^{n-1} f\left(a+k\frac{b-a} n\right)\to\int_a^b f(t)dt.\)
+
+
+<b>Théorème :</b> Soit \(f:[a,b]\to\mathbb E\) continue.
+ Alors la fonction \(F:[a,b]\to E\), \(x\mapsto \int_a^x f(t)dt\)
+est dérivable, et pour tout \(x\in\mathbb R\), on a \(F'(x)=\) \(f(x)\).
+
+
+
+Formules de Taylor
+
+<b>Formule de Taylor avec reste intégral :</b>
+Soit \(f:[a,b]\to\mathbb E\) une fonction de classe \(\mathcal C^{n+1} \).
+ Alors 
+\(f(b)=\) \(\sum_{k=\) \(0} ^{n} \frac{(b-a)^k} {k!} f^{(k)} (a)+\int_a^b \frac{(b-t)^n} {n!} f^{(n+1)} (t)dt.\)
+
+
+<b>Inégalité de Taylor-Lagrange :</b>
+Soit \(f:[a,b]\to\mathbb E\) une fonction de classe \(\mathcal C^{n+1} \).
+ Alors 
+\(\left| f(b)-\sum_{k=\) \(0} ^{n} \frac{(b-a)^k} {k!} f^{(k)} (a)\right|\leq M_{n+1} \frac{|b-a|^{n+1} } {(n+1)!} \)
+avec
+\(M_{n+1} =\) \(\sup_{t\in [a,b]} \|f^{(n+1)} (t)\|\).
+
+
+<b>Formule de Taylor-Young :</b> Soit \(I\) un intervalle de \(\mathbb R\), \(a\in I\) et \(f:I\to E\) de classe \(\mathcal C^n\).
+ Alors \(f\) admet un développement limité à l'ordre \(n\)
+en \(a\) donné par
+\(f(a+h)=\) \(f(a)+f'(a) h+\dots+\frac{f^{(n)} (a)} {n!} h^n+h^n\veps(h)\)
+où \(\veps:I\to E\) vérifie \(\lim_{h\to 0} \veps(h)=\) \(0_E\).
+
+
+
+Arcs paramétrés
+
+On appelle <b>arc paramétré à valeurs dans \(E\)</b> la donnée d'un couple \((I,f)\) où \(I\) est un intervalle et \(f:I\to E\) est une fonction.
+
+L'arc est dit continue ou de classe \(\mathcal C^k\) si \(f\) l'est.
+
+On appelle <b>support</b> de l'arc \((I,f)\) la partie \(\Gamma\) de \(E\) définie par \(\Gamma=\) \(\{f(t);\ t\in I\} \).
+
+Lorsque \(E=\) \(\mathbb R^2\), on parle d'arc paramétré plan.
+ Le support d'un tel arc est alors une courbe du plan.
+
+On dit que l'arc paramétré \((I,f)\) admet une <b>tangente</b> au point \(f(t_0)\) s'il existe un vecteur \(\vec u_0\) tel que la droite \((f(t)f(t_0))\) admette 
+un vecteur directeur \(\vec u(t)\) qui tend vers \(\vec u_0\) lorsque \(t\) tend vers \(t_0\).
+ Cette condition impose en particulier que \(f(t)\neq f(t_0)\) pour tout \(t\neq t_0\) dans un voisinage de \(t_0\).
+
+En pratique, il suffit de considérer le vecteur directeur normalisé \(\frac{f(t)-f(t_0)} {\|f(t)-f(t_0)\|} \) et d'étudier si ce vecteur admet une limite lorsque \(t\) tend vers \(t_0\).
+
+Un arc paramétré de classe \(\mathcal C^1\) est dit <b>régulier</b> en \(t_0\) si \(f'(t_0)\neq 0\).
+ Il est dit régulier s'il est régulier en chacun de ses points.
+
+<b>Proposition : </b> Soit \((I,f)\) un arc paramétré de classe \(\mathcal C^1\) et soit \(t_0\) un point régulier de \(f\).
+ Alors \((I,f)\) admet une tangente en \(f(t_0)\) dirigée par \(f'(t_0)\).
+ En particulier, si \(E=\) \(\mathbb R^2\) et si on écrit \(f(t)=\) \((x(t),y(t))\), alors l'équation de la tangente au point \(f(t_0)=\) \((x(t_0),y(t_0)\) est
+\(y'(t_0)\big(x-x(t_0)\big)-x'(t_0)\big(y-y(t_0)\big)=\) \(0.\)
+
+
+
