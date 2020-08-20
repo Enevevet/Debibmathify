@@ -36,31 +36,21 @@ Alors \(f\) est intégrable sur \(I\), et on a
 Régularité d'une intégrale à paramètres
 
 <b>Théorème de continuité des intégrales à paramètres :</b>
-Soit \(A\) une partie d'un espace normé de dimension finie, \(I\) un intervalle de \(\mathbb R\) 
-et \(f\) une fonction définie sur \(A\times I\) à valeurs dans \(\mathbb K\).
+Soit \(A\) une partie d'un espace normé de dimension finie, \(I\) un intervalle de \(\mathbb R\) et \(f\) une fonction définie sur \(A\times I\) à valeurs dans \(\mathbb K\).
  On suppose que 
 
-pour tout \(t\in I\), la fonction \(x\mapsto f(x,t)\) est continue sur \(A\);
-pour tout \(x\in A\), la fonction \(t\mapsto f(x,t)\) est continue par morceaux sur \(I\);
-il existe \(g:I\to\mathbb R_+\) continue par morceaux et intégrable telle que, 
-pour tout \(x\in A\) et tout \(t\in I\), 
+pour tout \(t\in I\), la fonction \(x\mapsto f(x,t)\) est continue sur \(A\); pour tout \(x\in A\), la fonction \(t\mapsto f(x,t)\) est continue par morceaux sur \(I\); il existe \(g:I\to\mathbb R_+\) continue par morceaux et intégrable telle que, pour tout \(x\in A\) et tout \(t\in I\), 
 \(|f(x,t)|\leq g(t)\).
 
 Alors la fonction \(F:x\mapsto \int_I f(x,t)dt\) est continue sur \(A\).
 
 
 <b>Théorème de dérivabilité des intégrales à paramètres :</b>
-Soit \(I,J\) deux intervalles de \(\mathbb R\) 
-et \(f\) une fonction définie sur \(J\times I\) à valeurs dans \(\mathbb K\).
+Soit \(I,J\) deux intervalles de \(\mathbb R\) et \(f\) une fonction définie sur \(J\times I\) à valeurs dans \(\mathbb K\).
  On suppose que 
 
-pour tout \(x\in J\), la fonction \(t\mapsto f(x,t)\) est continue par morceaux sur \(I\) et
-intégrable sur \(I\);
-\(f\) admet une dérivée partielle \(\frac{\partial f} {\partial x} \) définie sur \(J\times I\);
-pour tout \(x\in J\), la fonction \(t\mapsto \frac{\partial f} {\partial x} (x,t)\) est continue par morceaux sur \(I\);
-pour tout \(t\in I\), la fonction \(x\mapsto \frac{\partial f} {\partial x} (x,t)\) est continue sur \(J\);
-il existe \(g:I\to\mathbb R_+\) continue par morceaux et intégrable telle que, 
-pour tout \(x\in J\) et tout \(t\in I\), 
+pour tout \(x\in J\), la fonction \(t\mapsto f(x,t)\) est continue par morceaux sur \(I\) et intégrable sur \(I\);
+\(f\) admet une dérivée partielle \(\frac{\partial f} {\partial x} \) définie sur \(J\times I\); pour tout \(x\in J\), la fonction \(t\mapsto \frac{\partial f} {\partial x} (x,t)\) est continue par morceaux sur \(I\); pour tout \(t\in I\), la fonction \(x\mapsto \frac{\partial f} {\partial x} (x,t)\) est continue sur \(J\); il existe \(g:I\to\mathbb R_+\) continue par morceaux et intégrable telle que, pour tout \(x\in J\) et tout \(t\in I\), 
 \(\left|\frac{\partial f} {\partial x} (x,t)\right|\leq g(t)\).
 
 Alors la fonction \(F:x\mapsto \int_I f(x,t)dt\) est de classe \(\mathcal C^1\) sur \(J\) et, pour tout \(x\in J\), \(F'(x)=\) \(\int_I \frac{\partial f} {\partial x} (x,t)dt\).
@@ -70,12 +60,7 @@ Alors la fonction \(F:x\mapsto \int_I f(x,t)dt\) est de classe \(\mathcal C^1\) 
 Soit \(I,J\) deux intervalles de \(\mathbb R\), \(f\) une fonction définie sur \(J\times I\) à valeurs dans \(\mathbb K\) et \(k\geq 1\).
  On suppose que 
 
-\(f\) admet des dérivées partielles par rapport à la première variable \(\frac{\partial^j f} {\partial x^j} \) définies sur \(J\times I\) pour tout \(j\leq k\);
-pour tout \(x\in J\) et tout \(0\leq j\leq k\), la fonction \(t\mapsto \frac{\partial^j f} {\partial x^j} (x,t)\) est continue par morceaux sur \(I\) et
-intégrable sur \(I\);
-pour tout \(t\in I\), la fonction \(x\mapsto \frac{\partial^k f} {\partial x^k} (x,t)\) est continue sur \(J\);
-il existe \(g:I\to\mathbb R_+\) continue par morceaux et intégrable telle que, 
-pour tout \(x\in J\) et tout \(t\in I\), 
+\(f\) admet des dérivées partielles par rapport à la première variable \(\frac{\partial^j f} {\partial x^j} \) définies sur \(J\times I\) pour tout \(j\leq k\); pour tout \(x\in J\) et tout \(0\leq j\leq k\), la fonction \(t\mapsto \frac{\partial^j f} {\partial x^j} (x,t)\) est continue par morceaux sur \(I\) et intégrable sur \(I\); pour tout \(t\in I\), la fonction \(x\mapsto \frac{\partial^k f} {\partial x^k} (x,t)\) est continue sur \(J\); il existe \(g:I\to\mathbb R_+\) continue par morceaux et intégrable telle que, pour tout \(x\in J\) et tout \(t\in I\), 
 \(\left|\frac{\partial^k f} {\partial x^k} (x,t)\right|\leq g(t)\).
 
 Alors la fonction \(F:x\mapsto \int_I f(x,t)dt\) est de classe \(\mathcal C^k\) sur \(J\) et, pour tout \(x\in J\) et tout \(0\leq j\leq k\), 

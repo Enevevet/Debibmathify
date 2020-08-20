@@ -15,8 +15,7 @@ Dans le cas de la convergence, on note
 Le vecteur \( \sum_{k=\) \(0} ^{+\infty} u_n\) de \(E\) s'appelle la somme de la série \(\sum u_k\).
  Toujours dans le cas de la convergence, le <b>reste</b> de la série d'ordre \(n\) est défini par 
 \(R_n=\) \(\sum_{k=\) \(n+1} ^{+\infty} u_k\).
-<b>Proposition :</b> Si la série \(\sum_n u_n\) converge, 
-alors  \((\|u_n\|)\) tend vers 0.
+<b>Proposition :</b> Si la série \(\sum_n u_n\) converge, alors \((\|u_n\|)\) tend vers 0.
 
 <b>Lien suite série :</b> Si on pose, pour \(n\geq 0\), \(v_n=\) \(u_{n+1} -u_n\), alors
 \(\sum_{k=\) \(0} ^n v_k=\) \(u_{n+1} -u_0\).
@@ -24,14 +23,12 @@ En particulier, la suite \((u_n)\) converge si et seulement si la série \(\sum_
 
 
 
-<b>Théorème :</b> Si la série (de réels positifs) \(\sum_n \|u_n\|\) converge, alors
-la série \(\sum_n u_n\) converge.
+<b>Théorème :</b> Si la série (de réels positifs) \(\sum_n \|u_n\|\) converge, alors la série \(\sum_n u_n\) converge.
  On dit alors que la série est <b>absolument convergente.
 </b>
 
 Remarque : si on a fixé une base \((e_1,\dots,e_d)\) de \(E\), chaque \(u_n\) peut s'écrire \(u_n=\) \(u_n(1)e_1+\dots +u_n(d)e_d\).
- La convergence
-de \(\sum_n u_n\) est alors équivalente à la convergence de toutes les séries de nombres complexes \(\sum_n u_n(k)\), \(k=\) \(1,\dots,d\).
+ La convergence de \(\sum_n u_n\) est alors équivalente à la convergence de toutes les séries de nombres complexes \(\sum_n u_n(k)\), \(k=\) \(1,\dots,d\).
 
 
 
@@ -54,31 +51,23 @@ Séries à termes positifs
 
 
 <b>domination :</b> Si \(u_n=\) \(_{+\infty} O(v_n)\), alors :
-
-si \(\sum_n u_n\) diverge, alors \(\sum_n v_n\) diverge et on a \(\sum_{k=\) \(1} ^{n} u_k =\) \(_{+\infty} O\left( \sum_{k=\) \(1} ^{n} v_k\right)\) (domination des sommes partielles).
-
-si \(\sum_n v_n\) converge, alors \(\sum_n u_n\) converge et on a \(\sum_{k=\) \(n+1} ^{+\infty} u_k =\) \(_{+\infty} O\left( \sum_{k=\) \(n+1} ^{+\infty} v_k\right)\) (domination des restes).
+ si \(\sum_n u_n\) diverge, alors \(\sum_n v_n\) diverge et on a \(\sum_{k=\) \(1} ^{n} u_k =\) \(_{+\infty} O\left( \sum_{k=\) \(1} ^{n} v_k\right)\) (domination des sommes partielles).
+ si \(\sum_n v_n\) converge, alors \(\sum_n u_n\) converge et on a \(\sum_{k=\) \(n+1} ^{+\infty} u_k =\) \(_{+\infty} O\left( \sum_{k=\) \(n+1} ^{+\infty} v_k\right)\) (domination des restes).
 
 
 <b>négligeabilité :</b> Si \(u_n=\) \(_{+\infty} o(v_n)\), alors :
-
-si \(\sum_n u_n\) diverge, alors \(\sum_n v_n\) diverge et on a \(\sum_{k=\) \(1} ^{n} u_k =\) \(_{+\infty} o\left( \sum_{k=\) \(1} ^{n} v_k\right)\) (négligeabilité des sommes partielles).
-
-si \(\sum_n v_n\) converge, alors \(\sum_n u_n\) converge et on a \(\sum_{k=\) \(n+1} ^{+\infty} u_k =\) \(_{+\infty} o\left( \sum_{k=\) \(n+1} ^{+\infty} v_k\right)\) (négligeabilité des restes).
+ si \(\sum_n u_n\) diverge, alors \(\sum_n v_n\) diverge et on a \(\sum_{k=\) \(1} ^{n} u_k =\) \(_{+\infty} o\left( \sum_{k=\) \(1} ^{n} v_k\right)\) (négligeabilité des sommes partielles).
+ si \(\sum_n v_n\) converge, alors \(\sum_n u_n\) converge et on a \(\sum_{k=\) \(n+1} ^{+\infty} u_k =\) \(_{+\infty} o\left( \sum_{k=\) \(n+1} ^{+\infty} v_k\right)\) (négligeabilité des restes).
 
 
 
 Pour appliquer le théorème précédent, on a besoin de séries de référence.
- On rappelle en particulier que \(\sum_n \frac1{n^\alpha} \) converge
-si et seulement si \(\alpha>1\).
+ On rappelle en particulier que \(\sum_n \frac1{n^\alpha} \) converge si et seulement si \(\alpha>1\).
 
 <b>Théorème (règle de d'Alembert) :</b> Soit \((u_n)\) une suite de réels positifs.
  On suppose que \(\frac{u_{n+1} } {u_n} \to\ell\).
  Alors :
-
-si \(\ell<1\), la série \(\sum_n u_n\) converge;
-si \(\ell>1\), la série \(\sum_n u_n\) diverge;
-si \(\ell=\) \(1\), on ne peut pas conclure.
+ si \(\ell<1\), la série \(\sum_n u_n\) converge; si \(\ell>1\), la série \(\sum_n u_n\) diverge; si \(\ell=\) \(1\), on ne peut pas conclure.
 
 
 
@@ -89,8 +78,7 @@ Soit \(f:[0,+\infty[\to\mathbb R\).
 
 
 si \(f\) est croissante, alors pour tout \(n\geq 1\), 
-\(\int_{n-1} ^n f(t)dt\leq f(n)\leq \int_n^{n+1} f(t)dt\).
-si \(f\) est décroissante, alors pour tout \(n\geq 1\), 
+\(\int_{n-1} ^n f(t)dt\leq f(n)\leq \int_n^{n+1} f(t)dt\). si \(f\) est décroissante, alors pour tout \(n\geq 1\), 
 \(\int_{n} ^{n+1} f(t)dt\leq f(n)\leq \int_{n-1} ^{n} f(t)dt\).
 
 En sommant ces inégalités, on obtient des encadrements des sommes partielles et des restes des séries.
@@ -106,8 +94,7 @@ En particulier, sous les hypothèses précédentes, la série \(\sum_n f(n)\) et
 
 Critère des séries alternées
 
-<b>Critère des séries alternées :</b> Soit \((a_n)\) une suite de réels positifs, décroissante, et
-tendant vers \(0\).
+<b>Critère des séries alternées :</b> Soit \((a_n)\) une suite de réels positifs, décroissante, et tendant vers \(0\).
  Alors la série
 \(\sum_n (-1)^n a_n\) converge.
  De plus, si on note \(S\) sa somme, \(S_n=\) \(\sum_{k=\) \(0} ^n (-1)^k a_k\) la somme partielle d'ordre \(n\) et \(R_n=\) \(\sum_{k=\) \(n+1} ^{+\infty} 

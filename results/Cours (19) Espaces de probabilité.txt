@@ -17,9 +17,7 @@ La tribu triviale \(\{\varnothing,\Omega\} \) est une tribu, l'ensemble des part
 Soit \(\mathcal T\) une tribu.
  Alors 
 
-\(\varnothing\in\mathcal T\);
-toute réunion finie ou dénombrable d'éléments de \(\mathcal T\) est un élément de \(\mathcal T\);
-toute intersection finie ou dénombrable d'éléments de \(\mathcal T\) est un élément de \(\mathcal T\).
+\(\varnothing\in\mathcal T\); toute réunion finie ou dénombrable d'éléments de \(\mathcal T\) est un élément de \(\mathcal T\); toute intersection finie ou dénombrable d'éléments de \(\mathcal T\) est un élément de \(\mathcal T\).
 
 
 Si \(\mathcal T\) est une tribu, le couple \((\Omega,\mathcal T)\) s'appelle <b>espace probabilisable</b>.
@@ -28,8 +26,7 @@ Si \(\mathcal T\) est une tribu, le couple \((\Omega,\mathcal T)\) s'appelle <b>
 
 Deux événements \(A\) et \(B\) sont incompatibles si \(A\cap B=\) \(\varnothing\).
 
-On appelle <b>système complet d'événements</b> la donnée
-d'une famille finie ou dénombrable d'événements \((A_i)_{i\in I} \) deux à deux incompatibles et dont la réunion est l'événement certain \(\Omega\).
+On appelle <b>système complet d'événements</b> la donnée d'une famille finie ou dénombrable d'événements \((A_i)_{i\in I} \) deux à deux incompatibles et dont la réunion est l'événement certain \(\Omega\).
 
 
 
@@ -104,7 +101,7 @@ En particulier, on retrouve la formule des probabilités totales pour un nombre 
  Soit \(B\) un événement.
  Alors :\(P(B)=\) \(\sum_{i=\) \(1} ^n P(A_i)P(B|A_i)\).
 
-<b>Formule de Bayes  :</b> Si \(I\) est un ensemble fini ou dénombrable, et si \((A_i)\) est un système complet d'événéments dont aucun n'est négligeable, alors pour tout événement \(B\) non négligeable et pour tout \(k\in I\), on a :\(P(A_k|B)=\) \(\frac{P(A_k)P(B|A_k)} {\sum_{i\in I} P(A_i)P(B|A_i)} \).
+<b>Formule de Bayes :</b> Si \(I\) est un ensemble fini ou dénombrable, et si \((A_i)\) est un système complet d'événéments dont aucun n'est négligeable, alors pour tout événement \(B\) non négligeable et pour tout \(k\in I\), on a :\(P(A_k|B)=\) \(\frac{P(A_k)P(B|A_k)} {\sum_{i\in I} P(A_i)P(B|A_i)} \).
 
 En particulier, on retrouve la formule de Bayes pour deux événements : si \(A\) et \(B\) sont deux événements de probabilité non nulle, alors
 \(P(A|B)=\) \(\frac{P(B|A)P(A)} {P(B)} \).

@@ -7,22 +7,18 @@ Soit \(u,v\in\mathcal L(E)\) et soit \(A,B\in\mathcal M_n(\mathbb K)\).
 
 
 On dit qu'un sous-espace \(F\) de \(E\) est <b>stable</b> par \(u\) si \(u(F)\subset F\).
- On peut alors
-définir un endomorphisme \(u_F\) de \(F\) en posant \(u_F(x)=\) \(u(x)\) pour tout \(x\in F\).
- \(u_F\) s'appelle l'<b>endomorphisme induit</b>
-par \(u\) sur \(F\).
+ On peut alors définir un endomorphisme \(u_F\) de \(F\) en posant \(u_F(x)=\) \(u(x)\) pour tout \(x\in F\).
+ \(u_F\) s'appelle l'<b>endomorphisme induit</b> par \(u\) sur \(F\).
  
 <b>Proposition :</b> si \(u\) et \(v\) commutent, alors \(\textrm{Im} (u)\) et \(\ker(u)\) sont stables par \(v\).
 
 Soit \(F\) un sous-espace vectoriel de \(E\) et soit \(\mathcal B\) une base dont les premiers vecteurs forment une base de \(F\).
- Alors
-la matrice de \(u\) dans cette base a la forme
+ Alors la matrice de \(u\) dans cette base a la forme
 \(\left(\begin{array} {c|c} 
 A&B\\
 \hline
 0&C
-\end{array} \right)\)
-si et seulement si \(F\) est stable par \(u\).
+\end{array} \right)\) si et seulement si \(F\) est stable par \(u\).
 
 
 &Eacute;léments propres d'un endomorphisme et d'une matrice carrée
@@ -36,8 +32,7 @@ Si \(\lambda\in\mathbb K\) est une valeur propre de \(u\), le <b>sous-espace pro
 L'ensemble des valeurs propres de \(u\) s'appelle le <b>spectre</b> de \(u\) et est noté \(\textrm{Sp} (u)\).
 
 
-<b>Théorème :</b> Si \(\lambda_1,\dots,\lambda_p\) sont des valeurs propres distinctes de \(u\), alors les sous-espaces propres 
-associés \(E_{\lambda_1} ,\dots,E_{\lambda_p} \) sont en somme directe.
+<b>Théorème :</b> Si \(\lambda_1,\dots,\lambda_p\) sont des valeurs propres distinctes de \(u\), alors les sous-espaces propres associés \(E_{\lambda_1} ,\dots,E_{\lambda_p} \) sont en somme directe.
 
 
 <b>Corollaire :</b> Des vecteurs propres associés à des valeurs propres distinctes forment toujours une famille libre.
@@ -48,8 +43,7 @@ associés \(E_{\lambda_1} ,\dots,E_{\lambda_p} \) sont en somme directe.
 
 La matrice \(A\in\mathcal M_n(\mathbb K)\) définit un endomorphisme de \(\mathbb K^n\) par \(X\mapsto AX\).
 
-On définit valeurs propres, vecteurs propres et espaces propres de \(A\) comme les valeurs propres, vecteurs propres et espaces propres
-de l'endomorphisme de \(\mathbb K^n\) défini par \(X\mapsto AX\).
+On définit valeurs propres, vecteurs propres et espaces propres de \(A\) comme les valeurs propres, vecteurs propres et espaces propres de l'endomorphisme de \(\mathbb K^n\) défini par \(X\mapsto AX\).
  En particulier, \(X\) est un vecteur propre de \(A\) pour la valeur propre \(\lambda\) si et seulement si
 \(AX=\) \(\lambda X\).
 
@@ -67,8 +61,7 @@ Polynôme caractéristique
 On appelle <b>polynôme caractéristique</b> de \(A\) le polynôme de degré \(n\) 
 \(\chi_A(X)=\) \(\det(XI_n-A)\).
 
-En particulier, si \(A\) est une matrice triangulaire (inférieure ou supérieure) dont les coefficients diagonaux
-sont \(\lambda_1,\dots,\lambda_n\), alors le polynôme caractéristique de \(A\) est 
+En particulier, si \(A\) est une matrice triangulaire (inférieure ou supérieure) dont les coefficients diagonaux sont \(\lambda_1,\dots,\lambda_n\), alors le polynôme caractéristique de \(A\) est 
 \(\chi_A(X)=\) \((X-\lambda_1)\cdots (X-\lambda_n)\).
 <b>Proposition :</b> Deux matrices semblables ont le même polynôme caractéristique.
 
@@ -77,13 +70,11 @@ On appelle <b>polynôme caractéristique</b> de \(u\) le polynôme caractéristi
  On le note \(\chi_u(X)\).
 
 <b>Proposition :</b> \(\chi_A\) est un polynôme unitaire, 
-\(\chi_A(X)=\) \(X^{n} +a_{n-1} X^{n-1} +\dots+a_0,\)
-avec \(a_{n-1} =\) \(-\textrm{tr} (A)\) et \(a_0=\) \((-1)^n\det(A)\).
+\(\chi_A(X)=\) \(X^{n} +a_{n-1} X^{n-1} +\dots+a_0,\) avec \(a_{n-1} =\) \(-\textrm{tr} (A)\) et \(a_0=\) \((-1)^n\det(A)\).
 
 
 <b>Théorème : </b>Les racines du polynôme caractéristique de \(A\) (resp.
- \(u\)) sont
-exactement les valeurs propres de \(A\) (resp.
+ \(u\)) sont exactement les valeurs propres de \(A\) (resp.
  \(u\)).
 
 On appelle <b>multiplicité</b> de la valeur propre \(\lambda\) sa multiplicité comme racine du polynôme caractéristique.
@@ -105,13 +96,11 @@ On dit que \(u\) est <b>diagonalisable</b> s'il existe une base de \(E\) dans la
  
 Une telle base est donc constituée de vecteurs propres pour \(u\).
 
- <b>Proposition : </b> Un endomorphisme est diagonalisable si et seulement si 
-la somme de ses sous-espaces propres est égale à \(E\).
+ <b>Proposition : </b> Un endomorphisme est diagonalisable si et seulement si la somme de ses sous-espaces propres est égale à \(E\).
 
 <b>Corollaire : </b>Un projecteur et une symétrie sont diagonalisables.
 
- <b>Théorème : </b>\(u\) est diagonalisable si et seulement si \(\chi_u\) est scindé et si, 
-pour toute valeur propre \(\lambda\), on a \(\dim(E_\lambda)=\) \(\textrm{mult} (\lambda)\).
+ <b>Théorème : </b>\(u\) est diagonalisable si et seulement si \(\chi_u\) est scindé et si, pour toute valeur propre \(\lambda\), on a \(\dim(E_\lambda)=\) \(\textrm{mult} (\lambda)\).
  
  <b>Corollaire : </b>Un endomorphisme de \(E\) admettant \(n\) valeurs propres distinctes est diagonalisable.
 
@@ -148,8 +137,7 @@ On dit que \(u\) est <b>nilpotent</b> s'il existe un entier \(p\) tel que \(u^p=
 
 <b>Théorème : </b>Les assertions suivantes sont équivalentes :
 \(u\) est nilpotent;
-\(\chi_u(X)=\) \(X^n\);
-il existe une base de \(E\) dans laquelle la matrice de \(u\) est triangulaire supérieure avec des zéros sur la diagonale.
+\(\chi_u(X)=\) \(X^n\); il existe une base de \(E\) dans laquelle la matrice de \(u\) est triangulaire supérieure avec des zéros sur la diagonale.
 
 
 <b>Corollaire : </b>L'indice de nilpotence de \(u\) est majoré par \(n\).

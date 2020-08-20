@@ -6,18 +6,15 @@ Intégrale impropre
 
 
 Soit \(f:[a,+\infty[\to \mathbb K\) continue par morceaux.
- On dit que l'intégrale \(\int_a^{+\infty} f\) est <b>convergente</b> si la fonction \(x\mapsto \int_a^x f(t)dt\) admet une limite finie
-lorsque \(x\) tend vers \(+\infty\).
+ On dit que l'intégrale \(\int_a^{+\infty} f\) est <b>convergente</b> si la fonction \(x\mapsto \int_a^x f(t)dt\) admet une limite finie lorsque \(x\) tend vers \(+\infty\).
  Dans ce cas, on note \(\int_a^{+\infty} f(t)dt\) ou \(\int_a^{+\infty} f\) cette limite.
 
 Soit \(f:[a,b[\to\mathbb K\) continue par morceaux avec \(a,b\in\mathbb R\).
- On dit que l'intégrale \(\int_a^b f\) est <b>convergente</b> si la fonction \(x\mapsto \int_a^x f(t)dt\) admet une limite finie
-lorsque \(x\) tend vers \(b\).
+ On dit que l'intégrale \(\int_a^b f\) est <b>convergente</b> si la fonction \(x\mapsto \int_a^x f(t)dt\) admet une limite finie lorsque \(x\) tend vers \(b\).
  Dans ce cas, on note \(\int_a^{b} f(t)dt\) ou \(\int_a^{b} f\) cette limite.
 
 Soit \(f:]a,b[\to\mathbb K\) continue par morceaux avec \(a,b\in\mathbb R\cup\{\pm\infty\} \).
- On dit que l'intégrale \(\int_a^b f\) est <b>convergente</b> si, pour un (ou de façon équivalente pour tout) \(c\in ]a,b[\), la fonction \(x\mapsto \int_c^x f(t)dt\) admet une limite finie
-lorsque \(x\) tend vers \(b\) et la fonction \(x\mapsto \int_x^c f(t)dt\) admet une limite finie lorsque \(x\) tend vers \(a\).
+ On dit que l'intégrale \(\int_a^b f\) est <b>convergente</b> si, pour un (ou de façon équivalente pour tout) \(c\in ]a,b[\), la fonction \(x\mapsto \int_c^x f(t)dt\) admet une limite finie lorsque \(x\) tend vers \(b\) et la fonction \(x\mapsto \int_x^c f(t)dt\) admet une limite finie lorsque \(x\) tend vers \(a\).
  Dans ce cas, on note \(\int_a^{b} f(t)dt\) ou \(\int_a^{b} f\) la somme de ces deux limites :\(\int_a^b f=\) \(\lim_{x\to a} \int_x^c f+\lim_{y\to b} \int_c^yf\).
 Dans la suite, on considèrera \(I=\) \((a,b)\) un intervalle de \(\mathbb R\) ouvert ou semi-ouvert et \(f,g:I\to\mathbb R\) deux fonctions continues par morceaux.
 
@@ -31,8 +28,7 @@ Les propriétés usuelles sont vérifiées :
 \(\int_a^b f=\) \(\int_a^c f+\int_c^b f\).
 
 
-<b>Théorème (cas des fonctions positives) :</b> Si \(f:[a,b[\to\mathbb R\) est positive, alors \(\int_a^{b} f\) converge si et 
-seulement si la fonction \(x\mapsto \int_a^x f(t)dt\) est majorée sur \([a,b[\).
+<b>Théorème (cas des fonctions positives) :</b> Si \(f:[a,b[\to\mathbb R\) est positive, alors \(\int_a^{b} f\) converge si et seulement si la fonction \(x\mapsto \int_a^x f(t)dt\) est majorée sur \([a,b[\).
  
 <b>Théorème (intégrales de Riemann) :</b>
 
@@ -44,13 +40,10 @@ L'intégrale \(\int_a^b \frac{dx} {(x-a)^\alpha} \) est convergente si et seulem
 
 
 <b>Théorème (changement de variables) :</b> 
-Soit \(f\) une fonction continue sur \(]a,b[\) et \(\varphi :]\alpha,\beta[\to ]a,b[\) bijective, 
-strictement croissante et de classe \(\mathcal C^1\).
- Les intégrales \(\int_a^b f (t)dt\) et \(\int_\alpha^\beta f\circ\varphi(u)\varphi'(u)du\) 
-sont de même nature et égales en cas de convergence.
+Soit \(f\) une fonction continue sur \(]a,b[\) et \(\varphi :]\alpha,\beta[\to ]a,b[\) bijective, strictement croissante et de classe \(\mathcal C^1\).
+ Les intégrales \(\int_a^b f (t)dt\) et \(\int_\alpha^\beta f\circ\varphi(u)\varphi'(u)du\) sont de même nature et égales en cas de convergence.
 
-<b>Théorème (intégration par parties) :</b> Soient \(f,g:]a,b[\to\mathbb R\) deux fonctions de classe \(\mathcal C^1\) telles
-que \(\lim_{t\to a} f(t)g(t)\) et \(\lim_{t\to b} f(t)g(t)\) existent.
+<b>Théorème (intégration par parties) :</b> Soient \(f,g:]a,b[\to\mathbb R\) deux fonctions de classe \(\mathcal C^1\) telles que \(\lim_{t\to a} f(t)g(t)\) et \(\lim_{t\to b} f(t)g(t)\) existent.
  Alors les intégrales \(\int_a^b f(t)g'(t)dt\) et \(\int_a^b f'(t)g(t)dt\) sont de même nature.
 
 Lorsqu'elles sont convergentes, on a 
@@ -70,15 +63,13 @@ Si \(f\) et \(g\) sont intégrables sur \(I\), alors \(f+g\) est intégrable sur
 \(\int_I |f+g|\leq \int_I |f|+\int_I |g|\).
 Si \(f\) est continue sur \(I\), intégrable et positive, alors 
 \(\int_I |f(t)|dt=\) \(0\implies f\equiv 0\).
-Les deux propriétés précédentes entrainent que, si on note \(\mathcal E(I)\) l'ensemble des fonctions continues et intégrables de \(I\) dans \(\mathbb K\),
-alors \(\|f\|_1=\) \(\int_I |f(t)|dt\) est une norme sur \(\mathcal E(I)\).
+Les deux propriétés précédentes entrainent que, si on note \(\mathcal E(I)\) l'ensemble des fonctions continues et intégrables de \(I\) dans \(\mathbb K\), alors \(\|f\|_1=\) \(\int_I |f(t)|dt\) est une norme sur \(\mathcal E(I)\).
 
 <b>Théorème (critères d'intégrabilité par comparaison) :</b>
 Soit \(I=\) \([a,b[\) et \(f,g:I\to\mathbb R\) continues par morceaux.
 
 
-si \(0\leq f\leq g\) alors l’intégrabilité de \(g\) sur \(I\) implique celle de \(f\);
-si \(f(x)\sim_b g(x)\) et si \(f\) garde un signe constant au voisinage de \(b\), l'intégrabilité de \(g\) sur \(I\) est équivalente à celle de \(f\).
+si \(0\leq f\leq g\) alors l’intégrabilité de \(g\) sur \(I\) implique celle de \(f\); si \(f(x)\sim_b g(x)\) et si \(f\) garde un signe constant au voisinage de \(b\), l'intégrabilité de \(g\) sur \(I\) est équivalente à celle de \(f\).
 
 
 
@@ -101,24 +92,18 @@ Soit \(I=\) \([a,b[\) et \(f,g:I\to\mathbb R\) continue par morceaux.
 
 
 <span class=\) \(grastheo>équivalence :</span> Si \(f\sim_b g\) avec \(f,g\geq 0\), alors :
-
-si \(\int_a^b g(t)dt\) diverge, alors \(\int_a^b f(t)dt\) diverge et on a \(\int_a^x f(t)dt\sim_b \int_a^x g(t)dt\) (équivalence des sommes partielles).
-
-si \(\int_a^b g(t)dt\) converge, alors \(\int_a^b f(t)dt\) converge et on a \(\int_x^b f(t)dt\sim_b \int_x^b g(t)dt\) (équivalence des restes).
+ si \(\int_a^b g(t)dt\) diverge, alors \(\int_a^b f(t)dt\) diverge et on a \(\int_a^x f(t)dt\sim_b \int_a^x g(t)dt\) (équivalence des sommes partielles).
+ si \(\int_a^b g(t)dt\) converge, alors \(\int_a^b f(t)dt\) converge et on a \(\int_x^b f(t)dt\sim_b \int_x^b g(t)dt\) (équivalence des restes).
 
 
 <b>domination :</b> Si \(f=\) \(_bO(g)\) avec \(f,g\geq 0\), alors :
-
-si \(\int_a^b f(t)dt\) diverge, alors \(\int_a^b g(t)dt\) diverge et on a \(\int_a^x f(t)dt=\) \(_b O\left( \int_a^x g(t)dt\right)\) (domination des sommes partielles).
-
-si \(\int_a^b g(t)dt\) converge, alors \(\int_a^b f(t)dt\) converge et on a \(\int_x^b f(t)dt=\) \(_b O\left(\int_x^b g(t)dt\right)\) (domination des restes).
+ si \(\int_a^b f(t)dt\) diverge, alors \(\int_a^b g(t)dt\) diverge et on a \(\int_a^x f(t)dt=\) \(_b O\left( \int_a^x g(t)dt\right)\) (domination des sommes partielles).
+ si \(\int_a^b g(t)dt\) converge, alors \(\int_a^b f(t)dt\) converge et on a \(\int_x^b f(t)dt=\) \(_b O\left(\int_x^b g(t)dt\right)\) (domination des restes).
 
 
 <b>négligeabilité :</b> Si \(f=\) \(_b o(g)\) avec \(f,g\geq 0\), alors :
-
-si \(\int_a^b f(t)dt\) diverge, alors \(\int_a^b g(t)dt\) diverge et on a \(\int_a^x f(t)dt=\) \(_b o\left( \int_a^x g(t)dt\right)\) (négligeabilité des sommes partielles).
-
-si \(\int_a^b g(t)dt\) converge, alors \(\int_a^b f(t)dt\) converge et on a \(\int_x^b f(t)dt=\) \(_b o\left( \int_x^b g(t)dt\right)\) (négligeabilité des restes).
+ si \(\int_a^b f(t)dt\) diverge, alors \(\int_a^b g(t)dt\) diverge et on a \(\int_a^x f(t)dt=\) \(_b o\left( \int_a^x g(t)dt\right)\) (négligeabilité des sommes partielles).
+ si \(\int_a^b g(t)dt\) converge, alors \(\int_a^b f(t)dt\) converge et on a \(\int_x^b f(t)dt=\) \(_b o\left( \int_x^b g(t)dt\right)\) (négligeabilité des restes).
 
 
 

@@ -12,28 +12,21 @@ On appelle <b>anneau</b> la donnée d'un ensemble \(A\) et de deux lois de compo
 Lorsque la loi \(\times\) est commutative, on dit que l'anneau est commutatif.
  
 Dans un anneau \(A\), tous les éléments \(a\in A\) n'admettent pas forcément d'inverse pour la loi \(\times\).
- Lorsque c'est le cas,
-on dit que \(a\) est <b>inversible</b> ou que c'est une <b>unité</b> de \(A\), et on note
-son inverse \(a^{-1} \).
+ Lorsque c'est le cas, on dit que \(a\) est <b>inversible</b> ou que c'est une <b>unité</b> de \(A\), et on note son inverse \(a^{-1} \).
 
 Si \(A\) et \(B\) sont deux anneaux, on munit \(A\times B\) d'une structure d'anneau en posant \((a,b)+ (a',b')=\) \((a+a',b+b')\) et
 \((a,b) \times (a',b')=\) \((a\times a',b\times b')\).
 
-Si \(A\) est un anneau et \(B\) est une partie de \(A\), on dit que \(B\) est un <b>sous-anneau</b> de \(A\) si, muni des lois induites par \(A\),
-c'est lui-même un anneau.
+Si \(A\) est un anneau et \(B\) est une partie de \(A\), on dit que \(B\) est un <b>sous-anneau</b> de \(A\) si, muni des lois induites par \(A\), c'est lui-même un anneau.
  
 <b>Proposition (caractérisation des sous-anneaux) :</b>
 Une partie \(B\) de l'anneau \(A\) est un sous-anneau de \(A\) si et seulement si :
-\(1_A\in B\);
-pour tous \(a,b\in B\), \(a-b\in B\);
-pour tous \(a,b\in B\), \(a\times b\in B\).
+\(1_A\in B\); pour tous \(a,b\in B\), \(a-b\in B\); pour tous \(a,b\in B\), \(a\times b\in B\).
 
 
 Dans un anneau, on peut continuer à appliquer les identités remarquables pourvu que les éléments auxquels on les applique commutent.
- Par exemple,
-si \(a\times b=\) \(b\times a\), la formule du binôme de Newton
-\((a+b)^n=\) \(\sum_{k=\) \(0} ^n \binom nk a^k b^{n-k} \)
-est vraie.
+ Par exemple, si \(a\times b=\) \(b\times a\), la formule du binôme de Newton
+\((a+b)^n=\) \(\sum_{k=\) \(0} ^n \binom nk a^k b^{n-k} \) est vraie.
 
 Soient \(A,B\) deux anneaux.
  Une application \(f:A\to B\) est un morphisme d'anneaux si les conditions suivantes sont vérifiées : 
@@ -53,10 +46,7 @@ Si \(K\) est un corps, une partie \(L\) de \(K\) est un <b>sous-corps</b> de \(K
 
 Autrement dit, \(L\) est un sous-corps de \(K\) si et seulement si 
 
-\(1_K\in L\);
-pour tous \(a,b\in L\), \(a-b\in L\);
-pour tous \(a,b\in L\), \(a\times b\in L\);
-pour tout \(a\in L\) non-nul, on a \(a^{-1} \in L\).
+\(1_K\in L\); pour tous \(a,b\in L\), \(a-b\in L\); pour tous \(a,b\in L\), \(a\times b\in L\); pour tout \(a\in L\) non-nul, on a \(a^{-1} \in L\).
 
 
 
@@ -75,8 +65,7 @@ Le noyau d'un morphisme d'anneaux est un idéal.
 
 
 Si \(x\) est un élément de \(A\), alors \(xA=\) \(\{xa;\ a\in A\} \) est un idéal de \(A\) et c'est le plus petit idéal contenant \(x\).
- On l'appelle
-idéal engendré par \(x\).
+ On l'appelle idéal engendré par \(x\).
 
 Si \(A\) est intègre et \(x,y\in A\), on dit que \(x\) divise \(y\) si et seulement si il existe \(c\in A\) tel que \(cx=\) \(y\).
 
@@ -104,8 +93,7 @@ On a en particulier \(\mathbb Z/n\mathbb Z=\) \(\{\bar 0,\bar 1,\dots,\overline 
 
 <b>Corollaire :</b> \((\mathbb Z/n\mathbb Z,+,\times)\) est un corps si et seulement si \(n\) est premier.
 
-<b>Théorème chinois :</b> Si \(n,m\geq 2\) sont premiers entre eux, alors 
-l'anneau produit \(\mathbb Z/n\mathbb Z\times \mathbb Z/m\mathbb Z\) est isomorphe à l'anneau \(\mathbb Z/nm\mathbb Z\).
+<b>Théorème chinois :</b> Si \(n,m\geq 2\) sont premiers entre eux, alors l'anneau produit \(\mathbb Z/n\mathbb Z\times \mathbb Z/m\mathbb Z\) est isomorphe à l'anneau \(\mathbb Z/nm\mathbb Z\).
 
 On appelle <b>indicatrice d'Euler</b> et on note \(\varphi(n)\) le nombre d'éléments inversibles dans l'anneau \(\mathbb Z/n\mathbb Z\).
 
@@ -144,12 +132,10 @@ On dit que \(A\) et \(B\) sont premiers entre eux si \(A\wedge B=\) \(1\).
 On peut généraliser la définition du pgcd à un nombre fini de polynômes \(P_1,\dots,P_r\) : le pgcd de ces polynômes est l'unique polynôme \(D\) tel que 
 \((D)\) est égal à l'idéal \(\{A_1P_1+\dots+A_rP_r;\ A_1,\dots,A_r\in\mathbb K[X]\} \).
 
-Un polynôme \(P\in\mathbb K[X]\) est <b>irréductible</b> s'il est de degré supérieur ou égal à 1 et si tous ses diviseurs
-sont les polynômes constants ou les polynômes associés à \(P\) (c'est-à-dire les polynômes qui s'écrivent \(\lambda P\) avec \(\lambda\in\mathbb K\)).
+Un polynôme \(P\in\mathbb K[X]\) est <b>irréductible</b> s'il est de degré supérieur ou égal à 1 et si tous ses diviseurs sont les polynômes constants ou les polynômes associés à \(P\) (c'est-à-dire les polynômes qui s'écrivent \(\lambda P\) avec \(\lambda\in\mathbb K\)).
 
 <b>Théorème : </b> Tout polynôme \(P\in\mathbb K[X]\) s'écrit 
-\(P=\) \(\lambda P_1\cdots P_r\)
-où \(\lambda\in\mathbb K\) et où les \(P_i\) sont des polynômes irréductibles et unitaires de \(\mathbb K[X]\).
+\(P=\) \(\lambda P_1\cdots P_r\) où \(\lambda\in\mathbb K\) et où les \(P_i\) sont des polynômes irréductibles et unitaires de \(\mathbb K[X]\).
  De plus, cette décomposition est unique 
 à l'ordre des termes prêt.
 

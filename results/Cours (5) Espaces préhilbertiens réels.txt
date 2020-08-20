@@ -21,18 +21,15 @@ On suppose dans cette partie que \(F\) est un sous-espace de \(E\) de dimension 
  Si \(E\) est lui-même de dimension finie, on a en particulier
 \(\dim(F^\perp)=\) \(\dim(E)-\dim(F)\).
 Soit \(x\in E\), qui s'écrit uniquement \(x=\) \(y+z\) dans la somme directe \(F\oplus F^\perp\).
- Alors \(y\) s'appelle le <b>projeté orthogonal</b>
-de \(x\) sur \(F\), et est noté \(p_F(x)\).
+ Alors \(y\) s'appelle le <b>projeté orthogonal</b> de \(x\) sur \(F\), et est noté \(p_F(x)\).
  
 Si \((e_1,\dots,e_p)\) est une base orthonormée de \(F\), alors 
 \(p_F(x)=\) \(\sum_{i=\) \(1} ^p \langle x,e_i\rangle e_i\).
 
 <b>Théorème et définition :</b> Pour tout \(x\in E\) et tout \(f\in F\), on a 
-\(\|x-f\|\geq \|x-p_F(x)\|\)
-avec égalité si et seulement si \(f=\) \(p_F(x)\).
+\(\|x-f\|\geq \|x-p_F(x)\|\) avec égalité si et seulement si \(f=\) \(p_F(x)\).
  La quantité
-\(d(x,F)=\) \(\|x-p_F(x)\|=\) \(\inf_{f\in F} \|x-f\|\)
-d'appelle distance de \(x\) à \(F\).
+\(d(x,F)=\) \(\|x-p_F(x)\|=\) \(\inf_{f\in F} \|x-f\|\) d'appelle distance de \(x\) à \(F\).
 
 
 Par le théorème de Pythagore, on a 
@@ -48,8 +45,7 @@ Une suite \((e_n)_{n\geq 0} \) de \(E\) est une suite totale si l'espace vectori
 
 <b>Théorème :</b>
 Soit \((e_k)_{k\in\mathbb N} \) une suite orthonormale totale de \(E\).
- Notons, pour \(n\geq 0\), \(p_n\) la projection orthogonale sur l'espace vectoriel
-engendré par \((e_0,\dots,e_n)\).
+ Notons, pour \(n\geq 0\), \(p_n\) la projection orthogonale sur l'espace vectoriel engendré par \((e_0,\dots,e_n)\).
  Alors pour tout \(x\in E\), \((p_n(x))\) converge vers \(x\).
 
 
@@ -63,23 +59,19 @@ On appelle <b>matrice orthogonale</b> de taille \(n\) toute matrice \(M\in\mathc
  On a alors automatiquement \(MM^T=\) \(I_n\).
  De plus, \(M\) est inversible avec \(M^{-1} =\) \(M^T\).
 
-Une matrice est orthogonale si et seulement ses colonnes forment une base orthonormale de \(\mathbb R^n\), si et seulement si 
-ses lignes forment une base orthonormale de \(\mathbb R^n\).
+Une matrice est orthogonale si et seulement ses colonnes forment une base orthonormale de \(\mathbb R^n\), si et seulement si ses lignes forment une base orthonormale de \(\mathbb R^n\).
 
 L'ensemble des matrices orthogonales de taille \(n\) forme un groupe appelé <b>groupe orthogonal</b> et noté \(\mathcal O_n(\mathbb R)\).
 
 Le déterminant d'une matrice orthogonale vaut \(\pm 1\).
- Une matrice orthogonale est dite positive si son déterminant vaut \(1\), négative si son 
-déterminant vaut \(-1\).
- L'ensemble des matrices orthogonales positives forme un groupe appelé le <b>groupe spécial orthogonal</b>
-et note \(SO_n(\mathbb R)\).
+ Une matrice orthogonale est dite positive si son déterminant vaut \(1\), négative si son déterminant vaut \(-1\).
+ L'ensemble des matrices orthogonales positives forme un groupe appelé le <b>groupe spécial orthogonal</b> et note \(SO_n(\mathbb R)\).
  
 <b>Proposition (changement de base orthonormale) :</b> Soit \((e_1,\dots,e_n)\) une base orthonormale de \(E\) et soit
 \((f_1,\dots,f_n)\) une famille de vecteurs de \(E\).
  On a l'équivalence suivante 
 
-\((f_1,\dots,f_n)\) est une base orthonormale de \(E\);
-la matrice de passage de \((e_1,\dots,e_n)\) à \((f_1,\dots,f_n)\) est une matrice orthogonale.
+\((f_1,\dots,f_n)\) est une base orthonormale de \(E\); la matrice de passage de \((e_1,\dots,e_n)\) à \((f_1,\dots,f_n)\) est une matrice orthogonale.
 
 
 
@@ -88,8 +80,7 @@ Endomorphismes symétriques
 On suppose dans cette partie que \(E\) est euclidien de dimension \(n\).
 
 
-Un endomorphisme \(u\in\mathcal L(E)\) est <b>symétrique</b> (ou <b>auto-adjoint</b>)
-si pour tous \(x,y\in E\), \(\langle u(x),y\rangle=\) \(\langle x,u(y)\rangle\).
+Un endomorphisme \(u\in\mathcal L(E)\) est <b>symétrique</b> (ou <b>auto-adjoint</b>) si pour tous \(x,y\in E\), \(\langle u(x),y\rangle=\) \(\langle x,u(y)\rangle\).
 
 Matriciellement, dire qu'un endomorphisme est symétrique est équivalent à dire que sa matrice dans une base orthonormale est symétrique.
 
@@ -97,17 +88,14 @@ Matriciellement, dire qu'un endomorphisme est symétrique est équivalent à dir
 
 <b>Proposition :</b> Si \(u\in\mathcal L(E)\) est symétrique, alors \((\ker u)^\perp=\) \(\textrm{Im} (u)\).
 
-<b>Proposition :</b> Si \(u\in\mathcal L(E)\) est symétrique et si \(F\) est un sous-espace de \(E\) stable par \(u\),
-alors \(F^\perp\) est un sous-espace de \(E\) stable par \(u\).
+<b>Proposition :</b> Si \(u\in\mathcal L(E)\) est symétrique et si \(F\) est un sous-espace de \(E\) stable par \(u\), alors \(F^\perp\) est un sous-espace de \(E\) stable par \(u\).
 
 <b>Théorème spectral :</b> Soit \(u\) un endomorphisme symétrique de \(E\).
- Alors \(E\) est somme directe orthogonale
-des sous-espaces propres de \(u\).
+ Alors \(E\) est somme directe orthogonale des sous-espaces propres de \(u\).
  De façon équivalente, il existe une base orthonormale de \(E\) constituée de vecteurs propres pour \(u\).
 
 <b>Corollaire :</b> Soit \(M\) une matrice symétrique réelle.
- Alors il existe une matrice orthogonale \(P\) et une matrice
-diagonale \(D\) telle que \(M=\) \(PDP^T\).
+ Alors il existe une matrice orthogonale \(P\) et une matrice diagonale \(D\) telle que \(M=\) \(PDP^T\).
 
 
 
@@ -115,10 +103,8 @@ Isométries vectorielles
 On suppose dans cette partie que \(E\) est euclidien de dimension \(n\).
 
 
-Un endomorphisme \(u\in\mathcal L(E)\) est un <b>automorphisme orthogonal</b>, ou une <span class=\) \(rougedico>isométrie
-vectorielle</span> si pour tout \(x\in E\), \(\|u(x)\|=\) \(\|x\|\).
- On note \(\mathcal O(E)\) l'ensemble des automorphismes orthogonaux de \(E\); \(\mathcal O(E)\) est
-un sous-groupe de \(GL(E)\).
+Un endomorphisme \(u\in\mathcal L(E)\) est un <b>automorphisme orthogonal</b>, ou une <span class=\) \(rougedico>isométrie vectorielle</span> si pour tout \(x\in E\), \(\|u(x)\|=\) \(\|x\|\).
+ On note \(\mathcal O(E)\) l'ensemble des automorphismes orthogonaux de \(E\); \(\mathcal O(E)\) est un sous-groupe de \(GL(E)\).
 
 Un endomorphisme \(u\in\mathcal L(E)\) est orthogonal si et seulement s'il conserve le produit scalaire.
 
@@ -130,8 +116,7 @@ La matrice de \(f\) dans toute base orthonormale de \(E\) est orthogonale.
 
 
 
-<b>Proposition :</b> Si \(u\in\mathcal L(E)\) est une isométrie vectorielle et si \(F\) est un sous-espace de \(E\) stable par \(u\),
-alors \(F^\perp\) est un sous-espace de \(E\) stable par \(u\).
+<b>Proposition :</b> Si \(u\in\mathcal L(E)\) est une isométrie vectorielle et si \(F\) est un sous-espace de \(E\) stable par \(u\), alors \(F^\perp\) est un sous-espace de \(E\) stable par \(u\).
 
 
 <b>Théorème spectral :</b> Soit \(u\in\mathcal O(E)\).
@@ -177,13 +162,11 @@ Les matrices orthogonales négatives en dimension 2 sont les matrices de la form
 \cos(\theta)&\sin(\theta)\\
 \sin(\theta)&-\cos(\theta)
 \end{array} \right),\ \theta\in\mathbb R\).
-On appelle <b>rotation vectorielle</b> d'angle \(\theta\in [0,2\pi[\) un endomorphisme orthogonal de \(E\) dont la matrice
-dans une (dans toute) base orthonormale directe de \(E\) est de la forme \(M(\theta)\).
+On appelle <b>rotation vectorielle</b> d'angle \(\theta\in [0,2\pi[\) un endomorphisme orthogonal de \(E\) dont la matrice dans une (dans toute) base orthonormale directe de \(E\) est de la forme \(M(\theta)\).
  On note l'endomorphisme correspondant \(r_\theta\).
 
 Si \(u,v\) sont deux vecteurs unitaires de \(E\), il existe une unique rotation vectorielle \(r_\theta\) telle que \(r_\theta(u)=\) \(v\).
- \(\theta\) est appelé
-mesure de l'angle orienté \((u,v)\) (et est défini à \(2\pi\)-près).
+ \(\theta\) est appelé mesure de l'angle orienté \((u,v)\) (et est défini à \(2\pi\)-près).
 
 Les automorphismes orthogonaux de \(E\) sont les rotations vectorielles et les réflexions.
 

@@ -4,8 +4,7 @@ Résumé de cours : compléments de topologie des espaces vectoriels normés
 
 Parties compactes d'un espace vectoriel normé
 
-Une partie \(K\) de \(E\) est dite <b>compacte</b> si, de toute suite \((u_n)\) 
-d'éléments de \(K\), on peut extraire une sous-suite convergente vers un élément de \(K\).
+Une partie \(K\) de \(E\) est dite <b>compacte</b> si, de toute suite \((u_n)\) d'éléments de \(K\), on peut extraire une sous-suite convergente vers un élément de \(K\).
 
 En particulier, toute réunion finie ou toute intersection finie de parties compactes est compacte.
 
@@ -14,22 +13,18 @@ En particulier, toute réunion finie ou toute intersection finie de parties comp
 Un segment \([a,b]\) est une partie compacte de \(\mathbb R\).
  En particulier, les parties compactes de \(\mathbb R\) ou de \(\mathbb C\) sont les parties fermées et bornées.
 
-<b>Proposition : </b>Si \(A\) est une partie compacte de \(E\) et si \(B\subset A\)
-est fermé, alors \(B\) est compact.
+<b>Proposition : </b>Si \(A\) est une partie compacte de \(E\) et si \(B\subset A\) est fermé, alors \(B\) est compact.
 
-<b>Théorème : </b>Une suite d'éléments d'une partie compacte de \(E\) converge si et seulement si
-elle admet une unique valeur d'adhérence.
+<b>Théorème : </b>Une suite d'éléments d'une partie compacte de \(E\) converge si et seulement si elle admet une unique valeur d'adhérence.
 
-<b>Théorème : </b>Si \(E=\) \(E_1\times\dots\times E_p\) est un espace vectoriel normé produit,
-et si pour chaque \(i=\) \(1,\dots,p\), \(A_i\) est une partie compacte de \(E_i\), alors \(A=\) \(A_1\times\dots\times A_p\) est une partie compacte de \(E\).
+<b>Théorème : </b>Si \(E=\) \(E_1\times\dots\times E_p\) est un espace vectoriel normé produit, et si pour chaque \(i=\) \(1,\dots,p\), \(A_i\) est une partie compacte de \(E_i\), alors \(A=\) \(A_1\times\dots\times A_p\) est une partie compacte de \(E\).
 
 
 
 Applications continues sur une partie compacte
 
 <b>Théorème : </b> Soit \(f:K\to F\) une application continue où \(K\) est une partie compacte de \(E\).
- Alors \(f(K)\)
-est un compact de \(F\).
+ Alors \(f(K)\) est un compact de \(F\).
 
 En particulier, si \(f:K\to\mathbb R\) avec \(K\) compact, alors \(f\) est bornée et atteint ses bornes.
 
@@ -40,8 +35,7 @@ En particulier, si \(f:K\to\mathbb R\) avec \(K\) compact, alors \(f\) est born�
 Parties connexes par arcs
 
 Soit \(A\) une partie de \(E\), et \(x,y\in A\).
- On appelle <b>chemin continu</b> tracé dans \(A\) de \(x\) vers \(y\) toute application continue \(f:[0,1]\to A\) 
-vérifiant \(f(0)=\) \(x\) et \(f(1)=\) \(y\).
+ On appelle <b>chemin continu</b> tracé dans \(A\) de \(x\) vers \(y\) toute application continue \(f:[0,1]\to A\) vérifiant \(f(0)=\) \(x\) et \(f(1)=\) \(y\).
 
 Une partie \(A\) de \(E\) est <b>connexe par arcs</b> si, pour tous \(x,y\in A\), il existe un chemin continu de \(x\) vers \(y\) tracé dans \(A\).
 
@@ -74,8 +68,7 @@ En particulier, si \((u_n)\) est une suite d'un espace vectoriel normé de dimen
 
 <b>Théorème : </b> Une partie d'un espace vectoriel normé de dimension finie est compacte si et seulement si elle est fermée et bornée.
  
-<b>Corollaire : </b> Toute suite bornée d'un espace vectoriel normé de dimension finie admet une suite extraite
-convergente.
+<b>Corollaire : </b> Toute suite bornée d'un espace vectoriel normé de dimension finie admet une suite extraite convergente.
  
 <b>Corollaire : </b> Une suite bornée d'un espace vectoriel normé de dimension finie converge si et seulement si elle admet une unique valeur d'adhérence.
 

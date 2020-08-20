@@ -5,40 +5,30 @@ Dans la suite, \(I\) désigne un intervalle de \(\mathbb R\) et \(E\) un espace 
 Généralités
 
 On appelle <b>équation différentielle linéaire du premier ordre</b> une équation de la forme 
-\(x'(t)+a(t)\big(x(t)\big)=\) \(b(t)\)
-où \(a:I\to\mathcal L(E)\) et \(b:I\to E\) sont deux fonctions continues.
- Résoudre l'équation différentielle, c'est déterminer
-les fonctions \(x:I\to E\) dérivables qui satisfont l'équation précédente.
+\(x'(t)+a(t)\big(x(t)\big)=\) \(b(t)\) où \(a:I\to\mathcal L(E)\) et \(b:I\to E\) sont deux fonctions continues.
+ Résoudre l'équation différentielle, c'est déterminer les fonctions \(x:I\to E\) dérivables qui satisfont l'équation précédente.
 
 L'<b>équation différentielle homogène</b> associée à l'équation différentielle précédente est l'équation
 \(x'(t)+a(t)\big(x(t)\big)=\) \(0\).
 Si \(x_1\) est une solution de 
-\(x'(t)+a(t)\big(x(t)\big)=\) \(b_1(t)\)
-et \(x_2\) est une solution de 
-\(x'(t)+a(t)\big(x(t)\big)=\) \(b_2(t),\)
-alors \(x_1+x_2\) est une solution de 
+\(x'(t)+a(t)\big(x(t)\big)=\) \(b_1(t)\) et \(x_2\) est une solution de 
+\(x'(t)+a(t)\big(x(t)\big)=\) \(b_2(t),\) alors \(x_1+x_2\) est une solution de 
 \(x'(t)+a(t)\big(x(t)\big)=\) \(b_1(t)+b_2(t)\).
 C'est le <b>principe de superposition</b> des solutions.
 
-Si on introduit une base \(\mathcal B=\) \((e_1,\dots,e_n)\) de \(E\) et en posant \(A(t)\), \(B(t)\) et \(X(t)\) les matrices
-respectives de \(a(t)\), \(b(t)\) et \(x(t)\) dans \(\mathcal B\), alors l'équation différentielle \(x'(t)+a(t)\big(x(t)\big)=\) \(b(t)\) se réécrit sous la forme
-d'un système différentiel :\(X'(t)+A(t)X(t)=\) \(B(t)\).
+Si on introduit une base \(\mathcal B=\) \((e_1,\dots,e_n)\) de \(E\) et en posant \(A(t)\), \(B(t)\) et \(X(t)\) les matrices respectives de \(a(t)\), \(b(t)\) et \(x(t)\) dans \(\mathcal B\), alors l'équation différentielle \(x'(t)+a(t)\big(x(t)\big)=\) \(b(t)\) se réécrit sous la forme d'un système différentiel :\(X'(t)+A(t)X(t)=\) \(B(t)\).
 
 
 Résolution des problèmes de Cauchy
 
 Soit \((t_0,x_0)\in I\times E\) et \(x'(t)+a(t)\big(x(t)\big)=\) \(b(t)\) une équation différentielle linéaire.
  On appelle 
-<b>problème de Cauchy</b> associé la détermination des solutions de l'équation différentielle 
-vérifiant de plus \(x(t_0)=\) \(x_0\).
+<b>problème de Cauchy</b> associé la détermination des solutions de l'équation différentielle vérifiant de plus \(x(t_0)=\) \(x_0\).
 
-<b>Proposition (mise sous forme intégrale du problème de Cauchy) :</b> Soit \(a:I\to\mathcal L(E)\)
-et \(b:I\to E\) deux fonctions continues, \(x:I\to E\) dérivable et \((t_0,x_0)\in I\times E\).
+<b>Proposition (mise sous forme intégrale du problème de Cauchy) :</b> Soit \(a:I\to\mathcal L(E)\) et \(b:I\to E\) deux fonctions continues, \(x:I\to E\) dérivable et \((t_0,x_0)\in I\times E\).
  Alors les assertions suivantes sont équivalentes :
  - \(x\) est solution du problème de Cauchy 
-\(\left\{\begin{array} {rcl} 
-x'(t)+a(t)\big(x(t)\big)&=\) \(&b(t)\\
-x(t_0)&=\) \(&x_0.
+\(\left\{\begin{array} {rcl} x'(t)+a(t)\big(x(t)\big)&=\) \(&b(t)\\ x(t_0)&=\) \(&x_0.
 
 \end{array} \right\).
  - \(x\) vérifie, pour tout \(t\in I\), 
@@ -47,22 +37,16 @@ x(t_0)&=\) \(&x_0.
 <b>Théorème de Cauchy linéaire : </b> Soit \(a:I\to\mathcal L(E)\), \(b:I\to E\) deux fonctions continues et \((t_0,x_0)\in I\times E\).
 
 Alors le problème de Cauchy 
-\(\left\{\begin{array} {rcl} 
-x'(t)+a(t)\big(x(t)\big)&=\) \(&b(t)\\
-x(t_0)&=\) \(&x_0
-\end{array} \right\).
-admet une solution unique définie sur \(I\).
+\(\left\{\begin{array} {rcl} x'(t)+a(t)\big(x(t)\big)&=\) \(&b(t)\\ x(t_0)&=\) \(&x_0
+\end{array} \right\). admet une solution unique définie sur \(I\).
 
 <b>Théorème (structure de l'ensemble des solutions) : </b> Soit \(a:I\to\mathcal L(E)\), \(b:I\to E\) deux fonctions continues.
  L'ensemble des solutions \(\mathcal S\) de l'équation différentielle linéaire homogène
-\(x'(t)+a(t)\big(x(t)\big)=\) \(0\)
-est un sous-espace vectoriel de \(\mathcal C^1(I,E)\) de dimension \(n=\) \(\dim(E)\).
- De plus, l'application \(x\mapsto x(t_0)\) est un isomorphisme
-de \(\mathcal S\) sur \(E\).
+\(x'(t)+a(t)\big(x(t)\big)=\) \(0\) est un sous-espace vectoriel de \(\mathcal C^1(I,E)\) de dimension \(n=\) \(\dim(E)\).
+ De plus, l'application \(x\mapsto x(t_0)\) est un isomorphisme de \(\mathcal S\) sur \(E\).
 <br>
 L'ensemble des solutions de l'équation complète
-\(x'(t)+a(t)\big(x(t))=\) \(b(t)\)
-est un sous-espace affine de dimension \(n=\) \(\dim(E)\).
+\(x'(t)+a(t)\big(x(t))=\) \(b(t)\) est un sous-espace affine de dimension \(n=\) \(\dim(E)\).
 
 
 
@@ -70,8 +54,7 @@ Exponentielle de matrice
 
 Soit \(u\in\mathcal L(E)\).
  Alors la série \(\sum_{n\geq 0} \frac{u^n} {n!} \) converge absolument.
- Sa somme s'appelle l'<b>exponentielle</b>
-de \(u\) et est notée \(\exp(u)\) ou \(e^u\).
+ Sa somme s'appelle l'<b>exponentielle</b> de \(u\) et est notée \(\exp(u)\) ou \(e^u\).
 
 De même, si \(A\in\mathcal M_n(\mathbb K)\), on appelle exponentielle de \(A\) la matrice 
 \(\exp(A)=\) \(\sum_{n\geq 0} \frac{A^n} {n!} \).
@@ -81,8 +64,7 @@ De même, si \(A\in\mathcal M_n(\mathbb K)\), on appelle exponentielle de \(A\) 
 
 Si \(A,B\in\mathcal M_n(\mathbb K)\) sont tels que \(AB=\) \(BA\), alors \(\exp(A+B)=\) \(\exp(A)\exp(B)\).
 
-Pour tout \(A\in\mathcal M_n(\mathbb K)\), l'application \(t\mapsto \exp(tA)\) est dérivable, de
-dérivée \(t\mapsto A\exp(tA)\).
+Pour tout \(A\in\mathcal M_n(\mathbb K)\), l'application \(t\mapsto \exp(tA)\) est dérivable, de dérivée \(t\mapsto A\exp(tA)\).
 
 
 
@@ -92,60 +74,46 @@ Systèmes différentiels homogènes à coefficients constants
 <b>Théorème :</b> Soit \(a\in\mathcal L(E)\), \(t_0\in\mathbb R\) et \(x_0\in E\).
  L'unique solution au problème de Cauchy
 \(\left\{
-\begin{array} {rcl} 
-x'(t)&=\) \(&a\big(x(t)\big)\\
-x(t_0)&=\) \(&x_0
-\end{array} \right\).
-est la fonction \(t\mapsto \exp\big((t-t_0)a\big)(x_0)\).
+\begin{array} {rcl} x'(t)&=\) \(&a\big(x(t)\big)\\ x(t_0)&=\) \(&x_0
+\end{array} \right\). est la fonction \(t\mapsto \exp\big((t-t_0)a\big)(x_0)\).
 
 
-<b>Corollaire :</b> Soit \(a\in\mathcal L(E)\) diagonalisable, \((x_1,\dots,x_n)\) une base de vecteurs propres
-de \(a\) associés respectivement à \(\lambda_1,\dots,\lambda_n\).
+<b>Corollaire :</b> Soit \(a\in\mathcal L(E)\) diagonalisable, \((x_1,\dots,x_n)\) une base de vecteurs propres de \(a\) associés respectivement à \(\lambda_1,\dots,\lambda_n\).
  Notons \(\varphi_i(t)=\) \(e^{\lambda_i t} x_i\).
- Alors \((\varphi_1,\dots,\varphi_n)\) est une base
-de l'espace vectoriel des solutions de l'équation homogène \(x'=\) \(ax\).
+ Alors \((\varphi_1,\dots,\varphi_n)\) est une base de l'espace vectoriel des solutions de l'équation homogène \(x'=\) \(ax\).
 
 
 
 Méthode de variation des constantes
 On considère un système différentiel du type 
-\(X'(t)=\) \(A(t)X(t)+B(t),\)
-avec \(A:I\to\mathcal M_n(\mathbb K)\) et \(B:I\to\mathbb K^n\) continues.
+\(X'(t)=\) \(A(t)X(t)+B(t),\) avec \(A:I\to\mathcal M_n(\mathbb K)\) et \(B:I\to\mathbb K^n\) continues.
 
 
-On appelle <b>système fondamental</b> de solutions de ce système toute base \((X_1,\dots,X_n)\) de l'espace
-vectoriel des solutions de l'équation homogène associée.
+On appelle <b>système fondamental</b> de solutions de ce système toute base \((X_1,\dots,X_n)\) de l'espace vectoriel des solutions de l'équation homogène associée.
 
-<b>Proposition :</b> Soit \((X_1,\dots,X_n)\) un système fondamental de solutions, et \((C_1,\dots,C_n)\)
-une famille de \(n\) fonctions de classe \(\mathcal C^1\) de \(I\) dans \(\mathcal M_n(\mathbb K)\).
+<b>Proposition :</b> Soit \((X_1,\dots,X_n)\) un système fondamental de solutions, et \((C_1,\dots,C_n)\) une famille de \(n\) fonctions de classe \(\mathcal C^1\) de \(I\) dans \(\mathcal M_n(\mathbb K)\).
  L'application \(X\) définie par
-\(X(t)=\) \(\sum_{i=\) \(1} ^n C_i(t)X_i(t)\)
-est solution de l'équation avec second membre si et seulement si, pour tout \(t\in I\), 
+\(X(t)=\) \(\sum_{i=\) \(1} ^n C_i(t)X_i(t)\) est solution de l'équation avec second membre si et seulement si, pour tout \(t\in I\), 
 \(\sum_{i=\) \(1} ^n C_i'(t)X_i(t)=\) \(B(t)\).
 
 <b>Corollaire :</b> Soit \(a\in\mathcal L(E)\), \(b:I\to E\) continue et \(t_0\in I\).
- Alors l'ensemble des solutions de
-l'équation \(x'(t)=\) \(a\big(x(t)\big)+b(t)\) est
+ Alors l'ensemble des solutions de l'équation \(x'(t)=\) \(a\big(x(t)\big)+b(t)\) est
 \(\left\{t\mapsto e^{ta} x+e^{ta} \int_{t_0} ^t e^{-sa} \big(b(s)\big)ds;\ x\in E\right\} \).
 
 
 Cas des équations différentielles scalaires d'ordre \(n\)
 
-On appelle <b>équation différentielle linéaire scalaire d'ordre \(n\)</b> définie sur \(I\) toute équation
-de la forme 
-\(x^{(n)} (t)=\) \(a_{n-1} (t)x^{(n-1)} (t)+a_{n-2} (t)x^{(n-2)} (t)+\dots+a_0(t)x(t)+b(t)\)
-avec \(a_0,\dots,a_{n-1} \) et \(b:I\to \mathbb K\) des fonctions continues et \(x:I\to\mathbb K\) une fonction inconnue
+On appelle <b>équation différentielle linéaire scalaire d'ordre \(n\)</b> définie sur \(I\) toute équation de la forme 
+\(x^{(n)} (t)=\) \(a_{n-1} (t)x^{(n-1)} (t)+a_{n-2} (t)x^{(n-2)} (t)+\dots+a_0(t)x(t)+b(t)\) avec \(a_0,\dots,a_{n-1} \) et \(b:I\to \mathbb K\) des fonctions continues et \(x:I\to\mathbb K\) une fonction inconnue
 \(n\) fois dérivable sur \(I\).
 
-<b>Traduction matricielle :</b> Notons \(X\) le vecteur \(X(t)=\) \(\left(\begin{array} c x(t)\\ x'(t) \\ \vdots \\ x^{(n-1)} (t)\end{array} \right)\)
-et \(A\), \(B\) les matrices 
+<b>Traduction matricielle :</b> Notons \(X\) le vecteur \(X(t)=\) \(\left(\begin{array} c x(t)\\ x'(t) \\ \vdots \\ x^{(n-1)} (t)\end{array} \right)\) et \(A\), \(B\) les matrices 
 \(A(t)=\) \(\left(
 \begin{array} {ccccc} 
 0&1&0&\dots&\dots\\
 0&0&1&\ddots&\vdots\\
 \vdots&\vdots&\ddots&\ddots&\vdots\\
-0&0&\dots&\dots&1\\
-a_0(t)&a_1(t)&\dots&\dots&a_{n-1} (t)
+0&0&\dots&\dots&1\\ a_0(t)&a_1(t)&\dots&\dots&a_{n-1} (t)
 \end{array} \right),\quad 
 B(t)=\) \(\left(
 \begin{array} {c} 
@@ -153,20 +121,15 @@ B(t)=\) \(\left(
 0\\
 \vdots\\
 \vdots\\
-0\\
-b(t)
-\end{array} \right),\)
-l'équation différentielle scalaire d'ordre \(n\)
-\(x^{(n)} (t)=\) \(a_{n-1} (t)x^{(n-1)} (t)+a_{n-2} (t)x^{(n-2)} (t)+\dots+a_0(t)x(t)+b(t)\)
-est "équivalente" au système \(X'(t)=\) \(A(t)X(t)+B(t)\) au sens où \(x\) est solution de l'équation scalaire si et seulement si 
-c'est la première coordonnée de \(X\) solution de l'équation vectorielle.
+0\\ b(t)
+\end{array} \right),\) l'équation différentielle scalaire d'ordre \(n\)
+\(x^{(n)} (t)=\) \(a_{n-1} (t)x^{(n-1)} (t)+a_{n-2} (t)x^{(n-2)} (t)+\dots+a_0(t)x(t)+b(t)\) est "équivalente" au système \(X'(t)=\) \(A(t)X(t)+B(t)\) au sens où \(x\) est solution de l'équation scalaire si et seulement si c'est la première coordonnée de \(X\) solution de l'équation vectorielle.
 
 Soit une équation différentielle linéaire scalaire d'ordre \(n\)
 \(x^{(n)} (t)=\) \(a_{n-1} (t)x^{(n-1)} (t)+a_{n-2} (t)x^{(n-2)} (t)+\dots+a_0(t)x(t)+b(t)\).
 Soit également \((t_0,x_0,\dots,x_{n-1} )\in I\times \mathbb K^n\).
  On appelle 
-<b>problème de Cauchy</b> associé la détermination des solutions de l'équation différentielle 
-vérifiant de plus \(x(t_0)=\) \(x_0,\ x'(t_0)=\) \(x_1,\dots,\ x^{(n-1)} (t_0)=\) \(x_{n-1} \).
+<b>problème de Cauchy</b> associé la détermination des solutions de l'équation différentielle vérifiant de plus \(x(t_0)=\) \(x_0,\ x'(t_0)=\) \(x_1,\dots,\ x^{(n-1)} (t_0)=\) \(x_{n-1} \).
 
 <b>Théorème :</b> Si \(a_0,\dots,a_{n-1} \) et \(b:I\to \mathbb K\) sont des fonctions continues, le problème de Cauchy
 \(\left\{
@@ -174,31 +137,24 @@ vérifiant de plus \(x(t_0)=\) \(x_0,\ x'(t_0)=\) \(x_1,\dots,\ x^{(n-1)} (t_0)=
 	x^{(n)} (t)=\) \(a_{n-1} (t)x^{(n-1)} (t)+a_{n-2} (t)x^{(n-2)} (t)+\dots+a_0(t)x(t)+b(t)\\
 	x(t_0)=\) \(x_0,\ x'(t_0)=\) \(x_1,\dots,\ x^{(n-1)} (t_0)=\) \(x_{n-1} 
 	\end{array} 
-	\right\).
-admet une solution unique.
+	\right\). admet une solution unique.
 
-<b>Corollaire :</b> Si \(a_0,\dots,a_{n-1} \) et \(b:I\to \mathbb K\) sont des fonctions continues, l'ensemble des
-solutions de l'équation différentielle linéaire scalaire homogène d'ordre \(n\) 
-\(x^{(n)} (t)=\) \(a_{n-1} (t)x^{(n-1)} (t)+a_{n-2} (t)x^{(n-2)} (t)+\dots+a_0(t)x(t)\)
-est un sous-espace vectoriel de dimension \(n\).
+<b>Corollaire :</b> Si \(a_0,\dots,a_{n-1} \) et \(b:I\to \mathbb K\) sont des fonctions continues, l'ensemble des solutions de l'équation différentielle linéaire scalaire homogène d'ordre \(n\) 
+\(x^{(n)} (t)=\) \(a_{n-1} (t)x^{(n-1)} (t)+a_{n-2} (t)x^{(n-2)} (t)+\dots+a_0(t)x(t)\) est un sous-espace vectoriel de dimension \(n\).
  L'ensemble des solutions de l'équation avec second membre
-\(x^{(n)} (t)=\) \(a_{n-1} (t)x^{(n-1)} (t)+a_{n-2} (t)x^{(n-2)} (t)+\dots+a_0(t)x(t)+b(t)\)
-est un sous-espace affine de dimension \(n\).
+\(x^{(n)} (t)=\) \(a_{n-1} (t)x^{(n-1)} (t)+a_{n-2} (t)x^{(n-2)} (t)+\dots+a_0(t)x(t)+b(t)\) est un sous-espace affine de dimension \(n\).
 
 
 
 Cas particulier des équations différentielles scalaires d'ordre 2
 On considère une équation différentielle linéaire scalaire d'ordre \(2\)
-\(x''(t)=\) \(a(t)x'(t)+b(t)x(t)+c(t)\)
-où \(a,b,c:I\to\mathbb K\) sont continues.
+\(x''(t)=\) \(a(t)x'(t)+b(t)x(t)+c(t)\) où \(a,b,c:I\to\mathbb K\) sont continues.
 
 
 Soit \(f,g\) deux solutions de l'équation homogène.
  On appelle <b>wronskien</b> de ces deux solutions l'application
 \(W:t\in I\mapsto \left|
-\begin{array} {cc} 
-f(t)&g(t)\\
-f'(t)&g'(t)\\
+\begin{array} {cc} f(t)&g(t)\\ f'(t)&g'(t)\\
 \end{array} \right|\).
 <b>Théorème :</b> Soit \((f,g)\) deux solutions de l'équation homogène.
  Les assertions suivantes sont équivalentes :
@@ -209,8 +165,7 @@ Il existe \(t\in I\) tel que \(W(t)\neq 0\).
 
 
 
-<b>Méthode de variation des constantes pour les équations différentielles linéaires d'ordre \(2\) :</b> soit \((f,g)\) un système fondamental de
-solutions de l'équation homogène.
+<b>Méthode de variation des constantes pour les équations différentielles linéaires d'ordre \(2\) :</b> soit \((f,g)\) un système fondamental de solutions de l'équation homogène.
  On cherche une solution particulière \(x(t)\) sous la forme
 \(x(t)=\) \(\lambda(t)f(t)+\mu(t)g(t)\).
 La méthode de variation des constantes s'écrit alors :\(\left\{
@@ -229,19 +184,14 @@ La méthode de variation des constantes s'écrit alors :\(\left\{
 \(r^2=\) \(ar+b\).
 
 Résolution sur \(\mathbb C\) :
-
-si l'équation caractéristique admet deux racines \(r_1\) et \(r_2\), alors les solutions de l'équation homogène \(y''+ay'+by=\) \(0\) sont les fonctions
-\(x\mapsto \lambda e^{r_1 x} +\mu e^{r_2 x} \quad\textrm{ avec } \lambda,\mu\in\mathbb C\).
-si l'équation caractéristique admet une racine double \(r\), alors les solutions de l'équation homogène \(y''+ay'+by=\) \(0\) sont les fonctions
+ si l'équation caractéristique admet deux racines \(r_1\) et \(r_2\), alors les solutions de l'équation homogène \(y''+ay'+by=\) \(0\) sont les fonctions
+\(x\mapsto \lambda e^{r_1 x} +\mu e^{r_2 x} \quad\textrm{ avec } \lambda,\mu\in\mathbb C\). si l'équation caractéristique admet une racine double \(r\), alors les solutions de l'équation homogène \(y''+ay'+by=\) \(0\) sont les fonctions
 \(x\mapsto (\lambda x+\mu)e^{rx} \quad\textrm{ avec } \lambda,\mu\in\mathbb C\).
 
 Résolution sur \(\mathbb R\) :
-
-si l'équation caractéristique admet deux racines réelles \(r_1\) et \(r_2\), alors les solutions de l'équation homogène \(y''+ay'+by=\) \(0\) sont les fonctions
-\(x\mapsto \lambda e^{r_1 x} +\mu e^{r_2 x} \quad\textrm{ avec } \lambda,\mu\in\mathbb R\).
-si l'équation caractéristique admet une racine double \(r\), alors les solutions de l'équation homogène \(y''+ay'+by=\) \(0\) sont les fonctions
-\(x\mapsto (\lambda x+\mu)e^{rx} \quad\textrm{ avec } \lambda,\mu\in\mathbb R\).
-si l'équation caractéristique admet deux racines complexes conjuguées, \(\alpha\pm i\beta\), alors les solutions de l'équation homogène sont les fonctions
+ si l'équation caractéristique admet deux racines réelles \(r_1\) et \(r_2\), alors les solutions de l'équation homogène \(y''+ay'+by=\) \(0\) sont les fonctions
+\(x\mapsto \lambda e^{r_1 x} +\mu e^{r_2 x} \quad\textrm{ avec } \lambda,\mu\in\mathbb R\). si l'équation caractéristique admet une racine double \(r\), alors les solutions de l'équation homogène \(y''+ay'+by=\) \(0\) sont les fonctions
+\(x\mapsto (\lambda x+\mu)e^{rx} \quad\textrm{ avec } \lambda,\mu\in\mathbb R\). si l'équation caractéristique admet deux racines complexes conjuguées, \(\alpha\pm i\beta\), alors les solutions de l'équation homogène sont les fonctions
 \(x\mapsto \lambda e^{\alpha x} \cos(\beta x)+\mu e^{\alpha x} \sin(\beta x)\).
 
 

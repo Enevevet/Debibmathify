@@ -9,10 +9,8 @@ On dit que \((f_n)\) <b>converge simplement</b> vers \(f\) sur \(A\) si :
 \(\forall \veps>0,\ \forall x\in A,\ \exists n_0\in\mathbb N\textrm{ tel que } \forall n\geq n_0,\ |f_n(x)-f(x)|\leq \veps\).
 On dit que \((f_n)\) <b>converge uniformément</b> vers \(f\) sur \(A\) si :\(\forall \veps>0,\ \exists n_0\in\mathbb N\textrm{ tel que } \forall x\in A,\ \forall n\geq n_0,\ |f_n(x)-f(x)|\leq \veps\).
 La convergence simple traduit que pour chaque \(x\in A\), la suite de réels \((f_n(x))\) converge vers \(f(x)\).
- La convergence uniforme impose en plus que
-la convergence se fait toujours à la même vitesse.
- Si toutes les fonctions \(f_n\) et \(f\) sont bornées, alors \((f_n)\) converge uniformément vers \(f\) sur \(A\)
-si et seulement si \((\|f_n-f\|_{A,\infty} )\) tend vers \(0\), où 
+ La convergence uniforme impose en plus que la convergence se fait toujours à la même vitesse.
+ Si toutes les fonctions \(f_n\) et \(f\) sont bornées, alors \((f_n)\) converge uniformément vers \(f\) sur \(A\) si et seulement si \((\|f_n-f\|_{A,\infty} )\) tend vers \(0\), où 
 \(\|g\|_{\infty,A} =\) \(\sup\{|g(x)|;\ x\in A\} \).
 Explication de la différence entre convergence simple et convergence uniforme : 
 <iframe width=\) \("560" height=\) \("315" src=\) \("https://www.
@@ -24,8 +22,7 @@ Propriétés conservées
 Soit \(I\) un intervalle de \(\mathbb R\), \((f_n)\) une suite de fonctions de \(I\) dans \(\mathbb R\) et \(f:I\to\mathbb R\).
 
 
-<b>Continuité :</b> On suppose que toutes les \(f_n\) sont continues en \(a\in I\) et que \((f_n)\) converge uniformément vers \(f\)
-sur \(I\).
+<b>Continuité :</b> On suppose que toutes les \(f_n\) sont continues en \(a\in I\) et que \((f_n)\) converge uniformément vers \(f\) sur \(I\).
  Alors \(f\) est continue en \(a\).
 
 En particulier, si toutes les \(f_n\) sont continues sur \(I\), alors \(f\) est continue sur \(I\).
@@ -53,11 +50,9 @@ Alors \(g_0\) est de classe \(\mathcal C^k\) sur \(I\) et pour tout \(j\leq k\),
 <b>Permutation limite/intégrale :</b> On suppose que \(I=\) \([a,b]\) est un segment, que toutes les fonctions \(f_n\) sont continues et que \((f_n)\) converge uniformément vers \(f\) sur \(I\).
  Alors
 \(\lim_{n\to+\infty} \int_a^b f_n(t)dt=\) \(\int_a^b \lim_n f_n(t)dt=\) \(\int_a^b f(t)dt\).
-<b>Théorème d'interversion des limites :</b> On suppose que \(I=\) \([a,b[\) et que \((f_n)\)  converge uniformément vers \(f\) sur \(I\).
- On suppose de plus
-que chaque fonction \(f_n\) admet une limite \(\ell_n\) en \(b\).
- Alors la suite \((\ell_n)\) converge vers une limite \(\ell\), \(f\) admet une limite
-en \(b\) et \(\lim_{x\to b} f(x)=\) \(\ell\).
+<b>Théorème d'interversion des limites :</b> On suppose que \(I=\) \([a,b[\) et que \((f_n)\) converge uniformément vers \(f\) sur \(I\).
+ On suppose de plus que chaque fonction \(f_n\) admet une limite \(\ell_n\) en \(b\).
+ Alors la suite \((\ell_n)\) converge vers une limite \(\ell\), \(f\) admet une limite en \(b\) et \(\lim_{x\to b} f(x)=\) \(\ell\).
 
 Ce théorème est souvent appliqué avec \(b=\) \(+\infty\).
 
@@ -65,11 +60,9 @@ Ce théorème est souvent appliqué avec \(b=\) \(+\infty\).
 Séries de fonctions
 Soit \(I\) un intervalle de \(\mathbb R\) et \((u_n)\) une suite de fonctions de \(I\) dans \(\mathbb R\)
 
-On dit que la série de fonctions \(\sum_n u_n\) <b>converge simplement</b> vers \(S\) sur \(I\) si la suite de ses sommes partielles \(S_n(x)=\) \(\sum_{k=\) \(1} ^n u_k(x)\) converge
-simplement vers \(S\) sur \(I\).
+On dit que la série de fonctions \(\sum_n u_n\) <b>converge simplement</b> vers \(S\) sur \(I\) si la suite de ses sommes partielles \(S_n(x)=\) \(\sum_{k=\) \(1} ^n u_k(x)\) converge simplement vers \(S\) sur \(I\).
 
-On dit que la série de fonctions \(\sum_n u_n\) <b>converge uniformément</b> vers \(S\) sur \(I\) si la suite de ses sommes partielles \(S_n(x)=\) \(\sum_{k=\) \(1} ^n u_k(x)\) converge
-uniformément vers \(S\) sur \(I\).
+On dit que la série de fonctions \(\sum_n u_n\) <b>converge uniformément</b> vers \(S\) sur \(I\) si la suite de ses sommes partielles \(S_n(x)=\) \(\sum_{k=\) \(1} ^n u_k(x)\) converge uniformément vers \(S\) sur \(I\).
 
 On dit que la série de fonctions \(\sum_n u_n\) <b>converge normalement</b> sur \(I\) si la série numérique \(\sum_n \|u_n\|_{\infty,I} \) est convergente.
 
@@ -77,8 +70,7 @@ On dit que la série de fonctions \(\sum_n u_n\) <b>converge normalement</b> sur
 
 
 Les théorèmes relatifs aux suites de fonctions restent vraies dans ce nouveau cadre.
- Ils ont désormais les énoncés suivants :<b>Continuité :</b> On suppose que toutes les \(u_n\) sont continues en \(a\in I\) et que \(\sum_n u_n\) converge uniformément vers \(S\)
-sur \(I\).
+ Ils ont désormais les énoncés suivants :<b>Continuité :</b> On suppose que toutes les \(u_n\) sont continues en \(a\in I\) et que \(\sum_n u_n\) converge uniformément vers \(S\) sur \(I\).
  Alors \(S\) est continue en \(a\).
 
 En particulier, si toutes les \(u_n\) sont continues sur \(I\), alors \(S\) est continue sur \(I\).
@@ -105,23 +97,18 @@ Alors la fonction \(S:x\mapsto \sum_{n\geq 1} u_n(x)\) est de classe \(\mathcal 
 <b>Permutation somme/intégrale :</b> On suppose que \(I=\) \([a,b]\) est un segment, que toutes les fonctions \(u_n\) sont continues et que \(\sum_n u_n\) converge uniformément.
  Alors la série \(\sum_n \int_a^b u_n(t)dt\) converge et on a 
 \(\int_a^b \sum_n u_n(t)dt=\) \(\sum_{n\geq 0} \int_a^b u_n(t)dt\).
-<b>Théorème d'interversion des limites :</b> On suppose que \(I=\) \([a,b[\) et que \(\sum_n u_n\)  converge uniformément vers \(S\) sur \(I\).
- On suppose de plus
-que chaque fonction \((u_n)\) admet une limite \(\ell_n\) en \(b\).
- Alors la série \(\sum_n \ell_n\) converge, \(S\) admet une limite
-en \(b\) et 
+<b>Théorème d'interversion des limites :</b> On suppose que \(I=\) \([a,b[\) et que \(\sum_n u_n\) converge uniformément vers \(S\) sur \(I\).
+ On suppose de plus que chaque fonction \((u_n)\) admet une limite \(\ell_n\) en \(b\).
+ Alors la série \(\sum_n \ell_n\) converge, \(S\) admet une limite en \(b\) et 
 \(\lim_{x\to b} S(x)=\) \(\sum_{n\geq 1} \ell_n\).
 
 
 Extension aux espaces vectoriels normés
-Certains des résultats précédents restent vrais si on définit maintenant nos fonctions sur une partie \(A\) d'un espace vectoriel normé \(E\), et
-si elles sont à valeurs dans un autre espace vectoriel normé \(F\), par exemple la préservation de la continuité, le fait que la convergence normale entraîne la convergence
-uniforme, le théorème de permutation des limites, que l'on peut énoncer sous la forme plus générale suivante :
+Certains des résultats précédents restent vrais si on définit maintenant nos fonctions sur une partie \(A\) d'un espace vectoriel normé \(E\), et si elles sont à valeurs dans un autre espace vectoriel normé \(F\), par exemple la préservation de la continuité, le fait que la convergence normale entraîne la convergence uniforme, le théorème de permutation des limites, que l'on peut énoncer sous la forme plus générale suivante :
 <b>Théorème :</b> Soit \((f_n)\) une suite de fonctions de \(A\) dans \(F\) convergeant uniformément vers \(f\) sur \(A\), et soit \(a\) un point adhérent à \(A\); si, pour tout \(n\), \(f_n\) admet une limite \(\ell_n\) en a, alors \((\ell_n)\) admet une limite \(\ell\), \(f\) admet une limite en \(a\) et
 \(\lim_{x\to a} f(x)=\) \(\ell\).
 
-En revanche, toutes les propriétés relatives à l'intégration et à la dérivation nécessitent que l'ensemble de départ soit un intervalle (il faut bien pouvoir
-donner un sens aux objets considérés!).
+En revanche, toutes les propriétés relatives à l'intégration et à la dérivation nécessitent que l'ensemble de départ soit un intervalle (il faut bien pouvoir donner un sens aux objets considérés!).
 </p>
 
 Approximation uniforme

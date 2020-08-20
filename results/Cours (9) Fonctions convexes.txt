@@ -12,22 +12,18 @@ Soit \(u_1,\dots,u_n\) des vecteurs de \(E\), et \(\lambda_1,\dots,\lambda_n\) d
 \(v=\) \(\frac{1} {\sum_{i=\) \(1} ^n \lambda_i} \sum_{i=\) \(1} ^n \lambda_i u_i\).
 Dans le plan ou l'espace muni d'un repère de centre \(O\), on identifie le point \(M\) et le vecteur \(\overrightarrow{OM} \).
 
-On définit alors le barycentre \(G\) des points \(A_1,\dots,A_n\) affectés des poids \(\lambda_1,\dots,\lambda_n\) par le fait 
-que le vecteur \(\overrightarrow{OG} \) est le barycentre des vecteurs \(\overrightarrow{OA_1} ,\dots,\overrightarrow{OA_n} \)
-affectés des poids \(\lambda_1,\dots,\lambda_n\).
+On définit alors le barycentre \(G\) des points \(A_1,\dots,A_n\) affectés des poids \(\lambda_1,\dots,\lambda_n\) par le fait que le vecteur \(\overrightarrow{OG} \) est le barycentre des vecteurs \(\overrightarrow{OA_1} ,\dots,\overrightarrow{OA_n} \) affectés des poids \(\lambda_1,\dots,\lambda_n\).
  Ceci ne dépend pas du choix du repère initial.
 
 <b>Proposition (associativité du barycentre) :</b> si \(v\) est le barycentre de \((u_1,\lambda_1),\dots,(u_n,\lambda_n)\), et si 
-\(\mu_1=\) \(\sum_{i=\) \(1} ^p \lambda_i\neq 0\textrm{ et } \mu_2=\) \(\sum_{i=\) \(p+1} ^n \lambda_i\neq 0,\) 
-alors \(v\) est aussi le barycentre de \((v_1,\mu_1)\) et de \((v_2,\mu_2)\), où \(v_1\) est le barycentre de
+\(\mu_1=\) \(\sum_{i=\) \(1} ^p \lambda_i\neq 0\textrm{ et } \mu_2=\) \(\sum_{i=\) \(p+1} ^n \lambda_i\neq 0,\) alors \(v\) est aussi le barycentre de \((v_1,\mu_1)\) et de \((v_2,\mu_2)\), où \(v_1\) est le barycentre de
 \((u_1,\lambda_1),\dots,(u_p,\lambda_p)\) et \(v_2\) est le barycentre de \((u_{p+1} ,\lambda_{p+1} ),\dots,(u_n,\lambda_n)\).
 
 
 Une partie \(C\) de \(E\) est dite convexe si, pour tous \(u,v\in C\) et tout \(t\in [0,1]\), alors 
 \(tu+(1-t)v\in C\).
 
-<b>Proposition :</b> Une partie \(C\) de \(E\) est convexe si et seulement si 
-elle contient tous les barycentres de ses vecteurs affectés de coefficients positifs.
+<b>Proposition :</b> Une partie \(C\) de \(E\) est convexe si et seulement si elle contient tous les barycentres de ses vecteurs affectés de coefficients positifs.
 
 
 
@@ -40,8 +36,7 @@ On dit que \(f\) est <b>convexe</b> si, pour tous \(x,y\in I\) et tout \(t\in [0
 Autrement dit, \(f\) est convexe lorsque son <b>épigraphe</b> \(E(f)\) est convexe, où 
 \(E(f)=\) \(\{(x,y);\ y\geq f(x)\} \)
 (il s'agit donc de la partie située au dessus de la courbe de \(f\)).
- Ceci signifie aussi que la courbe représentative de \(f\) est en-dessous de ses cordes
-entre les deux extrémités de la corde.
+ Ceci signifie aussi que la courbe représentative de \(f\) est en-dessous de ses cordes entre les deux extrémités de la corde.
 
 <b>Proposition : </b> \(f\) est convexe si et seulement si, pour tout \(n\geq 2\), pour tous
 \(x_1,\dots,x_n\in I\), pour tous réels \(\lambda_1,\dots,\lambda_n\) de \([0,1]\) tels que \(\sum_{i=\) \(1} ^n\lambda_i=\) \(1\), alors
@@ -61,7 +56,7 @@ Fonctions convexes dérivables, deux fois dérivables
 \(I\) est un intervalle de \(\mathbb R\) et \(f\) est une fonction de \(I\) dans \(\mathbb R\).
 
 
-<b>Théorème : </b> On suppose que  \(f\) est dérivable.
+<b>Théorème : </b> On suppose que \(f\) est dérivable.
  Alors \(f\) est convexe si et seulement si
 \(f'\) est croissante.
 
@@ -72,8 +67,7 @@ Fonctions convexes dérivables, deux fois dérivables
  \(f\) est concave si et seulement si \(f''\leq 0\).
 
 
-En particulier, la courbe représentative d'une fonction convexe est située au-dessus de ses tangentes, c'est-à-dire que pour tout \(x,a\in\mathbb R\), on a \(f(x)\geq f'(a)(x-a)+f(a)\); de même, la courbe représentative
-d'une fonction concave est située en-dessous de ses tangentes.
+En particulier, la courbe représentative d'une fonction convexe est située au-dessus de ses tangentes, c'est-à-dire que pour tout \(x,a\in\mathbb R\), on a \(f(x)\geq f'(a)(x-a)+f(a)\); de même, la courbe représentative d'une fonction concave est située en-dessous de ses tangentes.
 
 A l'aide de cette propriété, on démontre de nombreuses inégalités comme
 \(\forall x>-1,\ \ln(1+x)\leq x\).

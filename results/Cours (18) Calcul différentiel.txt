@@ -7,12 +7,11 @@ Résumé de cours : calcul différentiel
 Dérivées suivant un vecteur, dérivées partielles
 
 Soit \(v\in E\) et \(a\in\mathcal U\).
-  On dit que \(f\) admet une <b>dérivée suivant le vecteur \(v\) en \(a\)</b> si l'application \(t\mapsto f(a+tv)\) est dérivable en \(0\).
+ On dit que \(f\) admet une <b>dérivée suivant le vecteur \(v\) en \(a\)</b> si l'application \(t\mapsto f(a+tv)\) est dérivable en \(0\).
  Dans ce cas, on note
-\(D_vf(a)=\) \(\lim_{t\to 0} \frac{f(a+tv)-f(a)} {t} \)
-la dérivée de \(f\) en \(a\) suivant le vecteur \(v\).
+\(D_vf(a)=\) \(\lim_{t\to 0} \frac{f(a+tv)-f(a)} {t} \) la dérivée de \(f\) en \(a\) suivant le vecteur \(v\).
 
-On appelle <b>\(i\)-ème dérivée partielle</b>, \(1\leq i\leq p\) de  \(f\) en \(a\) la dérivée suivant le vecteur \(e_i\) de \(f\) en \(a\), et on note 
+On appelle <b>\(i\)-ème dérivée partielle</b>, \(1\leq i\leq p\) de \(f\) en \(a\) la dérivée suivant le vecteur \(e_i\) de \(f\) en \(a\), et on note 
 \(\frac{\partial f} {\partial x_i} (a)=\) \(\partial_i f(a)=\) \(\lim_{t\to 0} \frac{f(a+te_i)-f(a)} t\).
 <b>Proposition :</b> \(f=\) \((f_1,\dots,f_n)\) admet une dérivée par rapport à \(v\) en \(a\) si et seulement si tous les \(f_i\), \(1\leq i\leq n\), admettent une dérivée par rapport à \(v\) en \(a\).
  Dans ce cas,
@@ -61,7 +60,7 @@ Si \(f:U\to F\) et \(g:U\to G\) sont différentiables en \(a\) et si \(B:F\times
 <b>Composée de deux applications différentiables.
 </b>
 Si \(V\) est un ouvert de \(F\), \(g:V\to G\), \(f(U)\subset V\) et si \(f\) est différentiable en \(a\) et \(g\) est différentiable en \(f(a)\), alors \(g\circ f\) est différentiable en \(a\) et 
-\(d(g\circ f)_a=\) \(dg_{f(a)} \circ  df_a\).
+\(d(g\circ f)_a=\) \(dg_{f(a)} \circ df_a\).
 
 Sur les matrices jacobiennes, l'égalité précédente se traduit par un produit de matrices :\(J_a (g\circ f)=\) \(J_{f(a)} gJ_a f\).
 <b>Corollaire :</b> Si \(V\) est un ouvert de \(F\), \(g:V\to G\), \(f(U)\subset V\) et si \(f\) est différentiable en \(a\) et \(g\) est différentiable en \(f(a)\), alors les dérivées partielles de \(g\circ f\) en \(a\) sont données par 
@@ -78,17 +77,16 @@ Applications de classe \(C^k\), \(k\geq 1\)
 
 On dit que \(f\) est de classe \(C^1\) sur \(U\) si \(f\) est différentiable sur \(U\) et si l'application \(a\in U\mapsto df_a \) est continue.
 
-<b>Théorème :</b> \(f\) est de classe \(C^1\) sur \(U\) si et seulement si toutes les dérivées partielles \(\frac{\partial f} {\partial x_i} \) de \(f\) existent sur \(U\)  et si elles sont continues sur \(U\).
+<b>Théorème :</b> \(f\) est de classe \(C^1\) sur \(U\) si et seulement si toutes les dérivées partielles \(\frac{\partial f} {\partial x_i} \) de \(f\) existent sur \(U\) et si elles sont continues sur \(U\).
 
-<b>Théorème :</b> Si \(f\) est une application de classe \(C^1\) de \(U\) dans \(F\), si \(\gamma\)  est une application de classe \(C^1\) de \([0,1]\) dans \(U\), si \(\gamma(0)=\) \(a\), \(\gamma(1) =\) \( b\), alors :\(f (b) - f (a) =\) \( \int_0^1 df_{\gamma(t)} ( \gamma'(t))dt\).
+<b>Théorème :</b> Si \(f\) est une application de classe \(C^1\) de \(U\) dans \(F\), si \(\gamma\) est une application de classe \(C^1\) de \([0,1]\) dans \(U\), si \(\gamma(0)=\) \(a\), \(\gamma(1) =\) \( b\), alors :\(f (b) - f (a) =\) \( \int_0^1 df_{\gamma(t)} ( \gamma'(t))dt\).
 
 <b>Corollaire : </b>Si \(U\) est connexe par arcs et si \(f:U\to F\) est de classe \(C^1\), \(f\) est constante si et seulement si \(df=\) \(0\) sur \(U\).
 
 
 Pour \(k\geq 2\), on définit par récurrence les dérivées partielles d'ordre \(k\) de \(f\) comme les dérivées partielles des dérivées partielles d'ordre \(k-1\) de \(f\).
  Par exemple, les dérivées partielles d'ordre \(2\) sont les fonctions 
-\(\frac{\partial} {\partial x_i} \left(\frac{\partial f} {\partial x_j} \right)\)
-avec \(1\leq i,j\leq p\).
+\(\frac{\partial} {\partial x_i} \left(\frac{\partial f} {\partial x_j} \right)\) avec \(1\leq i,j\leq p\).
  On la note \(\frac{\partial^2 f} {\partial x_i\partial x_j} \).
  Plus généralement, pour tout \(k\)-uplet \((i_1,\dots,i_k)\) de \(\{1,\dots,p\} ^k\), 
 \(\frac{\partial^k f} {\partial x_{i_1} \dots \partial x_{i_k} } =\) \(\frac{\partial} {\partial x_{i_1} } 
@@ -111,8 +109,7 @@ Extrema
 
 On dit que \(f\) admet un <b>minimum global</b> en \(a\in \mathcal U\) si, pour tout \(x\in \mathcal U\), \(f(x)\geq f(a)\).
 
-On dit que \(f\) admet un <b>minimum local</b> en \(a\) s'il existe \(r>0\) tel que, pour tout \(x\in \mathcal U\cap B(a,r)\),
- on a \(f(x)\geq f(a)\).
+On dit que \(f\) admet un <b>minimum local</b> en \(a\) s'il existe \(r>0\) tel que, pour tout \(x\in \mathcal U\cap B(a,r)\), on a \(f(x)\geq f(a)\).
 
 On définit de la même façon maximum global, maximum local.
  Un extrémum est un maximum ou un minimum.
@@ -120,8 +117,7 @@ On définit de la même façon maximum global, maximum local.
 
 Si \(f\) est différentiable en \(a\in\mathcal U\), on dit que \(a\) est un <b>point critique</b> de \(f\) si \(df_a=\) \(0\).
 
-<b>Théorème :</b> Si \(f\) admet un extrémum local en \(a\) et si \(f\) est différentiable en \(a\),
- alors \(a\) est un point critique de \(f\).
+<b>Théorème :</b> Si \(f\) admet un extrémum local en \(a\) et si \(f\) est différentiable en \(a\), alors \(a\) est un point critique de \(f\).
 
 
 

@@ -7,17 +7,14 @@ On appelle <b>série entière</b> toute série de fonctions de la forme \(\sum_{
  
 L'ensemble des \(z\in\mathbb C\) pour lesquels la série converge s'appelle le <b>domaine de convergence</b> de la série entière.
 
-<b>Lemme d'Abel :</b> Si la suite \((a_nz_0^n)\) est bornée, alors pour tout \(z\in\mathbb C\) avec \(|z|<|z_0|\), la série \(\sum_n a_n z^n\) 
-est absolument convergente.
+<b>Lemme d'Abel :</b> Si la suite \((a_nz_0^n)\) est bornée, alors pour tout \(z\in\mathbb C\) avec \(|z|<|z_0|\), la série \(\sum_n a_n z^n\) est absolument convergente.
 
 On appelle <b>rayon de convergence</b> de la série entière 
 \(R=\) \(\sup\{\rho\geq 0;\ (a_n\rho^n)\textrm{ est bornée} \} \in \mathbb R_+\cup\{+\infty\} \).
 <b>Proposition :</b> Soit \(\sum_n a_nz^n\) une série entière de rayon de convergence \(R\).
  Alors, pour tout \(z\in \mathbb C\),
 
-si \(|z|&lt;R\), la série \(\sum_n a_nz^n\) converge absolument;
-si \(|z|>R\), la série \(\sum_n a_nz^n\) diverge grossièrement (son terme général ne tend pas vers 0);
-si \(|z|=\) \(R\), alors on ne peut pas conclure en général.
+si \(|z|&lt;R\), la série \(\sum_n a_nz^n\) converge absolument; si \(|z|>R\), la série \(\sum_n a_nz^n\) diverge grossièrement (son terme général ne tend pas vers 0); si \(|z|=\) \(R\), alors on ne peut pas conclure en général.
 
 
 
@@ -36,8 +33,7 @@ Pour calculer le rayon de convergence d'une série entière, on utilise souvent 
 
 
 
-Lorsqu'on applique cette règle à une série entière \(\sum_n a_nz^n\) en posant \(u_n=\) \(|a_nz^n|\), on obtient que si \(|a_{n+1} |/|a_n|\) converge vers \(\ell\),
-alors le rayon de convergence de la série entière est \(1/\ell\).
+Lorsqu'on applique cette règle à une série entière \(\sum_n a_nz^n\) en posant \(u_n=\) \(|a_nz^n|\), on obtient que si \(|a_{n+1} |/|a_n|\) converge vers \(\ell\), alors le rayon de convergence de la série entière est \(1/\ell\).
  
 
 
@@ -55,20 +51,17 @@ On considère \(\sum_n a_n z^n\) et \(\sum_n b_nz^n\) deux séries entières de 
 \(\sum_{n\geq 0} (a_n+b_n)z^n=\) \(\sum_{n\geq 0} a_n z^n+\sum_{n\geq 0} b_nz^n\).
 On appelle <b>série entière produit</b> de \(\sum_n a_nz^n\) et de \(\sum_n b_nz^n\) la série entière \(\sum_n c_nz^n\) avec \(c_n=\) \(\sum_{k=\) \(0} ^n a_k b_{n-k} \).
 
-<b>Proposition :</b> Le rayon de convergence \(R\) de la série produit \(\sum_n c_nz^n\) de \(\sum_n a_nz^n\) et \(\sum_n b_nz^n\) 
-vérifie \(R\geq  \min(R_a,R_b)\).
+<b>Proposition :</b> Le rayon de convergence \(R\) de la série produit \(\sum_n c_nz^n\) de \(\sum_n a_nz^n\) et \(\sum_n b_nz^n\) vérifie \(R\geq \min(R_a,R_b)\).
  De plus, pour tout \(z\in\mathbb C\) avec \(|z|<\min(R_a,R_b)\), alors
 \(\sum_{n\geq 0} c_nz^n=\) \(\left(\sum_{n\geq 0} a_n z^n\right)\times\left(\sum_{n\geq 0} b_nz^n\right)\).
 
 
 Cas de la variable réelle
-On s'intéresse désormais au cas où la variable ne peut plus prendre que des valeurs réelles, et nous noterons désormais les 
-séries entières \(\sum_n a_n x^n\).
+On s'intéresse désormais au cas où la variable ne peut plus prendre que des valeurs réelles, et nous noterons désormais les séries entières \(\sum_n a_n x^n\).
  On s'intéresse à la régularité de la série entière à l'intérieur de son intervalle de convergence \(]-R,R[\).
 
 
-<b>Théorème (intégration d'une série entière) :</b> Soit \(f(x)=\) \(\sum_{n\geq 0} a_nx^n\) une série entière de rayon de convergence \(R>0\) et soit \(F\)
-une primitive de \(f\).
+<b>Théorème (intégration d'une série entière) :</b> Soit \(f(x)=\) \(\sum_{n\geq 0} a_nx^n\) une série entière de rayon de convergence \(R>0\) et soit \(F\) une primitive de \(f\).
  Alors, pour tout \(x\in ]-R,R[\),
 \(F(x)=\) \(F(0)+\sum_{n\geq 0} \frac{a_n} {n+1} x^{n+1} \).
 
@@ -101,15 +94,13 @@ Une combinaison linéaire de fonctions développables en série entière est dé
  Il en est de même de la dérivée ou d'une primitive d'une fonction développable en série entière.
 
 <b>Corollaire :</b> Soit \(I\) un intervalle contenant \(0\) et \(f:I\to\mathbb R\).
- Si \(f\) est développable en série entière en \(0\), alors il existe \(r>0\) tel que, 
-pour tout \(x\in ]-r,r[\), 
+ Si \(f\) est développable en série entière en \(0\), alors il existe \(r>0\) tel que, pour tout \(x\in ]-r,r[\), 
 \(f(x)=\) \(\sum_{n\geq 0} \frac{f^{(n)} (0)} {n!} x^n\).
 
 
 Développements en séries entières usuels
 
-\begin{eqnarray*} 
-e^x&=\) \(&\sum_{n\geq 0} \frac{x^n} {n!} ,\ R=\) \(+\infty\\
+\begin{eqnarray*} e^x&=\) \(&\sum_{n\geq 0} \frac{x^n} {n!} ,\ R=\) \(+\infty\\
 \cos x&=\) \(&\sum_{n\geq 0} \frac{(-1)^n x^{2n} } {(2n)!} ,\ R=\) \(+\infty\\
 \sin x&=\) \(&\sum_{n\geq 0} \frac{(-1)^n x^{2n+1} } {(2n+1)!} ,\ R=\) \(+\infty\\
 \cosh x&=\) \(&\sum_{n\geq 0} \frac{x^{2n} } {(2n)!} ,\ R=\) \(+\infty\\

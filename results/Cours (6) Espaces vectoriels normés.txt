@@ -43,8 +43,7 @@ Une partie \(A\) de l'espace vectoriel normé \(E\) est dite <b>bornée</b> s'il
 
 Une fonction \(f:X\to E\) est dite bornée si son image \(f(X)\) est bornée dans \((E,\|\cdot\|)\).
 
-Si \((E_1,N_1),\dots,(E_p,N_p)\) sont \(p\) espaces vectoriels normés, on peut définir une norme
-sur \(E_1\times\dots\times E_p\) en posant 
+Si \((E_1,N_1),\dots,(E_p,N_p)\) sont \(p\) espaces vectoriels normés, on peut définir une norme sur \(E_1\times\dots\times E_p\) en posant 
 \(N\big((x_1,\dots,x_p)\big)=\) \(\max\big(N_1(x_1),\dots,N_p(x_p)\big)\).
 On l'appelle la <b>norme produit</b>
 
@@ -67,30 +66,21 @@ Une suite qui n'est convergente vers aucun \(\ell\in E\) est dite <b>divergente<
 <b>Proposition :</b> Toute suite convergente est bornée.
 
 
-<b>Proposition :</b> Si \((u_n)\) et \((v_n)\) sont deux suites de \(E\) convergeant
-respectivement vers \(\ell\) et vers \(\ell'\), alors pour tous \(\alpha,\beta\in\mathbb K^2\), \((\alpha u_n+\beta v_n)\) converge
-vers \(\alpha \ell+\beta\ell'\).
+<b>Proposition :</b> Si \((u_n)\) et \((v_n)\) sont deux suites de \(E\) convergeant respectivement vers \(\ell\) et vers \(\ell'\), alors pour tous \(\alpha,\beta\in\mathbb K^2\), \((\alpha u_n+\beta v_n)\) converge vers \(\alpha \ell+\beta\ell'\).
  
-<b>Proposition :</b> Soient \((E_1,N_1),\dots,(E_p,N_p)\) des espaces vectoriels normés et soit \(N\)
-la norme produit sur \(E=\) \(E_1\times\dots\times E_p\).
+<b>Proposition :</b> Soient \((E_1,N_1),\dots,(E_p,N_p)\) des espaces vectoriels normés et soit \(N\) la norme produit sur \(E=\) \(E_1\times\dots\times E_p\).
  Soit \((u_n)=\) \((u_n(1),\dots,u_n( p))\) une suite de \(E\).
- Alors \((u_n)\) converge dans \(E\)
-pour la norme \(N\) si et seulement si, pour chaque \(i=\) \(1,\dots,p\), \((u_n(i))\) converge dans \(E_i\) pour la norme \(N_i\).
+ Alors \((u_n)\) converge dans \(E\) pour la norme \(N\) si et seulement si, pour chaque \(i=\) \(1,\dots,p\), \((u_n(i))\) converge dans \(E_i\) pour la norme \(N_i\).
 
 Soit \((u_n)\) une suite de \(E\) et soit \(\phi:\mathbb N\to\mathbb N\) strictement croissante.
  La suite \((u_{\phi(n)} )\) s'appelle <b>suite extraite</b> de \((u_n)\).
 
 <b>Proposition :</b> Soit \((u_n)\) une suite de \(E\).
 
-
-toute suite extraite d'une suite extraite de \((u_n)\) est une suite extraite de \((u_n)\).
-
-si \((u_n)\) converge vers \(\ell\), toute suite extraite de \((u_n)\) converge vers \(\ell\).
-
-si \((u_n)\) admet une suite extraite \((u_{\phi(n)} )\) qui converge vers \(\ell_1\) et une suite extraite \((u_{\psi(n)} )\) qui converge vers \(\ell_2\)
-avec \(\ell_1\neq \ell_2\), alors \((u_n)\) est divergente.
-
-si \((u_{2n} )\) et \((u_{2n+1} )\) convergent vers le même \(\ell\in E\), alors \((u_n)\) converge vers \(\ell\).
+ toute suite extraite d'une suite extraite de \((u_n)\) est une suite extraite de \((u_n)\).
+ si \((u_n)\) converge vers \(\ell\), toute suite extraite de \((u_n)\) converge vers \(\ell\).
+ si \((u_n)\) admet une suite extraite \((u_{\phi(n)} )\) qui converge vers \(\ell_1\) et une suite extraite \((u_{\psi(n)} )\) qui converge vers \(\ell_2\) avec \(\ell_1\neq \ell_2\), alors \((u_n)\) est divergente.
+ si \((u_{2n} )\) et \((u_{2n+1} )\) convergent vers le même \(\ell\in E\), alors \((u_n)\) converge vers \(\ell\).
 
 
 On dit que \(\ell\) est une <b>valeur d'adhérence</b> de la suite \((u_n)\) s'il existe une suite extraite de \((u_n)\) qui converge vers \(\ell\).
@@ -98,8 +88,7 @@ On dit que \(\ell\) est une <b>valeur d'adhérence</b> de la suite \((u_n)\) s'i
 <b>Corollaire :</b> Si \((u_n)\) admet deux valeurs d'adhérence distinctes, alors \((u_n)\) est divergente.
 
 
-<b>Théorème : </b> \(\ell\) est une valeur d'adhérence de la suite \((u_n)\) si et seulement si, pour tout \(\veps>0\), 
-pour tout \(N\in\mathbb N\), il existe \(n\geq N\) tel que \(\|u_n-\ell\|<\veps\).
+<b>Théorème : </b> \(\ell\) est une valeur d'adhérence de la suite \((u_n)\) si et seulement si, pour tout \(\veps>0\), pour tout \(N\in\mathbb N\), il existe \(n\geq N\) tel que \(\|u_n-\ell\|<\veps\).
 
 
 

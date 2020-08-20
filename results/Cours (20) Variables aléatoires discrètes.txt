@@ -81,8 +81,7 @@ Soit \(p\in\mathbb N^*\).
 \(\big(E(XY)\big)^2\leq E(X^2)E(Y^2)\).
 
 Lorsque \(X^2\) est d'espérance finie, on appelle <b>variance de \(X\)</b> le réel 
-\(V(X)=\) \(E\big( (X-E(X))^2\big)=\) \(E(X^2)-\big(E(X)\big)^2\)
-et <b>écart-type de \(X\)</b> le réel \(\sigma(X)=\) \(\sqrt{V(X)} \).
+\(V(X)=\) \(E\big( (X-E(X))^2\big)=\) \(E(X^2)-\big(E(X)\big)^2\) et <b>écart-type de \(X\)</b> le réel \(\sigma(X)=\) \(\sqrt{V(X)} \).
 
 On a \(V(aX+b)=\) \(a^2V(X)\).
 
@@ -100,12 +99,11 @@ Le <b>coefficient de corrélation linéaire</b> est
 
 Loi discrètes usuelles
 
-On dit qu'une variable aléatoire \(X\) suit une <b>loi de Bernoulli</b> de paramètre \(p\in [0,1]\) lorsque \(X\) 
-est à valeurs dans \(\{0,1\} \) et que
+On dit qu'une variable aléatoire \(X\) suit une <b>loi de Bernoulli</b> de paramètre \(p\in [0,1]\) lorsque \(X\) est à valeurs dans \(\{0,1\} \) et que
 \(P(X=\) \(1)=\) \(p\textrm{ et } P(X=\) \(0)=\) \(1-p\).
 On a alors 
 \(E(X)=\) \(p,\ V(X)=\) \(p(1-p)\).
-On dit qu'une variable aléatoire \(X\) suit une <b>loi binomiale</b> de paramètres \(n\in\mathbb N^*\) et  \(p\in [0,1]\), que l'on note \(\mathcal B( n,p)\), lorsque \(X\) est à valeurs dans \(\{0,\dots,n\} \) avec, pour tout \(k\in\{0,\dots,n\} \), 
+On dit qu'une variable aléatoire \(X\) suit une <b>loi binomiale</b> de paramètres \(n\in\mathbb N^*\) et \(p\in [0,1]\), que l'on note \(\mathcal B( n,p)\), lorsque \(X\) est à valeurs dans \(\{0,\dots,n\} \) avec, pour tout \(k\in\{0,\dots,n\} \), 
 \(P(X=\) \(k)=\) \(\binom nk p^k(1-p)^{n-k} \).
 On a alors
 \(E(X)=\) \(np,\ V(X)=\) \(np(1-p)\).
@@ -119,12 +117,11 @@ On a alors \(E(X)=\) \(\frac 1p\textrm{ et } V(X)=\) \(\frac{1-p} {p^2} \).
 
 <b>Théorème (caractérisation comme loi sans mémoire) :</b> Soit \(X\) une variable aléatoire à valeurs dans \(\mathbb N\).
  \(X\) est sans mémoire, c'est-à-dire que pour tout \(n,k\in\mathbb N^2\), 
-\(P(X>n+k|X>n)=\) \(P(X>k)\)
- si et seulement si \(X\) suit une loi géométrique.
+\(P(X>n+k|X>n)=\) \(P(X>k)\) si et seulement si \(X\) suit une loi géométrique.
 
  
  Soit \(\lambda>0\).
- On dit que \(X\) suit  une <b>loi de Poisson</b> de paramètre \(\lambda\) si elle est à valeurs dans \(\mathbb N\) et si, pour tout \(n\in \mathbb N\), \(P(X=\) \(n)=\) \(\frac{e^{-\lambda} \lambda^n} {n!} \).
+ On dit que \(X\) suit une <b>loi de Poisson</b> de paramètre \(\lambda\) si elle est à valeurs dans \(\mathbb N\) et si, pour tout \(n\in \mathbb N\), \(P(X=\) \(n)=\) \(\frac{e^{-\lambda} \lambda^n} {n!} \).
  On a alors \(E(X)=\) \(\lambda\) et \(V(X)=\) \(\lambda\).
 
 
@@ -146,7 +143,7 @@ Soit \((X_n)_{n\geq 1} \) une suite de variables aléatoires discrètes réelles
  Alors, si \(m=\) \(E(X_1)\), on a
 \(P\left(\left|\frac{S_n} n-m\right|\geq\veps\right)\xrightarrow{n\to+\infty} 0\).
 
-<b>Approximation de la loi binomiale par la loi de Poisson  :</b> Soit \((X_n)\) une suite de variables aléatoires telle que, pour tout \(n\), \(X_n\) suit une loi binomiale de paramètres \((n,p_n)\).
+<b>Approximation de la loi binomiale par la loi de Poisson :</b> Soit \((X_n)\) une suite de variables aléatoires telle que, pour tout \(n\), \(X_n\) suit une loi binomiale de paramètres \((n,p_n)\).
  Si la suite \((np_n)\) converge vers \(\lambda>0\), alors, pour tout \(k\in\mathbb N\), 
 \(P(X_n=\) \(k)\xrightarrow{n\to+\infty} \frac{e^{-\lambda} \lambda^k} {k!} \).
 
@@ -154,7 +151,7 @@ Soit \((X_n)_{n\geq 1} \) une suite de variables aléatoires discrètes réelles
 Fonction génératrice
 
 Soit \(X\) une variable aléatoire à valeurs dans \(\mathbb N\).
- On appelle  <b>fonction génératrice</b> de \(X\) la série entière suivante :\(G_X(t)=\) \(\sum_{n=\) \(0} ^{+\infty} P(X=\) \(n)t^n\).
+ On appelle <b>fonction génératrice</b> de \(X\) la série entière suivante :\(G_X(t)=\) \(\sum_{n=\) \(0} ^{+\infty} P(X=\) \(n)t^n\).
 Le rayon de convergence de la série entière précédente est supérieur ou égal à \(1\).
  \(G_X\) définit donc une fonction de classe \(\mathcal C^\infty\) sur \(]-1,1[\).
  Elle est en fait continue sur l'intervalle fermé \([-1,1]\).
