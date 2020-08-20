@@ -48,8 +48,7 @@ Alors les assertions suivantes sont équivalentes :
 
 
 Dans ce cas, on a
-\(\sum_{i\in I} u_i=\) \(\sum_n \left(\sum_{i\in I_n} u_i\right).\)
-
+\(\sum_{i\in I} u_i=\) \(\sum_n \left(\sum_{i\in I_n} u_i\right)\).
 
 
 Familles sommables de nombres complexes
@@ -60,19 +59,16 @@ La famille de nombres complexes \((u_i)_{i\in I} \) est dite <b>sommable</b> si 
 
 Soit \((u_i)_{i\in I} \) une famille de nombres réels.
  On note, pour tout \(i\in I\), 
-\(u_i^+=\) \(\max(u_i,0)\textrm{ et } u_i^-=\) \(\max(-u_i,0).\)
-
+\(u_i^+=\) \(\max(u_i,0)\textrm{ et } u_i^-=\) \(\max(-u_i,0)\).
 Alors \((u_i)_{i\in I} \) est sommable si et seulement si \((u_i^+)_{i\in I} \) et \((u_i^-)_{i\in I} \) sont sommables.
  Dans ce cas, on appelle <b>somme</b> 
 de la famille \((u_i)_{i\in I} \) le réel
-\(\sum_{i\in I} u_i=\) \(\sum_{i\in I} u_i^+-\sum_{i\in I} u_i^-.\)
-
+\(\sum_{i\in I} u_i=\) \(\sum_{i\in I} u_i^+-\sum_{i\in I} u_i^-\).
 Soit \((u_i)_{i\in I} \) une famille de nombres complexes.
  Alors \((u_i)_{i\in I} \) est sommable si et seulement si les deux suites de nombres réels \((\Re e(u_i))_{i\in I} \)
 et \((\Im m(u_i))_{i\in I} \) sont sommables.
  Dans ce cas, on appelle <b>somme</b> de la famille \((u_i)_{i\in I} \) le nombre complexe
-\(\sum_{i\in I} u_i=\) \(\sum_{i\in I} \Re e(u_i)+\text{i} \sum_{i\in I} \Im m(u_i).\)
-
+\(\sum_{i\in I} u_i=\) \(\sum_{i\in I} \Re e(u_i)+\text{i} \sum_{i\in I} \Im m(u_i)\).
 <b>Proposition :</b> Soit \((u_n)_{n\in\mathbb N} \) une famille de complexes indexée
 par \(\mathbb N\).
  Alors la famille \((u_n)\) est sommable si et seulement si la série \(\sum_n u_n\) est absolument convergente.
@@ -91,39 +87,33 @@ Alors la famille \((u_i)_{i\in I} \) est sommable si et seulement si la famille 
 Alors pour tout entier \(n\in\mathbb N\), la famille \((u_i)_{i\in I_n} \) est sommable et la série \(\sum_n \left(\sum_{i\in I_n} u_i\right)\) est absolument convergente.
 
 De plus, on a
-\(\sum_{i\in I} u_i=\) \(\sum_n \left(\sum_{i\in I_n} u_i\right).\)
-
+\(\sum_{i\in I} u_i=\) \(\sum_n \left(\sum_{i\in I_n} u_i\right)\).
 
 Propriétés : soit \((u_i)_{i\in I} \) et \((v_i)_{i\in I} \) deux familles sommables de nombres complexes.
  Alors 
 
 <b>linéarité :</b> pour tout \(\lambda\in\mathbb C\), \((\lambda u_i+v_i)_{i\in I} \) est sommable, et 
-\(\sum_{i\in I} \big(\lambda u_i+v_i\big)=\) \(\lambda\sum_{i\in I} u_i+\sum_{i\in I} v_i.\)
-
+\(\sum_{i\in I} \big(\lambda u_i+v_i\big)=\) \(\lambda\sum_{i\in I} u_i+\sum_{i\in I} v_i\).
 <b>positivité :</b> si \(u_i\geq 0\), alors \(\sum_i u_i\geq 0\) avec égalité si et seulement si, pour chaque \(i\in I\), \(u_i=\) \(0\).
 
 <b>inégalité triangulaire :</b> 
-\(\left|\sum_{i\in I} u_i\right|\leq \sum_{i\in I} |u_i|.\)
-
+\(\left|\sum_{i\in I} u_i\right|\leq \sum_{i\in I} |u_i|\).
 <b>famille produit :</b> la famille \((u_iv_j)_{(i,j)\in I\times I} \) est sommable et on a
-\(\sum_{(i,j)\in I\times I} u_iv_j=\) \(\left(\sum_{i\in I} u_i\right)\times\left(\sum_{j\in I} v_j\right).\)
-
+\(\sum_{(i,j)\in I\times I} u_iv_j=\) \(\left(\sum_{i\in I} u_i\right)\times\left(\sum_{j\in I} v_j\right)\).
 
 
 Application aux séries
 
 <b>Proposition (permutation de l'ordre des termes):</b> Soit \(\sum_n u_n\) une série absolument convergente et soit \(\sigma\) une bijection de \(\mathbb N\).
  Alors
-\(\sum u_{\sigma(n)} \) est absolument convergente, et on a \(\sum_{n\geq 0} u_n=\) \(\sum_{n\geq 0} u_{\sigma(n)} .\)
-</span>
+\(\sum u_{\sigma(n)} \) est absolument convergente, et on a \(\sum_{n\geq 0} u_n=\) \(\sum_{n\geq 0} u_{\sigma(n)} \).</span>
 <b>Théorème (permutation des sommes) :</b> Soit \((u_{m,n} )_{(m,n)\in\mathbb N^2} \) une famille de nombres complexes.
  Les assertions suivantes sont équivalentes :
  - la famille \((u_{m,n} )_{(n,m)\in\mathbb N^2} \) est sommable;
  - pour tout entier \(n\), la série \(\sum_m |u_{m,n} |\) converge, et la série \(\sum_n \left(\sum_{m=\) \(0} ^{+\infty} |u_{m,n} |\right)\) est convergente.
 
 
-Dans ce cas, on a égalité des sommes :\(\sum_{(m,n)\in\mathbb N^2} u_{m,n} =\) \(\sum_{n=\) \(0} ^{+\infty} \sum_{m=\) \(0} ^{+\infty} u_{m,n} .\)
-
+Dans ce cas, on a égalité des sommes :\(\sum_{(m,n)\in\mathbb N^2} u_{m,n} =\) \(\sum_{n=\) \(0} ^{+\infty} \sum_{m=\) \(0} ^{+\infty} u_{m,n} \).
 
 Soit \(\sum_n a_n\) et \(\sum_n b_n\) deux séries de nombres complexes.
  On appelle <b>produit de Cauchy</b> de ces deux séries
@@ -132,7 +122,6 @@ la série de terme général \(c_n=\) \(\sum_{k=\) \(0} ^n a_k b_{n-k} \).
 <b>Théorème (produit de Cauchy de deux séries) :</b> Soit \(\sum_n a_n\) et \(\sum_n b_n\) deux séries de nombres complexes absolument convergentes
 et soit \(\sum_n c_n\) la série produit de Cauchy de ces deux séries.
  Alors \(\sum_n c_n\) est absolument convergente et on a 
-\(\sum_{n\geq 0} c_n=\) \(\left(\sum_{n\geq 0} a_n\right)\times\left(\sum_{n\geq 0} b_n\right).\)
-
+\(\sum_{n\geq 0} c_n=\) \(\left(\sum_{n\geq 0} a_n\right)\times\left(\sum_{n\geq 0} b_n\right)\).
 
 

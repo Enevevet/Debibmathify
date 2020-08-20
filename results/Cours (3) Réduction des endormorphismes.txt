@@ -69,8 +69,7 @@ On appelle <b>polynôme caractéristique</b> de \(A\) le polynôme de degré \(n
 
 En particulier, si \(A\) est une matrice triangulaire (inférieure ou supérieure) dont les coefficients diagonaux
 sont \(\lambda_1,\dots,\lambda_n\), alors le polynôme caractéristique de \(A\) est 
-\(\chi_A(X)=\) \((X-\lambda_1)\cdots (X-\lambda_n).\)
-
+\(\chi_A(X)=\) \((X-\lambda_1)\cdots (X-\lambda_n)\).
 <b>Proposition :</b> Deux matrices semblables ont le même polynôme caractéristique.
 
 On appelle <b>polynôme caractéristique</b> de \(u\) le polynôme caractéristique de toute matrice

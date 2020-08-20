@@ -18,8 +18,7 @@ lorsque \(x\) tend vers \(b\).
 Soit \(f:]a,b[\to\mathbb K\) continue par morceaux avec \(a,b\in\mathbb R\cup\{\pm\infty\} \).
  On dit que l'intégrale \(\int_a^b f\) est <b>convergente</b> si, pour un (ou de façon équivalente pour tout) \(c\in ]a,b[\), la fonction \(x\mapsto \int_c^x f(t)dt\) admet une limite finie
 lorsque \(x\) tend vers \(b\) et la fonction \(x\mapsto \int_x^c f(t)dt\) admet une limite finie lorsque \(x\) tend vers \(a\).
- Dans ce cas, on note \(\int_a^{b} f(t)dt\) ou \(\int_a^{b} f\) la somme de ces deux limites :\(\int_a^b f=\) \(\lim_{x\to a} \int_x^c f+\lim_{y\to b} \int_c^yf.\)
-
+ Dans ce cas, on note \(\int_a^{b} f(t)dt\) ou \(\int_a^{b} f\) la somme de ces deux limites :\(\int_a^b f=\) \(\lim_{x\to a} \int_x^c f+\lim_{y\to b} \int_c^yf\).
 Dans la suite, on considèrera \(I=\) \((a,b)\) un intervalle de \(\mathbb R\) ouvert ou semi-ouvert et \(f,g:I\to\mathbb R\) deux fonctions continues par morceaux.
 
 Les propriétés usuelles sont vérifiées :
@@ -29,8 +28,7 @@ Les propriétés usuelles sont vérifiées :
 \(\int_I(f+\lambda g)\) converge et \(\int_I(f+\lambda g)=\) \(\int_I f+\lambda \int_I g\).
 
 <b>Relation de Chasles :</b> si \(\int_I f\) converge, alors pour tout \(c\in ]a,b[\), \(\int_a^c f\) et \(\int_c^b f\) convergent et on a 
-\(\int_a^b f=\) \(\int_a^c f+\int_c^b f.\)
-
+\(\int_a^b f=\) \(\int_a^c f+\int_c^b f\).
 
 
 <b>Théorème (cas des fonctions positives) :</b> Si \(f:[a,b[\to\mathbb R\) est positive, alors \(\int_a^{b} f\) converge si et 
@@ -56,8 +54,7 @@ que \(\lim_{t\to a} f(t)g(t)\) et \(\lim_{t\to b} f(t)g(t)\) existent.
  Alors les intégrales \(\int_a^b f(t)g'(t)dt\) et \(\int_a^b f'(t)g(t)dt\) sont de même nature.
 
 Lorsqu'elles sont convergentes, on a 
-\(\int_a^b f'(t)g(t)dt=\) \(f(b)g(b)-f(a)g(a)-\int_a^b f(t)g'(t)dt.\)
-
+\(\int_a^b f'(t)g(t)dt=\) \(f(b)g(b)-f(a)g(a)-\int_a^b f(t)g'(t)dt\).
 
 
 Fonctions intégrables
@@ -70,11 +67,9 @@ On dit que \(f\) est <b>intégrable sur \(I\)</b> ou que \(\int_If\) est <b>abso
 <b>Théorème :</b> Si \(f\) est intégrable sur \(I\), alors \(\int_I f(t)dt\) converge.
 
 Si \(f\) et \(g\) sont intégrables sur \(I\), alors \(f+g\) est intégrable sur \(I\) et on a 
-\(\int_I |f+g|\leq \int_I |f|+\int_I |g|.\)
-
+\(\int_I |f+g|\leq \int_I |f|+\int_I |g|\).
 Si \(f\) est continue sur \(I\), intégrable et positive, alors 
-\(\int_I |f(t)|dt=\) \(0\implies f\equiv 0.\)
-
+\(\int_I |f(t)|dt=\) \(0\implies f\equiv 0\).
 Les deux propriétés précédentes entrainent que, si on note \(\mathcal E(I)\) l'ensemble des fonctions continues et intégrables de \(I\) dans \(\mathbb K\),
 alors \(\|f\|_1=\) \(\int_I |f(t)|dt\) est une norme sur \(\mathcal E(I)\).
 

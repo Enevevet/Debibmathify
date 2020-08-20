@@ -6,24 +6,20 @@ Soit \(E\) un espace vectoriel de dimension finie munie d'une norme \(\|\cdot\|\
 
 
 On appelle <b>somme partielle d'ordre \(n\)</b> de la série \(\sum u_k\) le vecteur
-\(S_n=\) \(\sum_{k=\) \(0} ^n u_k.\)
-
+\(S_n=\) \(\sum_{k=\) \(0} ^n u_k\).
 On dit que la série \(\sum u_n\) converge si la suite de ses sommes partielles \((S_n)\) est convergente.
  On dit qu'elle diverge dans le cas contraire.
 
 Dans le cas de la convergence, on note
-\(\sum_{k=\) \(0} ^{+\infty} u_k=\) \(\lim_{n\to+\infty} S_n.\)
-
+\(\sum_{k=\) \(0} ^{+\infty} u_k=\) \(\lim_{n\to+\infty} S_n\).
 Le vecteur \( \sum_{k=\) \(0} ^{+\infty} u_n\) de \(E\) s'appelle la somme de la série \(\sum u_k\).
  Toujours dans le cas de la convergence, le <b>reste</b> de la série d'ordre \(n\) est défini par 
-\(R_n=\) \(\sum_{k=\) \(n+1} ^{+\infty} u_k.\)
-
+\(R_n=\) \(\sum_{k=\) \(n+1} ^{+\infty} u_k\).
 <b>Proposition :</b> Si la série \(\sum_n u_n\) converge, 
 alors  \((\|u_n\|)\) tend vers 0.
 
 <b>Lien suite série :</b> Si on pose, pour \(n\geq 0\), \(v_n=\) \(u_{n+1} -u_n\), alors
-\(\sum_{k=\) \(0} ^n v_k=\) \(u_{n+1} -u_0.\)
-
+\(\sum_{k=\) \(0} ^n v_k=\) \(u_{n+1} -u_0\).
 En particulier, la suite \((u_n)\) converge si et seulement si la série \(\sum_n (u_{n+1} -u_n)\) converge.
 
 
@@ -93,11 +89,9 @@ Soit \(f:[0,+\infty[\to\mathbb R\).
 
 
 si \(f\) est croissante, alors pour tout \(n\geq 1\), 
-\(\int_{n-1} ^n f(t)dt\leq f(n)\leq \int_n^{n+1} f(t)dt.\)
-
+\(\int_{n-1} ^n f(t)dt\leq f(n)\leq \int_n^{n+1} f(t)dt\).
 si \(f\) est décroissante, alors pour tout \(n\geq 1\), 
-\(\int_{n} ^{n+1} f(t)dt\leq f(n)\leq \int_{n-1} ^{n} f(t)dt.\)
-
+\(\int_{n} ^{n+1} f(t)dt\leq f(n)\leq \int_{n-1} ^{n} f(t)dt\).
 
 En sommant ces inégalités, on obtient des encadrements des sommes partielles et des restes des séries.
 

@@ -29,22 +29,18 @@ On appelle <b>couple</b> de variables aléatoires discrètes un couple \((X,Y)\)
 
 Soit \(x\) un élément de \(X(\Omega)\) tel que \(P(X=\) \(x)>0\).
  On appelle <b>loi conditionnelle de \(Y\) sachant que \((X=\) \(x)\)</b> la probabilité \(P_x\) définie sur \(Y(\Omega)\) par 
-\(\forall y\in Y(\Omega), P_x(\{y\} )=\) \(P(Y=\) \(y|X=\) \(x)=\) \(\frac{P(X=\) \(x,Y=\) \(y)} {P(X=\) \(x)} .\)
-
+\(\forall y\in Y(\Omega), P_x(\{y\} )=\) \(P(Y=\) \(y|X=\) \(x)=\) \(\frac{P(X=\) \(x,Y=\) \(y)} {P(X=\) \(x)} \).
 Ces définitions se généralisent à des \(n\)-uplets de variables aléatoires discrètes.
  Si \(X_1,\dots,X_n\) sont \(n\) variables aléatoires discrètes, \((X_1,\dots,X_n)\) s'appelle un vecteur aléatoire discret.
 
 Deux variables aléatoires discrètes \(X\) et \(Y\) sont dites <b>indépendantes</b> si, pour tout \(x\in X(\Omega)\) et tout \(y\in Y(\Omega)\), on a
-\(P(X=\) \(x,Y=\) \(y)=\) \(P(X=\) \(x)P(Y=\) \(y).\)
-
+\(P(X=\) \(x,Y=\) \(y)=\) \(P(X=\) \(x)P(Y=\) \(y)\).
 <b>Proposition :</b> Deux variables aléatoires discrètes \(X\) et \(Y\) sont indépendantes si et seulement si, pour tout \(A\subset X(\Omega)\) et tout \(B\subset Y(\Omega)\), on a 
-\(P(X\in A,Y\in B)=\) \(P(X\in A)P(Y\in B).\)
-
+\(P(X\in A,Y\in B)=\) \(P(X\in A)P(Y\in B)\).
 
 Soit \((X_n)_{n\in I} \) une famille de variables aléatoires, où \(I\) est fini ou dénombrable.
  On dit que les variables aléatoires \((X_n)_{n\in I} \) sont <b>mutuellement indépendantes</b> lorsque, pour toute partie finie \(J=\) \(\{i_1,\dots,i_p\} \subset I\), pour tout \((x_{i_1} ,\dots,x_{i_p} )\in X_{i_1} (\Omega)\times\dots\times X_{i_p} (\Omega)\), on a
-\(P(X_{i_1} =\) \(x_{i_1} ,\dots,X_{i_p} =\) \(x_{i_p} )=\) \(P(X_{i_1} =\) \(x_{i_1} )\cdots P(X_{i_p} =\) \(x_{i_p} ).\)
-
+\(P(X_{i_1} =\) \(x_{i_1} ,\dots,X_{i_p} =\) \(x_{i_p} )=\) \(P(X_{i_1} =\) \(x_{i_1} )\cdots P(X_{i_p} =\) \(x_{i_p} )\).
 <b>Proposition :</b> Si \(X_1,X_2,\dots,X_n\) sont des variables aléatoires mutuellement indépendantes, alors pour tout \(m\) compris entre 1 et \(n-1\), et pour toutes fonctions \(f\) et \(g\), les variables \(f(X_1,\cdots,X_m)\) et \(g(X_{m+1} ,\cdots,X_n)\) sont indépendantes.
 
 
@@ -55,8 +51,7 @@ Dans cette partie, \(X\) et \(Y\) désignent deux variables aléatoires discrèt
 
 
 On dit que \(X\) est d'<b>espérance finie</b> si la famille \((x_n P(X=\) \(x_n))\) est sommable.
- Si c'est le cas, on appelle <b>espérance de \(X\)</b> la somme de cette famille :\(E(X)=\) \(\sum_{n\in I} x_n P(X=\) \(x_n).\)
-
+ Si c'est le cas, on appelle <b>espérance de \(X\)</b> la somme de cette famille :\(E(X)=\) \(\sum_{n\in I} x_n P(X=\) \(x_n)\).
 <b>Proposition :</b>
 
 L'espérance est linéaire : si \(X\) et \(Y\) sont d'espérance finie, \(X+Y\) est d'espérance finie et \(E(X+Y)=\) \(E(X)+E(Y)\).
@@ -73,8 +68,7 @@ Si \(|Y|\leq X\) et \(X\) est d'espérance finie, alors \(Y\) est d'espérance f
 <b>Théorème de transfert :</b> Soit \(f\) une fonction définie sur \(X(\Omega)\) à valeurs dans \(\mathbb R\).
  Alors \(f(X)\) est d'espérance finie si et seulement si la famille \((P(X=\) \(x_n)f(x_n))_{n\in I} \) est sommable.
  Dans ce cas,
-\(E(f(X))=\) \(\sum_{n\in I} f(x_n)P(X=\) \(x_n).\)
-
+\(E(f(X))=\) \(\sum_{n\in I} f(x_n)P(X=\) \(x_n)\).
 
 Soit \(p\in\mathbb N^*\).
  On dit que \(X\) admet un <b>moment d'ordre \(p\)</b> si \(X^p\) est d'espérance finie.
@@ -84,8 +78,7 @@ Soit \(p\in\mathbb N^*\).
  Si \(X\) admet un moment d'ordre \(q\), alors \(X\) admet un moment d'ordre \(p\).
 
 <b>Inégalité de Cauchy-Schwarz :</b> Si \(X\) et \(Y\) admettent des moments d'ordre \(2\), alors \(XY\) est d'espérance finie et
-\(\big(E(XY)\big)^2\leq E(X^2)E(Y^2).\)
-
+\(\big(E(XY)\big)^2\leq E(X^2)E(Y^2)\).
 
 Lorsque \(X^2\) est d'espérance finie, on appelle <b>variance de \(X\)</b> le réel 
 \(V(X)=\) \(E\big( (X-E(X))^2\big)=\) \(E(X^2)-\big(E(X)\big)^2\)
@@ -95,43 +88,33 @@ On a \(V(aX+b)=\) \(a^2V(X)\).
 
 <b>Théorème (variance d'une somme de variables aléatoires) :</b> Soit \(X_1,\dots,X_n\) des variables aléatoires discrètes finies admettant des moments d'ordre \(2\).
  Alors
-\(V\left(\sum_{i=\) \(1} ^n X_i\right)=\) \(\sum_{i=\) \(1} ^n V(X_i)+2\sum_{1\leq i&lt;j\leq n} \big(E(X_iX_j)-E(X_i)E(X_j)\big).\)
-
+\(V\left(\sum_{i=\) \(1} ^n X_i\right)=\) \(\sum_{i=\) \(1} ^n V(X_i)+2\sum_{1\leq i&lt;j\leq n} \big(E(X_iX_j)-E(X_i)E(X_j)\big)\).
 En particulier, si les \(X_I\) sont <b>deux à deux</b> indépendantes, alors 
-\(V\left(\sum_{i=\) \(1} ^n X_i\right)=\) \(\sum_{i=\) \(1} ^n V(X_i).\)
-
+\(V\left(\sum_{i=\) \(1} ^n X_i\right)=\) \(\sum_{i=\) \(1} ^n V(X_i)\).
 
 Si \(X\) et \(Y\) admettent un moment d'ordre \(2\), on appelle <b>covariance</b> de \(X\) et de \(Y\) le réel
-\(\textrm{Cov} (X,Y)=\) \(E\big((X-E(X))(Y-E(Y)\big)=\) \(E(XY)-E(X)E(Y).\)
-
+\(\textrm{Cov} (X,Y)=\) \(E\big((X-E(X))(Y-E(Y)\big)=\) \(E(XY)-E(X)E(Y)\).
 Le <b>coefficient de corrélation linéaire</b> est
-\(\rho(X,Y)=\) \(\frac{\textrm{Cov} (X,Y)} {\sigma(X)\sigma(Y)} .\)
-
+\(\rho(X,Y)=\) \(\frac{\textrm{Cov} (X,Y)} {\sigma(X)\sigma(Y)} \).
 
 
 Loi discrètes usuelles
 
 On dit qu'une variable aléatoire \(X\) suit une <b>loi de Bernoulli</b> de paramètre \(p\in [0,1]\) lorsque \(X\) 
 est à valeurs dans \(\{0,1\} \) et que
-\(P(X=\) \(1)=\) \(p\textrm{ et } P(X=\) \(0)=\) \(1-p.\)
-
+\(P(X=\) \(1)=\) \(p\textrm{ et } P(X=\) \(0)=\) \(1-p\).
 On a alors 
-\(E(X)=\) \(p,\ V(X)=\) \(p(1-p).\)
-
+\(E(X)=\) \(p,\ V(X)=\) \(p(1-p)\).
 On dit qu'une variable aléatoire \(X\) suit une <b>loi binomiale</b> de paramètres \(n\in\mathbb N^*\) et  \(p\in [0,1]\), que l'on note \(\mathcal B( n,p)\), lorsque \(X\) est à valeurs dans \(\{0,\dots,n\} \) avec, pour tout \(k\in\{0,\dots,n\} \), 
-\(P(X=\) \(k)=\) \(\binom nk p^k(1-p)^{n-k} .\)
-
+\(P(X=\) \(k)=\) \(\binom nk p^k(1-p)^{n-k} \).
 On a alors
-\(E(X)=\) \(np,\ V(X)=\) \(np(1-p).\)
-
+\(E(X)=\) \(np,\ V(X)=\) \(np(1-p)\).
 <b>Proposition :</b> Si \(X_1,\dots,X_n\) sont \(n\) variables aléatoires indépendantes définies sur le même univers \(\Omega\) suivant toutes une loi de Bernoulli \(\mathcal B( p)\), alors \(X_1+\dots+X_n\) suit une loi binomiale \(\mathcal B(n,p)\).
 
 
 Soit \(p\in ]0,1[\).
- On dit que la variable aléatoire \(X\) suit une <b>loi géométrique</b> de paramètre \(p\) si elle est à valeurs dans \(\mathbb N^*\) et si, pour tout \(n\geq 1\), \(P(X=\) \(n)=\) \(p(1-p)^{n-1} .\)
-
-On a alors \(E(X)=\) \(\frac 1p\textrm{ et } V(X)=\) \(\frac{1-p} {p^2} .\)
-
+ On dit que la variable aléatoire \(X\) suit une <b>loi géométrique</b> de paramètre \(p\) si elle est à valeurs dans \(\mathbb N^*\) et si, pour tout \(n\geq 1\), \(P(X=\) \(n)=\) \(p(1-p)^{n-1} \).
+On a alors \(E(X)=\) \(\frac 1p\textrm{ et } V(X)=\) \(\frac{1-p} {p^2} \).
 <b>Proposition :</b> Si \((X_n)\) est une suite de variables aléatoires de Bernoulli indépendantes de même paramètre \(p\), et si \(X\) est la variable aléatoire qui donne le rang du premier succès dans cette succession d'épreuves, alors \(X\) suit une loi géométrique de paramètre \(p\).
 
 <b>Théorème (caractérisation comme loi sans mémoire) :</b> Soit \(X\) une variable aléatoire à valeurs dans \(\mathbb N\).
@@ -141,8 +124,7 @@ On a alors \(E(X)=\) \(\frac 1p\textrm{ et } V(X)=\) \(\frac{1-p} {p^2} .\)
 
  
  Soit \(\lambda>0\).
- On dit que \(X\) suit  une <b>loi de Poisson</b> de paramètre \(\lambda\) si elle est à valeurs dans \(\mathbb N\) et si, pour tout \(n\in \mathbb N\), \(P(X=\) \(n)=\) \(\frac{e^{-\lambda} \lambda^n} {n!} .\)
-
+ On dit que \(X\) suit  une <b>loi de Poisson</b> de paramètre \(\lambda\) si elle est à valeurs dans \(\mathbb N\) et si, pour tout \(n\in \mathbb N\), \(P(X=\) \(n)=\) \(\frac{e^{-\lambda} \lambda^n} {n!} \).
  On a alors \(E(X)=\) \(\lambda\) et \(V(X)=\) \(\lambda\).
 
 
@@ -152,32 +134,27 @@ Estimation
 <b>Inégalité de Markov :</b>
 Soit \(X\) une variable aléatoire discrète réelle admettant une espérance et soit \(t>0\).
  Alors
-\(P(|X|\geq t)\leq\frac{E(|X|)} {t} .\)
-
+\(P(|X|\geq t)\leq\frac{E(|X|)} {t} \).
 
 <b>Inégalité de Bienaymé-Tchebychev :</b>
 Soit \(X\) une variable aléatoire discrète réelle telle que \(X^2\) soit d'espérance finie.
  Alors, pour tout \(\veps>0\), 
-\(P(|X-E(X)|\geq \veps)\leq \frac{V(X)} {\veps^2} .\)
-
+\(P(|X-E(X)|\geq \veps)\leq \frac{V(X)} {\veps^2} \).
 
 <b>Loi faible des grands nombres :</b>
 Soit \((X_n)_{n\geq 1} \) une suite de variables aléatoires discrètes réelles deux à deux indépendantes, de même loi, et admettant un moment d'ordre 2.
  Alors, si \(m=\) \(E(X_1)\), on a
-\(P\left(\left|\frac{S_n} n-m\right|\geq\veps\right)\xrightarrow{n\to+\infty} 0.\)
-
+\(P\left(\left|\frac{S_n} n-m\right|\geq\veps\right)\xrightarrow{n\to+\infty} 0\).
 
 <b>Approximation de la loi binomiale par la loi de Poisson  :</b> Soit \((X_n)\) une suite de variables aléatoires telle que, pour tout \(n\), \(X_n\) suit une loi binomiale de paramètres \((n,p_n)\).
  Si la suite \((np_n)\) converge vers \(\lambda>0\), alors, pour tout \(k\in\mathbb N\), 
-\(P(X_n=\) \(k)\xrightarrow{n\to+\infty} \frac{e^{-\lambda} \lambda^k} {k!} .\)
-
+\(P(X_n=\) \(k)\xrightarrow{n\to+\infty} \frac{e^{-\lambda} \lambda^k} {k!} \).
 
 
 Fonction génératrice
 
 Soit \(X\) une variable aléatoire à valeurs dans \(\mathbb N\).
- On appelle  <b>fonction génératrice</b> de \(X\) la série entière suivante :\(G_X(t)=\) \(\sum_{n=\) \(0} ^{+\infty} P(X=\) \(n)t^n.\)
-
+ On appelle  <b>fonction génératrice</b> de \(X\) la série entière suivante :\(G_X(t)=\) \(\sum_{n=\) \(0} ^{+\infty} P(X=\) \(n)t^n\).
 Le rayon de convergence de la série entière précédente est supérieur ou égal à \(1\).
  \(G_X\) définit donc une fonction de classe \(\mathcal C^\infty\) sur \(]-1,1[\).
  Elle est en fait continue sur l'intervalle fermé \([-1,1]\).
@@ -185,17 +162,13 @@ Le rayon de convergence de la série entière précédente est supérieur ou ég
 <b>Exemples :</b>
 
 Si \(X\) suit une loi de Bernoulli de paramètre \(p\), alors
-\(G_X(t)=\) \((1-p)+pt.\)
-
+\(G_X(t)=\) \((1-p)+pt\).
 Si \(X\) suit une loi binomiale de paramètres \(n,p\), alors
-\(G_X(t)=\) \(\big((1-p)+pt)^n.\)
-
+\(G_X(t)=\) \(\big((1-p)+pt)^n\).
 Si \(X\) suit une loi géométrique de paramètre \(p\in ]0,1[\), alors
-\(G_X(t)=\) \(\frac{pt} {1-(1-p)t} .\)
-
+\(G_X(t)=\) \(\frac{pt} {1-(1-p)t} \).
 Si \(X\) suit une loi de Poisson de paramètre \(\lambda>0\), alors
-\(G_X(t)=\) \(e^{-\lambda} e^{\lambda t} .\)
-
+\(G_X(t)=\) \(e^{-\lambda} e^{\lambda t} \).
 
 La fonction génératrice caractérise la loi d'une variable aléatoire :<b>Théorème :</b> Si \(X\) et \(Y\) sont deux variables aléatoires à valeurs dans \(\mathbb N\) telles que, pour tout \(t\in ]-1,1[\), \(G_X(t)=\) \(G_Y(t)\), alors \(X\) et \(Y\) ont la même loi.
 
@@ -209,8 +182,7 @@ La fonction génératrice permet de retrouver les moments d'une variable aléato
  - \(X\) admet une espérance si et seulement si \(G_X\) est dérivable en \(1\).
  Dans ce cas, \(G_X'(1)=\) \(E(X)\);
  - \(X\) admet une variance si et seulement si \(G_X\) est deux fois dérivable en \(1\).
- Dans ce cas, \(V(X)=\) \(G_X''(1)+G_X'(1)-\big(G_X'(1)\big)^2.\)
-
+ Dans ce cas, \(V(X)=\) \(G_X''(1)+G_X'(1)-\big(G_X'(1)\big)^2\).
 
 
 

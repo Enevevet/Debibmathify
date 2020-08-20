@@ -11,8 +11,7 @@ L'ensemble des \(z\in\mathbb C\) pour lesquels la série converge s'appelle le <
 est absolument convergente.
 
 On appelle <b>rayon de convergence</b> de la série entière 
-\(R=\) \(\sup\{\rho\geq 0;\ (a_n\rho^n)\textrm{ est bornée} \} \in \mathbb R_+\cup\{+\infty\} .\)
-
+\(R=\) \(\sup\{\rho\geq 0;\ (a_n\rho^n)\textrm{ est bornée} \} \in \mathbb R_+\cup\{+\infty\} \).
 <b>Proposition :</b> Soit \(\sum_n a_nz^n\) une série entière de rayon de convergence \(R\).
  Alors, pour tout \(z\in \mathbb C\),
 
@@ -53,15 +52,13 @@ On considère \(\sum_n a_n z^n\) et \(\sum_n b_nz^n\) deux séries entières de 
 
 <b>Somme de deux séries entières</b> : Le rayon de convergence de la série somme \(\sum_n (a_n+b_n)z^n\) vérifie \(R\geq \min(R_a,R_b)\).
  De plus, pour tout \(z\in\mathbb C\) avec \(|z|<\min(R_a,R_b)\), alors
-\(\sum_{n\geq 0} (a_n+b_n)z^n=\) \(\sum_{n\geq 0} a_n z^n+\sum_{n\geq 0} b_nz^n.\)
-
+\(\sum_{n\geq 0} (a_n+b_n)z^n=\) \(\sum_{n\geq 0} a_n z^n+\sum_{n\geq 0} b_nz^n\).
 On appelle <b>série entière produit</b> de \(\sum_n a_nz^n\) et de \(\sum_n b_nz^n\) la série entière \(\sum_n c_nz^n\) avec \(c_n=\) \(\sum_{k=\) \(0} ^n a_k b_{n-k} \).
 
 <b>Proposition :</b> Le rayon de convergence \(R\) de la série produit \(\sum_n c_nz^n\) de \(\sum_n a_nz^n\) et \(\sum_n b_nz^n\) 
 vérifie \(R\geq  \min(R_a,R_b)\).
  De plus, pour tout \(z\in\mathbb C\) avec \(|z|<\min(R_a,R_b)\), alors
-\(\sum_{n\geq 0} c_nz^n=\) \(\left(\sum_{n\geq 0} a_n z^n\right)\times\left(\sum_{n\geq 0} b_nz^n\right).\)
-
+\(\sum_{n\geq 0} c_nz^n=\) \(\left(\sum_{n\geq 0} a_n z^n\right)\times\left(\sum_{n\geq 0} b_nz^n\right)\).
 
 
 Cas de la variable réelle
@@ -73,19 +70,16 @@ séries entières \(\sum_n a_n x^n\).
 <b>Théorème (intégration d'une série entière) :</b> Soit \(f(x)=\) \(\sum_{n\geq 0} a_nx^n\) une série entière de rayon de convergence \(R>0\) et soit \(F\)
 une primitive de \(f\).
  Alors, pour tout \(x\in ]-R,R[\),
-\(F(x)=\) \(F(0)+\sum_{n\geq 0} \frac{a_n} {n+1} x^{n+1} .\)
-
+\(F(x)=\) \(F(0)+\sum_{n\geq 0} \frac{a_n} {n+1} x^{n+1} \).
 
 <b>Théorème (dérivation terme à terme) :</b> Soit \(f(x)=\) \(\sum_{n\geq 0} a_nx^n\) une série entière de rayon de convergence \(R>0\).
  Alors \(f\) est de classe \(\mathcal C^\infty\) sur \(]-R,R[\).
  De plus, pour tout \(x\in]-R,R[\) et tout \(k\geq 0\), on a 
-\(f^{(k)} (x)=\) \(\sum_{n\geq k} n(n-1)\cdots(n-k+1)a_n x^{n-k} .\)
-
+\(f^{(k)} (x)=\) \(\sum_{n\geq k} n(n-1)\cdots(n-k+1)a_n x^{n-k} \).
 
 <b>Théorème (expression des coefficients d'une série entière) :</b> Soit \(f(x)=\) \(\sum_{n\geq 0} a_nx^n\) une série entière de rayon de convergence \(R>0\).
  Alors, pour tout \(n\geq 0\), 
-\(a_n=\) \(\frac{f^{(n)} (0)} {n!} .\)
-
+\(a_n=\) \(\frac{f^{(n)} (0)} {n!} \).
 </di>
 <b>Corollaire :</b> Si \(f(x)=\) \(\sum_{n\geq 0} a_nx^n\) et \(g(x)=\) \(\sum_{n\geq 0} b_nx^n\) coïncident sur un voisinage de \(0\), alors pour tout \(n\geq 0\), \(a_n=\) \(b_n\).
 
@@ -95,8 +89,7 @@ Cas de la variable complexe
 
 <b>Théorème (dérivabilité de la variable complexe) :</b> Soit \(f(z)=\) \(\sum_{n\geq 0} a_nz^n\) une série entière de rayon de convergence \(R>0\).
  Alors, pour tout \(z_0\in D(0,R)\), 
-\(\lim_{h\to 0} \frac{f(z_0+h)-f(z_0)} {h} =\) \(\sum_{n\geq 1} n a_n z_0^{n-1} .\)
-
+\(\lim_{h\to 0} \frac{f(z_0+h)-f(z_0)} {h} =\) \(\sum_{n\geq 1} n a_n z_0^{n-1} \).
 
 
 Développements en série entière
@@ -110,8 +103,7 @@ Une combinaison linéaire de fonctions développables en série entière est dé
 <b>Corollaire :</b> Soit \(I\) un intervalle contenant \(0\) et \(f:I\to\mathbb R\).
  Si \(f\) est développable en série entière en \(0\), alors il existe \(r>0\) tel que, 
 pour tout \(x\in ]-r,r[\), 
-\(f(x)=\) \(\sum_{n\geq 0} \frac{f^{(n)} (0)} {n!} x^n.\)
-
+\(f(x)=\) \(\sum_{n\geq 0} \frac{f^{(n)} (0)} {n!} x^n\).
 
 
 Développements en séries entières usuels

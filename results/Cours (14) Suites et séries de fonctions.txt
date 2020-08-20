@@ -6,17 +6,14 @@ Soit \(A\) une partie de \(\mathbb R\); soit \((f_n)\) une suite de fonctions de
  
 
 On dit que \((f_n)\) <b>converge simplement</b> vers \(f\) sur \(A\) si : 
-\(\forall \veps>0,\ \forall x\in A,\ \exists n_0\in\mathbb N\textrm{ tel que } \forall n\geq n_0,\ |f_n(x)-f(x)|\leq \veps.\)
-
-On dit que \((f_n)\) <b>converge uniformément</b> vers \(f\) sur \(A\) si :\(\forall \veps>0,\ \exists n_0\in\mathbb N\textrm{ tel que } \forall x\in A,\ \forall n\geq n_0,\ |f_n(x)-f(x)|\leq \veps.\)
-
+\(\forall \veps>0,\ \forall x\in A,\ \exists n_0\in\mathbb N\textrm{ tel que } \forall n\geq n_0,\ |f_n(x)-f(x)|\leq \veps\).
+On dit que \((f_n)\) <b>converge uniformément</b> vers \(f\) sur \(A\) si :\(\forall \veps>0,\ \exists n_0\in\mathbb N\textrm{ tel que } \forall x\in A,\ \forall n\geq n_0,\ |f_n(x)-f(x)|\leq \veps\).
 La convergence simple traduit que pour chaque \(x\in A\), la suite de réels \((f_n(x))\) converge vers \(f(x)\).
  La convergence uniforme impose en plus que
 la convergence se fait toujours à la même vitesse.
  Si toutes les fonctions \(f_n\) et \(f\) sont bornées, alors \((f_n)\) converge uniformément vers \(f\) sur \(A\)
 si et seulement si \((\|f_n-f\|_{A,\infty} )\) tend vers \(0\), où 
-\(\|g\|_{\infty,A} =\) \(\sup\{|g(x)|;\ x\in A\} .\)
-
+\(\|g\|_{\infty,A} =\) \(\sup\{|g(x)|;\ x\in A\} \).
 Explication de la différence entre convergence simple et convergence uniforme : 
 <iframe width=\) \("560" height=\) \("315" src=\) \("https://www.
 youtube.
@@ -55,8 +52,7 @@ Alors \(g_0\) est de classe \(\mathcal C^k\) sur \(I\) et pour tout \(j\leq k\),
 
 <b>Permutation limite/intégrale :</b> On suppose que \(I=\) \([a,b]\) est un segment, que toutes les fonctions \(f_n\) sont continues et que \((f_n)\) converge uniformément vers \(f\) sur \(I\).
  Alors
-\(\lim_{n\to+\infty} \int_a^b f_n(t)dt=\) \(\int_a^b \lim_n f_n(t)dt=\) \(\int_a^b f(t)dt.\)
-
+\(\lim_{n\to+\infty} \int_a^b f_n(t)dt=\) \(\int_a^b \lim_n f_n(t)dt=\) \(\int_a^b f(t)dt\).
 <b>Théorème d'interversion des limites :</b> On suppose que \(I=\) \([a,b[\) et que \((f_n)\)  converge uniformément vers \(f\) sur \(I\).
  On suppose de plus
 que chaque fonction \(f_n\) admet une limite \(\ell_n\) en \(b\).
@@ -108,15 +104,13 @@ Alors la fonction \(S:x\mapsto \sum_{n\geq 1} u_n(x)\) est de classe \(\mathcal 
 
 <b>Permutation somme/intégrale :</b> On suppose que \(I=\) \([a,b]\) est un segment, que toutes les fonctions \(u_n\) sont continues et que \(\sum_n u_n\) converge uniformément.
  Alors la série \(\sum_n \int_a^b u_n(t)dt\) converge et on a 
-\(\int_a^b \sum_n u_n(t)dt=\) \(\sum_{n\geq 0} \int_a^b u_n(t)dt.\)
-
+\(\int_a^b \sum_n u_n(t)dt=\) \(\sum_{n\geq 0} \int_a^b u_n(t)dt\).
 <b>Théorème d'interversion des limites :</b> On suppose que \(I=\) \([a,b[\) et que \(\sum_n u_n\)  converge uniformément vers \(S\) sur \(I\).
  On suppose de plus
 que chaque fonction \((u_n)\) admet une limite \(\ell_n\) en \(b\).
  Alors la série \(\sum_n \ell_n\) converge, \(S\) admet une limite
 en \(b\) et 
-\(\lim_{x\to b} S(x)=\) \(\sum_{n\geq 1} \ell_n.\)
-
+\(\lim_{x\to b} S(x)=\) \(\sum_{n\geq 1} \ell_n\).
 
 
 Extension aux espaces vectoriels normés
@@ -124,8 +118,7 @@ Certains des résultats précédents restent vrais si on définit maintenant nos
 si elles sont à valeurs dans un autre espace vectoriel normé \(F\), par exemple la préservation de la continuité, le fait que la convergence normale entraîne la convergence
 uniforme, le théorème de permutation des limites, que l'on peut énoncer sous la forme plus générale suivante :
 <b>Théorème :</b> Soit \((f_n)\) une suite de fonctions de \(A\) dans \(F\) convergeant uniformément vers \(f\) sur \(A\), et soit \(a\) un point adhérent à \(A\); si, pour tout \(n\), \(f_n\) admet une limite \(\ell_n\) en a, alors \((\ell_n)\) admet une limite \(\ell\), \(f\) admet une limite en \(a\) et
-\(\lim_{x\to a} f(x)=\) \(\ell.\)
-
+\(\lim_{x\to a} f(x)=\) \(\ell\).
 
 En revanche, toutes les propriétés relatives à l'intégration et à la dérivation nécessitent que l'ensemble de départ soit un intervalle (il faut bien pouvoir
 donner un sens aux objets considérés!).

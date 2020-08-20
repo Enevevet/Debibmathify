@@ -7,8 +7,7 @@ On appelle <b>anneau</b> la donnée d'un ensemble \(A\) et de deux lois de compo
  - La loi \(\times\) est associative : pour tous \(a,b,c\in A\), \(a\times(b\times c)=\) \((a\times b)\times c\);
  - la loi \(\times\) possède un élément neutre noté \(1_A\);
  - la loi \(\times\) est distributive à gauche et à droite par rapport à la loi \(+\), c'est-à-dire que pour tout \(a,b,c\in A\), on a 
-\(a\times(b+c)=\) \(a\times b+a\times c\textrm{ et } (b+c)\times a=\) \(b\times a+c\times a.\)
-
+\(a\times(b+c)=\) \(a\times b+a\times c\textrm{ et } (b+c)\times a=\) \(b\times a+c\times a\).
 
 Lorsque la loi \(\times\) est commutative, on dit que l'anneau est commutatif.
  
@@ -96,12 +95,10 @@ Soit \(n\geq 2\).
 
 On note \(\bar a\) la classe d'équivalence de \(a\), et \(\mathbb Z/n\mathbb Z\) l'ensemble des classes d'équivalence pour cette relation.
 
-On a en particulier \(\mathbb Z/n\mathbb Z=\) \(\{\bar 0,\bar 1,\dots,\overline {n-1} \} .\)
-
+On a en particulier \(\mathbb Z/n\mathbb Z=\) \(\{\bar 0,\bar 1,\dots,\overline {n-1} \} \).
 <b>Théorème :</b> On munit \(\mathbb Z/n\mathbb Z\) d'une structure d'anneaux en posant 
 \(\bar a+\bar b=\) \(\overline{a+b} \)
-\(\bar a\times \bar b=\) \(\overline{a\times b} .\)
-
+\(\bar a\times \bar b=\) \(\overline{a\times b} \).
 
 <b>Théorème :</b> \(\bar k\) est inversible dans \(\mathbb Z/n\mathbb Z\) si et seulement \(k\wedge n=\) \(1\).
 
@@ -114,19 +111,16 @@ On appelle <b>indicatrice d'Euler</b> et on note \(\varphi(n)\) le nombre d'él�
 
 <b>Théorème :</b> Si la décomposition en produit de facteurs premiers de \(n\) est 
 \(n=\) \(p_1^{\alpha_1} \cdots p_r^{\alpha_r} \), alors 
-\(\varphi(n)=\) \(\prod_{i=\) \(1} ^r (p_i^{\alpha_i} -p_i^{\alpha_i-1} ).\)
+\(\varphi(n)=\) \(\prod_{i=\) \(1} ^r (p_i^{\alpha_i} -p_i^{\alpha_i-1} )\).
 
-
-<b>Théorème d'Euler :</b> Pour tout entier naturel \(n\geq 2\) et tout entier \(k\) premier avec \(n\), on a \(k^{\varphi(n)} \equiv 1\ [n].\)
-
+<b>Théorème d'Euler :</b> Pour tout entier naturel \(n\geq 2\) et tout entier \(k\) premier avec \(n\), on a \(k^{\varphi(n)} \equiv 1\ [n]\).
 
 
 Idéaux et arithmétique de polynômes
 Dans ce paragraphe, \(\mathbb K\) désigne un sous-corps de \(\mathbb C\).
 
 
-<b>Théorème :</b> Les idéaux de \(\mathbb K[X]\) sont les idéaux \(( P)\) engendrés par un polynôme \(P\in\mathbb K[X]\) :\(( P)=\) \(\{AP;\ A\in\mathbb K[X]\} .\)
-
+<b>Théorème :</b> Les idéaux de \(\mathbb K[X]\) sont les idéaux \(( P)\) engendrés par un polynôme \(P\in\mathbb K[X]\) :\(( P)=\) \(\{AP;\ A\in\mathbb K[X]\} \).
 De plus, on a \(( P)=\) \(( Q)\) si et seulement si il existe \(\lambda\in\mathbb K^*\) tel que \(Q=\) \(\lambda P\).
 
 
@@ -177,8 +171,7 @@ On appelle <b>\(\mathbb K\)-algèbre</b> un ensemble muni de deux lois internes 
 \((E,+,\times)\) est un anneau;
 \((E,+,\cdot)\) est un espace vectoriel sur \(\mathbb K\);
 Pour tout \(\alpha\in\mathbb K\), pour tout \((x,y)\in E^2\), on a 
-\((\alpha \cdot x)\times y=\) \(x\times (\alpha\cdot y)=\) \(\alpha\cdot(x\times y).\)
-
+\((\alpha \cdot x)\times y=\) \(x\times (\alpha\cdot y)=\) \(\alpha\cdot(x\times y)\).
 
 Une partie \(F\) d'une algèbre \(E\) est une <b>sous-algèbre</b> de \(E\) si muni des lois \(+\), \(\times\), \(\cdot\) héritées de \(E\), c'est une algèbre.
 

@@ -147,11 +147,9 @@ Continuité uniforme, applications lipschitiziennes
 
 
 On dit que \(f\) est <b>uniformément continue</b> sur \(A\) si, pour tout \(\veps>0\), il existe \(\delta>0\) tel que
-\(\forall x,y\in A,\ \|x-y\|&lt;\delta\implies \|f(x)-f(y)\|&lt;\veps.\)
-
+\(\forall x,y\in A,\ \|x-y\|&lt;\delta\implies \|f(x)-f(y)\|&lt;\veps\).
 On dit que \(f\) est <b>lipschitzienne</b> de rapport \(k\in\mathbb R\) si
-\(\forall x,y\in A,\  \|f(x)-f(y)\|\leq k\|x-y\|.\)
-
+\(\forall x,y\in A,\  \|f(x)-f(y)\|\leq k\|x-y\|\).
 Toute application lipschitzienne est uniformément continue.
  Toute application uniformément continue est continue.
  Les réciproques sont fausses.
@@ -162,8 +160,7 @@ Applications linéaires continues
 
 <b>Théorème :</b> Soient \((E,\|\cdot\|)\), \((F,\|\cdot\|)\) deux espaces vectoriels normés, et soit \(u\in\mathcal L(E,F)\) une application linéaire.
  Alors \(u\) est continue si et seulement s'il existe \(C>0\) tel que, pour tout \(x\in E\), 
-\(\|u(x)\|\leq C\|x\|.\)
-
+\(\|u(x)\|\leq C\|x\|\).
 
 On note \(\mathcal L_c(E,F)\) l'ensemble des applications linéaires continues de \(E\) dans \(F\).
  

@@ -16,8 +16,7 @@ On suppose que
 
 
 Alors toutes les fonctions \(f_n\) et \(f\) sont intégrables sur \(I\), et on a 
-\(\lim_{n\to+\infty} \int_I f_n=\) \(\int_I f.\)
-
+\(\lim_{n\to+\infty} \int_I f_n=\) \(\int_I f\).
 
 
 <b>Théorème d'intégration terme à terme :</b>
@@ -30,8 +29,7 @@ On suppose que
 
 
 Alors \(f\) est intégrable sur \(I\), et on a 
-\(\sum_{n\geq 1} \int_I u_n=\) \(\int_I f.\)
-
+\(\sum_{n\geq 1} \int_I u_n=\) \(\int_I f\).
 
 
 
@@ -46,8 +44,7 @@ pour tout \(t\in I\), la fonction \(x\mapsto f(x,t)\) est continue sur \(A\);
 pour tout \(x\in A\), la fonction \(t\mapsto f(x,t)\) est continue par morceaux sur \(I\);
 il existe \(g:I\to\mathbb R_+\) continue par morceaux et intégrable telle que, 
 pour tout \(x\in A\) et tout \(t\in I\), 
-\(|f(x,t)|\leq g(t).\)
-
+\(|f(x,t)|\leq g(t)\).
 
 Alors la fonction \(F:x\mapsto \int_I f(x,t)dt\) est continue sur \(A\).
 
@@ -64,8 +61,7 @@ pour tout \(x\in J\), la fonction \(t\mapsto \frac{\partial f} {\partial x} (x,t
 pour tout \(t\in I\), la fonction \(x\mapsto \frac{\partial f} {\partial x} (x,t)\) est continue sur \(J\);
 il existe \(g:I\to\mathbb R_+\) continue par morceaux et intégrable telle que, 
 pour tout \(x\in J\) et tout \(t\in I\), 
-\(\left|\frac{\partial f} {\partial x} (x,t)\right|\leq g(t).\)
-
+\(\left|\frac{\partial f} {\partial x} (x,t)\right|\leq g(t)\).
 
 Alors la fonction \(F:x\mapsto \int_I f(x,t)dt\) est de classe \(\mathcal C^1\) sur \(J\) et, pour tout \(x\in J\), \(F'(x)=\) \(\int_I \frac{\partial f} {\partial x} (x,t)dt\).
 
@@ -80,12 +76,10 @@ intégrable sur \(I\);
 pour tout \(t\in I\), la fonction \(x\mapsto \frac{\partial^k f} {\partial x^k} (x,t)\) est continue sur \(J\);
 il existe \(g:I\to\mathbb R_+\) continue par morceaux et intégrable telle que, 
 pour tout \(x\in J\) et tout \(t\in I\), 
-\(\left|\frac{\partial^k f} {\partial x^k} (x,t)\right|\leq g(t).\)
-
+\(\left|\frac{\partial^k f} {\partial x^k} (x,t)\right|\leq g(t)\).
 
 Alors la fonction \(F:x\mapsto \int_I f(x,t)dt\) est de classe \(\mathcal C^k\) sur \(J\) et, pour tout \(x\in J\) et tout \(0\leq j\leq k\), 
-\(F^{(j)} (x)=\) \(\int_I \frac{\partial^j f} {\partial x^j} (x,t)dt.\)
-
+\(F^{(j)} (x)=\) \(\int_I \frac{\partial^j f} {\partial x^j} (x,t)dt\).
 
 
 

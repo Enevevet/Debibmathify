@@ -19,15 +19,13 @@ On suppose dans cette partie que \(F\) est un sous-espace de \(E\) de dimension 
 \(F^\perp\) est un sous-espace supplémentaire de \(F\) appelé 
 <b>supplémentaire orthogonal</b> de \(F\).
  Si \(E\) est lui-même de dimension finie, on a en particulier
-\(\dim(F^\perp)=\) \(\dim(E)-\dim(F).\)
-
+\(\dim(F^\perp)=\) \(\dim(E)-\dim(F)\).
 Soit \(x\in E\), qui s'écrit uniquement \(x=\) \(y+z\) dans la somme directe \(F\oplus F^\perp\).
  Alors \(y\) s'appelle le <b>projeté orthogonal</b>
 de \(x\) sur \(F\), et est noté \(p_F(x)\).
  
 Si \((e_1,\dots,e_p)\) est une base orthonormée de \(F\), alors 
-\(p_F(x)=\) \(\sum_{i=\) \(1} ^p \langle x,e_i\rangle e_i.\)
-
+\(p_F(x)=\) \(\sum_{i=\) \(1} ^p \langle x,e_i\rangle e_i\).
 
 <b>Théorème et définition :</b> Pour tout \(x\in E\) et tout \(f\in F\), on a 
 \(\|x-f\|\geq \|x-p_F(x)\|\)
@@ -38,12 +36,10 @@ d'appelle distance de \(x\) à \(F\).
 
 
 Par le théorème de Pythagore, on a 
-\(d(x,F)=\) \(\sqrt{\|x\|^2-\|p_F(x)\|^2} .\)
-
+\(d(x,F)=\) \(\sqrt{\|x\|^2-\|p_F(x)\|^2} \).
 <b>Inégalité de Bessel :</b> Soit \((e_1,\dots,e_n)\) une famille orthonormale de \(E\).
  Alors pour tout \(x\in E\), on a 
-\(\sum_{k=\) \(1} ^n \langle x,e_k\rangle^2\leq \|x\|^2.\)
-
+\(\sum_{k=\) \(1} ^n \langle x,e_k\rangle^2\leq \|x\|^2\).
 
 
 Suites totales
@@ -143,8 +139,7 @@ alors \(F^\perp\) est un sous-espace de \(E\) stable par \(u\).
 \(\left(\begin{array} {cc} 
 \cos\theta&-\sin\theta\\
 \sin\theta&\cos\theta
-\end{array} \right),\ \theta\in\mathbb R.\)
-
+\end{array} \right),\ \theta\in\mathbb R\).
 Autrement dit \(E\) est la somme directe orthogonale des sous-espaces propres associés aux valeurs propres \(1\) et \(-1\), et de plans sur lesquels \(u\) opère comme une rotation.
 
 
@@ -164,8 +159,7 @@ I_p&0&\dots&&0\\
 \cos\theta_r&-\sin\theta_r\\
 \sin\theta_r&\cos\theta_r
 \end{array} \right)
-\end{array} \right).\)
-
+\end{array} \right)\).
 
 
 Isométries vectorielles en dimension 2
@@ -177,14 +171,12 @@ Les matrices orthogonales positives en dimension 2 sont les matrices de la forme
 \(M(\theta)=\) \(\left(\begin{array} {cc} 
 \cos(\theta)&-\sin(\theta)\\
 \sin(\theta)&\cos(\theta)
-\end{array} \right),\ \theta\in\mathbb R.\)
-
+\end{array} \right),\ \theta\in\mathbb R\).
 Les matrices orthogonales négatives en dimension 2 sont les matrices de la forme
 \(N(\theta)=\) \(\left(\begin{array} {cc} 
 \cos(\theta)&\sin(\theta)\\
 \sin(\theta)&-\cos(\theta)
-\end{array} \right),\ \theta\in\mathbb R.\)
-
+\end{array} \right),\ \theta\in\mathbb R\).
 On appelle <b>rotation vectorielle</b> d'angle \(\theta\in [0,2\pi[\) un endomorphisme orthogonal de \(E\) dont la matrice
 dans une (dans toute) base orthonormale directe de \(E\) est de la forme \(M(\theta)\).
  On note l'endomorphisme correspondant \(r_\theta\).

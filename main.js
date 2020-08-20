@@ -159,7 +159,8 @@ fs.readdir("./sources/", (err, files) => {
         par = par.replace(/=/g, "=\\) \\(")
         par = par.replace(/\n\r\n\r/gm, "\n");
         par = par.replace(/\.(?!\\)/gm, ".\n");
-        par = par.replace(/\.\\\)/gm, ".\\)\n");
+        par = par.replace(/\.\\\)/gm, "\\).");
+
 
 
         //Écriture dans le fichier

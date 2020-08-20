@@ -2,15 +2,13 @@ Résumé de cours : Polynômes d'endomorphismes
 
 \(E\) désigne un \(\mathbb K\)-espace vectoriel, \(\mathbb K\) étant le corps \(\mathbb R\) ou \(\mathbb C\), et \(u\) désigne un élément de \(\mathcal L(E)\).
 
-On rappelle la notation suivante :\(u^n=\) \(u\circ u\circ\dots \circ u\textrm{ de sorte que } u^{p+q} =\) \(u^p\circ u^q.\)
-
+On rappelle la notation suivante :\(u^n=\) \(u\circ u\circ\dots \circ u\textrm{ de sorte que } u^{p+q} =\) \(u^p\circ u^q\).
 
 Polynômes d'un endomorphisme
 
 Soit \(P\in\mathbb K[X]\), \(P(X)=\) \(a_dX^d+a_{d-1} X^{d-1} +\dots+a_1X+a_0\).
  On note \(P(u)\) l'endomorphisme de \(E\) défini par
-\(P(u)=\) \(a_d u^d+a_{d-1} u^{d-1} +\dots+a_1u+a_0Id_E.\)
-
+\(P(u)=\) \(a_d u^d+a_{d-1} u^{d-1} +\dots+a_1u+a_0Id_E\).
 <b>Proposition :</b> L'application de \(\mathbb K[X]\) dans \(\mathcal L(E)\) définie par \(P\mapsto P(u)\) est 
 un morphisme d'algèbres.
  Son image est une sous-algèbre commutative de \(\mathcal L(E)\), notée \(\mathbb K[u]\).
@@ -19,8 +17,7 @@ la plus petite algèbre de \(\mathcal L(E)\) contenant \(u\).
  Son noyau s'appelle <b>l'idéal annulateur</b> de \(u\).
 
 En particulier, la proposition précédente implique que, pour tous \(P,Q\in\mathbb K[X]\), on a
-\((PQ)(u)=\) \(P(u)\circ Q(u).\)
-
+\((PQ)(u)=\) \(P(u)\circ Q(u)\).
 <b>Théorème :</b> Si \(E\) est de dimension finie, alors le noyau de \(P\mapsto P(u)\) n'est pas réduit à \(\{0\} \).
  Il existe un unique polynôme unitaire \(\pi_u\) qui engendre ce noyau.
  On appelle ce polynôme le <b>polynôme minimal</b> de \(u\).
@@ -34,8 +31,7 @@ Dans la suite, on supposera désormais que \(E\) est de dimension finie.
 
 <b>Proposition :</b> Soit \(P\in\mathbb K[X]\), \(\lambda\in\textrm{Sp} (u)\) et \(x\in E\) tel que \(u(x)=\) \(\lambda x\).
  Alors 
-\(P(u)(x)=\) \(P(\lambda)x.\)
-
+\(P(u)(x)=\) \(P(\lambda)x\).
 En particulier, si \(P\) est un polynôme annulateur de \(u\), alors \(P(\lambda)=\) \(0\).
 
 <b>Théorème de Cayley-Hamilton : </b>Le polynôme caractéristique \(\chi_u\) est un polynôme annulateur de \(u\).
@@ -50,8 +46,7 @@ Lemme de décomposition des noyaux
 
 <b>Théorème :</b> Soient \(P_1,\dots,P_r\in\mathbb K[X]\) des polynômes premiers entre eux deux à deux et notons \(P=\) \(P_1\cdots P_r\).
  Alors
-\(\ker(P(u))=\) \(\bigoplus_{i=\) \(1} ^r \ker(P_i(u)).\)
-
+\(\ker(P(u))=\) \(\bigoplus_{i=\) \(1} ^r \ker(P_i(u))\).
 
 			
 			

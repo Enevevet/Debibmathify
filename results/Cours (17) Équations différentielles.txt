@@ -11,21 +11,18 @@ où \(a:I\to\mathcal L(E)\) et \(b:I\to E\) sont deux fonctions continues.
 les fonctions \(x:I\to E\) dérivables qui satisfont l'équation précédente.
 
 L'<b>équation différentielle homogène</b> associée à l'équation différentielle précédente est l'équation
-\(x'(t)+a(t)\big(x(t)\big)=\) \(0.\)
-
+\(x'(t)+a(t)\big(x(t)\big)=\) \(0\).
 Si \(x_1\) est une solution de 
 \(x'(t)+a(t)\big(x(t)\big)=\) \(b_1(t)\)
 et \(x_2\) est une solution de 
 \(x'(t)+a(t)\big(x(t)\big)=\) \(b_2(t),\)
 alors \(x_1+x_2\) est une solution de 
-\(x'(t)+a(t)\big(x(t)\big)=\) \(b_1(t)+b_2(t).\)
-
+\(x'(t)+a(t)\big(x(t)\big)=\) \(b_1(t)+b_2(t)\).
 C'est le <b>principe de superposition</b> des solutions.
 
 Si on introduit une base \(\mathcal B=\) \((e_1,\dots,e_n)\) de \(E\) et en posant \(A(t)\), \(B(t)\) et \(X(t)\) les matrices
 respectives de \(a(t)\), \(b(t)\) et \(x(t)\) dans \(\mathcal B\), alors l'équation différentielle \(x'(t)+a(t)\big(x(t)\big)=\) \(b(t)\) se réécrit sous la forme
-d'un système différentiel :\(X'(t)+A(t)X(t)=\) \(B(t).\)
-
+d'un système différentiel :\(X'(t)+A(t)X(t)=\) \(B(t)\).
 
 
 Résolution des problèmes de Cauchy
@@ -43,11 +40,9 @@ et \(b:I\to E\) deux fonctions continues, \(x:I\to E\) dérivable et \((t_0,x_0)
 x'(t)+a(t)\big(x(t)\big)&=\) \(&b(t)\\
 x(t_0)&=\) \(&x_0.
 
-\end{array} \right.\)
-
+\end{array} \right\).
  - \(x\) vérifie, pour tout \(t\in I\), 
-\(x(t)=\) \(x_0+\int_{t_0} ^t \Big(-a(u)\big(x(u)\big)+b(u)\Big)du.\)
-
+\(x(t)=\) \(x_0+\int_{t_0} ^t \Big(-a(u)\big(x(u)\big)+b(u)\Big)du\).
 
 <b>Théorème de Cauchy linéaire : </b> Soit \(a:I\to\mathcal L(E)\), \(b:I\to E\) deux fonctions continues et \((t_0,x_0)\in I\times E\).
 
@@ -55,8 +50,7 @@ Alors le problème de Cauchy
 \(\left\{\begin{array} {rcl} 
 x'(t)+a(t)\big(x(t)\big)&=\) \(&b(t)\\
 x(t_0)&=\) \(&x_0
-\end{array} \right.\)
-
+\end{array} \right\).
 admet une solution unique définie sur \(I\).
 
 <b>Théorème (structure de l'ensemble des solutions) : </b> Soit \(a:I\to\mathcal L(E)\), \(b:I\to E\) deux fonctions continues.
@@ -80,8 +74,7 @@ Soit \(u\in\mathcal L(E)\).
 de \(u\) et est notée \(\exp(u)\) ou \(e^u\).
 
 De même, si \(A\in\mathcal M_n(\mathbb K)\), on appelle exponentielle de \(A\) la matrice 
-\(\exp(A)=\) \(\sum_{n\geq 0} \frac{A^n} {n!} .\)
-
+\(\exp(A)=\) \(\sum_{n\geq 0} \frac{A^n} {n!} \).
 <b>Théorème :</b> L'application exponentielle vérifie les propriétés suivantes :
 
 \(A\mapsto \exp(A)\) est une application continue de \(\mathcal M_n(\mathbb K)\) dans \(\mathcal M_n(\mathbb K)\).
@@ -102,8 +95,7 @@ Systèmes différentiels homogènes à coefficients constants
 \begin{array} {rcl} 
 x'(t)&=\) \(&a\big(x(t)\big)\\
 x(t_0)&=\) \(&x_0
-\end{array} \right.\)
-
+\end{array} \right\).
 est la fonction \(t\mapsto \exp\big((t-t_0)a\big)(x_0)\).
 
 
@@ -129,14 +121,12 @@ une famille de \(n\) fonctions de classe \(\mathcal C^1\) de \(I\) dans \(\mathc
  L'application \(X\) définie par
 \(X(t)=\) \(\sum_{i=\) \(1} ^n C_i(t)X_i(t)\)
 est solution de l'équation avec second membre si et seulement si, pour tout \(t\in I\), 
-\(\sum_{i=\) \(1} ^n C_i'(t)X_i(t)=\) \(B(t).\)
-
+\(\sum_{i=\) \(1} ^n C_i'(t)X_i(t)=\) \(B(t)\).
 
 <b>Corollaire :</b> Soit \(a\in\mathcal L(E)\), \(b:I\to E\) continue et \(t_0\in I\).
  Alors l'ensemble des solutions de
 l'équation \(x'(t)=\) \(a\big(x(t)\big)+b(t)\) est
-\(\left\{t\mapsto e^{ta} x+e^{ta} \int_{t_0} ^t e^{-sa} \big(b(s)\big)ds;\ x\in E\right\} .\)
-
+\(\left\{t\mapsto e^{ta} x+e^{ta} \int_{t_0} ^t e^{-sa} \big(b(s)\big)ds;\ x\in E\right\} \).
 
 
 Cas des équations différentielles scalaires d'ordre \(n\)
@@ -172,8 +162,7 @@ est "équivalente" au système \(X'(t)=\) \(A(t)X(t)+B(t)\) au sens où \(x\) es
 c'est la première coordonnée de \(X\) solution de l'équation vectorielle.
 
 Soit une équation différentielle linéaire scalaire d'ordre \(n\)
-\(x^{(n)} (t)=\) \(a_{n-1} (t)x^{(n-1)} (t)+a_{n-2} (t)x^{(n-2)} (t)+\dots+a_0(t)x(t)+b(t).\)
-
+\(x^{(n)} (t)=\) \(a_{n-1} (t)x^{(n-1)} (t)+a_{n-2} (t)x^{(n-2)} (t)+\dots+a_0(t)x(t)+b(t)\).
 Soit également \((t_0,x_0,\dots,x_{n-1} )\in I\times \mathbb K^n\).
  On appelle 
 <b>problème de Cauchy</b> associé la détermination des solutions de l'équation différentielle 
@@ -185,8 +174,7 @@ vérifiant de plus \(x(t_0)=\) \(x_0,\ x'(t_0)=\) \(x_1,\dots,\ x^{(n-1)} (t_0)=
 	x^{(n)} (t)=\) \(a_{n-1} (t)x^{(n-1)} (t)+a_{n-2} (t)x^{(n-2)} (t)+\dots+a_0(t)x(t)+b(t)\\
 	x(t_0)=\) \(x_0,\ x'(t_0)=\) \(x_1,\dots,\ x^{(n-1)} (t_0)=\) \(x_{n-1} 
 	\end{array} 
-	\right.\)
-
+	\right\).
 admet une solution unique.
 
 <b>Corollaire :</b> Si \(a_0,\dots,a_{n-1} \) et \(b:I\to \mathbb K\) sont des fonctions continues, l'ensemble des
@@ -211,8 +199,7 @@ Soit \(f,g\) deux solutions de l'équation homogène.
 \begin{array} {cc} 
 f(t)&g(t)\\
 f'(t)&g'(t)\\
-\end{array} \right|.\)
-
+\end{array} \right|\).
 <b>Théorème :</b> Soit \((f,g)\) deux solutions de l'équation homogène.
  Les assertions suivantes sont équivalentes :
 
@@ -225,8 +212,7 @@ Il existe \(t\in I\) tel que \(W(t)\neq 0\).
 <b>Méthode de variation des constantes pour les équations différentielles linéaires d'ordre \(2\) :</b> soit \((f,g)\) un système fondamental de
 solutions de l'équation homogène.
  On cherche une solution particulière \(x(t)\) sous la forme
-\(x(t)=\) \(\lambda(t)f(t)+\mu(t)g(t).\)
-
+\(x(t)=\) \(\lambda(t)f(t)+\mu(t)g(t)\).
 La méthode de variation des constantes s'écrit alors :\(\left\{
 	\begin{array} {rcl} 
 	\lambda'(t) f(t)+\mu'(t)g(t)&=\) \(&0\\
@@ -240,29 +226,23 @@ La méthode de variation des constantes s'écrit alors :\(\left\{
 \(x''=\) \(ax'+bx\)
 à coefficients constants.
  On introduit l'équation caractéristique
-\(r^2=\) \(ar+b.\)
-
+\(r^2=\) \(ar+b\).
 
 Résolution sur \(\mathbb C\) :
 
 si l'équation caractéristique admet deux racines \(r_1\) et \(r_2\), alors les solutions de l'équation homogène \(y''+ay'+by=\) \(0\) sont les fonctions
-\(x\mapsto \lambda e^{r_1 x} +\mu e^{r_2 x} \quad\textrm{ avec } \lambda,\mu\in\mathbb C.\)
-
+\(x\mapsto \lambda e^{r_1 x} +\mu e^{r_2 x} \quad\textrm{ avec } \lambda,\mu\in\mathbb C\).
 si l'équation caractéristique admet une racine double \(r\), alors les solutions de l'équation homogène \(y''+ay'+by=\) \(0\) sont les fonctions
-\(x\mapsto (\lambda x+\mu)e^{rx} \quad\textrm{ avec } \lambda,\mu\in\mathbb C.\)
-
+\(x\mapsto (\lambda x+\mu)e^{rx} \quad\textrm{ avec } \lambda,\mu\in\mathbb C\).
 
 Résolution sur \(\mathbb R\) :
 
 si l'équation caractéristique admet deux racines réelles \(r_1\) et \(r_2\), alors les solutions de l'équation homogène \(y''+ay'+by=\) \(0\) sont les fonctions
-\(x\mapsto \lambda e^{r_1 x} +\mu e^{r_2 x} \quad\textrm{ avec } \lambda,\mu\in\mathbb R.\)
-
+\(x\mapsto \lambda e^{r_1 x} +\mu e^{r_2 x} \quad\textrm{ avec } \lambda,\mu\in\mathbb R\).
 si l'équation caractéristique admet une racine double \(r\), alors les solutions de l'équation homogène \(y''+ay'+by=\) \(0\) sont les fonctions
-\(x\mapsto (\lambda x+\mu)e^{rx} \quad\textrm{ avec } \lambda,\mu\in\mathbb R.\)
-
+\(x\mapsto (\lambda x+\mu)e^{rx} \quad\textrm{ avec } \lambda,\mu\in\mathbb R\).
 si l'équation caractéristique admet deux racines complexes conjuguées, \(\alpha\pm i\beta\), alors les solutions de l'équation homogène sont les fonctions
-\(x\mapsto \lambda e^{\alpha x} \cos(\beta x)+\mu e^{\alpha x} \sin(\beta x).\)
-
+\(x\mapsto \lambda e^{\alpha x} \cos(\beta x)+\mu e^{\alpha x} \sin(\beta x)\).
 
 
 

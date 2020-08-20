@@ -9,8 +9,7 @@ Soit \(u_1,\dots,u_n\) des vecteurs de \(E\), et \(\lambda_1,\dots,\lambda_n\) d
 \(\sum_{i=\) \(1} ^n \lambda_i\neq 0\).
  On appelle <b>barycentre</b> des vecteurs \(u_1,\dots,u_n\) affectés des poids
 \(\lambda_1,\dots,\lambda_n\) le vecteur \(v\) défini par
-\(v=\) \(\frac{1} {\sum_{i=\) \(1} ^n \lambda_i} \sum_{i=\) \(1} ^n \lambda_i u_i.\)
-
+\(v=\) \(\frac{1} {\sum_{i=\) \(1} ^n \lambda_i} \sum_{i=\) \(1} ^n \lambda_i u_i\).
 Dans le plan ou l'espace muni d'un repère de centre \(O\), on identifie le point \(M\) et le vecteur \(\overrightarrow{OM} \).
 
 On définit alors le barycentre \(G\) des points \(A_1,\dots,A_n\) affectés des poids \(\lambda_1,\dots,\lambda_n\) par le fait 
@@ -37,8 +36,7 @@ Fonctions convexes d'une variable réelle
 
 
 On dit que \(f\) est <b>convexe</b> si, pour tous \(x,y\in I\) et tout \(t\in [0,1]\), on a 
-\(f(tx+(1-t)y)\leq tf(x)+(1-t)f(y).\)
-
+\(f(tx+(1-t)y)\leq tf(x)+(1-t)f(y)\).
 Autrement dit, \(f\) est convexe lorsque son <b>épigraphe</b> \(E(f)\) est convexe, où 
 \(E(f)=\) \(\{(x,y);\ y\geq f(x)\} \)
 (il s'agit donc de la partie située au dessus de la courbe de \(f\)).
@@ -47,16 +45,13 @@ entre les deux extrémités de la corde.
 
 <b>Proposition : </b> \(f\) est convexe si et seulement si, pour tout \(n\geq 2\), pour tous
 \(x_1,\dots,x_n\in I\), pour tous réels \(\lambda_1,\dots,\lambda_n\) de \([0,1]\) tels que \(\sum_{i=\) \(1} ^n\lambda_i=\) \(1\), alors
-\(f\left(\sum_{i=\) \(1} ^n \lambda_i x_i\right)\leq \sum_{i=\) \(1} ^n \lambda_i f(x_i).\)
-
+\(f\left(\sum_{i=\) \(1} ^n \lambda_i x_i\right)\leq \sum_{i=\) \(1} ^n \lambda_i f(x_i)\).
 
 <b>Théorème (inégalité des pentes) : </b> \(f\) est convexe si et seulement si, pour tous
 \(a,b,c\in I\) avec \(a&lt;b&lt;c\), on a 
-\(\frac{f(b)-f(a)} {b-a} \leq \frac{f(c)-f(a)} {c-a} \leq \frac{f(c)-f(b)} {c-b} .\)
-
+\(\frac{f(b)-f(a)} {b-a} \leq \frac{f(c)-f(a)} {c-a} \leq \frac{f(c)-f(b)} {c-b} \).
 Une fonction est dite <b>concave</b> lorsque \(-f\) est convexe, c'est-à-dire lorsque pour tous \(x,y\in I\) et tout \(t\in [0,1]\), on a
-\(f(tx+(1-t)y)\geq tf(x)+(1-t)f(y).\)
-
+\(f(tx+(1-t)y)\geq tf(x)+(1-t)f(y)\).
 Pour une fonction concave, l'inégalité des pentes est inversée.
 
 
@@ -81,8 +76,7 @@ En particulier, la courbe représentative d'une fonction convexe est située au-
 d'une fonction concave est située en-dessous de ses tangentes.
 
 A l'aide de cette propriété, on démontre de nombreuses inégalités comme
-\(\forall x>-1,\ \ln(1+x)\leq x.\)
-
+\(\forall x>-1,\ \ln(1+x)\leq x\).
 
 
 
