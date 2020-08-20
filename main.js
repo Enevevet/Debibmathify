@@ -161,6 +161,7 @@ fs.readdir("./sources/", (err, files) => {
         par = par.replace(/\.(?!\\)/gm, ".\n");
         par = par.replace(/\.\\\)/gm, "\\).");
         par = par.replace(/(?!\.)\r\n ?(?!\\\()(?=[a-z])/gm, " ")
+        par = par.replace(/  /g, " ")
 
 
 
