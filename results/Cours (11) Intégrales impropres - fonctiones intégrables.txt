@@ -19,9 +19,7 @@ Soit \(f:]a,b[\to\mathbb K\) continue par morceaux avec \(a,b\in\mathbb R\cup\{\
 Dans la suite, on considèrera \(I=\) \((a,b)\) un intervalle de \(\mathbb R\) ouvert ou semi-ouvert et \(f,g:I\to\mathbb R\) deux fonctions continues par morceaux.
 
 Les propriétés usuelles sont vérifiées :
-
-<b>positivité :</b> si \(\int_I f\) converge et si \(f\geq 0\) sur \(I\), alors \(\int_I f\geq 0\);
-<b>linéarité :</b> si \(\int_I f\) et \(\int_I g\) convergent, alors pour tout \(\lambda\in\mathbb K\), 
+ <b>positivité :</b> si \(\int_I f\) converge et si \(f\geq 0\) sur \(I\), alors \(\int_I f\geq 0\); <b>linéarité :</b> si \(\int_I f\) et \(\int_I g\) convergent, alors pour tout \(\lambda\in\mathbb K\), 
 \(\int_I(f+\lambda g)\) converge et \(\int_I(f+\lambda g)=\) \(\int_I f+\lambda \int_I g\).
 
 <b>Relation de Chasles :</b> si \(\int_I f\) converge, alors pour tout \(c\in ]a,b[\), \(\int_a^c f\) et \(\int_c^b f\) convergent et on a 

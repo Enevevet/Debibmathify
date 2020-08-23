@@ -55,8 +55,7 @@ Une partie \(A\) de \(E\) est <b>dense</b> dans \(E\) si son adhérence est éga
 
 Soit \(A\) une partie de \(E\).
  On appelle <b>ouvert relatif de A</b> l'intersection d'un ouvert de \(E\) avec \(A\).
- De même, on appelle
-<b>fermé relatif de A</b> l'intersection d'un fermé de \(E\) avec \(A\).
+ De même, on appelle <b>fermé relatif de A</b> l'intersection d'un fermé de \(E\) avec \(A\).
  Un fermé relatif de \(A\) est aussi le complémentaire dans \(A\) d'un ouvert relatif de \(A\).
  
 <b>Proposition :</b> Soit \(A\) une partie de \(E\) et \(F\) une partie de \(A\).

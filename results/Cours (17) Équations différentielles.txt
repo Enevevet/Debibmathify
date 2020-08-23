@@ -22,8 +22,7 @@ Si on introduit une base \(\mathcal B=\) \((e_1,\dots,e_n)\) de \(E\) et en posa
 Résolution des problèmes de Cauchy
 
 Soit \((t_0,x_0)\in I\times E\) et \(x'(t)+a(t)\big(x(t)\big)=\) \(b(t)\) une équation différentielle linéaire.
- On appelle 
-<b>problème de Cauchy</b> associé la détermination des solutions de l'équation différentielle vérifiant de plus \(x(t_0)=\) \(x_0\).
+ On appelle <b>problème de Cauchy</b> associé la détermination des solutions de l'équation différentielle vérifiant de plus \(x(t_0)=\) \(x_0\).
 
 <b>Proposition (mise sous forme intégrale du problème de Cauchy) :</b> Soit \(a:I\to\mathcal L(E)\) et \(b:I\to E\) deux fonctions continues, \(x:I\to E\) dérivable et \((t_0,x_0)\in I\times E\).
  Alors les assertions suivantes sont équivalentes :
@@ -128,8 +127,7 @@ B(t)=\) \(\left(
 Soit une équation différentielle linéaire scalaire d'ordre \(n\)
 \(x^{(n)} (t)=\) \(a_{n-1} (t)x^{(n-1)} (t)+a_{n-2} (t)x^{(n-2)} (t)+\dots+a_0(t)x(t)+b(t)\).
 Soit également \((t_0,x_0,\dots,x_{n-1} )\in I\times \mathbb K^n\).
- On appelle 
-<b>problème de Cauchy</b> associé la détermination des solutions de l'équation différentielle vérifiant de plus \(x(t_0)=\) \(x_0,\ x'(t_0)=\) \(x_1,\dots,\ x^{(n-1)} (t_0)=\) \(x_{n-1} \).
+ On appelle <b>problème de Cauchy</b> associé la détermination des solutions de l'équation différentielle vérifiant de plus \(x(t_0)=\) \(x_0,\ x'(t_0)=\) \(x_1,\dots,\ x^{(n-1)} (t_0)=\) \(x_{n-1} \).
 
 <b>Théorème :</b> Si \(a_0,\dots,a_{n-1} \) et \(b:I\to \mathbb K\) sont des fonctions continues, le problème de Cauchy
 \(\left\{

@@ -26,12 +26,9 @@ Elle vérifie les propriétés suivantes :
 
 
 Si \((E,\|\cdot\|)\) est un espace vectoriel normé, on appelle
-
-<b>boule ouverte</b> de centre \(a\in E\) et de rayon \(r\geq 0\) l'ensemble 
-\(B(a,r)=\) \(\{x\in E;\ \|x-a\|< r\} \).
-<b>boule fermée</b> de centre \(a\in E\) et de rayon \(r\geq 0\) l'ensemble 
-\(\bar B(a,r)=\) \(\{x\in E;\ \|x-a\|\leq r\} \).
-<b>sphère</b> de centre \(a\in E\) et de rayon \(r\geq 0\) l'ensemble 
+ <b>boule ouverte</b> de centre \(a\in E\) et de rayon \(r\geq 0\) l'ensemble 
+\(B(a,r)=\) \(\{x\in E;\ \|x-a\|< r\} \). <b>boule fermée</b> de centre \(a\in E\) et de rayon \(r\geq 0\) l'ensemble 
+\(\bar B(a,r)=\) \(\{x\in E;\ \|x-a\|\leq r\} \). <b>sphère</b> de centre \(a\in E\) et de rayon \(r\geq 0\) l'ensemble 
 \(S(a,r)=\) \(\{x\in E;\ \|x-a\|=\) \(r\} \).
 
 <b>Proposition :</b>

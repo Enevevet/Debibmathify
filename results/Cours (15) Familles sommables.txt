@@ -84,12 +84,9 @@ Propriétés : soit \((u_i)_{i\in I} \) et \((v_i)_{i\in I} \) deux familles som
  Alors 
 
 <b>linéarité :</b> pour tout \(\lambda\in\mathbb C\), \((\lambda u_i+v_i)_{i\in I} \) est sommable, et 
-\(\sum_{i\in I} \big(\lambda u_i+v_i\big)=\) \(\lambda\sum_{i\in I} u_i+\sum_{i\in I} v_i\).
-<b>positivité :</b> si \(u_i\geq 0\), alors \(\sum_i u_i\geq 0\) avec égalité si et seulement si, pour chaque \(i\in I\), \(u_i=\) \(0\).
-
-<b>inégalité triangulaire :</b> 
-\(\left|\sum_{i\in I} u_i\right|\leq \sum_{i\in I} |u_i|\).
-<b>famille produit :</b> la famille \((u_iv_j)_{(i,j)\in I\times I} \) est sommable et on a
+\(\sum_{i\in I} \big(\lambda u_i+v_i\big)=\) \(\lambda\sum_{i\in I} u_i+\sum_{i\in I} v_i\). <b>positivité :</b> si \(u_i\geq 0\), alors \(\sum_i u_i\geq 0\) avec égalité si et seulement si, pour chaque \(i\in I\), \(u_i=\) \(0\).
+ <b>inégalité triangulaire :</b> 
+\(\left|\sum_{i\in I} u_i\right|\leq \sum_{i\in I} |u_i|\). <b>famille produit :</b> la famille \((u_iv_j)_{(i,j)\in I\times I} \) est sommable et on a
 \(\sum_{(i,j)\in I\times I} u_iv_j=\) \(\left(\sum_{i\in I} u_i\right)\times\left(\sum_{j\in I} v_j\right)\).
 
 

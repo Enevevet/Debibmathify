@@ -16,8 +16,7 @@ Projeté orthogonal sur un sous-espace de dimension finie
 On suppose dans cette partie que \(F\) est un sous-espace de \(E\) de dimension finie.
 
 
-\(F^\perp\) est un sous-espace supplémentaire de \(F\) appelé 
-<b>supplémentaire orthogonal</b> de \(F\).
+\(F^\perp\) est un sous-espace supplémentaire de \(F\) appelé <b>supplémentaire orthogonal</b> de \(F\).
  Si \(E\) est lui-même de dimension finie, on a en particulier
 \(\dim(F^\perp)=\) \(\dim(E)-\dim(F)\).
 Soit \(x\in E\), qui s'écrit uniquement \(x=\) \(y+z\) dans la somme directe \(F\oplus F^\perp\).
