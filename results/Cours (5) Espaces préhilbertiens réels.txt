@@ -5,7 +5,7 @@ On fixe \(E\) un espace préhilbertien réel.
  Le produit scalaire est noté \(\langle\cdot,\cdot\rangle\).
 
 Projeté orthogonal sur un sous-espace de dimension finie
-On suppose dans cette partie que \(F\) est un sous-espace de \(E\) de dimension finie.
+On suppose que \(F\) est un sous-espace de \(E\) de dimension finie.
 
 
 \(F^\perp\) est un sous-espace supplémentaire de \(F\) appelé <b>supplémentaire orthogonal</b> de \(F\).
@@ -42,7 +42,7 @@ Soit \((e_k)_{k\in\mathbb N} \) une suite orthonormale totale de \(E\).
 
 
 Matrices orthogonales
-On suppose dans cette partie que \(E\) est euclidien de dimension \(n\).
+On suppose que \(E\) est euclidien de dimension \(n\).
 
 
 On appelle <b>matrice orthogonale</b> de taille \(n\) toute matrice \(M\in\mathcal M_n(\mathbb R)\) vérifiant 
@@ -68,7 +68,7 @@ Le déterminant d'une matrice orthogonale vaut \(\pm 1\).
 
 
 Endomorphismes symétriques
-On suppose dans cette partie que \(E\) est euclidien de dimension \(n\).
+On suppose que \(E\) est euclidien de dimension \(n\).
 
 
 Un endomorphisme \(u\in\mathcal L(E)\) est <b>symétrique</b> (ou <b>auto-adjoint</b>) si pour tous \(x,y\in E\), \(\langle u(x),y\rangle=\) \(\langle x,u(y)\rangle\).
@@ -91,7 +91,7 @@ Matriciellement, dire qu'un endomorphisme est symétrique est équivalent à dir
 
 
 Isométries vectorielles
-On suppose dans cette partie que \(E\) est euclidien de dimension \(n\).
+On suppose que \(E\) est euclidien de dimension \(n\).
 
 
 Un endomorphisme \(u\in\mathcal L(E)\) est un <b>automorphisme orthogonal</b>, ou une <b>isométrie vectorielle</b> si pour tout \(x\in E\), \(\|u(x)\|=\) \(\|x\|\).
@@ -139,7 +139,7 @@ I_p&0&\dots&&0\\
 
 
 Isométries vectorielles en dimension 2
-On suppose dans cette partie que \(E\) est euclidien orienté de dimension 2.
+On suppose que \(E\) est euclidien orienté de dimension 2.
 
 
 
@@ -164,7 +164,7 @@ Les automorphismes orthogonaux de \(E\) sont les rotations vectorielles et les r
 
 
 Isométries vectorielles en dimension 3
-On suppose dans cette partie que \(E\) est euclidien orienté de dimension 3.
+On suppose que \(E\) est euclidien orienté de dimension 3.
 
 
 

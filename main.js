@@ -163,7 +163,7 @@ fs.readdir("./sources/", (err, files) => {
         par = par.replace(/(?!\.)\r\n ?(?!\\\()(?=[a-z]|\<b\>[a-z])/gm, " ");
         par = par.replace(/  /g, " ");
         par = par.replace(/On a résumé ici (.*?)\<\/p\>/gs, " ");
-
+        par = par.replace(/dans cette partie /g, "");
 
 
         //Écriture dans le fichier
