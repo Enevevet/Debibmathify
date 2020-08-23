@@ -94,7 +94,7 @@ Isométries vectorielles
 On suppose dans cette partie que \(E\) est euclidien de dimension \(n\).
 
 
-Un endomorphisme \(u\in\mathcal L(E)\) est un <b>automorphisme orthogonal</b>, ou une <span class=\) \(rougedico>isométrie vectorielle</span> si pour tout \(x\in E\), \(\|u(x)\|=\) \(\|x\|\).
+Un endomorphisme \(u\in\mathcal L(E)\) est un <b>automorphisme orthogonal</b>, ou une <b>isométrie vectorielle</b> si pour tout \(x\in E\), \(\|u(x)\|=\) \(\|x\|\).
  On note \(\mathcal O(E)\) l'ensemble des automorphismes orthogonaux de \(E\); \(\mathcal O(E)\) est un sous-groupe de \(GL(E)\).
 
 Un endomorphisme \(u\in\mathcal L(E)\) est orthogonal si et seulement s'il conserve le produit scalaire.

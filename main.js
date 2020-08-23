@@ -105,11 +105,11 @@ fs.readdir("./sources/", (err, files) => {
         //Changement du gras des defs
         mole = 0;
         count = 0;
-        set = par.match(/(<span class=rougedico>)(.*?)(<\/span>)/g);
+        set = par.match(/(<span class=rougedico>)(.*?)(<\/span>)/gs);
 
         if (set) {
             for (i = 0; i < set.length; i++) {
-                mole = par.search(/(<span class=rougedico>)(.*?)(<\/span>)/g);
+                mole = par.search(/(<span class=rougedico>)(.*?)(<\/span>)/gs);
                 temp = set[i];
                 par = par.replace(temp, " ");
                 temp = temp.replace("<span class=rougedico>", "");
