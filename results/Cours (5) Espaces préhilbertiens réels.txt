@@ -1,14 +1,6 @@
 Résumé de cours : Espaces préhilbertiens et endomorphismes des espaces euclidiens
 
-On a résumé ici les nouveautés spécifiques au programme de Math Spé.
- Evidemment, il faut encore savoir tout ce qui a été appris en Math Sup à ce sujet.
-
-On pourra pour cela consulter <a href=\) \(http://www.
-bibmath.
-net/ressources/index.
-php?action=\) \(affiche&quoi=\) \(mathsup/cours/prehilbert.
-html>ce résumé de cours</a>.
-</p>
+ 
 On fixe \(E\) un espace préhilbertien réel.
  Le produit scalaire est noté \(\langle\cdot,\cdot\rangle\).
 
