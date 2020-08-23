@@ -18,7 +18,7 @@ fs.readdir("./sources/", (err, files) => {
                 par = par.replace(a, b);
             }
             return par
-        }
+        };
 
 
 
@@ -33,7 +33,7 @@ fs.readdir("./sources/", (err, files) => {
                 mole = par.search(/<ol>(.*?)<\/ol>/gs); //On chope la place dans le paragraphe
                 temp = set[i]; //On prend l'élément
                 par = par.replace(temp, " "); //On jarte du paragraphe
-                temp = rp(temp, "<li>", " - ") //On bouge la prise
+                temp = rp(temp, "<li>", " - "); //On bouge la prise
                 temp = temp.replace("<ol>", "");
                 temp = temp.replace("<\/ol>", "");
                 par = [par.slice(0, mole), temp, par.slice(mole + 1)].join(''); //On réimplente la prise modifiée
@@ -51,7 +51,7 @@ fs.readdir("./sources/", (err, files) => {
                 mole = par.search(/^<div class=theo>(?:[^<]|<(?!\/div>))+?<\/ul>$/gm); //On chope la place dans le paragraphe
                 temp = set[i]; //On prend l'élément
                 par = par.replace(temp, " "); //On jarte du paragraphe
-                temp = rp(temp, "<li>", " - ") //On bouge la prise
+                temp = rp(temp, "<li>", " - "); //On bouge la prise
                 temp = temp.replace("<ul>", "");
                 temp = temp.replace("<\/ul>", "");
                 par = [par.slice(0, mole), temp, par.slice(mole + 1)].join(''); //On réimplente la prise modifiée
@@ -155,14 +155,14 @@ fs.readdir("./sources/", (err, files) => {
 
         //Quelques autres remplacements
         par = par.replace(/:\r\n/gm, ':');
-        par = par.replace(/}(?! )/g, "} ")
-        par = par.replace(/=/g, "=\\) \\(")
+        par = par.replace(/}(?! )/g, "} ");
+        par = par.replace(/=/g, "=\\) \\(");
         par = par.replace(/\n\r\n\r/gm, "\n");
         par = par.replace(/\.(?!\\)/gm, ".\n");
         par = par.replace(/\.\\\)/gm, "\\).");
-        par = par.replace(/(?!\.)\r\n ?(?!\\\()(?=[a-z]|\<b\>[a-z])/gm, " ")
-        par = par.replace(/  /g, " ")
-        par = par.replace(/On a résumé ici (.*?)\<\/p\>/gs, " ")
+        par = par.replace(/(?!\.)\r\n ?(?!\\\()(?=[a-z]|\<b\>[a-z])/gm, " ");
+        par = par.replace(/  /g, " ");
+        par = par.replace(/On a résumé ici (.*?)\<\/p\>/gs, " ");
 
 
 
