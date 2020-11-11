@@ -37,7 +37,6 @@ Séries à termes positifs
 
 <b>Théorème :</b> Une série à termes positifs converge si et seulement si la suite de ses sommes partielles est majorée.
 
-</span>
 
 
 <b>Théorème (sommation des relations de comparaison) :</b> Soit \((u_n)\) et \((v_n)\) deux suites de nombres réels positifs.
