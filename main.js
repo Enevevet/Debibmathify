@@ -3,7 +3,7 @@ const fs = require('fs');
 
 fs.readdir("./sources/", (err, files) => {
     files.forEach(file => {
-        console.log(typeof file);
+
 
 
         var par = fs.readFileSync(`./sources/${file}`).toString('utf-8');
