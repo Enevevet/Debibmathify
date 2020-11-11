@@ -71,7 +71,6 @@ de $\sum_n u_n$ est alors équivalente à la convergence de toutes les séries d
 <li>
 <div class=theo>
 <span class=grastheo>Théorème :</span> Une série à termes positifs converge si et seulement si la suite de ses sommes partielles est majorée.
-</span>
 </div>
 <li>
 <div class=theo>
