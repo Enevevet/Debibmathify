@@ -43,7 +43,7 @@ Séries à termes positifs
 <b>Théorème (sommation des relations de comparaison) :</b> Soit \((u_n)\) et \((v_n)\) deux suites de nombres réels positifs.
 
 
- - <span class=\) \(grastheo>équivalence :</span> Si \(u_n\sim_{+\infty} v_n\), alors :
+ - <b>équivalence :</b> Si \(u_n\sim_{+\infty} v_n\), alors :
 
  - si \(\sum_n v_n\) diverge, alors \(\sum_n u_n\) diverge et on a \(\sum_{k=1} ^n u_k\sim \sum_{k=1} ^n v_k\) (équivalence des sommes partielles).
 

@@ -122,11 +122,11 @@ fs.readdir("./sources/", (err, files) => {
         //Changement du gras des props
         mole = 0;
         count = 0;
-        set = par.match(/(<span class=grastheo>)+\w[^\>]+(<\/span>)/g);
+        set = par.match(/(<span class=grastheo>)+.[^\>]+(<\/span>)/g);
 
         if (set) {
             for (i = 0; i < set.length; i++) {
-                mole = par.search(/(<span class=grastheo>)+\w[^\>]+(<\/span>)/g);
+                mole = par.search(/(<span class=grastheo>)+.[^\>]+(<\/span>)/g);
                 temp = set[i];
                 par = par.replace(temp, " ");
                 temp = temp.replace("<span class=grastheo>", "");

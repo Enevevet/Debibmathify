@@ -89,7 +89,7 @@ Intégration des relations de comparaison
 Soit \(I=\) \([a,b[\) et \(f,g:I\to\mathbb R\) continue par morceaux.
 
 
-<span class=\) \(grastheo>équivalence :</span> Si \(f\sim_b g\) avec \(f,g\geq 0\), alors :
+<b>équivalence :</b> Si \(f\sim_b g\) avec \(f,g\geq 0\), alors :
  si \(\int_a^b g(t)dt\) diverge, alors \(\int_a^b f(t)dt\) diverge et on a \(\int_a^x f(t)dt\sim_b \int_a^x g(t)dt\) (équivalence des sommes partielles).
  si \(\int_a^b g(t)dt\) converge, alors \(\int_a^b f(t)dt\) converge et on a \(\int_x^b f(t)dt\sim_b \int_x^b g(t)dt\) (équivalence des restes).
 
