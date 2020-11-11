@@ -60,9 +60,9 @@ Ce théorème est souvent appliqué avec \(b=\) \(+\infty\).
 Séries de fonctions
 Soit \(I\) un intervalle de \(\mathbb R\) et \((u_n)\) une suite de fonctions de \(I\) dans \(\mathbb R\)
 
-On dit que la série de fonctions \(\sum_n u_n\) <b>converge simplement</b> vers \(S\) sur \(I\) si la suite de ses sommes partielles \(S_n(x)=\) \(\sum_{k=\) \(1} ^n u_k(x)\) converge simplement vers \(S\) sur \(I\).
+On dit que la série de fonctions \(\sum_n u_n\) <b>converge simplement</b> vers \(S\) sur \(I\) si la suite de ses sommes partielles \(S_n(x)=\) \(\sum_{k=1} ^n u_k(x)\) converge simplement vers \(S\) sur \(I\).
 
-On dit que la série de fonctions \(\sum_n u_n\) <b>converge uniformément</b> vers \(S\) sur \(I\) si la suite de ses sommes partielles \(S_n(x)=\) \(\sum_{k=\) \(1} ^n u_k(x)\) converge uniformément vers \(S\) sur \(I\).
+On dit que la série de fonctions \(\sum_n u_n\) <b>converge uniformément</b> vers \(S\) sur \(I\) si la suite de ses sommes partielles \(S_n(x)=\) \(\sum_{k=1} ^n u_k(x)\) converge uniformément vers \(S\) sur \(I\).
 
 On dit que la série de fonctions \(\sum_n u_n\) <b>converge normalement</b> sur \(I\) si la série numérique \(\sum_n \|u_n\|_{\infty,I} \) est convergente.
 

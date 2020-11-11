@@ -49,7 +49,7 @@ On considère \(\sum_n a_n z^n\) et \(\sum_n b_nz^n\) deux séries entières de 
 <b>Somme de deux séries entières</b> : Le rayon de convergence de la série somme \(\sum_n (a_n+b_n)z^n\) vérifie \(R\geq \min(R_a,R_b)\).
  De plus, pour tout \(z\in\mathbb C\) avec \(|z|<\min(R_a,R_b)\), alors
 \(\sum_{n\geq 0} (a_n+b_n)z^n=\) \(\sum_{n\geq 0} a_n z^n+\sum_{n\geq 0} b_nz^n\).
-On appelle <b>série entière produit</b> de \(\sum_n a_nz^n\) et de \(\sum_n b_nz^n\) la série entière \(\sum_n c_nz^n\) avec \(c_n=\) \(\sum_{k=\) \(0} ^n a_k b_{n-k} \).
+On appelle <b>série entière produit</b> de \(\sum_n a_nz^n\) et de \(\sum_n b_nz^n\) la série entière \(\sum_n c_nz^n\) avec \(c_n=\) \(\sum_{k=0} ^n a_k b_{n-k} \).
 
 <b>Proposition :</b> Le rayon de convergence \(R\) de la série produit \(\sum_n c_nz^n\) de \(\sum_n a_nz^n\) et \(\sum_n b_nz^n\) vérifie \(R\geq \min(R_a,R_b)\).
  De plus, pour tout \(z\in\mathbb C\) avec \(|z|<\min(R_a,R_b)\), alors

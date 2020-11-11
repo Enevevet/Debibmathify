@@ -87,9 +87,9 @@ On a \(V(aX+b)=\) \(a^2V(X)\).
 
 <b>Théorème (variance d'une somme de variables aléatoires) :</b> Soit \(X_1,\dots,X_n\) des variables aléatoires discrètes finies admettant des moments d'ordre \(2\).
  Alors
-\(V\left(\sum_{i=\) \(1} ^n X_i\right)=\) \(\sum_{i=\) \(1} ^n V(X_i)+2\sum_{1\leq i&lt;j\leq n} \big(E(X_iX_j)-E(X_i)E(X_j)\big)\).
+\(V\left(\sum_{i=1} ^n X_i\right)=\) \(\sum_{i=1} ^n V(X_i)+2\sum_{1\leq i&lt;j\leq n} \big(E(X_iX_j)-E(X_i)E(X_j)\big)\).
 En particulier, si les \(X_I\) sont <b>deux à deux</b> indépendantes, alors 
-\(V\left(\sum_{i=\) \(1} ^n X_i\right)=\) \(\sum_{i=\) \(1} ^n V(X_i)\).
+\(V\left(\sum_{i=1} ^n X_i\right)=\) \(\sum_{i=1} ^n V(X_i)\).
 
 Si \(X\) et \(Y\) admettent un moment d'ordre \(2\), on appelle <b>covariance</b> de \(X\) et de \(Y\) le réel
 \(\textrm{Cov} (X,Y)=\) \(E\big((X-E(X))(Y-E(Y)\big)=\) \(E(XY)-E(X)E(Y)\).

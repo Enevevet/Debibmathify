@@ -15,7 +15,7 @@ Soit \(x\in E\), qui s'écrit uniquement \(x=\) \(y+z\) dans la somme directe \(
  Alors \(y\) s'appelle le <b>projeté orthogonal</b> de \(x\) sur \(F\), et est noté \(p_F(x)\).
  
 Si \((e_1,\dots,e_p)\) est une base orthonormée de \(F\), alors 
-\(p_F(x)=\) \(\sum_{i=\) \(1} ^p \langle x,e_i\rangle e_i\).
+\(p_F(x)=\) \(\sum_{i=1} ^p \langle x,e_i\rangle e_i\).
 
 <b>Théorème et définition :</b> Pour tout \(x\in E\) et tout \(f\in F\), on a 
 \(\|x-f\|\geq \|x-p_F(x)\|\) avec égalité si et seulement si \(f=\) \(p_F(x)\).
@@ -27,7 +27,7 @@ Par le théorème de Pythagore, on a
 \(d(x,F)=\) \(\sqrt{\|x\|^2-\|p_F(x)\|^2} \).
 <b>Inégalité de Bessel :</b> Soit \((e_1,\dots,e_n)\) une famille orthonormale de \(E\).
  Alors pour tout \(x\in E\), on a 
-\(\sum_{k=\) \(1} ^n \langle x,e_k\rangle^2\leq \|x\|^2\).
+\(\sum_{k=1} ^n \langle x,e_k\rangle^2\leq \|x\|^2\).
 
 
 Suites totales

@@ -26,7 +26,7 @@ Une partie \(B\) de l'anneau \(A\) est un sous-anneau de \(A\) si et seulement s
 
 Dans un anneau, on peut continuer à appliquer les identités remarquables pourvu que les éléments auxquels on les applique commutent.
  Par exemple, si \(a\times b=\) \(b\times a\), la formule du binôme de Newton
-\((a+b)^n=\) \(\sum_{k=\) \(0} ^n \binom nk a^k b^{n-k} \) est vraie.
+\((a+b)^n=\) \(\sum_{k=0} ^n \binom nk a^k b^{n-k} \) est vraie.
 
 Soient \(A,B\) deux anneaux.
  Une application \(f:A\to B\) est un morphisme d'anneaux si les conditions suivantes sont vérifiées : 

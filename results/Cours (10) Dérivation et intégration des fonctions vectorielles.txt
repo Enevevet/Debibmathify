@@ -62,7 +62,7 @@ Formule de Leibniz : soit \(f:I\to E\) et \(g:I\to F\) deux applications de clas
  
 Alors \(B(f,g)\) est de classe \(\mathcal C^n\) et 
 \begin{eqnarray*} 
-\big(B(f,g)\big)^{(n)} &=\) \(&\sum_{k=\) \(0} ^n \binom{n} {k} B\big(f^{(n-k)} ,g^{(k)} \big)
+\big(B(f,g)\big)^{(n)} &=\) \(&\sum_{k=0} ^n \binom{n} {k} B\big(f^{(n-k)} ,g^{(k)} \big)
 \end{eqnarray*} 
 
 <b>Théorème (inégalité des accroissements finis) :</b> Soit \(f:[a,b]\to E\) de classe \(\mathcal C^1\).
@@ -92,7 +92,7 @@ L'intégration vectorielle vérifie les deux propriétés suivantes, bien connue
 <b>Théorème :</b> Soit \(f:[a,b]\to E\) continue par morceaux.
 
 Alors
-\(\frac {b-a} n\sum_{k=\) \(0} ^{n-1} f\left(a+k\frac{b-a} n\right)\to\int_a^b f(t)dt\).
+\(\frac {b-a} n\sum_{k=0} ^{n-1} f\left(a+k\frac{b-a} n\right)\to\int_a^b f(t)dt\).
 
 <b>Théorème :</b> Soit \(f:[a,b]\to\mathbb E\) continue.
  Alors la fonction \(F:[a,b]\to E\), \(x\mapsto \int_a^x f(t)dt\) est dérivable, et pour tout \(x\in\mathbb R\), on a \(F'(x)=\) \(f(x)\).
@@ -104,12 +104,12 @@ Formules de Taylor
 <b>Formule de Taylor avec reste intégral :</b>
 Soit \(f:[a,b]\to\mathbb E\) une fonction de classe \(\mathcal C^{n+1} \).
  Alors 
-\(f(b)=\) \(\sum_{k=\) \(0} ^{n} \frac{(b-a)^k} {k!} f^{(k)} (a)+\int_a^b \frac{(b-t)^n} {n!} f^{(n+1)} (t)dt\).
+\(f(b)=\) \(\sum_{k=0} ^{n} \frac{(b-a)^k} {k!} f^{(k)} (a)+\int_a^b \frac{(b-t)^n} {n!} f^{(n+1)} (t)dt\).
 
 <b>Inégalité de Taylor-Lagrange :</b>
 Soit \(f:[a,b]\to\mathbb E\) une fonction de classe \(\mathcal C^{n+1} \).
  Alors 
-\(\left| f(b)-\sum_{k=\) \(0} ^{n} \frac{(b-a)^k} {k!} f^{(k)} (a)\right|\leq M_{n+1} \frac{|b-a|^{n+1} } {(n+1)!} \) avec
+\(\left| f(b)-\sum_{k=0} ^{n} \frac{(b-a)^k} {k!} f^{(k)} (a)\right|\leq M_{n+1} \frac{|b-a|^{n+1} } {(n+1)!} \) avec
 \(M_{n+1} =\) \(\sup_{t\in [a,b]} \|f^{(n+1)} (t)\|\).
 
 

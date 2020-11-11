@@ -164,6 +164,12 @@ fs.readdir("./sources/", (err, files) => {
         par = par.replace(/  /g, " ");
         par = par.replace(/On a résumé ici (.*?)\<\/p\>/gs, " ");
         par = par.replace(/dans cette partie /g, "");
+        par = par.replace(/\\sum_{k=\\\) \\\(0}/g, "\\sum_{k=0}")
+        par = par.replace(/\\sum_{k=\\\) \\\(1}/g, "\\sum_{k=1}")
+        par = par.replace(/\\sum_{i=\\\) \\\(0}/g, "\\sum_{i=0}")
+        par = par.replace(/\\sum_{i=\\\) \\\(1}/g, "\\sum_{i=1}")
+        par = par.replace(/\\sum_{\\ell=\\\) \\\(0}/g, "\\sum_{\\ell=0}")
+        par = par.replace(/\\sum_{\\ell=\\\) \\\(1}/g, "\\sum_{\\ell=1}")
 
 
         //Écriture dans le fichier

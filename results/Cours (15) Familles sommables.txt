@@ -104,7 +104,7 @@ Application aux séries
 Dans ce cas, on a égalité des sommes :\(\sum_{(m,n)\in\mathbb N^2} u_{m,n} =\) \(\sum_{n=\) \(0} ^{+\infty} \sum_{m=\) \(0} ^{+\infty} u_{m,n} \).
 
 Soit \(\sum_n a_n\) et \(\sum_n b_n\) deux séries de nombres complexes.
- On appelle <b>produit de Cauchy</b> de ces deux séries la série de terme général \(c_n=\) \(\sum_{k=\) \(0} ^n a_k b_{n-k} \).
+ On appelle <b>produit de Cauchy</b> de ces deux séries la série de terme général \(c_n=\) \(\sum_{k=0} ^n a_k b_{n-k} \).
 
 <b>Théorème (produit de Cauchy de deux séries) :</b> Soit \(\sum_n a_n\) et \(\sum_n b_n\) deux séries de nombres complexes absolument convergentes et soit \(\sum_n c_n\) la série produit de Cauchy de ces deux séries.
  Alors \(\sum_n c_n\) est absolument convergente et on a 

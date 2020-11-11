@@ -6,19 +6,19 @@ Soit \(E\) un espace vectoriel de dimension finie munie d'une norme \(\|\cdot\|\
 
 
 On appelle <b>somme partielle d'ordre \(n\)</b> de la série \(\sum u_k\) le vecteur
-\(S_n=\) \(\sum_{k=\) \(0} ^n u_k\).
+\(S_n=\) \(\sum_{k=0} ^n u_k\).
 On dit que la série \(\sum u_n\) converge si la suite de ses sommes partielles \((S_n)\) est convergente.
  On dit qu'elle diverge dans le cas contraire.
 
 Dans le cas de la convergence, on note
-\(\sum_{k=\) \(0} ^{+\infty} u_k=\) \(\lim_{n\to+\infty} S_n\).
-Le vecteur \( \sum_{k=\) \(0} ^{+\infty} u_n\) de \(E\) s'appelle la somme de la série \(\sum u_k\).
+\(\sum_{k=0} ^{+\infty} u_k=\) \(\lim_{n\to+\infty} S_n\).
+Le vecteur \( \sum_{k=0} ^{+\infty} u_n\) de \(E\) s'appelle la somme de la série \(\sum u_k\).
  Toujours dans le cas de la convergence, le <b>reste</b> de la série d'ordre \(n\) est défini par 
 \(R_n=\) \(\sum_{k=\) \(n+1} ^{+\infty} u_k\).
 <b>Proposition :</b> Si la série \(\sum_n u_n\) converge, alors \((\|u_n\|)\) tend vers 0.
 
 <b>Lien suite série :</b> Si on pose, pour \(n\geq 0\), \(v_n=\) \(u_{n+1} -u_n\), alors
-\(\sum_{k=\) \(0} ^n v_k=\) \(u_{n+1} -u_0\).
+\(\sum_{k=0} ^n v_k=\) \(u_{n+1} -u_0\).
 En particulier, la suite \((u_n)\) converge si et seulement si la série \(\sum_n (u_{n+1} -u_n)\) converge.
 
 
@@ -45,18 +45,18 @@ Séries à termes positifs
 
  - <span class=\) \(grastheo>équivalence :</span> Si \(u_n\sim_{+\infty} v_n\), alors :
 
- - si \(\sum_n v_n\) diverge, alors \(\sum_n u_n\) diverge et on a \(\sum_{k=\) \(1} ^n u_k\sim \sum_{k=\) \(1} ^n v_k\) (équivalence des sommes partielles).
+ - si \(\sum_n v_n\) diverge, alors \(\sum_n u_n\) diverge et on a \(\sum_{k=1} ^n u_k\sim \sum_{k=1} ^n v_k\) (équivalence des sommes partielles).
 
  - si \(\sum_n v_n\) converge, alors \(\sum_n u_n\) converge et on a \(\sum_{k=\) \(n+1} ^{+\infty} u_k \sim_{+\infty} \sum_{k=\) \(n+1} ^{+\infty} v_k\) (équivalence des restes).
 
 
 <b>domination :</b> Si \(u_n=\) \(_{+\infty} O(v_n)\), alors :
- si \(\sum_n u_n\) diverge, alors \(\sum_n v_n\) diverge et on a \(\sum_{k=\) \(1} ^{n} u_k =\) \(_{+\infty} O\left( \sum_{k=\) \(1} ^{n} v_k\right)\) (domination des sommes partielles).
+ si \(\sum_n u_n\) diverge, alors \(\sum_n v_n\) diverge et on a \(\sum_{k=1} ^{n} u_k =\) \(_{+\infty} O\left( \sum_{k=1} ^{n} v_k\right)\) (domination des sommes partielles).
  si \(\sum_n v_n\) converge, alors \(\sum_n u_n\) converge et on a \(\sum_{k=\) \(n+1} ^{+\infty} u_k =\) \(_{+\infty} O\left( \sum_{k=\) \(n+1} ^{+\infty} v_k\right)\) (domination des restes).
 
 
 <b>négligeabilité :</b> Si \(u_n=\) \(_{+\infty} o(v_n)\), alors :
- si \(\sum_n u_n\) diverge, alors \(\sum_n v_n\) diverge et on a \(\sum_{k=\) \(1} ^{n} u_k =\) \(_{+\infty} o\left( \sum_{k=\) \(1} ^{n} v_k\right)\) (négligeabilité des sommes partielles).
+ si \(\sum_n u_n\) diverge, alors \(\sum_n v_n\) diverge et on a \(\sum_{k=1} ^{n} u_k =\) \(_{+\infty} o\left( \sum_{k=1} ^{n} v_k\right)\) (négligeabilité des sommes partielles).
  si \(\sum_n v_n\) converge, alors \(\sum_n u_n\) converge et on a \(\sum_{k=\) \(n+1} ^{+\infty} u_k =\) \(_{+\infty} o\left( \sum_{k=\) \(n+1} ^{+\infty} v_k\right)\) (négligeabilité des restes).
 
 
@@ -97,7 +97,7 @@ Critère des séries alternées
 <b>Critère des séries alternées :</b> Soit \((a_n)\) une suite de réels positifs, décroissante, et tendant vers \(0\).
  Alors la série
 \(\sum_n (-1)^n a_n\) converge.
- De plus, si on note \(S\) sa somme, \(S_n=\) \(\sum_{k=\) \(0} ^n (-1)^k a_k\) la somme partielle d'ordre \(n\) et \(R_n=\) \(\sum_{k=\) \(n+1} ^{+\infty} 
+ De plus, si on note \(S\) sa somme, \(S_n=\) \(\sum_{k=0} ^n (-1)^k a_k\) la somme partielle d'ordre \(n\) et \(R_n=\) \(\sum_{k=\) \(n+1} ^{+\infty} 
 (-1)^k a_k\) le reste d'ordre \(n\), alors pour tout entier \(n\), on a \(S_{2n+1} \leq S\leq S_{2n} \), \(|R_n|\leq a_{n+1} \) et \(R_n\) est du signe de \((-1)^{n+1} \).
 
 

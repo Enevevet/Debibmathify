@@ -92,8 +92,8 @@ On appelle <b>système fondamental</b> de solutions de ce système toute base \(
 
 <b>Proposition :</b> Soit \((X_1,\dots,X_n)\) un système fondamental de solutions, et \((C_1,\dots,C_n)\) une famille de \(n\) fonctions de classe \(\mathcal C^1\) de \(I\) dans \(\mathcal M_n(\mathbb K)\).
  L'application \(X\) définie par
-\(X(t)=\) \(\sum_{i=\) \(1} ^n C_i(t)X_i(t)\) est solution de l'équation avec second membre si et seulement si, pour tout \(t\in I\), 
-\(\sum_{i=\) \(1} ^n C_i'(t)X_i(t)=\) \(B(t)\).
+\(X(t)=\) \(\sum_{i=1} ^n C_i(t)X_i(t)\) est solution de l'équation avec second membre si et seulement si, pour tout \(t\in I\), 
+\(\sum_{i=1} ^n C_i'(t)X_i(t)=\) \(B(t)\).
 
 <b>Corollaire :</b> Soit \(a\in\mathcal L(E)\), \(b:I\to E\) continue et \(t_0\in I\).
  Alors l'ensemble des solutions de l'équation \(x'(t)=\) \(a\big(x(t)\big)+b(t)\) est

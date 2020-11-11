@@ -33,7 +33,7 @@ L'application \(L\), si elle existe, est unique et s'appelle la <b>différentiel
 
 <b>Proposition :</b> Si \(f\) est différentiable en \(a\), alors les \(p\) dérivées partielles de \(f\) en \(a\) existent.
  De plus, pour tout \(h\in E\), on a 
-\(df_a(h)=\) \(\sum_{i=\) \(1} ^p \frac{\partial f} {\partial x_i} (a)h_i\).
+\(df_a(h)=\) \(\sum_{i=1} ^p \frac{\partial f} {\partial x_i} (a)h_i\).
 
 Si \(f\) est différentiable en \(a\), et si on écrit \(f=\) \((f_1,\dots,f_n)\), alors on appelle <b>matrice jacobienne</b> de \(f\) en \(a\) la matrice
 \(J_a f=\) \(\left(
@@ -68,7 +68,7 @@ Sur les matrices jacobiennes, l'égalité précédente se traduit par un produit
 
 En particulier, si \(f\) est différentiable sur \(U\) et si \(x_1,\dots,x_p:I\to \mathbb R\) sont dérivables sur \(I\) et vérifient \((x_1(t),\dots,x_p(t))\in U\) pour tout \(t\in I\), la fonction 
 \(F(t)=\) \(f(x_1(t),\dots,x_p(t))\) est dérivable sur \(I\) et vérifie
-\(F'(t)=\) \(\sum_{i=\) \(1} ^n x_i'(t)\frac{\partial f} {\partial x_i} (x_1(t),\dots,x_p(t))\).
+\(F'(t)=\) \(\sum_{i=1} ^n x_i'(t)\frac{\partial f} {\partial x_i} (x_1(t),\dots,x_p(t))\).
 <b>Dérivée le long d'un arc :</b> si \(\gamma\) est une application définie sur un intervalle \(I\) de \(\mathbb R\), dérivable en \(t\), si \(f\) est différentiable en \(\gamma(t)\), alors \(f\circ \gamma\) est dérivable en \(t\) et 
 \((f\circ \gamma)'(t)=\) \(df_{\gamma(t)} ( \gamma'(t))\).
 
